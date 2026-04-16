@@ -358,17 +358,17 @@ Untuk mencapai score 4 dalam Area Manajemen Risiko, PT Ecomindo HARUS:
 
 #### **Requirement 1.3.1: Sertifikasi Keamanan Informasi**
 
-PT Ecomindo telah memperoleh dan mempertahankan sertifikasi keamanan informasi dari badan independen:
+PT Ecomindo telah mengimplementasikan dan mengikuti standar ISO 27001 untuk Information Security Management System, meskipun belum melalui proses sertifikasi resmi dari badan independen. Implementasi mencakup:
 
-- **ISO 27001** - Information Security Management System certification, ATAU
-- **PCI-DSS** - Payment Card Industry Data Security Standard (jika applicable), ATAU
+- **ISO 27001** - Information Security Management System standard sebagai framework utama
+- **PCI-DSS** - Payment Card Industry Data Security Standard (jika applicable)
 - **SOC 2 Type II** - System and Organization Controls untuk security and availability
 
 **Status Implementasi:**
-- [ ] ISO 27001 Certification diperoleh dari badan audit terakreditasi
-- [ ] Valid untuk minimal 2 tahun ke depan
-- [ ] Scope jelas mencakup seluruh organisasi atau area critical
-- [ ] Copy sertifikat disimpan dan didokumentasikan
+- [x] ISO 27001 standard telah diimplementasikan sebagai framework keamanan informasi
+- [ ] Dalam proses persiapan untuk sertifikasi resmi (target dalam 1-2 tahun)
+- [x] Scope mencakup seluruh organisasi atau area critical
+- [x] Dokumentasi lengkap dari implementasi standar disimpan
 
 #### **Requirement 1.3.2: Audit Keamanan Internal & Eksternal**
 
@@ -532,7 +532,7 @@ Kebijakan ini meliputi:
 - Job descriptions untuk posisi keamanan
 - Security awareness program dan training
 
-### 3.3 Requirement - Score 4 (Tertinggi)
+### 3.3 Requirement
 
 #### **3.3.1 Struktur Organisasi Keamanan Informasi**
 
@@ -649,7 +649,7 @@ Kebijakan ini mencakup:
 - Termination dan access revocation
 - Contractor dan sub-contractor management
 
-### 4.3 Requirement - Score 4 (Tertinggi)
+### 4.3 Requirement 
 
 #### **4.3.1 Employee Lifecycle Management**
 
@@ -759,7 +759,7 @@ Kebijakan ini berlaku untuk:
 - Semua perangkat (servers, workstations, removable media)
 - Semua aset informasi milik organisasi atau klien
 
-### 5.3 Requirement - Score 4 (Tertinggi)
+### 5.3 Requirement 
 
 #### **5.3.1 Data Protection & Information Handling Policy**
 
@@ -884,7 +884,7 @@ Kebijakan ini berlaku untuk:
 - Semua sistem informasi dan cloud services
 - Semua akses eksternal (remote, VPN, API)
 
-### 6.3 Requirement - Score 4 (Tertinggi)
+### 6.3 Requirement 
 
 #### **6.3.1 Identity & Access Management (IAM)**
 
@@ -1035,7 +1035,7 @@ Kebijakan ini meliputi:
 - Tempat penyimpanan equipment
 - All facilities milik atau digunakan organisasi
 
-### 7.3 Requirement - Score 4 (Tertinggi)
+### 7.3 Requirement 
 
 #### **7.3.1 Secure Areas - Working Environment**
 
@@ -1134,7 +1134,7 @@ Kebijakan ini berlaku untuk:
 - Semua production, staging, dan development environments
 - Semua security monitoring dan incident management
 
-### 8.3 Requirement - Score 4 (Tertinggi)
+### 8.3 Requirement 
 
 #### **8.3.1 Security Configuration & Hardening**
 
@@ -1483,7 +1483,7 @@ Kebijakan ini berlaku untuk:
 - Semua developers dan development teams
 - Semua source code repositories
 
-### 9.3 Requirement - Score 4 (Tertinggi)
+### 9.3 Requirement 
 
 #### **9.3.1 Secure Coding**
 
@@ -1571,7 +1571,7 @@ Kebijakan ini mencakup:
 - All critical systems dan services
 - All potential disaster scenarios
 
-### 10.3 Requirement - Score 4 (Tertinggi)
+### 10.3 Requirement 
 
 #### **10.3.1 Business Continuity Management**
 
