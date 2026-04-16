@@ -1,24 +1,24 @@
 # TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI
 ## PT ECOMINDO SARANA CIPTA
 
+## Cover
+**Dokumen:** TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI  
 **Versi:** 1.0  
 **Tanggal Berlaku:** 15 April 2026  
 **Status:** Final  
 **Tingkat Keamanan:** Confidential
 
----
-
-## TANDA TANGAN PERSETUJUAN
+## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
 | Direktur Utama / CEO | _________________ | _________________ | __________ |
-| Manager Keamanan Informasi | _________________ | _________________ | __________ |
-| Direktur Operasional/ CTO | _________________ | _________________ | __________ |
+| Manajer Keamanan Informasi | _________________ | _________________ | __________ |
+| Direktur Operasional / CTO | _________________ | _________________ | __________ |
 
 ---
 
-## DAFTAR ISI
+## Daftar Isi
 
 1. [Pendahuluan](#pendahuluan)
 2. [Visi dan Misi](#visi-dan-misi)

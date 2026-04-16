@@ -1,10 +1,32 @@
 # PROC-06: Prosedur Kesadaran dan Kepatuhan
 
+## Cover
+**Dokumen:** PROC-06: Prosedur Kesadaran dan Kepatuhan  
 **Dokumen ID:** PROC-06  
 **Versi:** 1.0  
 **Tanggal Efektif:** 15 April 2026  
-**Disetujui Oleh:** [Nama dan Jabatan]  
-**Departemen:** Keamanan Informasi  
+**Departemen:** Keamanan Informasi
+
+## Lembar Pengesahan
+
+| Jabatan | Nama | Tanda Tangan | Tanggal |
+|---------|------|-------------|--------|
+| Direktur Utama |  |  |  |
+| Manajer Keamanan Informasi |  |  |  |
+| Manajer SDM |  |  |  |
+
+---
+
+## Daftar Isi
+
+- [1. Pendahuluan](#1-pendahuluan)
+- [2. Prosedur Utama](#2-prosedur-utama)
+- [3. Formulir dan Template](#3-formulir-dan-template)
+- [4. Kontrol dan Monitoring](#4-kontrol-dan-monitoring)
+- [5. Pemenuhan Standar Keamanan Informasi Internasional](#5-pemenuhan-standar-keamanan-informasi-internasional)
+- [6. Tanggung Jawab](#6-tanggung-jawab)
+- [7. Review dan Update](#7-review-dan-update)
+- [8. Lampiran](#8-lampiran)
 
 ---
 

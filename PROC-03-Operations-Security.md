@@ -1,10 +1,26 @@
 # PROC-03: Prosedur Keamanan Operasi
 
+## Cover
+**Dokumen:** PROC-03: Prosedur Keamanan Operasi  
 **Dokumen ID:** PROC-03  
 **Versi:** 1.0  
 **Tanggal Efektif:** 15 April 2026  
-**Disetujui Oleh:** [Nama dan Jabatan]  
-**Departemen:** Keamanan Informasi  
+**Departemen:** Keamanan Informasi
+
+## Lembar Pengesahan
+
+| Jabatan | Nama | Tanda Tangan | Tanggal |
+|---------|------|-------------|--------|
+| Direktur Utama |  |  |  |
+| Manajer Keamanan Informasi |  |  |  |
+| Manajer SDM |  |  |  |
+
+---
+
+## Daftar Isi
+
+- [1. Pendahuluan](#1-pendahuluan)
+- [2. Prosedur Utama](#2-prosedur-utama)
 
 ---
 
