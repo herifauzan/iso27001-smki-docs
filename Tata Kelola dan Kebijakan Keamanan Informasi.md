@@ -1790,7 +1790,7 @@ Jika ditemukan non-compliance:
 
 ---
 
-## 13. DOCUMENT REFERENCES & INTEGRATION MAP
+## 13. DOCUMENT REFERENCES & INTEGRATION MAP {#document-references-integration-map}
 
 ### 13.1 Document Hierarchy
 
@@ -1854,7 +1854,7 @@ Setiap karyawan harus:
 
 ---
 
-## 15. EFFECTIVE DATE & AMENDMENTS
+## 15. EFFECTIVE DATE & AMENDMENTS {#effective-date-amendments}
 
 **Document Status:** Effective as of **15 April 2026**
 
