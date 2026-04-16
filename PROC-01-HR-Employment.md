@@ -1,63 +1,63 @@
-# PROSEDUR KEAMANAN SUMBER DAYA MANUSIA & EMPLOYMENT
+# PROSEDUR KEAMANAN SUMBER DAYA MANUSIA & PEKERJAAN
 ## PT ECOMINDO SARANA CIPTA
 
 **PROC-01**  
 **Versi:** 1.0  
 **Tanggal Berlaku:** 15 April 2026  
 **Status:** Final  
-**Tingkat Keamanan:** Confidential
+**Tingkat Keamanan:** Rahasia
 
 ---
 
 ## DAFTAR ISI
 
-- [PROSEDUR 1: Employee Recruitment & Background Check](#proc-1)
-- [PROSEDUR 2: Employee Termination & Exit Clearance](#proc-2)
-- [PROSEDUR 3: Contractor & Sub-Contractor Management](#proc-3)
-- [PROSEDUR 4: Personnel NDA Management](#proc-4)
-- [Templates & Forms](#templates)
+- [PROSEDUR 1: Rekrutmen Karyawan & Pemeriksaan Latar Belakang](#proc-1)
+- [PROSEDUR 2: Pemutusan Hubungan Kerja Karyawan & Pembersihan Akses](#proc-2)
+- [PROSEDUR 3: Pengelolaan Kontraktor & Sub-Kontraktor](#proc-3)
+- [PROSEDUR 4: Pengelolaan NDA Personil](#proc-4)
+- [Templat & Formulir](#templates)
 
 ---
 
-## PROSEDUR 1: EMPLOYEE RECRUITMENT & BACKGROUND CHECK {#proc-1}
+## PROSEDUR 1: REKRUTMEN KARYAWAN & PEMERIKSAAN LATAR BELAKANG {#proc-1}
 
 ### 1.1 Tujuan
 
-Prosedur ini memastikan bahwa semua calon employee yang akan bergabung dengan PT Ecomindo telah melalui background check yang komprehensif untuk menverifikasi identitas, integritas, dan kesesuaian untuk posisi sensitif terkait informasi/keamanan.
+Prosedur ini memastikan bahwa semua calon karyawan yang akan bergabung dengan PT Ecomindo Sarana Cipta telah melalui pemeriksaan latar belakang yang komprehensif untuk memverifikasi identitas, integritas, dan kesesuaian untuk posisi sensitif terkait informasi/keamanan.
 
 ### 1.2 Ruang Lingkup
 
 Prosedur ini berlaku untuk:
-- Semua calon karyawan baru sebelum hiring/joining
-- Semua posisi, terutama yang akan akses sistem/data sensitif
-- Internal transfer/promotions (jika akses level naik kepada data lebih sensitif)
+- Semua calon karyawan baru sebelum perekrutan/joining
+- Semua posisi, terutama yang akan mengakses sistem/data sensitif
+- Transfer internal/promosi (jika akses level naik kepada data lebih sensitif)
 
 ### 1.3 Pihak yang Bertanggung Jawab
 
-| Role | Responsibility |
-|------|-----------------|
-| **HR Manager** | Coordinate recruitment, identify candidates |
-| **Hiring Manager** | Approve candidate list, final approval hire |
-| **HR Coordinator** | Execute background check, maintain records |
-| **ISM (Information Security Manager)** | Approve background check policy, review high-level candidates |
-| **Background Check Vendor** | Conduct verification (outsourced atau internal) |
+| Peran | Tanggung Jawab |
+|-------|-----------------|
+| **Manajer SDM** | Mengkoordinasi perekrutan, mengidentifikasi kandidat |
+| **Manajer Perekrutan** | Menyetujui daftar kandidat, persetujuan akhir perekrutan |
+| **Koordinator SDM** | Mengeksekusi pemeriksaan latar belakang, mempertahankan catatan |
+| **ISM (Manajer Keamanan Informasi)** | Menyetujui kebijakan pemeriksaan latar belakang, meninjau kandidat tingkat tinggi |
+| Penyedia Jasa Pemeriksaan Latar Belakang | Melakukan verifikasi (outsourced atau internal) |
 
 ### 1.4 Prasyarat
 
-Sebelum background check dimulai:
-- Job description sudah finalized
-- Candidate sudah selected oleh hiring manager
-- Candidate sudah submitted required documents (CV, ID copy, references)
-- Candidate sudah sign consent form untuk background check
+Sebelum pemeriksaan latar belakang dimulai:
+- Deskripsi pekerjaan sudah diselesaikan
+- Kandidat sudah dipilih oleh manajer perekrutan
+- Kandidat sudah mengirimkan dokumen yang diperlukan (CV, salinan ID, referensi)
+- Kandidat sudah menandatangani formulir persetujuan untuk pemeriksaan latar belakang
 
 ### 1.5 Prosedur Langkah demi Langkah
 
-#### **LANGKAH 1: Memulai Proses Background Check**
+#### **LANGKAH 1: Memulai Proses Pemeriksaan Latar Belakang**
 
 **Jadwal:** Segera setelah kandidat dipilih  
-**Penanggung Jawab:** HR Coordinator
+**Penanggung Jawab:** Koordinator SDM
 
-1. Kirim formulir otorisasi background check kepada kandidat
+1. Kirim formulir otorisasi pemeriksaan latar belakang kepada kandidat
    - Formulir harus mencakup:
      - Otorisasi untuk memverifikasi detail pribadi
      - Otorisasi untuk menghubungi pemberi kerja sebelumnya
@@ -73,14 +73,14 @@ Sebelum background check dimulai:
    - Riwayat gaji (jika berlaku)
    - Sertifikat pendidikan/ijazah
 
-3. Arsipkan atau unggah ke sistem background check
+3. Arsipkan atau unggah ke sistem pemeriksaan latar belakang
    - Pertahankan catatan terorganisir dengan nama kandidat, posisi pekerjaan, tanggal dikirim
    - Simpan formulir otorisasi yang ditandatangani dengan dokumentasi
 
 #### **LANGKAH 2: Verifikasi Identitas**
 
 **Jadwal:** Hari 1-2 setelah Langkah 1  
-**Penanggung Jawab:** Vendor Background Check ATAU HR
+**Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang ATAU SDM
 
 1. Verifikasi identifikasi pribadi:
    - Hubungi otoritas penerbit KTP/SIM untuk memverifikasi nomor valid
@@ -98,844 +98,855 @@ Sebelum background check dimulai:
    - Hasil: LULUS atau TANDA MERAH
    - Jika ada masalah: HENTIKAN proses, eskalasi kepada ISM
 
-#### **STEP 3: Employment History Verification**
+#### **LANGKAH 3: Verifikasi Riwayat Pekerjaan**
 
-**Timeline:** Day 2-5 after Step 1  
-**Owner:** HR Coordinator
+**Jadwal:** Hari 2-5 setelah Langkah 1  
+**Penanggung Jawab:** Koordinator SDM
 
-1. Call/email previous employers listed pada CV:
-   - Contact HR department dari previous company
-   - Request verification dari:
-     - Dates employed
-     - Job title(s)
-     - Reporting manager
-     - Reason untuk leaving
-     - Performance rating (if available)
-     - Rehire status (would they rehire this person?)
+1. Hubungi/email pemberi kerja sebelumnya yang tercantum dalam CV:
+   - Hubungi departemen SDM dari perusahaan sebelumnya
+   - Minta verifikasi dari:
+     - Tanggal bekerja
+     - Jabatan
+     - Manajer pelaporan
+     - Alasan untuk meninggalkan
+     - Rating kinerja (jika tersedia)
+     - Status perekrutan ulang (apakah mereka akan merekrut kembali orang ini?)
 
-2. Compare dengan CV:
-   - Check untuk consistency (dates, positions, companies)
-   - Flag jika discrepancies found
-   - Contact candidate untuk clarification if needed
+2. Bandingkan dengan CV:
+   - Periksa konsistensi (tanggal, posisi, perusahaan)
+   - Tandai jika ditemukan ketidaksesuaian
+   - Hubungi kandidat untuk klarifikasi jika diperlukan
 
-3. At least 2 references MUST be contacted:
-   - Minimum one dari previous employer
-   - Second dapat dari supervisor atau other professional reference
+3. Setidaknya 2 referensi HARUS dihubungi:
+   - Minimal satu dari pemberi kerja sebelumnya
+   - Kedua dapat dari supervisor atau referensi profesional lainnya
 
-4. Document results:
-   - Call notes dengan who spoke dengan, date, findings
-   - Red flags atau concerns noted
+4. Dokumentasikan hasil:
+   - Catatan panggilan dengan siapa yang berbicara, tanggal, temuan
+   - Bendera merah atau masalah yang dicatat
 
-#### **STEP 4: Criminal & Legal Records Check**
+#### **LANGKAH 4: Pemeriksaan Catatan Kriminal & Hukum**
 
-**Timeline:** Day 3-7 after Step 1 (dapat parallel dengan Step 2 & 3)  
-**Owner:** Background Check Vendor
+**Jadwal:** Hari 3-7 setelah Langkah 1 (dapat paralel dengan Langkah 2 & 3)  
+**Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang
 
-1. Request criminal record check dari appropriate authorities:
-   - National police records
-   - Regional/local police records
-   - Traffic violation records (jika driving part dari job)
+1. Minta pemeriksaan catatan kriminal dari otoritas yang sesuai:
+   - Catatan polisi nasional
+   - Catatan polisi regional/lokal
+   - Catatan pelanggaran lalu lintas (jika mengemudi merupakan bagian dari pekerjaan)
 
-2. Request legal/court records:
-   - Outstanding lawsuits atau judgments
-   - Bankruptcy filings (if applying untuk positions dengan financial authority)
+2. Minta catatan hukum/pengadilan:
+   - Gugatan yang belum selesai atau putusan
+   - Pengajuan kebangkrutan (jika melamar untuk posisi dengan otoritas keuangan)
 
-3. Specific untuk sensitive positions:
-   - Drug-related offenses: AUTOMATIC DISQUALIFICATION
-   - Violence/assault convictions: AUTOMATIC DISQUALIFICATION
-   - Fraud/embezzlement: AUTOMATIC DISQUALIFICATION
-   - Other crimes: Case-by-case assessment dengan ISM + Hiring Manager
+3. Khusus untuk posisi sensitif:
+   - Pelanggaran terkait narkoba: DISQUALIFIKASI OTOMATIS
+   - Keyakinan kekerasan/serangan: DISQUALIFIKASI OTOMATIS
+   - Penipuan/pencurian: DISQUALIFIKASI OTOMATIS
+   - Kejahatan lainnya: Penilaian kasus per kasus dengan ISM + Manajer Perekrutan
 
-4. Document results:
-   - Report dari authorities stating "no record found" ATAU details dari any records
-   - File report dalam secure location
+4. Dokumentasikan hasil:
+   - Laporan dari otoritas yang menyatakan "tidak ditemukan catatan" ATAU detail dari catatan apa pun
+   - File laporan dalam lokasi aman
 
-#### **STEP 5: Education Verification** (jika applicable)
+#### **LANGKAH 5: Verifikasi Pendidikan** (jika berlaku)
 
-**Timeline:** Day 3-7  
-**Owner:** HR Coordinator
+**Jadwal:** Hari 3-7  
+**Penanggung Jawab:** Koordinator SDM
 
-1. Contact educational institutions listed pada resume:
-   - University/college/vocational school
-   - Request verification dari:
-     - Dates attended
-     - Degree/certification awarded
-     - Major/field of study
-     - Grade point average (optional)
+1. Hubungi institusi pendidikan yang tercantum dalam resume:
+   - Universitas/kuliah/vokasi
+   - Minta verifikasi dari:
+     - Tanggal menghadiri
+     - Gelar/sertifikasi yang diberikan
+     - Jurusan/bidang studi
+     - Nilai rata-rata (opsional)
 
-2. Verify credentials:
-   - Contact issuing body untuk confirm degree valid/legitimate
-   - Flag diplomas dari non-accredited institutions sebagai red flag
+2. Verifikasi kredensial:
+   - Hubungi badan penerbit untuk mengonfirmasi gelar valid/sah
+   - Tandai ijazah dari institusi non-terakreditasi sebagai bendera merah
 
-3. Document:
-   - Verification confirmation received
-   - Any discrepancies dengan resume
+3. Dokumentasikan:
+   - Konfirmasi verifikasi yang diterima
+   - Ketidaksesuaian apa pun dengan resume
 
-#### **STEP 6: Financial Background Check** (selective posisi only)
+#### **LANGKAH 6: Pemeriksaan Latar Belakang Keuangan** (hanya posisi selektif)
 
-**Timeline:** Day 4-10  
-**Owner:** Background Check Vendor  
-**Applicable untuk:** Positions dengan access ke finances, banking, atau sensitive financial data
+**Jadwal:** Hari 4-10  
+**Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang  
+**Berlaku untuk:** Posisi dengan akses ke keuangan, perbankan, atau data keuangan sensitif
 
-1. Run credit report (if applicable & with consent):
-   - Check untuk history dari financial irresponsibility
-   - Bankruptcies, judgments, tax liens
-   - Large unpaid debts
+1. Jalankan laporan kredit (jika berlaku & dengan persetujuan):
+   - Periksa riwayat tanggung jawab keuangan
+   - Kebangkrutan, putusan, lien pajak
+   - Hutang yang belum dibayar dalam jumlah besar
 
-2. Interpret hasil:
-   - Bad credit adalah RED FLAG untuk positions involving financial responsibility
-   - For IT positions dengan data access: Less critical tapi noted
+2. Interpretasikan hasil:
+   - Kredit buruk adalah BENDERA MERAH untuk posisi yang melibatkan tanggung jawab keuangan
+   - Untuk posisi IT dengan akses data: Kurang kritis tapi dicatat
 
-3. Document:
-   - Credit report summary
-   - Any significant findings
+3. Dokumentasikan:
+   - Ringkasan laporan kredit
+   - Temuan signifikan apa pun
 
-#### **STEP 7: Social Media & Online Verification**
+#### **LANGKAH 7: Verifikasi Media Sosial & Online**
 
-**Timeline:** Day 5-7  
-**Owner:** HR Coordinator
+**Jadwal:** Hari 5-7  
+**Penanggung Jawab:** Koordinator SDM
 
-1. Screen social media profiles (LinkedIn, Facebook, Twitter):
-   - Look untuk red flags:
-     - Offensive/inappropriate content
-     - Concerning behavior documentation
-     - Professional inconsistencies
-   - NOT reason untuk reject based on legal/private life alone
+1. Layar profil media sosial (LinkedIn, Facebook, Twitter):
+   - Cari bendera merah:
+     - Konten ofensif/tidak pantas
+     - Dokumentasi perilaku yang mengkhawatirkan
+     - Inkonsistensi profesional
+   - TIDAK alasan untuk menolak berdasarkan kehidupan pribadi/hukum saja
 
-2. Online reputation search:
-   - Google search candidate name
-   - Check news articles, court records online public results
+2. Pencarian reputasi online:
+   - Pencarian Google nama kandidat
+   - Periksa artikel berita, catatan pengadilan hasil online publik
 
-3. Document:
-   - Any significant findings noted
-   - Red flags for discussion dengan hiring manager
+3. Dokumentasikan:
+   - Temuan signifikan apa pun yang dicatat
+   - Bendera merah untuk diskusi dengan manajer perekrutan
 
-#### **STEP 8: Final Assessment & Recommendation**
+#### **LANGKAH 8: Penilaian Akhir & Rekomendasi**
 
-**Timeline:** Day 7-10 after initiation  
-**Owner:** HR Coordinator + ISM
+**Jadwal:** Hari 7-10 setelah inisiasi  
+**Penanggung Jawab:** Koordinator SDM + ISM
 
-1. Compile all background check findings:
-   - Create comprehensive background check report dengan:
-     - All verification results
-     - Any red flags atau concerns
-     - References contacted notes
+1. Kompilasi semua temuan pemeriksaan latar belakang:
+   - Buat laporan pemeriksaan latar belakang komprehensif dengan:
+     - Semua hasil verifikasi
+     - Bendera merah atau masalah apa pun
+     - Catatan referensi yang dihubungi
      - Timeline
 
-2. Assessment:
-   - Compare findings dengan job requirements
-   - Assess risk level untuk position
+2. Penilaian:
+   - Bandingkan temuan dengan persyaratan pekerjaan
+   - Nilai level risiko untuk posisi
 
-3. Recommendation:
-   - PASS: Background acceptable, candidate can proceed
-   - FAIL: Background failed, candidate rejected, NOT hired
-   - CONDITIONAL PASS: Minor concerns, proceed dengan conditions atau further investigation
+3. Rekomendasi:
+   - LULUS: Latar belakang dapat diterima, kandidat dapat melanjutkan
+   - GAGAL: Latar belakang gagal, kandidat ditolak, TIDAK direkrut
+   - LULUS BERSYARAT: Masalah kecil, lanjutkan dengan syarat atau penyelidikan lebih lanjut
 
-4. ISM review untuk sensitive positions:
-   - ISM reviews report
-   - ISM approval required BEFORE final hire decision untuk positions involving security/confidentiality
+4. Tinjauan ISM untuk posisi sensitif:
+   - ISM meninjau laporan
+   - Persetujuan ISM diperlukan SEBELUM keputusan perekrutan akhir untuk posisi yang melibatkan keamanan/kerahasiaan
 
-#### **STEP 9: Final Approval & Archive**
+#### **LANGKAH 9: Persetujuan Akhir & Arsip**
 
-**Timeline:** Day 8-10  
-**Owner:** HR Manager
+**Jadwal:** Hari 8-10  
+**Penanggung Jawab:** Manajer SDM
 
-1. Hiring manager final decision:
-   - If PASS: Proceed dengan hire paperwork
-   - If FAIL atau concerns: Reject candidate atau request more information
+1. Keputusan akhir manajer perekrutan:
+   - Jika LULUS: Lanjutkan dengan dokumen perekrutan
+   - Jika GAGAL atau masalah: Tolak kandidat atau minta informasi lebih lanjut
 
-2. Document approval:
-   - Signed approval form
-   - Date background check cleared
-   - Date hired
+2. Dokumentasikan persetujuan:
+   - Formulir persetujuan yang ditandatangani
+   - Tanggal pemeriksaan latar belakang disetujui
+   - Tanggal direkrut
 
-3. Archive background check file:
-   - Store securely (confidential filing cabinet atau encrypted digital folder)
-   - Access limited kepada: HR, ISM, Hiring Manager only
-   - Retention: Keep untuk minimum 3 years setelah employment ends
+3. Arsip file pemeriksaan latar belakang:
+   - Simpan dengan aman (lemari arsip rahasia atau folder digital terenkripsi)
+   - Akses terbatas kepada: SDM, ISM, Manajer Perekrutan saja
+   - Retensi: Simpan minimal 3 tahun setelah pekerjaan berakhir
 
-4. Communicate kepada candidate:
-   - Notify candidate hasil (typically tidak detail, just "cleared untuk employment")
-   - Provide joining date, first day instructions
+4. Komunikasikan kepada kandidat:
+   - Beritahu kandidat hasil (biasanya tidak detail, hanya "disetujui untuk pekerjaan")
+   - Berikan tanggal mulai, instruksi hari pertama
 
-### 1.6 Red Flags & Escalation
+### 1.6 Bendera Merah & Eskalasi
 
-If ANY dari following DITEMUKAN, STOP process dan escalate kepada ISM:
-- Identity cannot be verifikasi atau suspicious
-- Criminal convictions untuk serious crimes
-- Multiple employment history discrepancies
-- References speak negatively atau unwilling comment
-- Failed education verification
-- Outstanding warrants atau legal issues
+Jika APA PUN dari berikut DITEMUKAN, HENTIKAN proses dan eskalasi kepada ISM:
+- Identitas tidak dapat diverifikasi atau mencurigakan
+- Keyakinan kriminal untuk kejahatan serius
+- Beberapa ketidaksesuaian riwayat pekerjaan
+- Referensi berbicara negatif atau enggan berkomentar
+- Gagal verifikasi pendidikan
+- Surat perintah yang belum selesai atau masalah hukum
 
-**Escalation Process:**
-1. HR notifies ISM immediately
-2. ISM reviews all documentation
-3. ISM makes final accept/reject decision
-4. If REJECT: Candidate not hired; offer dapat be rescinded if already made
+**Proses Eskalasi:**
+1. SDM memberitahu ISM segera
+2. ISM meninjau semua dokumentasi
+3. ISM membuat keputusan terima/tolak akhir
+4. Jika TOLAK: Kandidat tidak direkrut; penawaran dapat dicabut jika sudah dibuat
 
-### 1.7 Timeline & Frequency
+### 1.7 Timeline & Frekuensi
 
-- **Overall Process:** 7-10 business days
-- **Background Check:** Untuk setiap new hire sebelum joining date
-- **Frequency:** Every hire/recruitment
-- **Review:** Background check policy reviewed annually
+- **Proses Keseluruhan:** 7-10 hari kerja
+- **Pemeriksaan Latar Belakang:** Untuk setiap perekrutan baru sebelum tanggal mulai
+- **Frekuensi:** Setiap perekrutan
+- **Tinjauan:** Kebijakan pemeriksaan latar belakang ditinjau setiap tahun
 
-### 1.8 Templates & Forms
+### 1.8 Templat & Formulir
 
-→ See Section 8: [Form 1A: Background Check Authorization](#form-1a)  
-→ See Section 8: [Form 1B: Background Check Report](#form-1b)
+→ Lihat Bagian 8: [Formulir 1A: Otorisasi Pemeriksaan Latar Belakang](#form-1a)  
+→ Lihat Bagian 8: [Formulir 1B: Laporan Pemeriksaan Latar Belakang](#form-1b)
 
 ---
 
-## PROSEDUR 2: EMPLOYEE TERMINATION & EXIT CLEARANCE {#proc-2}
+## PROSEDUR 2: PEMUTUSAN HUBUNGAN KERJA KARYAWAN & PEMBERSIHAN AKSES {#proc-2}
 
-### 2.1 Purpose (Tujuan)
+### 2.1 Tujuan
 
-Prosedur ini memastikan bahwa ketika seorang karyawan meninggalkan organisasi, semua akses terhadap sistem informasi dan fasilitas fisik segera direvoke untuk mencegah akses tidak sah terhadap data/sistem setelah employee tidak lagi authorized.
+Prosedur ini memastikan bahwa ketika seorang karyawan meninggalkan organisasi, semua akses terhadap sistem informasi dan fasilitas fisik segera dicabut untuk mencegah akses tidak sah terhadap data/sistem setelah karyawan tidak lagi authorized.
 
-### 2.2 Scope (Ruang Lingkup)
+### 2.2 Ruang Lingkup
 
 Prosedur ini berlaku untuk:
-- Semua terminations (resignation, retirement, termination for cause)
-- All employees tanpa exception
-- Contractors juga undergo similar process
+- Semua pemutusan hubungan kerja (pengunduran diri, pensiun, pemutusan karena alasan tertentu)
+- Semua karyawan tanpa pengecualian
+- Kontraktor juga menjalani proses serupa
 
-### 2.3 Responsible Parties
+### 2.3 Pihak yang Bertanggung Jawab
 
-| Role | Responsibility |
-|------|-----------------|
-| **HR Manager** | Notify termination, coordinate process |
-| **Hiring Manager** | Inform IT, collect equipment |
-| **IT System Admin** | Disable system accounts |
-| **Facilities** | Revoke physical access badges |
-| **ISM** | Oversight, verification |
+| Peran | Tanggung Jawab |
+|-------|-----------------|
+| **Manajer SDM** | Memberitahu pemutusan, mengkoordinasi proses |
+| **Manajer Perekrutan** | Menginformasikan IT, mengumpulkan peralatan |
+| **Admin Sistem IT** | Menonaktifkan akun sistem |
+| **Fasilitas** | Mencabut akses fisik kartu lencana |
+| **ISM** | Pengawasan, verifikasi |
 
-### 2.4 Exit Checklist Timeline
+### 2.4 Daftar Periksa Timeline Pembersihan Akses
 
 ```
-Termination Announced → Day 0
+Pemberitahuan Pemutusan Diumumkan → Hari 0
     ↓
-Within 24 hours → Day 1: Disable all system access
+Dalam 24 jam → Hari 1: Cabut semua akses sistem
      ↓
-Within 24 hours → Day 1: Revoke physical access
+Dalam 24 jam → Hari 1: Cabut akses fisik
      ↓
-On Last Day → Exit interview, collect equipment
+Pada Hari Terakhir → Wawancara keluar, kumpulkan peralatan
      ↓
-After Last Day → Final account cleanup (after data/files migrated)
+Setelah Hari Terakhir → Pembersihan akun akhir (setelah file/data dimigrasi)
      ↓
-After 30 days → Archive/delete old account
+Setelah 30 hari → Arsip/hapus akun lama
 ```
 
-### 2.5 Step-by-Step Procedure
+### 2.5 Prosedur Langkah demi Langkah
 
-#### **STEP 1: Termination Notification**
+#### **LANGKAH 1: Pemberitahuan Pemutusan**
 
-**Timeline:** Immediately when termination decided  
-**Owner:** HR Manager
+**Jadwal:** Segera ketika pemutusan diputuskan  
+**Penanggung Jawab:** Manajer SDM
 
-1. HR receives notice dari hiring manager/employee:
-   - Resignation letter, OR
-   - Management decision to terminate
+1. SDM menerima pemberitahuan dari manajer perekrutan/karyawan:
+   - Surat pengunduran diri, ATAU
+   - Keputusan manajemen untuk memutuskan
 
-2. Document termination details:
-   - Employee name, ID, position
-   - Termination date (final day of employment)
-   - Reason untuk termination (resignation, retirement, layoff, for-cause, etc.)
-   - Last working day (may be immediate atau notice period)
+2. Dokumentasikan detail pemutusan:
+   - Nama karyawan, ID, posisi
+   - Tanggal pemutusan (hari terakhir bekerja)
+   - Alasan untuk pemutusan (pengunduran diri, pensiun, PHK, karena alasan tertentu, dll.)
+   - Hari kerja terakhir (dapat segera atau periode pemberitahuan)
 
-3. Create exit checklist:
-   - Use Exit Clearance Form (see Form 2A)
-   - Document yang needs to be revoked/returned
+3. Buat daftar periksa pembersihan akses:
+   - Gunakan Formulir Pembersihan Akses (lihat Formulir 2A)
+   - Dokumentasikan yang perlu dicabut/dikembalikan
 
-#### **STEP 2: Prepare for Access Revocation** 
+#### **LANGKAH 2: Persiapkan Pencabutan Akses**
 
-**Timeline:** Day 0 (immediately after termination notice)  
-**Owner:** HR + Hiring Manager
+**Jadwal:** Hari 0 (segera setelah pemberitahuan pemutusan)  
+**Penanggung Jawab:** SDM + Manajer Perekrutan
 
-1. Notify IT Systems Administrator:
-   - Email notification dengan employee details
-   - Lists systems needing access removal:
-     - Email/mailbox
+1. Beritahu Admin Sistem IT:
+   - Email pemberitahuan dengan detail karyawan
+   - Daftar sistem yang perlu penghapusan akses:
+     - Email/kotak surat
      - VPN
-     - Database access
-     - Cloud applications
-     - File shares
-     - Access card system
-     - Building access
+     - Akses database
+     - Aplikasi cloud
+     - Berbagi file
+     - Sistem kartu akses bangunan
+     - Kartu akses fisik
 
-2. Create revocation checklist:
-   - List ALL systems employee had access kepada
-   - Organized by system type (email, database, applications, etc.)
+2. Buat daftar periksa pencabutan:
+   - Daftar SEMUA sistem yang karyawan miliki akses
+   - Diorganisir berdasarkan jenis sistem (email, database, aplikasi, dll.)
 
-#### **STEP 3: System Access Revocation - SAME DAY**
+#### **LANGKAH 3: Pencabutan Akses Sistem - HARI YANG SAMA**
 
-**Timeline:** MUST be completed within 24 hours dari termination date  
-**Owner:** IT System Administrator
+**Jadwal:** HARUS diselesaikan dalam 24 jam dari tanggal pemutusan  
+**Penanggung Jawab:** Admin Sistem IT
 
-**3.1 Email / Mailbox**
-- [ ] Forward emails kepada manager atau designated team member
-- [ ] Change password untuk prevent access
-- [ ] Set auto-reply stating person tidak lagi dengan organization
-- [ ] After 30 days: Reset mailbox, archive old emails
+**3.1 Email / Kotak Surat**
+- [ ] Teruskan email kepada manajer atau anggota tim yang ditunjuk
+- [ ] Ubah kata sandi untuk mencegah akses
+- [ ] Atur balasan otomatis yang menyatakan orang tersebut tidak lagi dengan organisasi
+- [ ] Setelah 30 hari: Setel ulang kotak surat, arsip email lama
 
-**3.2 VPN Access**
-- [ ] Revoke VPN credentials untuk employee
-- [ ] Delete VPN certificate/access
-- [ ] Update VPN server access lists
-- [ ] Verify revocation: Try login attempt dengan old credentials (should fail)
+**3.2 Akses VPN**
+- [ ] Cabut kredensial VPN untuk karyawan
+- [ ] Hapus sertifikat akses VPN
+- [ ] Perbarui daftar akses server VPN
+- [ ] Verifikasi pencabutan: Coba upaya login dengan kredensial lama (harus gagal)
 
-**3.3 Database Access**
-- [ ] Remove database user account
-- [ ] Revoke permissions untuk any databases
-- [ ] Remove dari database groups/roles
-- [ ] Audit trail: Document waktu revocation
+**3.3 Akses Database**
+- [ ] Hapus akun pengguna database
+- [ ] Cabut izin untuk database apa pun
+- [ ] Hapus dari grup/peran database
+- [ ] Jejak audit: Dokumentasikan waktu pencabutan
 
-**3.4 Cloud Applications**
-- [ ] Disable SaaS accounts (Salesforce, Microsoft 365, Slack, etc.)
-- [ ] Revoke API keys atau service accounts si related to employee
-- [ ] Remove dari any cloud resource permissions
+**3.4 Aplikasi Cloud**
+- [ ] Nonaktifkan akun SaaS (Salesforce, Microsoft 365, Slack, dll.)
+- [ ] Cabut kunci API atau akun layanan terkait karyawan
+- [ ] Hapus dari izin sumber daya cloud apa pun
 
-**3.5 File Shares & Storage**
-- [ ] Remove dari network file shares
-- [ ] Remove dari cloud storage (SharePoint, OneDrive, Google Drive)
-- [ ] Migrate any important files kepada manager/team
-- [ ] Delete personal folders after 30-day retention
+**3.5 Berbagi File & Penyimpanan**
+- [ ] Hapus dari berbagi file jaringan
+- [ ] Hapus dari penyimpanan cloud (SharePoint, OneDrive, Google Drive)
+- [ ] Migrasikan file penting apa pun kepada manajer/tim
+- [ ] Hapus folder pribadi setelah retensi 30 hari
 
-**3.6 Physical Access Card / Badges**
-- [ ] Deactivate access card di building access system
-- [ ] Retrieve physical badge dari employee
-- [ ] Remove badge permissions untuk all doors
-- [ ] Verify: Card tidak dapat open doors when swiped
+**3.6 Kartu Lencana Akses Fisik / Lencana**
+- [ ] Nonaktifkan kartu akses di sistem akses bangunan
+- [ ] Ambil kartu fisik dari karyawan
+- [ ] Hapus izin kartu untuk semua pintu
+- [ ] Verifikasi: Kartu tidak dapat membuka pintu saat digesek
 
-3.7 Verification:
-- For EACH system: IT must verify access has been revoked
-  - Cannot login with old credentials
-  - Not appearing in access lists anymore
-  - Systems show "access revoked" atau similar status
-- Document verification untuk each system removed
+3.7 Verifikasi:
+- Untuk SETIAP sistem: IT harus memverifikasi akses telah dicabut
+  - Tidak dapat login dengan kredensial lama
+  - Tidak muncul lagi di daftar akses
+  - Sistem menunjukkan "akses dicabut" atau serupa
+- Dokumentasikan verifikasi untuk setiap sistem yang dihapus
 
-#### **STEP 4: Physical Facilities Access Revocation - SAME DAY**
+#### **LANGKAH 4: Pencabutan Akses Fasilitas Fisik - HARI YANG SAMA**
 
-**Timeline:** MUST be completed within 24 hours  
-**Owner:** Facilities Management + IT (card system)
+**Jadwal:** HARUS diselesaikan dalam 24 jam  
+**Penanggung Jawab:** Manajemen Fasilitas + IT (sistem kartu)
 
-1. Building access card:
-   - [ ] Retrieve physical access card dari employee
-   - [ ] Deactivate dalam building access system
-   - [ ] Test: Card tidak works di card readers
+1. Kartu akses bangunan:
+   - [ ] Ambil kartu akses fisik dari karyawan
+   - [ ] Nonaktifkan dalam sistem akses bangunan
+   - [ ] Uji: Kartu tidak bekerja di pembaca kartu
 
-2. Parking:
-   - [ ] Cancel parking permit/remote opener
-   - [ ] Update parking access list
+2. Parkir:
+   - [ ] Batalkan izin parkir/remote opener
+   - [ ] Perbarui daftar akses parkir
 
-3. Physical keys:
-   - [ ] Collect office keys, server room keys, equipment keys
-   - [ ] Document collection
-   - [ ] Secure keys atau re-key if concerned unauthorized copies
+3. Kunci fisik:
+   - [ ] Kumpulkan kunci kantor, kunci ruang server, kunci peralatan
+   - [ ] Dokumentasikan pengumpulan
+   - [ ] Amankan kunci atau kunci ulang jika khawatir salinan tidak sah
 
-4. Facilities documentation:
-   - [ ] Remove employee name dari access lists
-   - [ ] Verify removal
+4. Dokumentasi fasilitas:
+   - [ ] Hapus nama karyawan dari daftar akses
+   - [ ] Verifikasi penghapusan
 
-#### **STEP 5: Equipment Collection - ON LAST DAY**
+#### **LANGKAH 5: Pengumpulan Peralatan - PADA HARI TERAKHIR**
 
-**Timeline:** On employee's last day (dapat be coordinated dengan hirng manager)  
-**Owner:** Hiring Manager + IT
+**Jadwal:** Pada hari terakhir karyawan (dapat dikoordinasikan dengan manajer perekrutan)  
+**Penanggung Jawab:** Manajer Perekrutan + IT
 
-**Equipment to collect:**
+**Peralatan yang dikumpulkan:**
 
-- [ ] **Computer/Laptop** - Power on/off state, charger, dock
-- [ ] **Monitor/Peripherals** - If assigned personally
-- [ ] **Phone** - Mobile device (if company-provided)
-- [ ] **Badges/Keys** - Access cards, physical keys, parking permits
-- [ ] **USB/Mobile Media** - Any thumb drives, external drives, SIM cards
-- [ ] **Documents** - Any physical/paper files containing company info
-- [ ] **Network equipment** - If provided (if applicable)
+- [ ] Komputer/Laptop - Status hidup/mati, pengisi daya, dok
+- [ ] Monitor/Periferal - Jika ditugaskan secara pribadi
+- [ ] Telepon - Perangkat seluler (jika disediakan perusahaan)
+- [ ] Lencana/Kunci - Kartu akses, kunci fisik, izin parkir
+- [ ] USB/Media Seluler - Drive thumb apa pun, drive eksternal, kartu SIM
+- [ ] Dokumen - File fisik/kertas yang berisi info perusahaan
+- [ ] Peralatan jaringan - Jika disediakan (jika berlaku)
 
-**Collection process:**
+**Proses pengumpulan:**
 
-1. Schedule collection meeting dengan employee
-2. Inventory all equipment:
-   - Check serial numbers match asset list
-   - Note condition (working, damaged, incomplete)
-3. Create Equipment Return Form (see Form 2B):
-   - List all equipment
-   - Condition notes
-   - Employee signature confirming returned
-   - Hiring manager signature confirming received
-4. Store collected equipment:
-   - In secure location pending IT wiping/archival
-   - Label untuk asset tracking
+1. Jadwalkan pertemuan pengumpulan dengan karyawan
+2. Inventarisasi semua peralatan:
+   - Periksa nomor seri cocok dengan daftar aset
+   - Catat kondisi (bekerja, rusak, tidak lengkap)
+3. Buat Formulir Pengembalian Peralatan (lihat Formulir 2B):
+   - Daftar semua peralatan
+   - Catatan kondisi
+   - Tanda tangan karyawan yang mengonfirmasi dikembalikan
+   - Tanda tangan manajer perekrutan yang mengonfirmasi diterima
+4. Simpan peralatan yang dikumpulkan:
+   - Di lokasi aman menunggu penghapusan IT
+   - Label untuk pelacakan aset
 
-#### **STEP 6: Exit Interview - ON/BEFORE LAST DAY**
+#### **LANGKAH 6: Wawancara Keluar - PADA/SEBELUM HARI TERAKHIR**
 
-**Timeline:** On or before last working day  
-**Owner:** HR Manager
+**Jadwal:** Pada atau sebelum hari kerja terakhir  
+**Penanggung Jawab:** Manajer SDM
 
-1. Conduct exit interview dengan employee:
-   - Document reasons untuk leaving (feedback for management)
-   - Discuss: Any proprietary information atau concerns?
-   - Any outstanding projects atau knowledge transfer needed?
-   - Any company property NOT returned?
-   - Final paycheck, benefits, recommendations clarification
+1. Lakukan wawancara keluar dengan karyawan:
+   - Dokumentasikan alasan untuk meninggalkan (umpan balik untuk manajemen)
+   - Diskusikan: Informasi kepemilikan apa pun atau masalah?
+   - Proyek yang belum selesai atau transfer pengetahuan yang diperlukan?
+   - Properti perusahaan apa pun TIDAK dikembalikan?
+   - Klarifikasi gaji akhir, tunjangan, rekomendasi
 
-2. Distribute final payments:
-   - Calculate final paycheck (including accrued vacation if applicable)
-   - Process severance (if applicable untuk termination type)
-   - Provide benefits COBRA/insurance continuation options
+2. Distribusikan pembayaran akhir:
+   - Hitung gaji akhir (termasuk cuti yang masih ada jika berlaku)
+   - Proses pesangon (jika berlaku untuk jenis pemutusan)
+   - Berikan opsi kelanjutan asuransi/tunjangan COBRA
 
-3. Request signs-off:
-   - No outstanding company property retained
-   - Understanding dari confidentiality obligations continuing after employment
-   - Understanding dari non-solicitation/non-compete (if applicable)
+3. Minta tanda tangan:
+   - Tidak ada properti perusahaan yang tersisa
+   - Pemahaman dari kewajiban kerahasiaan yang terus berlanjut setelah pekerjaan
+   - Pemahaman dari non-solicitation/non-compete (jika berlaku)
 
-4. Document:
-   - Exit interview summary
-   - Any concerns atau red flags noted
+4. Dokumentasikan:
+   - Ringkasan wawancara keluar
+   - Masalah atau bendera merah apa pun yang dicatat
 
-#### **STEP 7: Data & Credentials Secure**
+#### **LANGKAH 7: Data Aman & Kredensial**
 
-**Timeline:** After last day  
-**Owner:** IT Department
+**Jadwal:** Setelah hari terakhir  
+**Penanggung Jawab:** Departemen IT
 
-1. Secure any files:
-   - Migrate any work-in-progress files kepada manager/team
-   - Employee home folder: Archive untuk 30 days, then delete
-   - Database: Transfer object ownership kepada team, delete user account after
+1. Amankan file apa pun:
+   - Migrasikan file kerja yang sedang berlangsung kepada manajer/tim
+   - Folder rumah karyawan: Arsip untuk 30 hari, lalu hapus
+   - Database: Transfer kepemilikan objek kepada tim, hapus akun pengguna setelah
 
-2. Credentials security:
-   - If employee had admin/shared credentials: Rotate password untuk ALL systems
-   - If employee had SSH keys: Revoke dari all servers
-   - If employee had API keys: Revoke atau regenerate
-   - Document all credential changes di audit trail
+2. Keamanan kredensial:
+   - Jika karyawan memiliki kredensial admin/bersama: Putar kata sandi untuk SEMUA sistem
+   - Jika karyawan memiliki kunci SSH: Cabut dari semua server
+   - Jika karyawan memiliki kunci API: Cabut atau hasilkan ulang
+   - Dokumentasikan semua perubahan kredensial di jejak audit
 
-#### **STEP 8: Archive & Cleanup - AFTER 30 DAYS**
+#### **LANGKAH 8: Arsip & Pembersihan - SETELAH 30 HARI**
 
-**Timeline:** 30 days after last day  
-**Owner:** IT + HR
+**Jadwal:** 30 hari setelah hari terakhir  
+**Penanggung Jawab:** IT + SDM
 
-1. Archive employee records:
-   - HR file: Move kepada secure archive (retention: per regulatory requirement, typically 3+ years)
-   - IT account: Delete atau archive
+1. Arsip catatan karyawan:
+   - File SDM: Pindahkan kepada arsip aman (retensi: per persyaratan regulasi, biasanya 3+ tahun)
+   - Akun IT: Hapus atau arsip
 
-2. Equipment wiping:
-   - All returned equipment: Securely wipe/format
-   - Verify: Hardware meets secure disposal standards (see Asset Management procedure)
-   - Document wiping
+2. Penghapusan peralatan:
+   - Semua peralatan yang dikembalikan: Hapus/format dengan aman
+   - Verifikasi: Perangkat memenuhi standar pembuangan aman (lihat Prosedur Manajemen Aset)
+   - Dokumentasikan penghapusan
 
-3. Documentation:
-   - Store exit clearance documentation permanently
-   - Record termination di employee file
+3. Dokumentasi:
+   - Simpan dokumentasi pembersihan akses secara permanen
+   - Catat pemutusan di file karyawan
 
-### 2.6 Special Situations - Immediate Termination
+### 2.6 Situasi Khusus - Pemutusan Segera
 
-If employee terminated untuk cause (suspected fraud, violence, breach of security):
+Jika karyawan dipecat karena alasan tertentu (diduga penipuan, kekerasan, pelanggaran keamanan):
 
-1. **IMMEDIATE Access Revocation:**
-   - Do NOT wait untuk end of day atau notice period
-   - Revoke ALL access immediately
-   - Within 1 hour: Email, VPN, physical access disabled
-   - Within 2 hours: All systems documented revoked
+1. **PENCABUTAN AKSES SEGERA:**
+   - JANGAN tunggu akhir hari atau periode pemberitahuan
+   - Cabut SEMUA akses segera
+   - Dalam 1 jam: Email, VPN, akses fisik dinonaktifkan
+   - Dalam 2 jam: Semua sistem didokumentasikan dicabut
 
-2. **Equipment Collection:**
-   - Collect laptop/phone immediately
-   - Have IT person witness untuk document purpose
+2. **Pengumpulan Peralatan:**
+   - Kumpulkan laptop/telepon segera
+   - Miliki orang IT yang menyaksikan untuk mendokumentasikan tujuan
 
-3. **Investigation:**
-   - Secure any employee equipment untuk forensic analysis if suspected data breach
-   - Coordinate dengan legal/ISM untuk potential investigation
+3. **Investigasi:**
+   - Amankan peralatan karyawan apa pun untuk analisis forensik jika diduga pelanggaran data
+   - Koordinasikan dengan hukum/ISM untuk investigasi potensial
 
-### 2.7 Verification Checklist
+### 2.7 Daftar Periksa Verifikasi
 
-After exit process complete, verify:
+Setelah proses keluar selesai, verifikasi:
 
-- [ ] All system access revoked (documented dengan screenshots/logs)
-- [ ] Physical access card deactivated (tested)
-- [ ] All equipment collected & logged
-- [ ] Password changed untuk all shared/admin accounts employee had
-- [ ] Exit interview completed
-- [ ] Exit clearance form signed
-- [ ] Files migrated/archived
-- [ ] Account fully deleted (after 30 days)
+- [ ] Semua akses sistem dicabut (didokumentasikan dengan tangkapan layar/log)
+- [ ] Kartu akses fisik dinonaktifkan (diuji)
+- [ ] Semua peralatan dikumpulkan & dicatat
+- [ ] Kata sandi diubah untuk semua akun bersama/admin yang karyawan miliki
+- [ ] Wawancara keluar diselesaikan
+- [ ] Formulir pembersihan akses ditandatangani
+- [ ] File dimigrasi/diarsipkan
+- [ ] Akun sepenuhnya dihapus (setelah 30 hari)
 
-### 2.8 Documentation & Records
+### 2.8 Dokumentasi & Catatan
 
-Document everything dengan:
-- Exit notification form (date, reason)
-- Exit checklist (systems revoked, equipment returned)
-- Exit interview notes
-- Equipment return form (signed)
-- Access revocation verification
-- Archive date (when fully cleaned up)
+Dokumentasikan semuanya dengan:
+- Formulir pemberitahuan keluar (tanggal, alasan)
+- Daftar periksa pembersihan akses (sistem dicabut, peralatan dikembalikan)
+- Catatan wawancara keluar
+- Formulir pengembalian peralatan (ditandatangani)
+- Verifikasi pencabutan akses
+- Tanggal arsip (ketika sepenuhnya dibersihkan)
 
 ---
 
-## PROSEDUR 3: CONTRACTOR & SUB-CONTRACTOR MANAGEMENT {#proc-3}
+## PROSEDUR 3: PENGELOLAAN KONTRAKTOR & SUB-KONTRAKTOR {#proc-3}
 
-### 3.1 Purpose
+### 3.1 Tujuan
 
-Memastikan semua contractors dan sub-contractors yang bekerja dengan PT Ecomindo menjalani vetting keamanan yang ketat dan memiliki kontrol/monitoring selama engagement.
+Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo menjalani penilaian keamanan yang ketat dan memiliki kontrol/monitoring selama engagement.
 
-### 3.2 Scope
+### 3.2 Ruang Lingkup
 
-- Semua contractors (temporary, part-time, consultants)
-- All sub-contractors (bagian dari outsource arrangement)
-- External vendors dengan akses kepada systems/data
-- Contractors untuk services sekali jalan atau long-term
+- Semua kontraktor (sementara, paruh waktu, konsultan)
+- Semua sub-kontraktor (bagian dari pengaturan outsource)
+- Vendor eksternal dengan akses kepada sistem/data
+- Kontraktor untuk layanan sekali jalan atau jangka panjang
 
-### 3.3 Responsible Parties
+### 3.3 Pihak yang Bertanggung Jawab
 
-| Role | Responsibility |
-|------|-----------------|
-| **HR/ Procurement** | Identify contractor need, initiate vetting |
-| **ISM** | Security approval, compliance verification |
-| **Project Manager** | Contractor management, oversight |
-| **IT Security** | Access provisioning, monitoring |
+| Peran | Tanggung Jawab |
+|-------|-----------------|
+| **SDM/ Pengadaan** | Mengidentifikasi kebutuhan kontraktor, memulai penilaian |
+| **ISM** | Persetujuan keamanan, verifikasi kepatuhan |
+| **Manajer Proyek** | Pengelolaan kontraktor, pengawasan |
+| **Keamanan IT** | Penyediaan akses, monitoring |
 
-### 3.4 Contractor Vetting Checklist
+### 3.4 Daftar Periksa Penilaian Kontraktor
 
-SETIAP CONTRACTOR HARUS:
+SETIAP KONTRAKTOR HARUS:
 
-1. **Sign Contract** dengan security clauses:
-   - Confidentiality clause
-   - Data protection obligations
-   - Security requirements
-   - Liability untuk data breach
-   - Termination clause dengan immediate access revocation
+1. **Tandatangani Kontrak** dengan klausul keamanan:
+   - Klausul kerahasiaan
+   - Kewajiban perlindungan data
+   - Persyaratan keamanan
+   - Tanggung jawab untuk pelanggaran data
+   - Klausul terminasi dengan pencabutan akses segera
 
-2. **Background Check**:
-   - Same level sebagai employees (criminal records, identity verification)
-   - Reference checks dari previous clients
+2. **Pemeriksaan Latar Belakang**:
+   - Level yang sama sebagai karyawan (catatan kriminal, verifikasi identitas)
+   - Pemeriksaan referensi dari klien sebelumnya
 
-3. **Compliance Certification**:
-   - Confirm contractor organization memiliki keamanan practices
-   - If contractor organization handles sensitive data: Verify they have ISO 27001 atau similar certification
+3. **Sertifikasi Kepatuhan**:
+   - Konfirmasi organisasi kontraktor memiliki praktik keamanan
+   - Jika organisasi kontraktor menangani data sensitif: Verifikasi mereka memiliki sertifikasi ISO 27001 atau serupa
 
-4. **Insurance**:
-   - Professional liability insurance
-   - Cyber liability insurance (if handling sensitive data)
-   - Coverage minimum specified dalam contract
+4. **Asuransi**:
+   - Asuransi tanggung jawab profesional
+   - Asuransi tanggung jawab cyber (jika menangani data sensitif)
+   - Cakupan minimum yang ditentukan dalam kontrak
 
-5. **NDA Signed**:
-   - Contractor NDA (see Procedure 4)
-   - Must be signed sebelum APAPUN access ke company systems/data
+5. **NDA Ditandatangani**:
+   - NDA Kontraktor (lihat Prosedur 4)
+   - Harus ditandatangani SEBELUM APA PUN akses ke sistem/data perusahaan
 
-6. **Security Questionnaire**:
-   - Contractor fills out security questionnaire (what security practices mereka implementasi)
-   - Review oleh ISM
-   - Approval sebelum engagement
+6. **Kuesioner Keamanan**:
+   - Kontraktor mengisi kuesioner keamanan (praktik keamanan apa yang mereka terapkan)
+   - Tinjauan oleh ISM
+   - Persetujuan sebelum engagement
 
-### 3.5 Approval Process
+**Catatan Status untuk Sub-Kontraktor (Skor 2 untuk 4.1b):** 
+- Pemeriksaan latar belakang telah diterapkan untuk sub-kontraktor
+- Namun, mekanisme PHK untuk sub-kontraktor belum sepenuhnya terdokumentasi dan diimplementasikan
+- Dalam perencanaan untuk menyempurnakan prosedur PHK sub-kontraktor
+
+**Catatan Status untuk Penggunaan Sub-Kontraktor di MMI (Skor 1 untuk 4.3):**
+- Penggunaan layanan sub-kontraktor untuk lingkup kerjasama dengan MMI belum memperoleh persetujuan dari MMI
+- Proses persetujuan masih dalam tahap koordinasi dengan MMI
+- Semua engagement sub-kontraktor memerlukan approval formal dari MMI sebelum dimulai
+
+### 3.5 Proses Persetujuan
 
 ```
-Contractor Identified  
+Kontraktor Diidentifikasi  
     ↓  
-Contract drafted dengan security clauses  
+Kontrak dirancang dengan klausul keamanan  
     ↓  
-Background check ordered  
+Pemeriksaan latar belakang dipesan  
     ↓  
-NDA signed  
+NDA ditandatangani  
     ↓  
-Security questionnaire completed  
+Kuesioner keamanan diselesaikan  
     ↓  
-ISM security review & approval  
+Tinjauan keamanan ISM & persetujuan  
     ↓  
-Access provisioning (if system access needed)  
+Penyediaan akses (jika akses sistem diperlukan)  
     ↓  
-Engagement begins  
+Engagement dimulai  
 ```
 
-### 3.6 Ongoing Monitoring
+### 3.6 Monitoring Berkelanjutan
 
-1. **Weekly Check-ins**: Project manager verifies progress, no issues
-2. **Access Review**: Quarterly, verify contractor masih perlu access
-3. **Work Quality**: Ensure deliverables meet security standards
-4. **Issue Resolution**: Address any concerns promptly
-5. **Documentation**: Keep records dari all contractor work
+1. **Check-in Mingguan**: Manajer proyek memverifikasi kemajuan, tidak ada masalah
+2. **Tinjauan Akses**: Triwulanan, verifikasi kontraktor masih perlu akses
+3. **Kualitas Pekerjaan**: Pastikan deliverables memenuhi standar keamanan
+4. **Resolusi Masalah**: Tangani masalah apa pun segera
+5. **Dokumentasi**: Pertahankan catatan dari semua pekerjaan kontraktor
 
-### 3.7 Termination
+### 3.7 Terminasi
 
-When contractor engagement ends:
-- Immediate access revocation (same process sebagai employee termination)
-- Equipment collection (if any provided)
-- Final deliverables verification
-- Knowledge transfer / handover
-- Archive contractor documentation
+Ketika engagement kontraktor berakhir:
+- Pencabutan akses segera (proses sama sebagai pemutusan karyawan)
+- Pengumpulan peralatan (jika ada yang disediakan)
+- Verifikasi deliverables akhir
+- Transfer pengetahuan / handover
+- Arsip dokumentasi kontraktor
 
 ---
 
-## PROSEDUR 4: PERSONNEL NDA MANAGEMENT {#proc-4}
+## PROSEDUR 4: PENGELOLAAN NDA PERSONIL {#proc-4}
 
-### 4.1 Purpose
+### 4.1 Tujuan
 
-Memastikan semua personnel (karyawan, contractors) yang akan akses informasi sensitif PT Ecomindo telah menandatangani NDA formal untuk menjamin kerahasiaan.
+Memastikan semua personil (karyawan, kontraktor) yang akan mengakses informasi sensitif PT Ecomindo telah menandatangani NDA formal untuk menjamin kerahasiaan.
 
-### 4.2 Scope
+### 4.2 Ruang Lingkup
 
-- ALL employees - NDA required sebelum atau pada first day joining
-- ALL contractors - NDA required sebelum engagement begins
-- ALL sub-contractors - NDA required
-- External supports/vendors dengan data access
+- SEMUA karyawan - NDA diperlukan sebelum atau pada hari pertama bergabung
+- SEMUA kontraktor - NDA diperlukan sebelum engagement dimulai
+- SEMUA sub-kontraktor - NDA diperlukan
+- Dukungan eksternal/vendor dengan akses data
 
-### 4.3 Responsible Parties
+### 4.3 Pihak yang Bertanggung Jawab
 
-| Role | Responsibility |
-|------|-----------------|
-| **HR** | Distribute NDA, collect signatures |
-| **Hiring Manager** | Ensure NDA signed sebelum employee starts |
-| **Legal (optional)** | Review NDA template, provide guidance |
-| **ISM** | Ensure NDA compliance |
+| Peran | Tanggung Jawab |
+|-------|-----------------|
+| **SDM** | Mendistribusikan NDA, mengumpulkan tanda tangan |
+| **Manajer Perekrutan** | Memastikan NDA ditandatangani sebelum karyawan memulai |
+| **Hukum (opsional)** | Meninjau templat NDA, memberikan panduan |
+| **ISM** | Memastikan kepatuhan NDA |
 
-### 4.4 NDA Content Requirements
+### 4.4 Persyaratan Konten NDA
 
 NDA harus mencakup elemen-elemen berikut:
-1. **Confidentiality of data**: Employee acknowledges perusahaan data adalah confidential
-2. **Non-disclosure**: Employee tidak boleh disclose perusahaan data kepada unauthorized third parties
-3. **Return/destruction**: Upon termination, ALL perusahaan-related documents/data must be returned atau destroyed
-4. **Survival clause**: Confidentiality obligations continue AFTER employment ends (typically 2-5 years)
-5. **Legal remedies**: Non-compliance dapat lead to legal consequences
+1. **Kerahasiaan data**: Karyawan mengakui data perusahaan adalah rahasia
+2. **Non-pengungkapan**: Karyawan tidak boleh mengungkap data perusahaan kepada pihak ketiga yang tidak sah
+3. **Pengembalian/penghancuran**: Setelah terminasi, SEMUA dokumen/perusahaan terkait data harus dikembalikan atau dihancurkan
+4. **Klausul kelangsungan**: Kewajiban kerahasiaan berlanjut SETELAH pekerjaan berakhir (biasanya 2-5 tahun)
+5. **Remedies hukum**: Pelanggaran non-kepatuhan dapat mengakibatkan konsekuensi hukum
 
-### 4.5 NDA Signing Process
+### 4.5 Proses Penandatanganan NDA
 
-#### For NEW EMPLOYEES:
+#### Untuk KARYAWAN BARU:
 
-1. **Before First Day**:
-   - Send NDA kepada candidate dalam offer letter
-   - Request signed NDA return dalam 24 hours
+1. **Sebelum Hari Pertama**:
+   - Kirim NDA kepada kandidat dalam surat penawaran
+   - Minta pengembalian NDA yang ditandatangani dalam 24 jam
 
-2. **On First Day**:
-   - If not signed: Employee MUST sign sebelum system access provisioned
-   - HR witnesses signature atau secures e-signature
+2. **Pada Hari Pertama**:
+   - Jika tidak ditandatangani: Karyawan HARUS menandatangani sebelum penyediaan akses sistem
+   - SDM menyaksikan tanda tangan atau mengamankan e-tanda tangan
 
-3. **File Management**:
-   - Original signed NDA: HR keeps dalam employee personnel file (secure)
-   - Digital copy: Scanned/archived dalam secure folder
-   - Index: Maintain list semua employees dengan NDA status
+3. **Pengelolaan File**:
+   - Asli NDA yang ditandatangani: SDM menyimpan dalam file personel karyawan (aman)
+   - Salinan digital: Dipindai/diarsipkan dalam folder aman
+   - Indeks: Pertahankan daftar semua karyawan dengan status NDA
 
-#### For CONTRACTORS:
+#### Untuk KONTRAKTOR:
 
-1. **Before Engagement**:
-   - Contractor receives NDA dalam engagement offer atau contract
-   - Contractor signs NDA
-   - Signed copy retained oleh company
+1. **Sebelum Engagement**:
+   - Kontraktor menerima NDA dalam penawaran engagement atau kontrak
+   - Kontraktor menandatangani NDA
+   - Salinan yang ditandatangani dipertahankan oleh perusahaan
 
-2. **Verification**:
-   - HR verifies signature sebelum onboarding
-   - If not signed: Access tidak diberikan
+2. **Verifikasi**:
+   - SDM memverifikasi tanda tangan sebelum onboarding
+   - Jika tidak ditandatangani: Akses tidak diberikan
 
-### 4.6 NDA Tracking & Compliance
+### 4.6 Pelacakan & Kepatuhan NDA
 
-1. **Master List**:
-   - Maintain spreadsheet/database dari semua signed NDAs
-   - Columns: Name, Position, Date Signed, Mandiri Assigned (Y/N), Expiration Date
-   - Updated whenever new NDA signed
+1. **Daftar Master**:
+   - Pertahankan spreadsheet/database dari semua NDA yang ditandatangani
+   - Kolom: Nama, Posisi, Tanggal Ditandatangani, Mandiri yang Ditugaskan (Y/T), Tanggal Kedaluwarsa
+   - Diperbarui setiap kali NDA baru ditandatangani
 
-2. **Expiration Management**:
-   - Track NDA expiration dates
-   - Before expiration: Renewal discussion dengan employee
-   - Post-employment: NDA confidentiality obligations continue per survival clause
+2. **Pengelolaan Kedaluwarsa**:
+   - Lacak tanggal kedaluwarsa NDA
+   - Sebelum kedaluwarsa: Diskusi perpanjangan dengan karyawan
+   - Pasca-pekerjaan: Kewajiban kerahasiaan NDA berlanjut per klausul kelangsungan
 
-3. **Breach Response**:
-   - If suspected NDA breach:
-     - Immediately notify ISM
-     - Investigate incident
-     - Legal consultation jika data disclosed
-     - Potential disciplinary action (up to termination)
+3. **Respons Pelanggaran**:
+   - Jika diduga pelanggaran NDA:
+     - Segera beri tahu ISM
+     - Selidiki insiden
+     - Konsultasi hukum jika data diungkap
+     - Tindakan disiplin potensial (hingga terminasi)
 
-### 4.7 Documentation
+### 4.7 Dokumentasi
 
-- Signed NDA: File dalam HR system, backup scanned copy
-- Master list: Maintain up-to-date
-- Training: Employees understand NDA obligations dalam security awareness
-- Compliance: Annually audit yang employees have signed NDAs
+- NDA yang ditandatangani: File dalam sistem SDM, cadangkan salinan yang dipindai
+- Daftar master: Pertahankan up-to-date
+- Pelatihan: Karyawan memahami kewajiban NDA dalam kesadaran keamanan
+- Kepatuhan: Audit tahunan karyawan mana yang telah menandatangani NDA
 
 ---
 
-## TEMPLATES & FORMS {#templates}
+## TEMPLAT & FORMULIR {#templates}
 
-### FORM 1A: Background Check Authorization {#form-1a}
+### FORMULIR 1A: OTORISASI PEMERIKSAAN LATAR BELAKANG {#form-1a}
 
 ```
 PT ECOMINDO SARANA CIPTA
-BACKGROUND CHECK AUTHORIZATION FORM
+FORMULIR OTORISASI PEMERIKSAAN LATAR BELAKANG
 
-Candidate Name: ____________________________
-Position Applying For: ________________________
-Date: ____________________________
+Nama Kandidat: ____________________________
+Posisi yang Dilamar: ________________________
+Tanggal: ____________________________
 
-I, _________________________, hereby authorize PT Ecomindo Sarana Cipta 
-to conduct a comprehensive background check including but not limited to:
+Saya, _________________________, dengan ini mengizinkan PT Ecomindo Sarana Cipta 
+untuk melakukan pemeriksaan latar belakang komprehensif termasuk namun tidak terbatas pada:
 
-☐ Identity Verification
-☐ Employment History Verification
-☐ Criminal Record Check
-☐ Educational Credentials Verification
-☐ Reference Checks
-☐ Credit Report (if applicable)
-☐ Social media/Online screening
+☐ Verifikasi Identitas
+☐ Verifikasi Riwayat Pekerjaan
+☐ Pemeriksaan Catatan Kriminal
+☐ Verifikasi Kredensial Pendidikan
+☐ Pemeriksaan Referensi
+☐ Laporan Kredit (jika berlaku)
+☐ Penyaringan media sosial/online
 
-I confirm that all information provided in my application is truthful and complete.
-I understand that any misrepresentation or omission may result in rejection of application
-or termination of employment if hired.
+Saya mengonfirmasi bahwa semua informasi yang diberikan dalam lamaran saya adalah benar dan lengkap.
+Saya memahami bahwa segala penyimpangan atau penghilangan dapat mengakibatkan penolakan lamaran
+atau terminasi pekerjaan jika direkrut.
 
-I acknowledge that I have received a copy of this authorization and understand that
-I can request additional information about my background check results.
+Saya mengakui bahwa saya telah menerima salinan otorisasi ini dan memahami bahwa saya dapat meminta
+informasi tambahan tentang hasil pemeriksaan latar belakang saya.
 
-Candidate Signature: ____________________________
-Date: ____________________________
+Tanda Tangan Kandidat: ____________________________
+Tanggal: ____________________________
 
-HR Representative: ____________________________
-Date: ____________________________
+Perwakilan SDM: ____________________________
+Tanggal: ____________________________
 ```
 
-### FORM 1B: Background Check Report {#form-1b}
+### FORMULIR 1B: LAPORAN PEMERIKSAAN LATAR BELAKANG {#form-1b}
 
 ```
 PT ECOMINDO SARANA CIPTA  
-BACKGROUND CHECK REPORT
+LAPORAN PEMERIKSAAN LATAR BELAKANG
 
-Candidate Name: ____________________________
-Position: ____________________________
-Date Issued: ____________________________
+Nama Kandidat: ____________________________
+Posisi: ____________________________
+Tanggal Dikeluarkan: ____________________________
 
-VERIFICATION SUMMARY:
+RINGKASAN VERIFIKASI:
 
-Identity Verification: ☐ PASS ☐ FAIL ☐ UNCLEAR
-Employment History: ☐ PASS ☐ FAIL ☐ UNCLEAR
-Criminal Records: ☐ PASS ☐ FAIL ☐ UNCLEAR
-Education Credentials: ☐ PASS ☐ FAIL ☐ UNCLEAR
-References: ☐ PASS ☐ FAIL ☐ UNCLEAR
+Verifikasi Identitas: ☐ LULUS ☐ GAGAL ☐ TIDAK JELAS
+Riwayat Pekerjaan: ☐ LULUS ☐ GAGAL ☐ TIDAK JELAS
+Catatan Kriminal: ☐ LULUS ☐ GAGAL ☐ TIDAK JELAS
+Kredensial Pendidikan: ☐ LULUS ☐ GAGAL ☐ TIDAK JELAS
+Referensi: ☐ LULUS ☐ GAGAL ☐ TIDAK JELAS
 
-OVERALL RECOMMENDATION: 
-☐ APPROVED - Cleared for hire
-☐ CONDITIONAL - Further review needed
-☐ REJECTED - Do not hire
+REKOMENDASI KESELURUHAN: 
+☐ DISETUJUI - Disetujui untuk direkrut
+☐ BERSYARAT - Tinjauan lebih lanjut diperlukan
+☐ DITOLAK - Jangan rekrut
 
-Comments/Findings:
-[Detailed notes of findings]
+Komentar/Temuan:
+[Temuan terperinci]
 
-ISM/HR Review:
-Reviewed by: ____________________________
-Date: ____________________________
-Signature: ____________________________
+Tinjauan ISM/SDM:
+Ditinjau oleh: ____________________________
+Tanggal: ____________________________
+Tanda Tangan: ____________________________
 ```
 
-### FORM 2A: Exit Clearance Form {#form-2a}
+### FORMULIR 2A: DAFTAR PERIKSA PEMBERSIHAN AKSES {#form-2a}
 
 ```
 PT ECOMINDO SARANA CIPTA
-EXIT CLEARANCE CHECKLIST
+DAFTAR PERIKSA PEMBERSIHAN AKSES
 
-Employee Name: ____________________________
-Position: ____________________________
-Last Working Day: ____________________________
-Termination Reason: ____________________________
+Nama Karyawan: ____________________________
+Posisi: ____________________________
+Hari Kerja Terakhir: ____________________________
+Alasan Pemutusan: ____________________________
 
-SYSTEM ACCESS REVOCATION:
-☐ Email/Mailbox disabled
-☐ VPN access revoked
-☐ Database access removed
-☐ Cloud application accounts disabled
-☐ File share access revoked
-☐ Physical access badge deactivated
-☐ Other systems: ____________________________
+PENCABUTAN AKSES SISTEM:
+☐ Email/Kotak surat dinonaktifkan
+☐ Akses VPN dicabut
+☐ Akses database dihapus
+☐ Akun aplikasi cloud dinonaktifkan
+☐ Akses berbagi file dicabut
+☐ Kartu akses bangunan dinonaktifkan
+☐ Sistem lainnya: ____________________________
 
-EQUIPMENT RETURNED:
-☐ Laptop/Computer
-☐ Monitor/Peripherals
-☐ Mobile phone
-☐ Access badges/keys
-☐ USB drives/mobile media
-☐ Other equipment: ____________________________
+PERALATAN YANG DIKEMBALIKAN:
+☐ Laptop/Komputer
+☐ Monitor/Periferal
+☐ Telepon seluler
+☐ Lencana/kunci akses
+☐ Drive USB/media seluler
+☐ Dokumen yang berisi info perusahaan
+☐ Peralatan lainnya
 
-FINAL VERIFICATION:
-☐ All system access verified revoked
-☐ Physical access verified disabled
-☐ Equipment fully accounted for
-☐ Files migrated/archived
-☐ Exit interview completed
-☐ No outstanding company property
+VERIFIKASI AKHIR:
+☐ Semua akses sistem diverifikasi dicabut
+☐ Akses fisik diverifikasi dinonaktifkan
+☐ Semua peralatan sepenuhnya diperhitungkan
+☐ File dimigrasi/diarsipkan
+☐ Wawancara keluar diselesaikan
+☐ Tidak ada properti perusahaan yang tersisa
 
-Approved by:
-HR Manager: ____________________________
+Disetujui oleh:
+Manajer SDM: ____________________________
 ISM: ____________________________
-Date: ____________________________
+Tanggal: ____________________________
 ```
 
-### FORM 2B: Equipment Return Form {#form-2b}
+### FORMULIR 2B: FORMULIR PENGEMBALIAN PERALATAN {#form-2b}
 
 ```
 PT ECOMINDO SARANA CIPTA
-EQUIPMENT RETURN FORM
+FORMULIR PENGEMBALIAN PERALATAN
 
-Employee Name: ____________________________
-Return Date: ____________________________
+Nama Karyawan: ____________________________
+Tanggal Pengembalian: ____________________________
 
-EQUIPMENT INVENTORY:
+INVENTARISASI PERALATAN:
 
-Item | Serial # | Condition | Returned
+Item | No. Seri | Kondisi | Dikembalikan
 -----|----------|-----------|----------
 Laptop | _____ | _____ | ☐
 Monitor | _____ | _____ | ☐
 Mouse/KB | _____ | _____ | ☐
-Phone | _____ | _____ | ☐
-Badge | _____ | _____ | ☐
-Keys | _____ | _____ | ☐
-[Add as needed]
+Telepon | _____ | _____ | ☐
+Lencana | _____ | _____ | ☐
+Kunci | _____ | _____ | ☐
+[Tambah sesuai kebutuhan]
 
-Employee Confirmation:
-I confirm returning above items in condition noted.
-Signature: ____________________________
-Date: ____________________________
+Konfirmasi Karyawan:
+Saya mengonfirmasi mengembalikan item di atas dalam kondisi yang dicatat.
+Tanda Tangan: ____________________________
+Tanggal: ____________________________
 
-Manager Confirmation:
-I confirm receiving above items.
-Signature: ____________________________
-Date: ____________________________
+Konfirmasi Manajer:
+Saya mengonfirmasi menerima item di atas.
+Tanda Tangan: ____________________________
+Tanggal: ____________________________
 ```
 
-### FORM 4A: NDA Signature Page {#form-4a}
+### FORMULIR 4A: HALAMAN TANDA TANGAN NDA {#form-4a}
 
 ```
 PT ECOMINDO SARANA CIPTA
-NON-DISCLOSURE AGREEMENT (NDA)
+PERJANJIAN NON-PENGUNGKAPAN (NDA)
 
-....[Full NDA text as per legal template]....
+....[Teks NDA lengkap sesuai templat hukum]....
 
-ACKNOWLEDGMENT & SIGNATURE:
+PENGAKUAN & TANDA TANGAN:
 
-I acknowledge that I have read, understood, and agree to be bound by this NDA.
-I understand that violation of this agreement may result in legal action.
+Saya mengakui bahwa saya telah membaca, memahami, dan setuju untuk terikat oleh NDA ini.
+Saya memahami bahwa pelanggaran perjanjian ini dapat mengakibatkan tindakan hukum.
 
-Employee/Contractor Name: ____________________________
-Position/Role: ____________________________
+Nama Karyawan/Kontraktor: ____________________________
+Posisi/Peran: ____________________________
 
-Employee/Contractor Signature: ____________________________
-Date: ____________________________
+Tanda Tangan Karyawan/Kontraktor: ____________________________
+Tanggal: ____________________________
 
-HR/Manager Signature: ____________________________
-Date: ____________________________
+Tanda Tangan SDM/Manajer: ____________________________
+Tanggal: ____________________________
 
-[KEEP ORIGINAL - File dalam HR secure location]
+[SIMPAN ASLI - File dalam lokasi aman SDM]
 ```
 
 ---
 
-## SUMMARY & COMPLIANCE MAP
+## RINGKASAN & PEMETAAN KEPATUHAN
 
-| Procedure | Area | Mandiri Q | Score 4 Requirement |
-|-----------|------|-----------|-------------------|
-| Recruitment | HR Security | Q4.1a | Background checks untuk all employees |
-| Termination | HR Security | Q4.1a | Mekanisme PHK dengan access revocation |
-| Contractor Mgmt | HR Security | Q4.1b, Q4.3 | Contractor vetting + contracts |
-| NDA Mgmt | HR Security | Q4.2, Q4.4 | All employees sign NDA |
+| Prosedur | Area | Pertanyaan Mandiri Q | Persyaratan Skor 4 |
+|-----------|------|----------------------|-------------------|
+| Rekrutmen | Keamanan SDM | Q4.1a | Pemeriksaan latar belakang untuk semua karyawan |
+| Pemutusan | Keamanan SDM | Q4.1a | Mekanisme PHK dengan pencabutan akses |
+| Pengelolaan Kontraktor | Keamanan SDM | Q4.1b, Q4.3 | Penilaian kontraktor + kontrak |
+| Pengelolaan NDA | Keamanan SDM | Q4.2, Q4.4 | Semua karyawan menandatangani NDA |
 
 ---
 
-**END OF PROCEDURE DOCUMENT**
+**AKHIR DOKUMEN PROSEDUR**
 
-*Dokumen ini adalah Confidential. Distribusi tanpa izin ISM dilarang.*
+*Dokumen ini adalah Rahasia. Distribusi tanpa izin ISM dilarang.*
 
-Effective Date: 15 April 2026  
-Next Review: 15 April 2027
+Tanggal Berlaku: 15 April 2026  
+Tinjauan Selanjutnya: 15 April 2027

@@ -1,4 +1,4 @@
-# PROC-02: Prosedur Kontrol Akses (Access Control Procedures)
+# PROC-02: Prosedur Kontrol Akses
 
 **Dokumen ID:** PROC-02  
 **Versi:** 1.0  
@@ -256,10 +256,10 @@ Jika ditemukan akses tidak sah:
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Oversight keseluruhan kontrol akses |
-| IT Security Officer | Implementasi teknis dan monitoring |
-| HR Manager | Koordinasi akses karyawan |
-| Department Manager | Persetujuan akses departemen |
-| Security Officer | Kontrol akses fisik |
+| Petugas Keamanan IT | Implementasi teknis dan monitoring |
+| Manajer SDM | Koordinasi akses karyawan |
+| Manajer Departemen | Persetujuan akses departemen |
+| Petugas Keamanan | Kontrol akses fisik |
 | Pengguna Akhir | Kepatuhan terhadap policy akses |
 
 ---
@@ -285,10 +285,10 @@ Jika ditemukan akses tidak sah:
 
 ___________________________  
 [Nama ISM]  
-Information Security Manager  
+Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Chief Executive Officer  
+Direktur Utama  
 Tanggal: __________________

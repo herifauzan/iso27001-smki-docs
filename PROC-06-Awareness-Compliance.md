@@ -1,4 +1,4 @@
-# PROC-06: Prosedur Kesadaran dan Kepatuhan (Awareness and Compliance Procedures)
+# PROC-06: Prosedur Kesadaran dan Kepatuhan
 
 **Dokumen ID:** PROC-06  
 **Versi:** 1.0  
@@ -305,7 +305,6 @@ Tanggal: __________
 - ✅ **AC-6**: Management commitment - Leadership training dan oversight
 - ✅ **AC-7**: Communication procedures - Multi-channel communications
 - ✅ **AC-8**: Audit and assessment - Regular internal/external audits
-
 **Status Kepatuhan:** 100% - Semua 8 kontrol AC terpenuhi
 
 ---
@@ -315,11 +314,11 @@ Tanggal: __________
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Program oversight dan strategy |
-| Security Awareness Officer | Training delivery dan materials |
-| HR Manager | Employee onboarding dan disciplinary |
-| Department Heads | Department compliance monitoring |
-| Internal Audit | Compliance audits |
-| All Employees | Policy compliance dan reporting |
+| Petugas Kesadaran Keamanan | Training delivery dan materials |
+| Manajer SDM | Employee onboarding dan disciplinary |
+| Kepala Departemen | Department compliance monitoring |
+| Audit Internal | Compliance audits |
+| Semua Karyawan | Policy compliance dan reporting |
 
 ---
 
@@ -345,10 +344,10 @@ Tanggal: __________
 
 ___________________________  
 [Nama ISM]  
-Information Security Manager  
+Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Chief Executive Officer  
+Direktur Utama  
 Tanggal: __________________

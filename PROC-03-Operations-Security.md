@@ -1,4 +1,4 @@
-# PROC-03: Prosedur Keamanan Operasi (Operations Security Procedures)
+# PROC-03: Prosedur Keamanan Operasi
 
 **Dokumen ID:** PROC-03  
 **Versi:** 1.0  
@@ -278,10 +278,10 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Oversight operasi keamanan |
-| IT Operations Manager | Daily operations dan change management |
-| SOC Team Lead | 24/7 monitoring dan incident response |
-| IT Security Officer | Vulnerability management dan patch deployment |
-| Change Advisory Board | Approval perubahan sistem |
+| Manajer Operasi IT | Daily operations dan change management |
+| Pimpinan Tim SOC | 24/7 monitoring dan incident response |
+| Petugas Keamanan IT | Vulnerability management dan patch deployment |
+| Dewan Penasihat Perubahan | Approval perubahan sistem |
 
 ---
 
@@ -307,10 +307,10 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 ___________________________  
 [Nama ISM]  
-Information Security Manager  
+Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Chief Executive Officer  
+Direktur Utama  
 Tanggal: __________________

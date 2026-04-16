@@ -1,4 +1,4 @@
-# PROC-05: Prosedur Keamanan Fisik (Physical Security Procedures)
+# PROC-05: Prosedur Keamanan Fisik
 
 **Dokumen ID:** PROC-05  
 **Versi:** 1.0  
@@ -298,17 +298,17 @@ __________________________________
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Oversight physical security |
-| Security Manager | Daily security operations |
-| Facilities Manager | Building maintenance dan environmental controls |
-| IT Operations Manager | Equipment security dan server room |
-| Department Heads | Compliance dalam departemen |
-| All Employees | Adhere to physical security procedures |
+| Manajer Keamanan | Daily security operations |
+| Manajer Fasilitas | Building maintenance dan environmental controls |
+| Manajer Operasi IT | Equipment security dan server room |
+| Kepala Departemen | Compliance dalam departemen |
+| Semua Karyawan | Adhere to physical security procedures |
 
 ---
 
 ## 7. Review dan Update
 
-- **Frekuensi Review:** Tahunan atau saat ada perubangan signifikan
+- **Frekuensi Review:** Tahunan atau saat ada perubahan signifikan
 - **Tanggung Jawab Review:** Security dan Facilities Team
 - **Approval Update:** ISM dan Management
 
@@ -328,10 +328,10 @@ __________________________________
 
 ___________________________  
 [Nama ISM]  
-Information Security Manager  
+Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Chief Executive Officer  
+Direktur Utama  
 Tanggal: __________________

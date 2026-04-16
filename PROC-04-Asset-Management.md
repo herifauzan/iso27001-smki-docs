@@ -1,4 +1,4 @@
-# PROC-04: Prosedur Manajemen Aset (Asset Management Procedures)
+# PROC-04: Prosedur Manajemen Aset
 
 **Dokumen ID:** PROC-04  
 **Versi:** 1.0  
@@ -285,11 +285,11 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Oversight asset management |
-| IT Operations Manager | Inventory dan maintenance |
-| IT Security Officer | Classification dan disposal |
-| Procurement Manager | Supplier management |
-| Department Heads | Asset ownership dalam departemen |
-| Data Owners | Data classification dan handling |
+| Manajer Operasi IT | Inventory dan maintenance |
+| Petugas Keamanan IT | Classification dan disposal |
+| Manajer Pengadaan | Supplier management |
+| Kepala Departemen | Asset ownership dalam departemen |
+| Pemilik Data | Data classification dan handling |
 
 ---
 
@@ -315,10 +315,10 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 
 ___________________________  
 [Nama ISM]  
-Information Security Manager  
+Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Chief Executive Officer  
+Direktur Utama  
 Tanggal: __________________
