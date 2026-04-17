@@ -25,7 +25,7 @@
 4. [Ruang Lingkup](#ruang-lingkup)
 5. [Struktur Organisasi Keamanan Informasi](#struktur-organisasi)
 6. [Peran dan Tanggung Jawab](#peran-dan-tanggung-jawab)
-7. [Kebijakan Keamanan Informasi Lengkap](#kebijakan-keamanan-informasi-lengkap)
+7. [Kebijakan Keamanan Informasi](#kebijakan-keamanan-informasi)
    - [Area 1: Manajemen Risiko Keamanan Informasi](#area-1)
    - [Area 2: Kebijakan Keamanan Informasi Umum & Security Baseline](#area-2)
    - [Area 3: Organisasi & Kesadaran Keamanan Informasi](#area-3)
@@ -258,7 +258,7 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 - Mendukung aktivitas respons insiden
 - Melaporkan insiden keamanan kepada ISM (Information Security Manager)
 
-### 6.5 All Employees
+### 6.5 Seluruh Karyawan
 
 **Peran:**
 - Garis pertahanan pertama untuk keamanan informasi
@@ -300,7 +300,7 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 
 ---
 
-## 7. KEBIJAKAN KEAMANAN INFORMASI LENGKAP {#kebijakan-keamanan-informasi-lengkap}
+## 7. KEBIJAKAN KEAMANAN INFORMASI {#kebijakan-keamanan-informasi}
 
 Dokumen ini adalah konsolidasi dari 10 kebijakan keamanan informasi utama yang mengacu pada standar keamanan informasi internasional dengan praktik terbaik.
 
@@ -319,33 +319,31 @@ Kebijakan ini berlaku untuk:
 - Semua sistem informasi dan aset
 - Semua ancaman dan risiko keamanan yang diidentifikasi
 
-### 1.3 Requirement - Score 2 (Partial Implementation)
+### 1.3 Kebijakan Utama
 
-Untuk mencapai score 2 dalam Area Manajemen Risiko, PT Ecomindo telah menerapkan security requirements berdasarkan best practices namun belum memiliki sertifikasi resmi dan belum melakukan audit oleh pihak independen.
+PT Ecomindo wajib mengelola risiko keamanan informasi secara komprehensif dengan sertifikasi, audit, dan/atau penerapan standar best practices.
 
-#### **Requirement 1.3.1: Sertifikasi Keamanan Informasi**
+#### **1.3.1 Sertifikasi Keamanan Informasi**
 
-PT Ecomindo telah menerapkan security requirements berdasarkan best practices namun belum memiliki sertifikasi resmi dari badan independen.
+PT Ecomindo wajib merencanakan dan mengejar sertifikasi keamanan informasi dari badan independen atau minimal melaksanakan best practice keamanan informasi.
 
-**Status Implementasi:**
-- [x] Security requirements berdasarkan best practices telah diterapkan (ISO 27001, NIST, CIS)
-- [ ] Sertifikasi resmi belum diperoleh (dalam perencanaan untuk 1-2 tahun ke depan)
-- [ ] Scope sertifikasi belum ditentukan
-- [ ] Dokumentasi implementasi best practices tersedia namun belum diverifikasi oleh auditor independen
+**Kebijakan Implementasi:**
+- Security requirements berbasis best practices diterapkan sesuai ISO 27001, NIST, dan CIS
+- PT Ecomindo harus mengidentifikasi cakupan sertifikasi dan menetapkan road map
+- Dokumentasi penerapan best practices harus diverifikasi oleh auditor internal/eksternal
 
-#### **Requirement 1.3.2: Audit Keamanan Internal & Eksternal**
+#### **1.3.2 Audit Keamanan Internal & Eksternal**
 
-PT Ecomindo belum melakukan audit keamanan oleh pihak independen.
+PT Ecomindo wajib melaksanakan audit keamanan internal dan eksternal secara teratur.
 
-**Status Saat Ini:**
-- [ ] Audit internal belum dilakukan secara teratur
-- [ ] Audit eksternal belum dilakukan
-- [ ] Tidak ada executive summary atau cover dari aktivitas audit
-- [ ] Dokumentasi audit belum tersedia
+**Kebijakan Audit:**
+- Audit internal dijadwalkan secara berkala
+- Audit eksternal dilakukan oleh pihak independen
+- Setiap aktivitas audit menghasilkan ringkasan eksekutif dan dokumentasi lengkap
 
-#### **Requirement 1.3.3: Penerapan Security Requirements Berdasarkan Best Practices**
+#### **1.3.3 Penerapan Security Requirements Berdasarkan Best Practices**
 
-PT Ecomindo telah menerapkan security requirements komprehensif mengacu pada standar best practices:
+PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar best practices.
 
 **Standar yang Diikuti:**
 - ISO/IEC 27001 - Information Security Management
@@ -353,27 +351,25 @@ PT Ecomindo telah menerapkan security requirements komprehensif mengacu pada sta
 - CIS Critical Security Controls - Top 18-20 security controls
 - OWASP Top 10 - Untuk application security
 
-**Security Requirements yang Diterapkan:**
-- OS Hardening (Windows, Linux) - sesuai CIS Benchmark
-- Database Hardening - sesuai vendor best practices
-- Network Hardening - firewall, WAF, segmentation
-- Application Security - secure coding, SAST/DAST
-- Encryption Standards - TLS 1.2+, AES-256 for data at rest
-- Identity & Access - RBAC, MFA, password policy
-- Monitoring & Logging - SIEM, centralized logging
-- Incident Response - documented procedures
-- Business Continuity - DRP, BCP
+**Kebijakan Implementasi:**
+- OS Hardening (Windows, Linux) dilakukan sesuai CIS Benchmark
+- Database Hardening dilakukan sesuai standar vendor
+- Network Hardening mencakup firewall, WAF, dan segmentasi
+- Application Security meliputi secure coding, SAST/DAST
+- Encryption Standards meliputi TLS 1.2+ dan AES-256 untuk data at rest
+- Identity & Access menerapkan RBAC, MFA, dan password policy
+- Monitoring & Logging menggunakan SIEM dan centralized logging
+- Incident Response didokumentasikan secara formal
+- Business Continuity mencakup DRP dan BCP
 
-**Implementasi:**
-- Sample capture dari setiap hardening requirement (screenshots, configs)
-- Dokumentasi lengkap security baseline untuk OS, DB, applications
-- Regular review dan update terhadap best practices terbaru
-
-**Catatan Status:** Meskipun security requirements telah diterapkan berdasarkan best practices, sertifikasi dan audit independen masih dalam tahap perencanaan untuk meningkatkan ke score yang lebih tinggi.
+**Kebijakan Verifikasi:**
+- Setiap hardening requirement didukung bukti seperti screenshot dan konfigurasi
+- Dokumentasi security baseline untuk OS, DB, dan aplikasi dipelihara dengan baik
+- Review dan pembaruan terhadap best practices dilakukan secara berkala
 
 ### 1.4 Tanggung Jawab
 
-- **ISM (Information Security Manager)**: Memastikan sertifikasi, audit, dan compliance maintenance
+- **ISM (Manajer Keamanan Informasi)**: Memastikan sertifikasi, audit, dan compliance maintenance
 - **Risk Management Team**: Conduct risk assessments, maintain audit schedule
 - **IT Department**: Implement security requirements, maintain documentation
 - **Management**: Approve audit scope, review audit findings, approve remediation budget
@@ -382,8 +378,7 @@ PT Ecomindo telah menerapkan security requirements komprehensif mengacu pada sta
 
 - Review kebijakan: Annually atau ketika ada perubahan persyaratan
 - Audit internal: Minimum yearly
-- Audit eksternal: Minimum yearly
-- Sertifikasi: Maintain valid status setiap waktu
+- Audit eksternal: Jika dibutuhkan
 
 ---
 
@@ -400,40 +395,38 @@ Kebijakan ini berlaku untuk:
 - Semua sistem informasi, aplikasi, perangkat, dan jaringan
 - Semua data dan informasi sensitif
 
-### 2.3 Requirement - Score 3 untuk Kebijakan Umum, Score 2 untuk Security Baseline
+### 2.3 Kebijakan Utama
 
-#### **2.3.1 Kebijakan Keamanan Informasi Umum (Score 3)**
+#### **2.3.1 Kebijakan Keamanan Informasi Umum**
 
-PT Ecomindo memiliki kebijakan formal yang sudah di-review/update berkala namun belum sepenuhnya disosialisasikan ke seluruh pegawai.
+PT Ecomindo menetapkan kebijakan formal keamanan informasi yang direview dan disosialisasikan secara menyeluruh.
 
 **Isi Kebijakan Minimum:**
 1. **Perlindungan Data Sensitif** - Klasifikasi data, enkripsi, backup
-2. **Mekanisme Exception** - Proses untuk exception/override dari kebijakan dengan approval
+2. **Mekanisme Exception** - Proses exception/override dari kebijakan dengan persetujuan
 3. **Access Controls** - Authentication, authorization, audit trails
 4. **Incident Management** - Detection, response, forensics
 5. **Policy Review Cycle** - Minimum 1 kali per tahun
 
-**Formalisasi:**
-- [x] kebijakan disahkan secara formal (CEO/Board approval)
-- [x] Memiliki cover page/lembar pengesahan
-- [x] Memiliki daftar isi (Table of Contents)
-- [x] Dokumentasi lengkap dan terstruktur
-- [x] Didistribusikan ke seluruh organisasi
-- [ ] Disosialisasikan melalui training formal (dalam proses)
-- [ ] Dipantau kepatuhannya secara menyeluruh
+**Kebijakan Formalisasi:**
+- Kebijakan harus disahkan secara formal oleh CEO/Board
+- Dokumen harus memiliki cover page/lembar pengesahan
+- Dokumen harus memiliki daftar isi
+- Dokumentasi harus lengkap dan terstruktur
+- Dokumen harus didistribusikan ke seluruh organisasi
+- Kebijakan harus disosialisasikan melalui pelatihan formal
+- Kepatuhan terhadap kebijakan harus dipantau secara menyeluruh
 
-**Sosialisasi:**
-- Training untuk seluruh karyawan (mandatory) - dalam perencanaan
-- Minimum 1 kali per tahun - belum terlaksana
-- Dokumentasi attendance/records training belum lengkap
-- Test pemahaman atau quiz setelah training - belum dilakukan
-- Acknowledgment form ditandatangani oleh setiap karyawan - sebagian
+**Kebijakan Sosialisasi:**
+- Pelatihan untuk seluruh karyawan wajib dilaksanakan
+- Pelatihan dilaksanakan minimum 1 kali per tahun
+- Dokumentasi kehadiran dan rekaman pelatihan harus lengkap
+- Evaluasi pemahaman setelah pelatihan harus dilakukan
+- Formulir pengakuan ditandatangani oleh setiap karyawan
 
-**Catatan Status:** Kebijakan formal sudah ada dan direview berkala, namun sosialisasi dan pemantauan kepatuhan masih perlu ditingkatkan.
+#### **2.3.2 Kebijakan Security Baseline Aplikasi, Sistem, dan Endpoint**
 
-#### **2.3.2 Kebijakan Security Baseline Aplikasi, Sistem, dan Endpoint (Score 2)**
-
-PT Ecomindo memiliki kebijakan security baseline yang disahkan formal namun belum di-review berkala.
+PT Ecomindo memiliki kebijakan security baseline yang disahkan formal dan direview secara berkala.
 
 **Scope Security Baseline:**
 - Operating Systems (Windows, Linux) - hardening, patching, antivirus
@@ -447,24 +440,22 @@ PT Ecomindo memiliki kebijakan security baseline yang disahkan formal namun belu
 1. **Hardening Checklist** - Item-item yang harus dilakukan
 2. **Security Requirements** - Standar teknis yang harus dipenuhi
 3. **Security Checklist** - Pre-deployment verification checklist
-4. **Configuration Standards** - Template configurations untuk setiap sistem type
+4. **Configuration Standards** - Template configuration untuk setiap sistem type
 
 **Exception Management:**
-- Proses formal untuk request exception dari security baseline
-- Approval dari ISM dan relevant manager
-- Risk assessment untuk setiap exception
-- Time-limited exceptions (e.g., 30-90 hari dengan review)
-- Documentation lengkap dari exception dan justification
+- Proses formal untuk permintaan exception dari security baseline
+- Persetujuan harus diperoleh dari ISM dan manajer terkait
+- Penilaian risiko harus dilakukan untuk setiap exception
+- Exception bersifat terbatas waktu (misalnya 30-90 hari dengan review)
+- Dokumentasi exception dan justifikasi harus lengkap
 
-**Formalisasi & Sosialisasi:**
-- [x] Kebijakan baseline formal (CEO approval)
-- [x] Clear cover page, daftar isi
-- [ ] Sosialisasi ke IT team, developers, system administrators (sebagian)
-- [ ] Training format dua arah: tatap muka, e-learning, workshops (dalam perencanaan)
-- [ ] Eksekusi training secara berkala (min. thn sekali) - belum terlaksana
-- [ ] Sample sosialisasi materials disimpan - sebagian
-
-**Catatan Status:** Kebijakan baseline sudah disahkan formal, namun review berkala dan sosialisasi masih perlu diperbaiki untuk mencapai implementasi penuh.
+**Kebijakan Formalisasi & Sosialisasi:**
+- Kebijakan baseline harus disahkan formal oleh CEO
+- Dokumen harus memiliki cover page dan daftar isi
+- Kebijakan baseline harus disosialisasikan ke tim IT, developer, dan administrator sistem
+- Pelatihan harus disediakan dalam format tatap muka, e-learning, dan lokakarya
+- Pelatihan harus dijalankan secara berkala minimum setahun sekali
+- Materi sosialisasi harus disimpan sebagai dokumentasi
 
 ### 2.4 Tanggung Jawab
 
@@ -539,29 +530,27 @@ Setiap posisi di tim security HARUS memiliki Deskripsi Jabatan formal:
 - Salinan disimpan di sistem HR
 - Disebarkan ke tim yang bersangkutan
 
-#### **3.3.3 Security Awareness Program (Score 3)**
+#### **3.3.3 Program Kesadaran Keamanan**
 
-PT Ecomindo menjalankan program kesadaran keamanan melalui komunikasi dua arah namun belum mencapai frekuensi dan cakupan penuh untuk semua karyawan:
+PT Ecomindo menetapkan program kesadaran keamanan yang dijalankan melalui komunikasi dua arah dan pelatihan berkala.
 
 **Program Scope:**
-- Target: SEMUA karyawan, kontraktor, pihak ketiga
+- Target: SEMUA karyawan, kontraktor, dan pihak ketiga
 - Format: Komunikasi dua arah (tatap muka, e-learning, pelatihan online, lokakarya)
-- Frekuensi: Dalam proses untuk mencapai minimum 1 kali per tahun pelatihan wajib
+- Frekuensi: Pelatihan wajib dilaksanakan minimum 1 kali per tahun
 
-**Mandatory Annual Training:**
-- Durasi: Minimum 1-2 jam per tahun per karyawan - belum konsisten
-- Konten: Meliputi 10 area keamanan informasi yang relevan dengan peran
-- Peserta: Sebagian besar karyawan, kontraktor - dalam peningkatan
-- Rekaman: Kehadiran, sertifikat penyelesaian disimpan sebagian
+**Kebijakan Pelatihan Tahunan:**
+- Durasi minimum 1-2 jam per tahun per karyawan
+- Konten mencakup 10 area keamanan informasi yang relevan dengan peran
+- Peserta meliputi seluruh karyawan dan kontraktor
+- Rekaman kehadiran dan sertifikat penyelesaian harus disimpan
 
-**Ongoing Awareness Activities** (dalam tahun):
-- Buletin bulanan/komunikasi tentang topik keamanan - dalam perencanaan
-- Lokakarya triwulanan/seminar (langsung atau online) - belum teratur
-- Peringatan email tentang ancaman terbaru/insiden - ad hoc
-- Tips keamanan di samping meja - terbatas
-- Latihan simulasi phishing - dalam perencanaan
-
-**Catatan Status:** Program awareness telah diterapkan melalui komunikasi dua arah, namun frekuensi pelatihan tahunan dan aktivitas berkelanjutan masih perlu diperbaiki untuk mencapai implementasi komprehensif.
+**Kebijakan Aktivitas Awareness Berkelanjutan:**
+- Buletin bulanan atau komunikasi rutin tentang topik keamanan dijalankan
+- Lokakarya/seminar triwulanan diselenggarakan secara langsung atau online
+- Peringatan email tentang ancaman terbaru dan insiden dikirim secara berkala
+- Tips keamanan di tempat kerja disediakan secara rutin
+- Latihan simulasi phishing dilaksanakan secara terjadwal
 
 ### 3.4 Tanggung Jawab
 
@@ -624,18 +613,18 @@ PT Ecomindo memiliki mekanisme pengelolaan kepegawaian yang komprehensif:
 - Timeline: Access HARUS direvoke dalam 24 jam sejak termination date
 - Documentation: Exit clearance form signed dan disimpan
 
-**C. Contractors & Sub-contractors (Score 2 untuk 4.1b, Score 1 untuk 4.3)**
-- Semua contractors (temporary, full-time, part-time) HARUS mengikuti proses sama:
-  - Background check requirement sama seperti employees - [x] diterapkan
-  - Clear statement dalam contract tentang security obligations - [x] diterapkan
-  - NDA mengikat kontractor - [x] diterapkan
-  - Termination process sama dengan employees - [ ] mekanisme PHK belum terdokumentasi secara formal
-  - Clear end date dan termination procedures - [ ] belum sepenuhnya diimplementasikan
+**C. Contractors & Sub-contractors**
+- Semua contractors (temporary, full-time, part-time) harus mengikuti mekanisme yang sama dengan karyawan:
+  - Background check sama seperti employees
+  - Pernyataan yang jelas dalam kontrak tentang security obligations
+  - NDA mengikat kontraktor harus ditandatangani sebelum mulai bekerja
+  - Termination process mengikuti prosedur formal yang setara dengan karyawan
+  - Clear end date dan termination procedures harus didokumentasikan
 
-**Catatan Status untuk Sub-Kontraktor:**
-- Background check telah diterapkan untuk sub-kontraktor
-- Mekanisme PHK untuk sub-kontraktor masih dalam pengembangan dan belum terdokumentasi
-- Penggunaan sub-kontraktor untuk lingkup MMI belum memperoleh persetujuan formal dari MMI (dalam proses koordinasi)
+**Kebijakan Pengawasan Sub-kontraktor:**
+- Background check wajib dilakukan untuk semua sub-kontraktor
+- Mekanisme pemutusan hubungan kerja untuk sub-kontraktor harus terdokumentasi secara formal
+- Penggunaan sub-kontraktor dalam lingkup MMI harus memperoleh persetujuan formal dari MMI
 
 #### **4.3.2 NDA (Non-Disclosure Agreement) & Security Agreement**
 
@@ -833,23 +822,21 @@ Kebijakan ini berlaku untuk:
 - Semua sistem informasi dan cloud services
 - Semua akses eksternal (remote, VPN, API)
 
-### 6.3 Requirement 
+### 6.3 Kebijakan Utama
 
-#### **6.3.1 Identity & Access Management (IAM) (Score 3)**
+#### **6.3.1 Identity & Access Management (IAM)**
 
-PT Ecomindo menerapkan IAM berbasis least privilege dengan review berkala namun dokumentasi review belum sepenuhnya formal:
+PT Ecomindo menerapkan IAM berbasis least privilege dengan review berkala dan dokumentasi formal.
 
-**A. User Account Lifecycle Management**
-- [x] User creation, changes, deactivation diterapkan
-- [x] Least privilege principle diterapkan
-- [x] Access review dilakukan berkala
-- [ ] Dokumentasi formal dari access reviews belum lengkap
-
-**Catatan Status:** IAM telah diterapkan dengan least privilege dan review berkala, namun dokumentasi formal dari proses review masih perlu diperbaiki untuk mencapai score 4.
+**Kebijakan User Account Lifecycle Management:**
+- User creation, modification, dan deactivation dilaksanakan sesuai kebijakan formal
+- Prinsip least privilege diterapkan pada semua akun
+- Review akses dilakukan secara berkala
+- Dokumentasi formal dari access review harus lengkap
 
 #### **6.3.2 Cloud Provider IAM**
 
-Untuk cloud services (AWS, Azure, GCP), requirement khusus:
+Untuk cloud services (AWS, Azure, GCP), kebijakan IAM khusus diterapkan:
 
 **A. User Management**
 - Same lifecycle management sebagai on-premise (creation, changes, disabling)
@@ -931,23 +918,27 @@ Kebijakan ini meliputi:
 - Tempat penyimpanan equipment
 - All facilities milik atau digunakan organisasi
 
-### 7.3 Requirement 
+### 7.3 Kebijakan Utama
 
-#### **7.3.1 Secure Areas - Working Environment (Score 2)**
+#### **7.3.1 Secure Areas - Working Environment**
 
-PT Ecomindo mengimplementasikan kontrol akses fisik ke ruangan kerja dengan access card namun CCTV masih dalam perencanaan:
+PT Ecomindo mengimplementasikan kontrol akses fisik untuk lingkungan kerja dan menetapkan persyaratan monitoring fisik.
 
-**A. Access Card / Biometric (Score 2 - Diterapkan)**
-- [x] Access control system diterapkan dengan access card
-- [x] Entry logged automatically
-- [x] Permissions berbeda untuk different areas
-- [x] Card review dilakukan
+**A. Access Card / Biometric**
+- Access control system harus diterapkan dengan access card atau biometric
+- Entry ke area harus dicatat secara otomatis
+- Permissions harus dibedakan untuk setiap area kerja
+- Review kartu akses dilakukan secara berkala
 
-**B. CCTV Monitoring (Score 2 - Dalam Perencanaan)**
-- [ ] CCTV belum sepenuhnya terpasang di semua area
-- [ ] Dalam proses deployment untuk mencapai implementasi penuh
+**B. CCTV Monitoring**
+- CCTV harus dipasang di area kerja yang kritis
+- Kamera harus merekam semua entry/exit dan menyimpan rekaman yang dapat diakses untuk investigasi
+- Implementasi CCTV harus mencakup coverage area yang memadai
+- Retensi rekaman CCTV harus sesuai kebijakan keamanan fisik
 
-**Catatan Status:** Access card telah diterapkan untuk kontrol akses fisik, namun CCTV monitoring masih perlu ditambahkan untuk mencapai implementasi komprehensif.
+**Kebijakan Pengawasan:**
+- Access card dan CCTV digunakan bersama-sama untuk kontrol akses fisik yang komprehensif
+- Keabsahan akses diverifikasi dengan rekaman elektronik dan review berkala
 
 #### **7.3.2 Secure Areas - Datacenter / Server Room**
 
