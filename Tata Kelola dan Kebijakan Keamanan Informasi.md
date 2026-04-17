@@ -13,16 +13,15 @@
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
 | Direktur Utama / CEO | _________________ | _________________ | __________ |
-| Manajer Keamanan Informasi | _________________ | _________________ | __________ |
 | Direktur Operasional / CTO | _________________ | _________________ | __________ |
-
+| Manajer Keamanan Informasi (ISM)| _________________ | _________________ | __________ |
 ---
 
 ## Daftar Isi
 
 1. [Pendahuluan](#pendahuluan)
 2. [Visi dan Misi](#visi-dan-misi)
-3. [Tujuan Sistem Manajemen Keamanan Informasi](#tujuan-smki)
+3. [Tujuan Tata Kelola dan Kebijakan Keamanan Informasi](#tujuan-tk3i)
 4. [Ruang Lingkup](#ruang-lingkup)
 5. [Struktur Organisasi Keamanan Informasi](#struktur-organisasi)
 6. [Peran dan Tanggung Jawab](#peran-dan-tanggung-jawab)
@@ -90,9 +89,9 @@ Dokumen Tata Kelola dan Kebijakan Keamanan Informasi ini dirancang untuk:
 
 ---
 
-## 3. TUJUAN SISTEM MANAJEMEN KEAMANAN INFORMASI {#tujuan-smki}
+## 3. TUJUAN TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI {#tujuan-tk3i}
 
-Tujuan SMKI PT Ecomindo adalah untuk:
+Tujuan TK3I PT Ecomindo adalah untuk:
 
 1. **Perlindungan Aset**: Melindungi kerahasiaan, integritas, dan ketersediaan informasi organisasi
 2. **Manajemen Risiko**: Mengidentifikasi, menganalisis, dan mengelola risiko keamanan informasi secara sistematis
@@ -107,7 +106,7 @@ Tujuan SMKI PT Ecomindo adalah untuk:
 
 ### 4.1 Cakupan Organisasi
 
-Pedoman SMKI ini berlaku untuk:
+Pedoman TK3I ini berlaku untuk:
 - Semua unit organisasi dan departemen di PT Ecomindo
 - Semua karyawan, kontraktor, dan pihak ketiga yang bekerja atas nama organisasi
 - Semua sistem informasi, aplikasi, dan infrastruktur IT yang digunakan organisasi
@@ -148,7 +147,7 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 │   (Kepala Keamanan Informasi - Direktur/Manager ke CEO)    │
 │                                                              │
 │ Tanggung Jawab:                                             │
-│ • Develop & maintain SMKI                                  │
+│ • Mengembangkan dan memelihara TK3I                        │
 │ • Manage information security programs                     │
 │ • Report security posture to management                    │
 │ • Oversee all 10 security areas                            │
@@ -192,11 +191,11 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 **Peran:**
 - Oversight terhadap governance keamanan informasi
 - Approval terhadap strategic information security initiatives
-- Executive Sponsor untuk SMKI dan compliance initiatives
+- Executive Sponsor untuk TK3I dan compliance initiatives
 - Final authority untuk security policy approval
 
 **Tanggung Jawab:**
-- Memastikan SMKI aligned dengan business strategy
+- Memastikan TK3I selaras dengan strategi bisnis
 - Review quarterly security reports dari ISM (Information Security Manager)
 - Approval atas risk tolerance dan risk mitigation strategies
 - Memastikan allocation of resources untuk keamanan informasi
@@ -210,11 +209,11 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 ### 6.2 Information Security Manager (ISM)
 
 **Peran:**
-- Owner dari SMKI dan information security programs
+- Pemilik TK3I dan program keamanan informasi
 - Primary liaison antara IT, Business, dan Compliance
 
 **Tanggung Jawab:**
-- Develop, implement, dan maintain SMKI
+- Mengembangkan, mengimplementasikan, dan memelihara TK3I
 - Define security policies, standards, dan procedures
 - Manage information security teams
 - Conduct risk assessments dan vulnerability management

@@ -49,7 +49,7 @@ Berlaku untuk semua karyawan, kontraktor, dan third party termasuk:
 
 ### 1.3 Referensi
 - Kebijakan Keamanan Informasi Lengkap (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- SMKI Master Policy Framework (Tata Kelola dan Kebijakan Keamanan Informasi.md)
+- TK3I Master Policy Framework (Tata Kelola dan Kebijakan Keamanan Informasi.md)
 - Standar keamanan informasi internasional
 
 ---

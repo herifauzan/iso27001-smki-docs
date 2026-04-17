@@ -9,7 +9,7 @@ Membuat dokumentasi security policy komprehensif yang memenuhi standar Mandiri I
 
 ### Document 1: Master Framework
 **File: Tata Kelola dan Kebijakan Keamanan Informasi.md**
-- Pedoman Sistem Manajemen Keamanan Informasi (SMKI)
+- Pedoman Tata Kelola dan Kebijakan Keamanan Informasi (TK3I)
 - Foreword, Vision/Mission, Scope, Objectives, Governance Structure, Roles & Responsibilities, Policy Directory
 - Fungsi: Single reference point untuk semua kebijakan & prosedur
 
@@ -143,7 +143,7 @@ Format per document: Purpose, Scope, Prerequisites, Step-by-step Instructions, R
 
 ### Organization Structure Recommendation
 ```
-SMKI-Documentation/
+TK3I-Documentation/
 ├── Tata Kelola dan Kebijakan Keamanan Informasi.md
 ├── PROC-01-HR-Employment.md
 ├── PROC-02-Access-Control.md
