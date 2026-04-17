@@ -12,9 +12,9 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
-| Direktur Utama / CEO | _________________ | _________________ | __________ |
-| Direktur Operasional / CTO | _________________ | _________________ | __________ |
-| Manajer Keamanan Informasi (ISM)| _________________ | _________________ | __________ |
+| Direktur Utama / CEO | Ahmad Firdaus |   |   |
+| Direktur Operasional / CTO | Dodi Darundriyo |   |   |
+| Manajer Keamanan Informasi (ISM)| Heri Fauzan |   |   |
 ---
 
 ## Daftar Isi
@@ -118,16 +118,16 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 
 | Area | Topik | Referensi Dokumen |
 |------|-------|-------------------|
-| **1** | Manajemen Risiko | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **2** | Kebijakan Keamanan Informasi | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **3** | Organisasi Keamanan Informasi | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **4** | Keamanan Sumber Daya Manusia | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **5** | Manajemen Aset | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **6** | Pengendalian Akses | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **7** | Keamanan Fisik & Lingkungan | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **8** | Keamanan Operasional | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **9** | Pengembangan Sistem Aman | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
-| **10** | Kontinuitas Bisnis & Pemulihan Bencana | Bagian 7 - Kebijakan Keamanan Informasi Lengkap |
+| **1** | Manajemen Risiko | ISO 27001 Annex A.8 (Information security risk assessment) |
+| **2** | Kebijakan Keamanan Informasi | ISO 27001 Annex A.5 (Information security policies) |
+| **3** | Organisasi Keamanan Informasi | ISO 27001 Annex A.6 (Organization of information security) |
+| **4** | Keamanan Sumber Daya Manusia | ISO 27001 Annex A.7 (Human resource security) |
+| **5** | Manajemen Aset | ISO 27001 Annex A.8 (Asset management) |
+| **6** | Pengendalian Akses | ISO 27001 Annex A.9 (Access control) |
+| **7** | Keamanan Fisik & Lingkungan | ISO 27001 Annex A.11 (Physical and environmental security) |
+| **8** | Keamanan Operasional | ISO 27001 Annex A.12 (Operations security) |
+| **9** | Pengembangan Sistem Aman | ISO 27001 Annex A.14 (System acquisition, development and maintenance) |
+| **10** | Kontinuitas Bisnis & Pemulihan Bencana | ISO 27001 Annex A.17 (Information security aspects of business continuity management) |
 
 ---
 
@@ -144,41 +144,33 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │             INFORMATION SECURITY MANAGER (ISM)             │
-│   (Kepala Keamanan Informasi - Direktur/Manager ke CEO)    │
-│                                                              │
-│ Tanggung Jawab:                                             │
-│ • Mengembangkan dan memelihara TK3I                        │
-│ • Manage information security programs                     │
-│ • Report security posture to management                    │
-│ • Oversee all 10 security areas                            │
 └─────────────────────────────────────────────────────────────┘
        │              │              │              │
        ▼              ▼              ▼              ▼
   ┌─────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
-  │ Security│   │ Identity │   │Physical  │   │Incident  │
-  │ Team 1: │   │ & Access │   │Security &│   │Response &│
-  │Policies │   │Management│   │Operations│   │Compliance│
-  │ & Risk  │   │Team 2    │   │Team 3    │   │Team 4    │
-  │ Mgmt    │   ├──────────┤   ├──────────┤   ├──────────┤
-  ├─────────┤   │• User    │   │• Access  │   │• Incident│
-  │• Risk   │   │  Mgmt    │   │  Control │   │  Response│
-  │  Assess │   │• MFA/VPN │   │• CCTV &  │   │• Forensics
-  │• Audit  │   │• Password│   │  Physical│   │• Audit   │
-  │• Vendor │   │  Policy  │   │  Access  │   │  Trail   │
-  │  Onboard│   └──────────┘   │• Datactr │   └──────────┘
-  │• Cert & │                  │  Mgmt    │
-  │  Compli │                  └──────────┘
-  │  ance   │
+  │Policies │   │ Identity │   │Physical  │   │Incident  │
+  │ & Risk  │   │ & Access │   │Security &│   │Response &│
+  │ Mgmt    │   │Management│   │Operations│   │Compliance│
+  │Team 1   │   │Team 2    │   │Team 3    │   │Team 4    │
+  ├─────────┤   ├──────────┤   ├──────────┤   ├──────────┤
+  │• Risk   │   │• User    │   │• Access  │   │• Incident│
+  │  Assess │   │  Mgmt    │   │  Control │   │  Response│
+  │• Audit  │   │• MFA/VPN │   │• CCTV &  │   │• Forensics|
+  │• Vendor │   │• Password│   │  Physical│   │• Audit   │
+  │  Onboard│   │  Policy  │   │  Access  │   │  Trail   │
+  │• Cert & │   └──────────┘   └──────────┘   └──────────┘
+  │  Compli │                 
+  │  ance   │                  
   └─────────┘
 ```
 
 ### 5.2 Reporting Structure
 
-**ISM reports to:**
-- CEO (Information Security Strategy & Compliance)
+**ISM melapor kepada:**
+- CEO atau CTO (Information Security Strategy & Compliance)
 - Board/Audit Committee (Quarterly Report on Security Posture)
 
-**ISM oversees:**
+**ISM mengawasi:**
 - 4 Security Teams (Policies, Identity, Physical, Incident Response)
 - Kolaborasi dengan IT Department, HR, Finance, dll.
 
@@ -189,152 +181,128 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 ### 6.1 Board of Directors
 
 **Peran:**
-- Oversight terhadap governance keamanan informasi
+- Pengawasan terhadap tata kelola keamanan informasi
 - Approval terhadap strategic information security initiatives
 - Executive Sponsor untuk TK3I dan compliance initiatives
 - Final authority untuk security policy approval
 
 **Tanggung Jawab:**
 - Memastikan TK3I selaras dengan strategi bisnis
-- Review quarterly security reports dari ISM (Information Security Manager)
-- Approval atas risk tolerance dan risk mitigation strategies
-- Memastikan allocation of resources untuk keamanan informasi
-- Demonstrate commitment terhadap keamanan informasi
-- Approve major policies dan procedures
-- Support budget allocation untuk security programs
-- Ensure security awareness di seluruh organisasi
+- Review quarterly security reports dari Manajer Keamanan Informasi (ISM)
+- Approval atas strategi risk tolerance dan risk mitigation
+- Memastikan alokasi sumber daya untuk keamanan informasi
+- Menunjukkan komitmen terhadap keamanan informasi
+- Menyetujui major policies dan procedures
+- Mendukung alokasi budget untuk security program
+- Memastikan security awareness di seluruh organisasi
 - Approval atas high-level risk decisions
 
 
-### 6.2 Information Security Manager (ISM)
+### 6.2 Manajer Keamanan Informasi (ISM)
 
 **Peran:**
 - Pemilik TK3I dan program keamanan informasi
-- Primary liaison antara IT, Business, dan Compliance
+- Penghubung utama antara IT, bisnis, dan kepatuhan
 
 **Tanggung Jawab:**
 - Mengembangkan, mengimplementasikan, dan memelihara TK3I
-- Define security policies, standards, dan procedures
-- Manage information security teams
-- Conduct risk assessments dan vulnerability management
-- Oversee all 10 security domains
-- Report security metrics to management monthly
-- Manage compliance dengan regulasi and stakeholder requirements
-- Lead incident response planning dan exercise
-- Conduct regular security awareness training
-- Coordinate dengan external auditors dan assessors
-- Manage security budget allocation
+- Mendefinisikan kebijakan keamanan, standar, dan prosedur
+- Mengelola tim keamanan informasi
+- Melakukan penilaian risiko dan pengelolaan kerentanan
+- Mengawasi semua 10 domain keamanan
+- Melaporkan metrik keamanan kepada manajemen setiap bulan
+- Mengelola kepatuhan terhadap regulasi dan persyaratan pemangku kepentingan
+- Memimpin perencanaan respons insiden dan latihan
+- Melakukan pelatihan kesadaran keamanan secara teratur
+- Mengkoordinasikan dengan auditor eksternal dan penilai
+- Mengelola alokasi anggaran keamanan
 
 ### 6.3 Information Security Teams
 
 #### **Team 1: Policy & Risk Management**
-- Develop security policies & procedures
-- Conduct risk assessments
-- Manage vendor security assessments
-- Audit and compliance management
+- Mengembangkan kebijakan dan prosedur keamanan
+- Melakukan penilaian risiko
+- Mengelola penilaian keamanan vendor
+- Pengelolaan audit dan kepatuhan
 
 #### **Team 2: Identity & Access Management**
-- User account provisioning & deprovisioning
-- Password policy & MFA implementation
-- Remote access & VPN management
-- Access review & audit
+- Penyediaan dan penghapusan akun pengguna
+- Implementasi kebijakan kata sandi dan MFA
+- Pengelolaan akses jarak jauh dan VPN
+- Tinjauan dan audit akses
 
 #### **Team 3: Physical Security & Operations**
-- Physical access control implementation
-- CCTV & datacenter security
-- Security configuration & hardening
-- Firewall & network security
-- Change management
-- Vulnerability assessment & patching
+- Implementasi kontrol akses fisik
+- Keamanan CCTV dan pusat data
+- Konfigurasi dan pengerasan keamanan
+- Firewall dan keamanan jaringan
+- Pengelolaan perubahan
+- Penilaian kerentanan dan patching
 
 #### **Team 4: Incident Response & Compliance**
-- Incident detection & response
-- Digital forensics & evidence collection
-- Disaster recovery & business continuity planning
-- Audit trail management
-- Compliance monitoring
+- Deteksi dan respons insiden
+- Forensik digital dan pengumpulan bukti
+- Perencanaan pemulihan bencana dan kontinuitas bisnis
+- Pengelolaan jejak audit
+- Pemantauan kepatuhan
 
 ### 6.4 IT Department
 
 **Peran:**
-- Partner dalam implementasi security controls
+- Mitra dalam implementasi kontrol keamanan
 
 **Tanggung Jawab:**
-- Implement security configurations as defined by policies
-- Maintain systems and infrastructure security
-- Deploy security tools and monitoring solutions
-- Support incident response activities
-- Report security incidents to ISM (Information Security Manager)
+- Mengimplementasikan konfigurasi keamanan sesuai kebijakan
+- Memelihara keamanan sistem dan infrastruktur
+- Menyebarkan alat dan solusi pemantauan keamanan
+- Mendukung aktivitas respons insiden
+- Melaporkan insiden keamanan kepada ISM (Information Security Manager)
 
 ### 6.5 All Employees
 
 **Peran:**
-- First line of defense untuk keamanan informasi
+- Garis pertahanan pertama untuk keamanan informasi
 
 **Tanggung Jawab:**
-- Comply dengan semua policies dan procedures
-- Complete mandatory security awareness training annually
-- Report security incidents atau suspicious activities immediately
-- Protect confidentiality of sensitive information
-- Use VPN for remote access
-- Do not share passwords atau credentials
-- Lock computer when leaving desk
-- Properly dispose of sensitive documents
-- Report all security concerns to ISM or IT
+- Mematuhi semua kebijakan dan prosedur
+- Menyelesaikan pelatihan kesadaran keamanan wajib setiap tahun
+- Melaporkan insiden keamanan atau aktivitas mencurigakan segera
+- Melindungi kerahasiaan informasi sensitif
+- Menggunakan VPN untuk akses jarak jauh
+- Jangan berbagi kata sandi atau kredensial
+- Kunci komputer saat meninggalkan meja
+- Buang dokumen sensitif dengan benar
+- Laporkan semua masalah keamanan kepada ISM atau IT
 
 ### 6.6 HR Department
 
 **Peran:**
-- Partner dalam employee lifecycle security
+- Mitra dalam keamanan siklus hidup karyawan
 
 **Tanggung Jawab:**
-- Conduct background checks during recruitment
-- Ensure NDA signatures before employment
-- Inform ISM about employee terminations
-- Facilitate access revocation process
-- Maintain personnel security documentation
+- Melakukan pemeriksaan latar belakang selama rekrutmen
+- Memastikan tanda tangan NDA sebelum pekerjaan
+- Menginformasikan ISM tentang pemutusan karyawan
+- Memfasilitasi proses pencabutan akses
+- Memelihara dokumentasi keamanan personel
 
 ### 6.7 Management (Semua Levels)
 
 **Peran:**
-- Support security initiatives dalam departemen mereka
+- Mendukung inisiatif keamanan di departemen mereka
 
 **Tanggung Jawab:**
-- Enforce compliance dengan security policies
-- Ensure team members complete security training
-- Report security incidents & concerns
-- Approve budget untuk security within department
-- Promote security awareness among team
+- Menegakkan kepatuhan terhadap kebijakan keamanan
+- Memastikan anggota tim menyelesaikan pelatihan keamanan
+- Melaporkan insiden keamanan dan masalah
+- Menyetujui anggaran untuk keamanan di departemen
+- Mempromosikan kesadaran keamanan di antara tim
 
 ---
 
 ## 7. KEBIJAKAN KEAMANAN INFORMASI LENGKAP {#kebijakan-keamanan-informasi-lengkap}
 
 Dokumen ini adalah konsolidasi dari 10 kebijakan keamanan informasi utama yang mengacu pada standar keamanan informasi internasional dengan praktik terbaik.
-
----
-
-## TANDA TANGAN PERSETUJUAN
-
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| CEO | _________________ | _________________ | __________ |
-| ISM | _________________ | _________________ | __________ |
-
----
-
-## DAFTAR ISI KEBIJAKAN
-
-- [Area 1: Manajemen Risiko Keamanan Informasi](#area-1)
-- [Area 2: Kebijakan Keamanan Informasi Umum & Security Baseline](#area-2)
-- [Area 3: Organisasi & Kesadaran Keamanan Informasi](#area-3)
-- [Area 4: Keamanan Sumber Daya Manusia](#area-4)
-- [Area 5: Manajemen Aset & Pengamanan Data](#area-5)
-- [Area 6: Pengendalian Akses & Identitas](#area-6)
-- [Area 7: Keamanan Fisik & Lingkungan](#area-7)
-- [Area 8: Keamanan Operasional](#area-8)
-- [Area 9: Keamanan Pengembangan Sistem](#area-9)
-- [Area 10: Kontinuitas Bisnis & Pemulihan Bencana](#area-10)
 
 ---
 
@@ -530,83 +498,83 @@ Kebijakan ini meliputi:
 
 #### **3.3.1 Struktur Organisasi Keamanan Informasi**
 
-PT Ecomindo memiliki tim keamanan informasi yang dedicated (bukan digabung dengan fungsi lain):
+PT Ecomindo memiliki tim keamanan informasi yang khusus (bukan digabung dengan fungsi lain):
 
 **Minimal Struktur yang Diperlukan:**
-1. **ISM (Information Security Manager)** - Reports to CEO/Direktur
-2. **Security Policy & Compliance Officer** - Manage policies, audit, compliance
-3. **Identity & Access Management Officer** - Manage user access, authentication
-4. **Operations Security Officer** - Manage network, operations, incident response
-5. **Physical & Environmental Security Officer** - Manage physical access, datacenter
+1. **ISM (Information Security Manager)** - Melapor kepada CEO/Direktur
+2. **Security Policy & Compliance Officer** - Mengelola kebijakan, audit, kepatuhan
+3. **Identity & Access Management Officer** - Mengelola akses pengguna, autentikasi
+4. **Operations Security Officer** - Mengelola jaringan, operasi, respons insiden
+5. **Physical & Environmental Security Officer** - Mengelola akses fisik, pusat data
 
-**Posisi dapat dijabat oleh 1 orang (small organization) atau multiple people (larger org) - tapi HARUS ada clear dedication.**
+**Posisi dapat dijabat oleh 1 orang (organisasi kecil) atau beberapa orang (organisasi besar) - tapi HARUS ada dedikasi yang jelas.**
 
 **Dokumentasi Wajib:**
-- Organizational Chart yang menunjukkan struktur keamanan informasi
-- Reporting line yang jelas dengan CEO
-- Dokumentasi formal bahwa ini adalah posisi dedicated
+- Bagan Organisasi yang menunjukkan struktur keamanan informasi
+- Jalur pelaporan yang jelas dengan CEO
+- Dokumentasi formal bahwa ini adalah posisi khusus
 
 #### **3.3.2 Job Description untuk Posisi Keamanan Informasi**
 
-Setiap posisi di tim security HARUS memiliki Job Description formal:
+Setiap posisi di tim security HARUS memiliki Deskripsi Jabatan formal:
 
 **Minimal Content per JD:**
-1. **Position Title** - Contoh: Information Security Manager
-2. **Reporting To** - Siapa supervisor/manager
-3. **Key Responsibilities**  - Minimum 5-10 tanggung jawab spesifik keamanan informasi
-4. **Requirements** - Pendidikan, pengalaman, skills yang diperlukan
-5. **Specific Security Responsibilities** - Apa keamanan informasi yang manage
-6. **Authority & Approval Levels** - Apa yang dapat di-approve/decide
+1. **Judul Jabatan** - Contoh: Information Security Manager
+2. **Melapor Kepada** - Siapa supervisor/manager
+3. **Tanggung Jawab Utama** - Minimum 5-10 tanggung jawab spesifik keamanan informasi
+4. **Persyaratan** - Pendidikan, pengalaman, keterampilan yang diperlukan
+5. **Tanggung Jawab Keamanan Khusus** - Apa keamanan informasi yang dikelola
+6. **Tingkat Otoritas & Persetujuan** - Apa yang dapat disetujui/diputuskan
 
 **Contoh JD Items:**
-- "Develop dan maintain information security policies yang align dengan ISO 27001"
-- "Conduct risk assessments dan manage information security risks"
-- "Lead incident response activities dan manage digital forensics"
-- "Manage security budget dan approve security investments"
-- "Report to CEO on security posture quarterly"
-- "Ensure compliance dengan standar keamanan informasi internasional"
+- "Mengembangkan dan memelihara kebijakan keamanan informasi yang selaras dengan ISO 27001"
+- "Melakukan penilaian risiko dan mengelola risiko keamanan informasi"
+- "Memimpin aktivitas respons insiden dan mengelola forensik digital"
+- "Mengelola anggaran keamanan dan menyetujui investasi keamanan"
+- "Melaporkan kepada CEO tentang postur keamanan setiap triwulan"
+- "Memastikan kepatuhan dengan standar keamanan informasi internasional"
 
 **Storage & Distribution:**
-- Job Descriptions di-document secara formal
-- Copy disimpan di HR system
-- Disebarkan ke team yang bersangkutan
+- Deskripsi Jabatan didokumentasikan secara formal
+- Salinan disimpan di sistem HR
+- Disebarkan ke tim yang bersangkutan
 
 #### **3.3.3 Security Awareness Program (Score 3)**
 
-PT Ecomindo menjalankan program security awareness melalui two-way communication namun belum mencapai frekuensi dan cakupan penuh untuk semua karyawan:
+PT Ecomindo menjalankan program kesadaran keamanan melalui komunikasi dua arah namun belum mencapai frekuensi dan cakupan penuh untuk semua karyawan:
 
 **Program Scope:**
-- Target: ALL employees, contractors, third parties
-- Format: Two-way communication (tatap muka, e-learning, online training, workshops)
-- Frequency: Dalam proses untuk mencapai minimum 1 kali per tahun mandatory training
+- Target: SEMUA karyawan, kontraktor, pihak ketiga
+- Format: Komunikasi dua arah (tatap muka, e-learning, pelatihan online, lokakarya)
+- Frekuensi: Dalam proses untuk mencapai minimum 1 kali per tahun pelatihan wajib
 
 **Mandatory Annual Training:**
-- Duration: Minimum 1-2 jam per tahun per employee - belum konsisten
-- Content: Covers 10 areas keamanan informasi yang relevan dengan role
-- Participants: Sebagian besar employees, contractors - dalam peningkatan
-- Records: Attendance, completion certificates disimpan sebagian
+- Durasi: Minimum 1-2 jam per tahun per karyawan - belum konsisten
+- Konten: Meliputi 10 area keamanan informasi yang relevan dengan peran
+- Peserta: Sebagian besar karyawan, kontraktor - dalam peningkatan
+- Rekaman: Kehadiran, sertifikat penyelesaian disimpan sebagian
 
 **Ongoing Awareness Activities** (dalam tahun):
-- Monthly newsletters/communications pada security topics - dalam perencanaan
-- Quarterly workshops/seminars (live or online) - belum teratur
-- Email alerts tentang latest threats/incidents - ad hoc
-- Desk-side security tips - terbatas
-- Phishing simulation exercises - dalam perencanaan
+- Buletin bulanan/komunikasi tentang topik keamanan - dalam perencanaan
+- Lokakarya triwulanan/seminar (langsung atau online) - belum teratur
+- Peringatan email tentang ancaman terbaru/insiden - ad hoc
+- Tips keamanan di samping meja - terbatas
+- Latihan simulasi phishing - dalam perencanaan
 
-**Catatan Status:** Program awareness telah diterapkan melalui two-way communication, namun frekuensi training tahunan dan ongoing activities masih perlu diperbaiki untuk mencapai implementasi komprehensif.
+**Catatan Status:** Program awareness telah diterapkan melalui komunikasi dua arah, namun frekuensi pelatihan tahunan dan aktivitas berkelanjutan masih perlu diperbaiki untuk mencapai implementasi komprehensif.
 
 ### 3.4 Tanggung Jawab
 
-- **ISM (Information Security Manager)**: Lead awareness program, develop content
-- **HR**: Support training execution, maintain records
-- **All Managers**: Ensure team attends training
-- **All Employees**: Attend mandatory training, apply security practices
+- **ISM (Information Security Manager)**: Memimpin program awareness, mengembangkan konten
+- **HR**: Mendukung pelaksanaan pelatihan, memelihara rekaman
+- **All Managers**: Memastikan tim menghadiri pelatihan
+- **All Employees**: Menghadiri pelatihan wajib, menerapkan praktik keamanan
 
 ### 3.5 Frequency & Review
 
-- Team structure review: Annually
-- Job descriptions: Update setiap ada perubahan role
-- Awareness training: Mandatory 1x per tahun untuk semua
+- Tinjauan struktur tim: Setiap tahun
+- Deskripsi jabatan: Update setiap ada perubahan peran
+- Pelatihan awareness: Wajib 1x per tahun untuk semua
 - Ongoing activities: Regular sepanjang tahun
 
 ---
@@ -615,15 +583,15 @@ PT Ecomindo menjalankan program security awareness melalui two-way communication
 
 ### 4.1 Tujuan Kebijakan
 
-Kebijakan ini memastikan bahwa PT Ecomindo menerapkan kontrol keamanan sepanjang employment lifecycle, termasuk recruitment, NDA, dan termination, untuk semua karyawan dan contractors.
+Kebijakan ini memastikan bahwa PT Ecomindo menerapkan kontrol keamanan sepanjang siklus hidup kepegawaian, termasuk rekrutmen, NDA, dan terminasi, untuk semua karyawan dan kontraktor.
 
 ### 4.2 Ruang Lingkup
 
 Kebijakan ini mencakup:
-- Proses rekrutmen dan background check
-- NDA dan security agreements
-- Termination dan access revocation
-- Contractor dan sub-contractor management
+- Proses rekrutmen dan pemeriksaan latar belakang
+- NDA dan perjanjian keamanan
+- Terminasi dan pencabutan akses
+- Pengelolaan kontraktor dan sub-kontraktor
 
 ### 4.3 Requirement 
 
@@ -671,59 +639,59 @@ PT Ecomindo memiliki mekanisme pengelolaan kepegawaian yang komprehensif:
 
 #### **4.3.2 NDA (Non-Disclosure Agreement) & Security Agreement**
 
-PT Ecomindo memiliki formal NDA policy:
+PT Ecomindo memiliki kebijakan NDA formal:
 
 **Personnel NDA Requirements:**
-- WAJIB signed oleh SEMUA employees sebelum atau pada hari first day
-- WAJIB signed oleh SEMUA contractors sebelum mulai bekerja
-- NDA harus mencakup confidentiality data sensitif perusahaan dengan:
-  - Clause tentang confidentiality data perusahaan
-  - Clause tentang prohibited sharing data ke pihak lain
-  - Termination clause ketika employee/contractor leave
+- WAJIB ditandatangani oleh SEMUA karyawan sebelum atau pada hari pertama
+- WAJIB ditandatangani oleh SEMUA kontraktor sebelum mulai bekerja
+- NDA harus mencakup kerahasiaan data sensitif perusahaan dengan:
+  - Klausa tentang kerahasiaan data perusahaan
+  - Klausa tentang dilarang membagikan data ke pihak lain
+  - Klausa terminasi ketika karyawan/kontraktor keluar
 
-- NDA Format: Professional legal document sesuai standar perusahaan
-- Distribution: Copy untuk employee, copy untuk HR file
-- Documentation:
-  - Master list semua signed NDAs
-  - Backup/scans digital dari signed documents
-  - Index by employee name, position, assignment date
+- Format NDA: Dokumen hukum profesional sesuai standar perusahaan
+- Distribusi: Salinan untuk karyawan, salinan untuk file HR
+- Dokumentasi:
+  - Daftar utama semua NDA yang ditandatangani
+  - Cadangan/scan digital dari dokumen yang ditandatangani
+  - Diindeks berdasarkan nama karyawan, posisi, tanggal penugasan
 
 **Security Agreements:**
-- Terpisah atau combined dengan NDA, clear statement tentang:
-  - Security obligations (comply dengan policies)
-  - Confidentiality requirements
-  - Password protection responsibilities
-  - Incident reporting obligations
-  - Consequences for breach (up to termination)
+- Terpisah atau digabungkan dengan NDA, pernyataan jelas tentang:
+  - Kewajiban keamanan (mematuhi kebijakan)
+  - Persyaratan kerahasiaan
+  - Tanggung jawab perlindungan kata sandi
+  - Kewajiban pelaporan insiden
+  - Konsekuensi untuk pelanggaran (hingga terminasi)
 
 **For External Parties/Vendor:**
-- Partnership agreement MUST include security requirements
-- NDA signed before any access ke data/systems
-- Contract clear tentang data protection dan liability
+- Perjanjian kemitraan HARUS mencakup persyaratan keamanan
+- NDA ditandatangani sebelum akses ke data/sistem
+- Kontrak jelas tentang perlindungan data dan tanggung jawab
 
 #### **4.3.3 Documentation & Records**
 
-- All HR security documentation HARUS di-maintain dengan formal records:
-  - Recruitment policies & background check procedures
-  - Signed background check reports untuk setiap employee
-  - All signed NDAs (organized & indexed)
-  - Termination checklists & exit clearance forms
-  - Contractor master list dengan contract copies
-  - Record of access revocation (timestamp, who did it)
+- Semua dokumentasi keamanan HR HARUS dipelihara dengan rekaman formal:
+  - Kebijakan rekrutmen dan prosedur pemeriksaan latar belakang
+  - Laporan pemeriksaan latar belakang yang ditandatangani untuk setiap karyawan
+  - Semua NDA yang ditandatangani (terorganisir dan diindeks)
+  - Daftar periksa terminasi dan formulir izin keluar
+  - Daftar utama kontraktor dengan salinan kontrak
+  - Rekaman pencabutan akses (timestamp, siapa yang melakukannya)
 
 ### 4.4 Tanggung Jawab
 
-- **HR Department**: Lead recruitment, maintain NDA copies, coordinate termination
-- **ISM**: Approval untuk recruitment policy, audit NDA compliance
-- **IT/Admin**: Execute access revocation di systems
-- **Managers**: Notify HR of terminations promptly
+- **HR Department**: Memimpin rekrutmen, memelihara salinan NDA, mengkoordinasikan terminasi
+- **ISM**: Persetujuan untuk kebijakan rekrutmen, audit kepatuhan NDA
+- **IT/Admin**: Melaksanakan pencabutan akses di sistem
+- **Managers**: Memberitahu HR tentang terminasi segera
 
 ### 4.5 Frequency & Review
 
-- Background checks: For every recruitment
-- NDA management: Ongoing, monitored quarterly
-- Termination process: For every termination
-- Policy review: Annually
+- Pemeriksaan latar belakang: Untuk setiap rekrutmen
+- Pengelolaan NDA: Berkelanjutan, dipantau triwulanan
+- Proses terminasi: Untuk setiap terminasi
+- Tinjauan kebijakan: Setiap tahun
 
 ---
 
@@ -926,26 +894,26 @@ PT Ecomindo menetapkan kebijakan remote access dengan strong security:
   - Review: Monthly review dari access logs untuk anomalies
 
 **D. Certificate & Key Management**
-- VPN certificates MUST be:
-  - Unique per user
-  - Strong encryption (RSA 2048-bit minimum)
-  - Rotated annually
-  - Revoked upon user termination
-  - Backed up securely
+- Sertifikat VPN HARUS:
+  - Unik per pengguna
+  - Enkripsi kuat (RSA 2048-bit minimum)
+  - Diputar setiap tahun
+  - Dicabut saat terminasi pengguna
+  - Dicadangkan dengan aman
 
 ### 6.4 Tanggung Jawab
 
-- **ISM**: Design IAM policy, approve access requests, oversee compliance
-- **IAM/Security Team**: Execute user lifecycle, conduct access reviews
-- **IT Department**: Implement in systems, maintain infrastructure
-- **All Managers**: Request access, participate in access review
+- **ISM**: Merancang kebijakan IAM, menyetujui permintaan akses, mengawasi kepatuhan
+- **IAM/Security Team**: Melaksanakan siklus hidup pengguna, melakukan tinjauan akses
+- **IT Department**: Mengimplementasikan di sistem, memelihara infrastruktur
+- **All Managers**: Meminta akses, berpartisipasi dalam tinjauan akses
 
 ### 6.5 Frequency & Review
 
-- User lifecycle: As needed (prompt)
-- Access review: Quarterly (minimum) + annually comprehensive
-- Policy review: Annually
-- VPN monitoring: Ongoing, reviewed monthly
+- Siklus hidup pengguna: Sesuai kebutuhan (segera)
+- Tinjauan akses: Triwulanan (minimum) + tahunan komprehensif
+- Tinjauan kebijakan: Setiap tahun
+- Pemantauan VPN: Berkelanjutan, ditinjau bulanan
 
 ---
 
