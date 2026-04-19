@@ -369,10 +369,10 @@ PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar b
 
 ### 1.4 Tanggung Jawab
 
-- **ISM (Manajer Keamanan Informasi)**: Memastikan sertifikasi, audit, dan compliance maintenance
-- **Risk Management Team**: Conduct risk assessments, maintain audit schedule
-- **IT Department**: Implement security requirements, maintain documentation
-- **Management**: Approve audit scope, review audit findings, approve remediation budget
+- **ISM (Manajer Keamanan Informasi)**: Memastikan sertifikasi, audit, dan pemeliharaan kepatuhan
+- **Risk Management Team**: Melakukan penilaian risiko, memelihara jadwal audit
+- **IT Department**: Menerapkan persyaratan keamanan, memelihara dokumentasi
+- **Management**: Menyetujui ruang lingkup audit, meninjau temuan audit, menyetujui anggaran remediasi
 
 ### 1.5 Frequency & Review
 
@@ -459,10 +459,10 @@ PT Ecomindo memiliki kebijakan security baseline yang disahkan formal dan direvi
 
 ### 2.4 Tanggung Jawab
 
-- **ISM (Information Security Manager)**: Draft dan maintain kebijakan, approve exceptions
-- **IT Department**: Implement baselines, maintain documentation
-- **HR**: Facilitate training execution
-- **All Employees**: Comply dengan policies, attend training
+- **ISM (Manajer Keamanan Informasi)**: Merancang dan memelihara kebijakan, menyetujui pengecualian
+- **IT Department**: Menerapkan baseline, memelihara dokumentasi
+- **HR**: Memfasilitasi pelaksanaan pelatihan
+- **All Employees**: Mematuhi kebijakan, menghadiri pelatihan
 
 ### 2.5 Frequency & Review
 
@@ -704,101 +704,101 @@ Kebijakan ini berlaku untuk:
 PT Ecomindo menetapkan 4 komponen WAJIB dalam kebijakan pengamanan data:
 
 **A. Data Classification**
-- ALL data HARUS diklasifikasikan ke dalam salah satu level:
+- Semua data harus diklasifikasikan ke dalam salah satu level:
   1. **Public** - Data yang dapat dibagikan ke publik (marketing materials, public info)
   2. **Internal** - Data internal only (policies, non-sensitive memos)
   3. **Confidential** - Sensitive business data (financial, strategic plans)
   4. **Restricted** - Highest sensitivity (personal data, security credentials, data sensitif perusahaan)
 
-- Setiap data harus memiliki label/tag dengan classification
-- Owners yang berbeda untuk setiap level
-- Handling restrictions yang berbeda sesuai classification
-- Classification policy formal dan terdokumentasi
+- Setiap data harus memiliki label/tag dengan klasifikasi
+- Pemilik yang berbeda untuk setiap level
+- Pembatasan penanganan yang berbeda sesuai klasifikasi
+- Kebijakan klasifikasi formal dan terdokumentasi
 
 **B. Encryption Standards**
-- **Data-at-Transit**: ALL sensitive data (Confidential/Restricted) HARUS encrypted ketika transit over networks
+- **Data-at-Transit**: Semua data sensitif (Confidential/Restricted) harus dienkripsi saat transit melalui jaringan
   - Minimum: TLS 1.2 atau lebih baru
-  - Untuk HTTPS: Force HTTPS, redirect HTTP to HTTPS
+  - Untuk HTTPS: Paksa HTTPS, redirect HTTP ke HTTPS
   - For APIs: OAuth 2.0 atau JWT with HTTPS
-  - For VPN: Use strong encryption (AES-256 atau equivalent)
+  - For VPN: Gunakan enkripsi kuat (AES-256 atau equivalent)
 
-- **Data-at-Rest**: ALL sensitive data stored on disk/database HARUS encrypted
+- **Data-at-Rest**: Semua data sensitif yang disimpan di disk/database harus dienkripsi
   - Minimum: AES-256 encryption
-  - For databases: Use database-level encryption atau full-disk encryption
-  - For files: Use file-level encryption (BitLocker, FileVault, LUKS)
-  - Key management: Encryption keys stored securely, not hardcoded
-  - Key rotation: Minimum annually
+  - For databases: Gunakan database-level encryption atau full-disk encryption
+  - For files: Gunakan file-level encryption (BitLocker, FileVault, LUKS)
+  - Key management: Encryption keys disimpan dengan aman, tidak hardcoded
+  - Key rotation: Minimal tahunan
   - Documentation: Encryption audit trail, configuration documentation
 
 **C. Secure Disposal of Devices**
-- Procedures formal untuk disposal/decommissioning devices:
-  - Before disposal: All data HARUS securely wiped menggunakan:
+- Prosedur formal untuk disposal/decommissioning devices:
+  - Before disposal: Semua data harus dihapus secara aman menggunakan:
     - NIST SP 800-88 compliant tool (e.g., Eraser, DBAN)
     - Or vendor secure erase feature
     - Or physical destruction (shredding, incineration)
   - Verification: Certificate of destruction untuk setiap device
-  - Log: Maintain inventory of disposed devices dengan dates
+  - Log: Pelihara inventaris perangkat yang dibuang dengan tanggal
 
 - Applicable untuk: Servers, workstations, laptops, USB drives, external drives, SSD, HDD
 
 **D. Removable Media Protection**
 - Controls untuk removable media (USB drives, external USB, SD cards):
   1. **Usage Policy**: 
-     - Removable media use HARUS approved terlebih dahulu
-     - Only approved devices dapat digunakan
-     - Personal USB drives NOT allowed (unless exceptional)
-  2. **Encryption**: All removable media carrying sensitive data HARUS encrypted
-  3. **Monitoring**: Use technical controls untuk detect/restrict USB usage:
+     - Penggunaan removable media harus disetujui terlebih dahulu
+     - Hanya perangkat yang disetujui dapat digunakan
+     - Personal USB drives tidak diizinkan (kecuali pengecualian)
+  2. **Encryption**: Semua removable media yang membawa data sensitif harus dienkripsi
+  3. **Monitoring**: Gunakan kontrol teknis untuk mendeteksi/membatasi penggunaan USB:
      - Endpoint DLP (Data Loss Prevention) software
      - USB device whitelisting
      - Monitoring logs of USB connections
-  4. **Disposal**: Same secure disposal process sebagai devices lainnya
+  4. **Disposal**: Proses pembuangan aman yang sama sebagai perangkat lainnya
 
 #### **5.3.2 Cloud Data Security Policy (PaaS/SaaS/IaaS)**
 
 Untuk organisasi yang menggunakan cloud services, kebijakan ini mencakup 6 components:
 
-**A. Data Classification** - Same as 5.3.1.A untuk cloud data
+**A. Data Classification** - Sama seperti 5.3.1.A untuk cloud data
 
 **B. Encryption**
-- Data-at-transit encrypted (TLS 1.2+) to/from cloud provider
-- Data-at-rest encrypted in cloud storage
-- Encryption keys: Either customer managed atau verified cloud provider managed
-- Backup encryption: All cloud backups harus encrypted
+- Data-at-transit dienkripsi (TLS 1.2+) ke/dari cloud provider
+- Data-at-rest dienkripsi di cloud storage
+- Encryption keys: Baik dikelola pelanggan atau dikelola penyedia cloud yang diverifikasi
+- Backup encryption: Semua cloud backups harus dienkripsi
 
 **C. Personal Data & PII Protection**
-- Requirement: Identify dan protect PII (names, emails, phone, addresses, SSN, etc.)
-- Encryption: PII MUST be encrypted
-- Masking: For development/testing, PII must be masked/anonymized
-- Privacy: Comply dengan data privacy regulations (GDPR, PDPA, etc.)
+- Requirement: Identifikasi dan lindungi PII (names, emails, phone, addresses, SSN, etc.)
+- Encryption: PII harus dienkripsi
+- Masking: Untuk development/testing, PII harus ditutupi/dianonimkan
+- Privacy: Patuhi regulasi privasi data (GDPR, PDPA, etc.)
 
 **D. Backup & Restore**
-- Cloud provider HARUS provide:
-  - Automated backup frequency (minimum daily)
+- Cloud provider harus menyediakan:
+  - Automated backup frequency (minimal harian)
   - Multiple geographic locations untuk redundancy
   - Clear RTO/RPO SLA dalam contract
-  - Test restore capability regularly (minimum quarterly)
+  - Test restore capability secara teratur (minimal triwulanan)
   - Encryption untuk backups
 
 **E. Secure Disposal**
-- Clear policies untuk data deletion from cloud:
-  - When contract ends: All data HARUS be deleted or returned
-  - Timeline: Deletion within 30-90 days (per contract)
+- Kebijakan jelas untuk penghapusan data dari cloud:
+  - When contract ends: Semua data harus dihapus atau dikembalikan
+  - Timeline: Penghapusan dalam 30-90 hari (per contract)
   - Verification: Certificate of deletion
-  - Residual data check: Ensure no copies remain di cloud provider systems
+  - Residual data check: Pastikan tidak ada salinan yang tersisa di sistem penyedia cloud
 
 **F. Secure Deletion from Cache**
-- Cloud provider HARUS securely delete:
-  - Cache data ketika object deleted
-  - Temporary files setelah operations
-  - Logs retention sesuai policy (not indefinitely)
-  - Documentation: Retention policy clear di contract
+- Cloud provider harus menghapus secara aman:
+  - Cache data ketika objek dihapus
+  - Temporary files setelah operasi
+  - Logs retention sesuai kebijakan (tidak selamanya)
+  - Documentation: Kebijakan retention jelas dalam kontrak
 
 ### 5.4 Tanggung Jawab
 
-- **Data Owner**: Classify data, approve disposal
-- **IT Department**: Implement encryption, execute disposal, monitor compliance
-- **ISM**: Approve data handling policy, audit compliance
+- **Data Owner**: Klasifikasikan data, setujui pembuangan
+- **IT Department**: Terapkan enkripsi, jalankan pembuangan, pantau kepatuhan
+- **ISM**: Setujui kebijakan penanganan data, audit kepatuhan
 
 ### 5.5 Frequency & Review
 
@@ -818,7 +818,7 @@ Kebijakan ini mengatur pengelolaan akses pengguna dan identitas untuk semua sist
 ### 6.2 Ruang Lingkup
 
 Kebijakan ini berlaku untuk:
-- Semua user di sistem organisasi
+- Semua pengguna di sistem organisasi
 - Semua sistem informasi dan cloud services
 - Semua akses eksternal (remote, VPN, API)
 
@@ -829,59 +829,59 @@ Kebijakan ini berlaku untuk:
 PT Ecomindo menerapkan IAM berbasis least privilege dengan review berkala dan dokumentasi formal.
 
 **Kebijakan User Account Lifecycle Management:**
-- User creation, modification, dan deactivation dilaksanakan sesuai kebijakan formal
+- Pembuatan, modifikasi, dan penonaktifan akun pengguna dilakukan sesuai kebijakan formal
 - Prinsip least privilege diterapkan pada semua akun
-- Review akses dilakukan secara berkala
-- Dokumentasi formal dari access review harus lengkap
+- Tinjauan akses dilakukan secara berkala
+- Dokumentasi formal dari tinjauan akses harus lengkap
 
 #### **6.3.2 Cloud Provider IAM**
 
 Untuk cloud services (AWS, Azure, GCP), kebijakan IAM khusus diterapkan:
 
 **A. User Management**
-- Same lifecycle management sebagai on-premise (creation, changes, disabling)
-- Cloud-specific: Service accounts untuk applications, tidak human users
+- Manajemen siklus hidup sama seperti on-premise (pembuatan, perubahan, penonaktifan)
+- Spesifik cloud: Akun layanan untuk aplikasi, bukan pengguna manusia
 - MFA WAJIB untuk semua human cloud accounts
 
 **B. MFA for Administration**
-- ALL admin/privileged accounts HARUS menggunakan MFA:
+- Semua akun admin/privileged harus menggunakan MFA:
   - MFA type: TOTP (Time-based One-Time Password) atau hardware token
   - Providers: Google Authenticator, Microsoft Authenticator, Yubikey, SMS (last resort - less secure)
-  - Backup codes: Generate & store securely untuk account recovery
-  - Enforcement: MFA required BEFORE access granted
+  - Backup codes: Hasilkan dan simpan dengan aman untuk pemulihan akun
+  - Enforcement: MFA diperlukan SEBELUM akses diberikan
 
 **C. Separation of Duties**
-- Admin accounts HARUS separated by organization/function:
-  - Contoh: Separate account untuk AWS Billing vs AWS Security vs AWS Development
-  - Benefit: Prevent single person dari controlling everything
-  - Implementation: Different account IDs untuk different privileges
-  - Documentation: Clear matrix dari который admin account has what privileges
+- Akun admin harus dipisahkan berdasarkan organisasi/fungsi:
+  - Contoh: Akun terpisah untuk AWS Billing vs AWS Security vs AWS Development
+  - Benefit: Mencegah satu orang mengontrol segalanya
+  - Implementation: ID akun berbeda untuk privilege berbeda
+  - Documentation: Matriks jelas dari akun admin mana yang memiliki privilege apa
 
 #### **6.3.3 Remote Access & VPN**
 
-PT Ecomindo menetapkan kebijakan remote access dengan strong security:
+PT Ecomindo menetapkan kebijakan akses jarak jauh dengan keamanan kuat:
 
 **A. VPN Requirement**
-- ALL remote access to company systems HARUS go through VPN
-- Exception: Only public-facing services (web portal, email access via webmail)
-- Current standard: VPN certificate-based authentication PLUS username/password PLUS MFA
+- Semua akses jarak jauh ke sistem perusahaan harus melalui VPN
+- Exception: Hanya layanan yang menghadap publik (portal web, akses email melalui webmail)
+- Current standard: Otentikasi berbasis sertifikat VPN PLUS nama pengguna/kata sandi PLUS MFA
 
 **B. Two-Factor Authentication (2FA)**
-- WAJIB untuk ALL remote access, including VPN:
-  1. Something you know: Username + Password (strong password policy applies)
-  2. Something you have: One-time code dari authenticator app OR hardware token
+- Wajib untuk semua akses jarak jauh, termasuk VPN:
+  1. Something you know: Nama pengguna + Kata sandi (kebijakan kata sandi kuat berlaku)
+  2. Something you have: Kode satu kali dari aplikasi autentikator ATAU token perangkat keras
 - Providers: Google Authenticator, Microsoft Authenticator, Yubikey, SMS (last resort - less secure)
-- Backup: Multiple 2FA methods registered untuk account recovery
+- Backup: Beberapa metode 2FA terdaftar untuk pemulihan akun
 
 **C. Monitoring**
-- VPN access HARUS dimonitored & logged:
-  - Log captures: User ID, IP address, timestamp, session duration, data transferred
-  - Centralized logging: SIEM atau logging server
-  - Alerts: Alert jika unusual access pattern (e.g., outside business hours, unusual locations)
-  - Review: Monthly review dari access logs untuk anomalies
+- Akses VPN harus dipantau dan dicatat:
+  - Pencatatan log: ID pengguna, alamat IP, timestamp, durasi sesi, data yang ditransfer
+  - Pencatatan terpusat: SIEM atau server pencatatan
+  - Alerts: Peringatan jika pola akses tidak biasa (misalnya, di luar jam kerja, lokasi tidak biasa)
+  - Review: Tinjauan bulanan dari log akses untuk anomali
 
 **D. Certificate & Key Management**
-- Sertifikat VPN HARUS:
+- Sertifikat VPN harus:
   - Unik per pengguna
   - Enkripsi kuat (RSA 2048-bit minimum)
   - Diputar setiap tahun
@@ -914,9 +914,9 @@ Kebijakan ini mengatur keamanan fisik akses ke ruangan kerja dan datacenter untu
 
 Kebijakan ini meliputi:
 - Ruangan kerja (offices)
-- Server room / data center
-- Tempat penyimpanan equipment
-- All facilities milik atau digunakan organisasi
+- Server room
+- Tempat penyimpanan peralatan
+- Semua fasilitas milik atau digunakan organisasi
 
 ### 7.3 Kebijakan Utama
 
@@ -925,72 +925,31 @@ Kebijakan ini meliputi:
 PT Ecomindo mengimplementasikan kontrol akses fisik untuk lingkungan kerja dan menetapkan persyaratan monitoring fisik.
 
 **A. Access Card / Biometric**
-- Access control system harus diterapkan dengan access card atau biometric
-- Entry ke area harus dicatat secara otomatis
-- Permissions harus dibedakan untuk setiap area kerja
-- Review kartu akses dilakukan secara berkala
+- Sistem kontrol akses harus diterapkan dengan kartu akses atau biometrik
+- Masuk ke area harus dicatat secara otomatis
+- Izin harus dibedakan untuk setiap area kerja
+- Tinjauan kartu akses dilakukan secara berkala
 
 **B. CCTV Monitoring**
 - CCTV harus dipasang di area kerja yang kritis
-- Kamera harus merekam semua entry/exit dan menyimpan rekaman yang dapat diakses untuk investigasi
-- Implementasi CCTV harus mencakup coverage area yang memadai
+- Kamera harus merekam semua masuk/keluar dan menyimpan rekaman yang dapat diakses untuk investigasi
+- Implementasi CCTV harus mencakup cakupan area yang memadai
 - Retensi rekaman CCTV harus sesuai kebijakan keamanan fisik
 
 **Kebijakan Pengawasan:**
-- Access card dan CCTV digunakan bersama-sama untuk kontrol akses fisik yang komprehensif
-- Keabsahan akses diverifikasi dengan rekaman elektronik dan review berkala
-
-#### **7.3.2 Secure Areas - Datacenter / Server Room**
-
-PT Ecomindo mengimplementasikan kontrol akses ke datacenter/server room dengan 3 komponen WAJIB:
-
-**A. Access Card / Biometric**
-- Same requirements sebagai 7.3.1.A
-- STRICTER enforcement: Only authorized personnel (IT staff, ISM, external support)
-- Badge: Different color/marking untuk datacenter access untuk easy identification
-- Dual authentication: Card PLUS PIN untuk highest security
-
-**B. CCTV Monitoring**
-- CCTV mandatory di datacenter:
-  - Multiple cameras untuk 360° coverage
-  - Record semua entries/exits
-  - Storage: Minimum 90 days (longer retention - critical area)
-  - Accessible: Recordings dapat diakses untuk investigation jika incidents
-
-**C. Logbook**
-- Physical logbook WAJIB dipertahankan untuk ALL datacenter access:
-  1. Format: Hardcopy logbook atau electronic system
-  2. Information per entry:
-     - Date & time entry
-     - Name of person
-     - Purpose of visit
-     - Supervisor/approver
-     - Time exit
-  3. Review: Logbook HARUS di-review:
-     - Weekly: Check untuk unauthorized entries, unusual times
-     - Monthly: Formal review & sign-off dari datacenter manager
-     - Documented: Review records filed
-
-- Purpose: Double verification - timestamp dari CCTV + logbook manual untuk accuracy
-
-**Optional Enhancements:**
-- Environmental controls (temperature, humidity monitoring)
-- Fire suppression systems
-- Redundant power supplies
-- Cable management & labeling
+- Kartu akses dan CCTV digunakan bersama-sama untuk kontrol akses fisik yang komprehensif
+- Keabsahan akses diverifikasi dengan rekaman elektronik dan tinjauan berkala
 
 ### 7.4 Tanggung Jawab
 
-- **Facilities Manager**: Access card system maintenance, CCTV deployment
-- **ISM**: Approve access levels, review logs
-- **IT Department**: Datacenter access management, logbook review
+- **Facilities Manager**: Pemeliharaan sistem kartu akses, penerapan CCTV
+- **ISM**: Menyetujui tingkat akses, meninjau log
 
 ### 7.5 Frequency & Review
 
-- Access card review: Quarterly
-- CCTV review: Ongoing, monthly summary
-- Logbook review: Weekly checks, monthly formal review
-- Policy review: Annually
+- Tinjauan kartu akses: Triwulanan
+- Tinjauan CCTV: Berkelanjutan, ringkasan bulanan
+- Tinjauan kebijakan: Tahunan
 
 ---
 
@@ -1003,8 +962,8 @@ Kebijakan ini mengatur keamanan operasional sistem dan infrastruktur IT, termasu
 ### 8.2 Ruang Lingkup
 
 Kebijakan ini berlaku untuk:
-- Semua servers, workstations, network devices
-- Semua production, staging, dan development environments
+- Semua server, workstation, perangkat jaringan
+- Semua environment produksi, staging, dan development
 - Semua security monitoring dan incident management
 
 ### 8.3 Requirement 
@@ -1014,332 +973,332 @@ Kebijakan ini berlaku untuk:
 PT Ecomindo menerapkan 3 komponen security configuration WAJIB:
 
 **A. Password Management**
-- Password policy formal HARUS diterapkan untuk SEMUA systems:
-  1. **Minimum requirements**:
-     - Minimum length: 12 characters (15+ recommended)
-     - Complexity: Mix of uppercase, lowercase, numbers, symbols
-     - Age: Expire every 90 days (require change)
-     - History: Cannot reuse last 5 passwords
-     - Lockout: After 3-5 failed attempts, account locked untuk 30 minutes
+- Kebijakan kata sandi formal harus diterapkan untuk semua sistem:
+  1. **Persyaratan minimum**:
+     - Panjang minimum: 12 karakter (15+ direkomendasikan)
+     - Kompleksitas: Campuran huruf besar, kecil, angka, simbol
+     - Usia: Kedaluwarsa setiap 90 hari (memerlukan perubahan)
+     - Riwayat: Tidak dapat menggunakan ulang 5 kata sandi terakhir
+     - Penguncian: Setelah 3-5 upaya gagal, akun dikunci selama 30 menit
 
-  2. **Password management for service accounts**:
-     - Service account passwords MUST be securely stored (not hardcoded)
-     - Use: Password vault/manager (HashiCorp Vault, CyberArk, etc.)
-     - Rotation: Service account passwords rotated quarterly minimum
-     - Audit: All password changes logged
+  2. **Manajemen kata sandi untuk akun layanan**:
+     - Kata sandi akun layanan harus disimpan dengan aman (tidak hardcoded)
+     - Gunakan: Vault/manajer kata sandi (HashiCorp Vault, CyberArk, dll.)
+     - Rotasi: Kata sandi akun layanan dirotasi minimal triwulanan
+     - Audit: Semua perubahan kata sandi dicatat
 
-  3. **Special/Administrative Accounts**:
-     - Admin/root/superuser passwords: MUST be unique per system
-     - Storage: Securely stored in password vault ONLY
-     - Access: Limited to only ISM & authorized senior IT
-     - Rotation: Every 90 days
-     - Audit: Every access logged and reviewed quarterly
+  3. **Akun Khusus/Administratif**:
+     - Kata sandi admin/root/superuser: Harus unik per sistem
+     - Penyimpanan: Disimpan dengan aman di vault kata sandi SAJA
+     - Akses: Terbatas hanya untuk ISM & IT senior yang berwenang
+     - Rotasi: Setiap 90 hari
+     - Audit: Setiap akses dicatat dan ditinjau triwulanan
 
   4. **Multi-Factor Authentication (MFA)**:
-     - MFA WAJIB untuk: All administrators, All remote access, All cloud access
-     - MFA optional untuk: Regular employees (recommended)
-     - Types: TOTP (Google Authenticator), hardware tokens (preferred)
+     - MFA wajib untuk: Semua administrator, Semua akses jarak jauh, Semua akses cloud
+     - MFA opsional untuk: Karyawan reguler (direkomendasikan)
+     - Jenis: TOTP (Google Authenticator), token perangkat keras (lebih disukai)
 
 **B. Hardening**
-- Operating system hardening WAJIB sesuai CIS Benchmarks:
+- Pengerasan sistem operasi wajib sesuai CIS Benchmarks:
 
-  **For Windows Servers:**
-  - Minimal services running (disable unnecessary services)
-  - Windows Firewall: Enabled & configured dengan specific rules
-  - Windows Defender/antivirus: Enabled & updated
-  - Patch management: Monthly security patch applied ke all systems
-  - Baseline image: Create & maintain secure baseline OS image
-  - Configuration: Document all OS configurations & settings
-  - Audit: Regular configuration audit vs baseline
+  **Untuk Server Windows:**
+  - Layanan minimal berjalan (nonaktifkan layanan yang tidak perlu)
+  - Windows Firewall: Diaktifkan & dikonfigurasi dengan aturan spesifik
+  - Windows Defender/antivirus: Diaktifkan & diperbarui
+  - Manajemen patch: Patch keamanan bulanan diterapkan ke semua sistem
+  - Gambar baseline: Buat & pelihara gambar OS baseline yang aman
+  - Konfigurasi: Dokumentasikan semua konfigurasi & pengaturan OS
+  - Audit: Audit konfigurasi reguler vs baseline
 
-  **For Linux Servers:**
-  - Same principles sebagai Windows
-  - Use AIDE/Tripwire untuk file integrity monitoring
-  - SSH hardening: SSH key-based authentication (no passwords), non-standard port
-  - Sudoers: Restricted sudo access dengan no-password options disabled
-  - SELinux/AppArmor: Enabled dengan restrictive policies
-  - Auditing: auditd enabled untuk all command logging
+  **Untuk Server Linux:**
+  - Prinsip yang sama seperti Windows
+  - Gunakan AIDE/Tripwire untuk pemantauan integritas file
+  - Pengerasan SSH: Otentikasi berbasis kunci SSH (tidak ada kata sandi), port non-standar
+  - Sudoers: Akses sudo terbatas dengan opsi tanpa kata sandi dinonaktifkan
+  - SELinux/AppArmor: Diaktifkan dengan kebijakan restriktif
+  - Audit: auditd diaktifkan untuk semua pencatatan perintah
 
-  **For Network Devices:**
-  - Access control lists (ACLs): Restrict traffic ke only required ports/protocols
-  - Logging: All configuration changes logged
-  - Management access: VPN/Bastion host required (no direct internet access)
-  - Firmware: Updated to latest stable version
-  - Credentials: Changed from defaults, stored securely
+  **Untuk Perangkat Jaringan:**
+  - Daftar kontrol akses (ACLs): Batasi lalu lintas ke hanya port/protokol yang diperlukan
+  - Pencatatan: Semua perubahan konfigurasi dicatat
+  - Akses manajemen: VPN/Host bastion diperlukan (tidak ada akses internet langsung)
+  - Firmware: Diperbarui ke versi stabil terbaru
+  - Kredensial: Diubah dari default, disimpan dengan aman
 
-  **For Databases:**
-  - Minimal services: Only required listeners enabled
-  - Database accounts: Unique credentials, strong passwords
-  - Network: Database not directly accessible from internet (firewall, VPN required)
-  - Auditing: Enabled untuk all data access (who, what, when)
-  - Backup: Regular automated backups with encryption
-  - Patch: Apply vendor security patches monthly
+  **Untuk Database:**
+  - Layanan minimal: Hanya listener yang diperlukan diaktifkan
+  - Akun database: Kredensial unik, kata sandi kuat
+  - Jaringan: Database tidak dapat diakses langsung dari internet (firewall, VPN diperlukan)
+  - Audit: Diaktifkan untuk semua akses data (siapa, apa, kapan)
+  - Backup: Backup otomatis reguler dengan enkripsi
+  - Patch: Terapkan patch keamanan vendor bulanan
 
 **C. Antivirus & Patch Management**
-- Antivirus WAJIB installed & maintained:
-  - All endpoints (workstations, servers): Antivirus/EDR endpoint protection
-  - Updated: Signature/definitions updated daily minimum
-  - Scans: Full system scan quarterly, daily quick scans
-  - Quarantine: Infected files isolated & reported
-  - Monitoring: Antivirus alerts monitored centrally
+- Antivirus wajib diinstal & dipelihara:
+  - Semua endpoint (workstation, server): Perlindungan endpoint antivirus/EDR
+  - Diperbarui: Tanda tangan/definisi diperbarui minimal harian
+  - Pemindaian: Pemindaian sistem penuh triwulanan, pemindaian cepat harian
+  - Karantina: File terinfeksi diisolasi & dilaporkan
+  - Pemantauan: Peringatan antivirus dipantau secara terpusat
 
-- Patch management WAJIB formal process:
-  1. **Inventory**: Maintain current inventory dari semua IT systems/applications
-  2. **Patch sources**: Subscribe ke vendor security bulletins (Microsoft, Adobe, etc.)
-  3. **Testing**: Test patches in non-production environment first
-  4. **Deployment**: Scheduled deployment pada maintenance window
-  5. **Verification**: Verify patch applied, system functionality verified
+- Manajemen patch wajib proses formal:
+  1. **Inventaris**: Pelihara inventaris saat ini dari semua sistem/aplikasi IT
+  2. **Sumber patch**: Berlangganan ke bulletin keamanan vendor (Microsoft, Adobe, dll.)
+  3. **Pengujian**: Uji patch di environment non-produksi terlebih dahulu
+  4. **Penerapan**: Penerapan terjadwal pada jendela pemeliharaan
+  5. **Verifikasi**: Verifikasi patch diterapkan, fungsionalitas sistem diverifikasi
   6. **Reporting**: Monthly report dari patches applied
   7. **Timeline**: Critical patches applied within 30 days, regular patches quarterly
 
 #### **8.3.2 Change Management**
 
-PT Ecomindo menetapkan formal change management process untuk SEMUA production changes:
+PT Ecomindo menetapkan proses manajemen perubahan formal untuk semua perubahan produksi:
 
 **A. Kebijakan Perubahan Sistem Produksi**
-- Kebijakan WAJIB formal dengan:
-  - Written approval requirement SEBELUM perubahan
-  - Change request form dengan details
-  - Impact assessment (risk, rollback plan)
-  - Scheduled maintenance window
-  - Approval hierarchy (manager, ISM, CTO)
+- Kebijakan wajib formal dengan:
+  - Persyaratan persetujuan tertulis SEBELUM perubahan
+  - Formulir permintaan perubahan dengan detail
+  - Penilaian dampak (risiko, rencana rollback)
+  - Jendela pemeliharaan terjadwal
+  - Hierarki persetujuan (manajer, ISM, CTO)
 
 **B. Change Request Process**
-1. **Submit**: IT staff submit change request dengan:
-   - What: Apa change yang diusulkan
-   - Why: Business justification
-   - When: Proposed datetime (outside business hours preferred)
-   - Risk: Potential risks & mitigation
-   - Rollback: If fails, rollback procedure
+1. **Kirim**: Staf IT mengirim permintaan perubahan dengan:
+   - Apa: Perubahan apa yang diusulkan
+   - Mengapa: Justifikasi bisnis
+   - Kapan: Tanggal waktu yang diusulkan (di luar jam kerja lebih disukai)
+   - Risiko: Risiko potensial & mitigasi
+   - Rollback: Jika gagal, prosedur rollback
 
-2. **Review**: Change review board (IT manager, ISM, stakeholder) review untuk:
-   - Business need justified?
-   - Risk acceptable?
-   - Resources available?
-   - Testing done?
+2. **Tinjauan**: Dewan tinjauan perubahan (manajer IT, ISM, stakeholder) meninjau untuk:
+   - Kebutuhan bisnis dibenarkan?
+   - Risiko dapat diterima?
+   - Sumber daya tersedia?
+   - Pengujian dilakukan?
 
-3. **Approve**: Approval dari manager, IT director, ISM (tiered authorization)
+3. **Setujui**: Persetujuan dari manajer, direktur IT, ISM (otorisasi bertingkat)
 
-4. **Implement**: Execute during scheduled maintenance window
-   - With: At least 2 IT staff present (one executes, one monitors)
-   - Comms: Notify users jika downtime expected
-   - Rollback ready: If failure, ready untuk rollback
+4. **Implementasi**: Eksekusi selama jendela pemeliharaan terjadwal
+   - Dengan: Setidaknya 2 staf IT hadir (satu mengeksekusi, satu memantau)
+   - Komunikasi: Beritahu pengguna jika downtime diharapkan
+   - Rollback siap: Jika gagal, siap untuk rollback
 
-5. **Verify**: Confirm change applied successfully
-   - System functionality: All systems working?
-   - Performance: Performance acceptable?
-   - Logs: Check system logs untuk errors
+5. **Verifikasi**: Konfirmasi perubahan diterapkan dengan sukses
+   - Fungsionalitas sistem: Semua sistem berfungsi?
+   - Performa: Performa dapat diterima?
+   - Log: Periksa log sistem untuk error
 
-6. **Document**: "All changes logged dengan":
-   - Change details, date, time, person
-   - Approval chain
-   - Implementation notes
-   - Result (success/failure)
-   - Lessons learned
+6. **Dokumentasi**: "Semua perubahan dicatat dengan":
+   - Detail perubahan, tanggal, waktu, orang
+   - Rantai persetujuan
+   - Catatan implementasi
+   - Hasil (sukses/gagal)
+   - Pelajaran yang dipelajari
 
 **C. Emergency Changes**
-- For urgent security patches atau critical outages:
-  - Verbal approval dari ISM acceptable
-  - Change still documented (retroactively if needed)
-  - Formal change request submitted within 24 hours
+- Untuk patch keamanan mendesak atau outage kritis:
+  - Persetujuan verbal dari ISM dapat diterima
+  - Perubahan masih didokumentasikan (retroaktif jika diperlukan)
+  - Permintaan perubahan formal dikirim dalam 24 jam
 
 #### **8.3.3 Network Security & Segregation**
 
-PT Ecomindo menetapkan 3 network security controls WAJIB:
+PT Ecomindo menetapkan 3 kontrol keamanan jaringan wajib:
 
 **A. Segregation Environment Dev/Test/Production**
-- Network separation WAJIB:
-  - Separate networks (atau VLANs) untuk development, testing, production
-  - Firewall rules: Strict filtering antara environments (prod tidak bisa reach dev directly)
-  - Purpose: Prevent accidental/unauthorized changes ke production dari developer
+- Pemisahan jaringan wajib:
+  - Jaringan terpisah (atau VLAN) untuk development, testing, production
+  - Aturan firewall: Filtering ketat antara environment (prod tidak bisa mencapai dev langsung)
+  - Tujuan: Mencegah perubahan tidak sengaja/tidak sah ke production dari developer
 
 **B. Firewall & WAF (Web Application Firewall)**
-- Firewall architecture:
-  - Perimeter firewall: Between internet dan internal network
-  - Rules: Default-deny inbound, only required ports open
-  - Configuration: Documented dalam firewall rule matrix
-  - Logging: All inbound/outbound connections logged
-  - Review: Monthly review dari firewall logs untuk suspicious patterns
+- Arsitektur firewall:
+  - Firewall perimeter: Antara internet dan jaringan internal
+  - Aturan: Default-deny inbound, hanya port yang diperlukan terbuka
+  - Konfigurasi: Didokumentasikan dalam matriks aturan firewall
+  - Pencatatan: Semua koneksi inbound/outbound dicatat
+  - Tinjauan: Tinjauan bulanan dari log firewall untuk pola mencurigakan
 
-- WAF (if applicable untuk web applications):
-  - Deployed untuk all internet-facing web applications
-  - Rules: Configured untuk block OWASP Top 10 attacks (SQL injection, XSS, etc.)
-  - Logging: SQL injection attempts, XSS attempts logged
-  - Tuning: Regular tuning untuk reduce false positives
+- WAF (jika berlaku untuk aplikasi web):
+  - Diterapkan untuk semua aplikasi web yang menghadap internet
+  - Aturan: Dikonfigurasi untuk memblokir serangan OWASP Top 10 (SQL injection, XSS, dll.)
+  - Pencatatan: Upaya SQL injection, upaya XSS dicatat
+  - Penyesuaian: Penyesuaian reguler untuk mengurangi false positive
 
 **C. Network Monitoring & Logging**
-- Monitoring WAJIB dengan:
-  - Network monitoring tool (IDS/IPS atau similar)
-  - Central logging: Firewall, servers, applications logs sent ke SIEM
-  - Alerting: Automated alerts untuk suspicious activities (port scans, DDoS, etc.)
-  - Review: Weekly review dari monitoring data, monthly formal review
-  - Retention: Logs retained minimum 90 days, critical 1 year
+- Pemantauan wajib dengan:
+  - Alat pemantauan jaringan (IDS/IPS atau serupa)
+  - Pencatatan terpusat: Log firewall, server, aplikasi dikirim ke SIEM
+  - Peringatan: Peringatan otomatis untuk aktivitas mencurigakan (port scans, DDoS, dll.)
+  - Tinjauan: Tinjauan mingguan dari data pemantauan, tinjauan formal bulanan
+  - Retensi: Log dipertahankan minimal 90 hari, kritis 1 tahun
 
 #### **8.3.4 VAPT (Vulnerability Assessment & Penetration Testing)**
 
-PT Ecomindo melakukan regular vulnerability assessment & penetration testing:
+PT Ecomindo melakukan penilaian kerentanan & penetration testing reguler:
 
 **A. Vulnerability Assessment**
-- Scope: All systems (servers, applications, network devices)
-- Frequency: Quarterly (minimum)
-- Method: Automated scanning using tools:
-  - Tenable Nessus, OpenVAS, Qualys, atau similar
-  - Covers: Known CVEs, configuration issues, weak passwords
-- Results: Report dengan:
-  - Vulnerabilities found dengan severity (Critical, High, Medium, Low)
-  - Remediation recommendations
-  - Timeline untuk fix
+- Ruang lingkup: Semua sistem (server, aplikasi, perangkat jaringan)
+- Frekuensi: Triwulanan (minimum)
+- Metode: Pemindaian otomatis menggunakan alat:
+  - Tenable Nessus, OpenVAS, Qualys, atau serupa
+  - Mencakup: CVE yang diketahui, masalah konfigurasi, kata sandi lemah
+- Hasil: Laporan dengan:
+  - Kerentanan yang ditemukan dengan severity (Kritis, Tinggi, Sedang, Rendah)
+  - Rekomendasi remediasi
+  - Timeline untuk perbaikan
 
 **B. Penetration Testing**
-- Scope: Network perimeter, applications, internal systems
-- Frequency: Annually (minimum), or after major changes
-- Method: External authorized hacker attempt penetration
-  - Can be: Black-box (no knowledge), Grey-box (limited knowledge), White-box (full knowledge)
-- Results: Executive summary dengan:
-  - Critical findings
-  - Recommendations
-  - Remediation timeline
+- Ruang lingkup: Perimeter jaringan, aplikasi, sistem internal
+- Frekuensi: Tahunan (minimum), atau setelah perubahan besar
+- Metode: Penyerang eksternal yang berwenang mencoba penetrasi
+  - Dapat berupa: Black-box (tidak ada pengetahuan), Grey-box (pengetahuan terbatas), White-box (pengetahuan penuh)
+- Hasil: Ringkasan eksekutif dengan:
+  - Temuan kritis
+  - Rekomendasi
+  - Timeline remediasi
 
 **C. Findings Remediation & Tracking**
-- Findings dari VAPT HARUS di-remediate:
-  - Track: Use issue tracking system (Jira, etc.)
-  - Timeline: Critical within 30 days, High within 60 days, Medium quarterly
-  - Verify: Re-test sampai verified fixed
-  - Report: Monthly status update ke management
-  - Document: All remediation efforts documented
+- Temuan dari VAPT harus diremediasi:
+  - Lacak: Gunakan sistem pelacakan masalah (Jira, dll.)
+  - Timeline: Kritis dalam 30 hari, Tinggi dalam 60 hari, Sedang triwulanan
+  - Verifikasi: Uji ulang sampai diverifikasi diperbaiki
+  - Laporan: Pembaruan status bulanan ke manajemen
+  - Dokumentasi: Semua upaya remediasi didokumentasikan
 
 #### **8.3.5 Incident Management & Response**
 
-PT Ecomindo memiliki formal incident response program:
+PT Ecomindo memiliki program respons insiden formal:
 
 **A. Detection & Response Process**
-1. **Detection**:
-   - SOC team monitors alerts dari: Firewall, IDS/IPS, antivirus, SIEM
-   - Alerts tiered by severity
-   - Alert triaging: Determine if true positive atau false positive
+1. **Deteksi**:
+   - Tim SOC memantau peringatan dari: Firewall, IDS/IPS, antivirus, SIEM
+   - Peringatan dikelompokkan berdasarkan severity
+   - Triaging peringatan: Tentukan jika true positive atau false positive
 
-2. **Identification**:
-   - Analyze alert: Gather logs, examine affected system
-   - Determine: Is this confirmed security incident?
-   - Information gathering: Who/what/when/where/how/why
+2. **Identifikasi**:
+   - Analisis peringatan: Kumpulkan log, periksa sistem yang terpengaruh
+   - Tentukan: Apakah ini insiden keamanan yang dikonfirmasi?
+   - Pengumpulan informasi: Siapa/apa/kapan/di mana/bagaimana/mengapa
 
-3. **Containment**:
-   - Short-term: Stop incident spread (isolate affected system)
-   - Long-term: Remediate underlying cause
-   - Communications: Notify management, relevant teams
+3. **Penahanan**:
+   - Jangka pendek: Hentikan penyebaran insiden (isolasi sistem yang terpengaruh)
+   - Jangka panjang: Remediasi penyebab mendasar
+   - Komunikasi: Beritahu manajemen, tim terkait
 
-4. **Eradication**:
-   - Remove malware/attacker: Clean affected systems
-   - Patch vulnerabilities: Fix underlying security issues
-   - Verify: Ensure incident eliminated
+4. **Pemberantasan**:
+   - Hapus malware/penyerang: Bersihkan sistem yang terpengaruh
+   - Patch kerentanan: Perbaiki masalah keamanan mendasar
+   - Verifikasi: Pastikan insiden dieliminasi
 
-5. **Recovery**:
-   - Restore service: Bring systems back online
-   - Monitoring: Monitor closely untuk recurrence
-   - Timeline: Restore within RTO SLA
+5. **Pemulihan**:
+   - Pulihkan layanan: Bawa sistem kembali online
+   - Pemantauan: Pantau secara ketat untuk rekurensi
+   - Timeline: Pulihkan dalam SLA RTO
 
-6. **Lessons Learned**:
-   - After incident: Conduct post-incident review
-   - Document: Root cause analysis, recommendations
-   - Implement: Process improvements untuk prevent recurrence
+6. **Pelajaran yang Dipelajari**:
+   - Setelah insiden: Lakukan tinjauan pasca-insiden
+   - Dokumentasi: Analisis akar penyebab, rekomendasi
+   - Implementasi: Perbaikan proses untuk mencegah rekurensi
 
 **B. Incident Documentation & Forensics**
-- All incidents documented dengan:
-  - Incident ID, date, time discovered
-  - Detection method (alert, user report, etc.)
-  - Description: Apa terjadi
-  - Investigation: Logs analyzed, findings
-  - Timeline: When events occurred
-  - Root cause: Why incident happened
-  - Resolution: Actions taken
-  - Impact: Systems affected, data exposed, etc.
+- Semua insiden didokumentasikan dengan:
+  - ID insiden, tanggal, waktu ditemukan
+  - Metode deteksi (peringatan, laporan pengguna, dll.)
+  - Deskripsi: Apa yang terjadi
+  - Investigasi: Log dianalisis, temuan
+  - Timeline: Kapan peristiwa terjadi
+  - Akar penyebab: Mengapa insiden terjadi
+  - Resolusi: Tindakan yang diambil
+  - Dampak: Sistem yang terpengaruh, data yang terpapar, dll.
 
-- Evidence preservation untuk serious incidents:
-  - Forensic: Follow NIST SP 800-88 guidelines
-  - Chain of custody: Document evidence handling
-  - Tools: Use forensic tools (EnCase, X-Ways, etc.)
-  - Analysis: Identify attacker techniques, artifacts
+- Pelestarian bukti untuk insiden serius:
+  - Forensik: Ikuti pedoman NIST SP 800-88
+  - Rantai kustodi: Dokumentasikan penanganan bukti
+  - Alat: Gunakan alat forensik (EnCase, X-Ways, dll.)
+  - Analisis: Identifikasi teknik penyerang, artefak
 
 #### **8.3.6 Audit Trail & Logging**
 
-PT Ecomindo mengaktifkan comprehensive audit logging:
+PT Ecomindo mengaktifkan pencatatan audit komprehensif:
 
 **A. Logging pada semua systems**
-- **OS Logging**:
-  - Windows: Event logs untuk all authentication, privilege use, object access
-  - Linux: syslog, auditd untuk all commands, access
+- **Pencatatan OS**:
+  - Windows: Log peristiwa untuk semua otentikasi, penggunaan privilege, akses objek
+  - Linux: syslog, auditd untuk semua perintah, akses
 
-- **Database Logging**:
-  - All queries logged (who, what, when)
-  - Database structure changes logged
-  - Failed access attempts logged
+- **Pencatatan Database**:
+  - Semua query dicatat (siapa, apa, kapan)
+  - Perubahan struktur database dicatat
+  - Upaya akses gagal dicatat
 
-- **Application Logging**:
-  - All user actions (login, data access, modifications) logged
-  - Errors & exceptions logged
-  - Administrative access logged
+- **Pencatatan Aplikasi**:
+  - Semua tindakan pengguna (login, akses data, modifikasi) dicatat
+  - Error & exception dicatat
+  - Akses administratif dicatat
 
-- **Network Logging**:
-  - Firewall: Inbound/outbound connections logged
-  - VPN: All connections logged (user, IP, time duration)
-  - DNS: DNS queries logged
+- **Pencatatan Jaringan**:
+  - Firewall: Koneksi inbound/outbound dicatat
+  - VPN: Semua koneksi dicatat (pengguna, IP, durasi waktu)
+  - DNS: Query DNS dicatat
 
 **B. Centralized Logging & Monitoring**
-- All logs sent ke central SIEM (Splunk, ELK, ArcSight, atau similar)
-- Real-time analysis: Automated rules untuk detect suspicious patterns
-- Alerting: Automated alerts untuk:
-  - Multiple failed logins
-  - Privilege escalation attempts
-  - Data exfiltration attempts
-  - System changes dari unauthorized users
+- Semua log dikirim ke SIEM terpusat (Splunk, ELK, ArcSight, atau serupa)
+- Analisis real-time: Aturan otomatis untuk mendeteksi pola mencurigakan
+- Peringatan: Peringatan otomatis untuk:
+  - Beberapa login gagal
+  - Upaya eskalasi privilege
+  - Upaya eksfiltrasi data
+  - Perubahan sistem dari pengguna yang tidak sah
 
 **C. Log Retention & Review**
-- Retention: Minimum 90 days (production), 1 year (security critical)
-- Review: Monthly formal review dari logs
-  - Look untuk: Unusual access patterns, suspected breaches, policy violations
-  - Documented: Review reports filed
+- Retensi: Minimum 90 hari (produksi), 1 tahun (kritis keamanan)
+- Tinjauan: Tinjauan formal bulanan dari log
+  - Lihat untuk: Pola akses tidak biasa, dugaan pelanggaran, pelanggaran kebijakan
+  - Didokumentasikan: Laporan tinjauan disimpan
 
 #### **8.3.7 Disaster Recovery & Business Continuity**
 
-PT Ecomindo memiliki formal disaster recovery planning:
+PT Ecomindo memiliki perencanaan pemulihan bencana formal:
 
 **A. Disaster Recovery Plan (DRP)**
-- Plan WAJIB documented dengan:
-  - Objectives: RTO (Recovery Time Objective), RPO (Recovery Point Objective)
-    - RTO: How long bisa kita tanpa system (2 hours? 4 hours? 1 day?)
-    - RPO: How much data loss acceptable (15 min? 1 hour? 1 day?)
-  - Prioritization: Critical systems vs non-critical
-  - Recovery procedures: Step-by-step untuk restore each system
-  - Backup procedures: How/where backed up, retention policy
-  - Testing: Annual test dengan documented results
+- Rencana wajib didokumentasikan dengan:
+  - Tujuan: RTO (Recovery Time Objective), RPO (Recovery Point Objective)
+    - RTO: Berapa lama kita bisa tanpa sistem (2 jam? 4 jam? 1 hari?)
+    - RPO: Berapa banyak kehilangan data yang dapat diterima (15 menit? 1 jam? 1 hari?)
+  - Prioritas: Sistem kritis vs non-kritis
+  - Prosedur pemulihan: Langkah demi langkah untuk memulihkan setiap sistem
+  - Prosedur backup: Bagaimana/di mana di-backup, kebijakan retensi
+  - Pengujian: Tes tahunan dengan hasil yang didokumentasikan
 
 **B. Backup & Recovery**
-- Backup policy WAJIB:
-  - Frequency: Daily untuk critical data, weekly untuk non-critical
-  - Location: Multiple geographic locations (off-site)
-  - Encryption: All backups encrypted
-  - Testing: Monthly test restore dari backups
-  - Hardware: Verified physical backup systems working
+- Kebijakan backup wajib:
+  - Frekuensi: Harian untuk data kritis, mingguan untuk non-kritis
+  - Lokasi: Beberapa lokasi geografis (off-site)
+  - Enkripsi: Semua backup dienkripsi
+  - Pengujian: Tes restore bulanan dari backup
+  - Perangkat keras: Sistem backup fisik yang diverifikasi berfungsi
 
-- Recovery capability:
-  - Document: Backup can be restored, timeline quantified
-  - Verification: Regular test restores performed
-  - Documented: Recovery test results kept
+- Kemampuan pemulihan:
+  - Dokumentasi: Backup dapat dipulihkan, timeline dikuantifikasi
+  - Verifikasi: Tes restore reguler dilakukan
+  - Didokumentasikan: Hasil tes pemulihan disimpan
 
 ### 8.4 Tanggung Jawab
 
-- **ISM**: Oversee all operational security, approve configurations
-- **IT Operations**: Implement hardening, manage changes, monitor systems
-- **Security Teams**: Conduct VAPT, manage incidents, review logs
+- **ISM**: Mengawasi semua keamanan operasional, menyetujui konfigurasi
+- **IT Operations**: Menerapkan pengerasan, mengelola perubahan, memantau sistem
+- **Security Teams**: Melakukan VAPT, mengelola insiden, meninjau log
 
 ### 8.5 Frequency & Review
 
-- Configuration audit: Semi-annually
-- Change management: For every production change
-- VAPT: Quarterly (VA) + annually (PT)
-- Network monitoring: Continuous
-- Incident response: As needed
-- Log review: Monthly
+- Configuration audit: Semi-tahunan
+- Change management: Untuk setiap perubahan produksi
+- VAPT: Triwulanan (VA) + tahunan (PT)
+- Network monitoring: Berkelanjutan
+- Incident response: Sesuai kebutuhan
+- Log review: Bulanan
 
 ---
 
@@ -1360,73 +1319,73 @@ Kebijakan ini berlaku untuk:
 
 #### **9.3.1 Secure Coding**
 
-PT Ecomindo menerapkan secure coding practices:
+PT Ecomindo menerapkan praktik coding aman:
 
 **A. Secure Coding Standards**
-- Development framework dan standard WAJIB:
-  - Use OWASP Top 10 sebagai reference untuk common vulnerabilities
-  - Follow vendor-specific security guidelines (Microsoft Security Development Lifecycle, SANS, etc.)
-  - Code review mandatory: Peer review sebelum production deployment
-  - Static analysis: Use SAST tools (SonarQube, Checkmarx, Veracode) untuk scan code
-  - Document: Secure coding guidelines / standards document maintained
+- Framework development dan standar wajib:
+  - Gunakan OWASP Top 10 sebagai referensi untuk kerentanan umum
+  - Ikuti pedoman keamanan spesifik vendor (Microsoft Security Development Lifecycle, SANS, dll.)
+  - Code review wajib: Peer review sebelum deployment production
+  - Analisis statis: Gunakan alat SAST (SonarQube, Checkmarx, Veracode) untuk scan kode
+  - Dokumentasi: Dokumen pedoman/standar coding aman dipelihara
 
 **B. Testing & Validation**
-- Security testing WAJIB di development process:
-  - Unit testing: Developer tests own code
-  - Integration testing: Full application flow tested
-  - Security testing: Specific tests untuk vulnerability checks
-  - DAST: Dynamic analysis in staging/pre-prod environment
-  - Penetration testing: External testing annually
+- Pengujian keamanan wajib di proses development:
+  - Unit testing: Developer menguji kode sendiri
+  - Integration testing: Alur aplikasi penuh diuji
+  - Pengujian keamanan: Tes spesifik untuk pemeriksaan kerentanan
+  - DAST: Analisis dinamis di environment staging/pre-prod
+  - Penetration testing: Pengujian eksternal tahunan
 
 **C. Vulnerability Remediation**
-- All findings dari code analysis HARUS remediated:
-  - Track: All issues dalam tracking system
-  - Fix: Developer fixes identified vulnerabilities
-  - Re-test: Verify fix works dan vulnerability gone
-  - Document: All fixes documented
+- Semua temuan dari analisis kode harus diremediasi:
+  - Lacak: Semua masalah dalam sistem pelacakan
+  - Perbaikan: Developer memperbaiki kerentanan yang diidentifikasi
+  - Uji ulang: Verifikasi perbaikan berfungsi dan kerentanan hilang
+  - Dokumentasi: Semua perbaikan didokumentasikan
 
 #### **9.3.2 Source Code Security**
 
 PT Ecomindo melindungi source code dengan 3 komponen:
 
 **A. Secure Source**
-- Source code ONLY dari trusted sources:
-  - Internal repository (GitHub Enterprise, GitLab, Bitbucket private)
-  - NOT dari internet tidak verified sources
-  - NOT personal GitHub public repositories
-  - Dependency management: Use package managers (Maven, NPM, etc.)
-    - Only dari official repositories (Maven Central, NPM official)
-    - NOT dari unknown sources
+- Source code HANYA dari sumber terpercaya:
+  - Repository internal (GitHub Enterprise, GitLab, Bitbucket private)
+  - TIDAK dari sumber internet yang tidak diverifikasi
+  - TIDAK repository GitHub publik pribadi
+  - Manajemen dependensi: Gunakan package managers (Maven, NPM, dll.)
+    - Hanya dari repository resmi (Maven Central, NPM resmi)
+    - TIDAK dari sumber yang tidak diketahui
 
 **B. Secure Storage & Access Control**
-- Source code repository WAJIB secured:
-  - Access control: Role-based access (developer, team lead, approver)
-  - Authentication: MFA required untuk all repository access
-  - Encryption: Repository encrypted at rest
-  - Backup: Regular repository backups
-  - Documentation: Repository policies documented
+- Repository source code wajib diamankan:
+  - Kontrol akses: Akses berbasis peran (developer, team lead, approver)
+  - Otentikasi: MFA diperlukan untuk semua akses repository
+  - Enkripsi: Repository dienkripsi saat istirahat
+  - Backup: Backup repository reguler
+  - Dokumentasi: Kebijakan repository didokumentasikan
 
 **C. Secure Deletion from Media**
-- When code no longer needed:
-  - Deletion: Complete removal dari repository
-  - Verification: Confirm deletion successful
-  - Documentation: Deletion audit trail
+- Ketika kode tidak lagi diperlukan:
+  - Penghapusan: Penghapusan lengkap dari repository
+  - Verifikasi: Konfirmasi penghapusan berhasil
+  - Dokumentasi: Trail audit penghapusan
 
-- History management:
-  - Git history: Complete repository history maintained
+- Manajemen riwayat:
+  - Riwayat Git: Riwayat repository lengkap dipelihara
 
 ### 9.4 Tanggung Jawab
 
-- **Development Lead**: Implement coding standards, code review
-- **Security Team**: SAST/DAST scanning, security testing
-- **ISM**: Approve development security policy
+- **Development Lead**: Menerapkan standar coding, code review
+- **Security Team**: Scanning SAST/DAST, pengujian keamanan
+- **ISM**: Menyetujui kebijakan keamanan development
 
 ### 9.5 Frequency & Review
 
-- Code review: Every commit/merge
+- Code review: Setiap commit/merge
 - SAST scanning: Continuous integration
-- DAST testing: Before production deployment
-- VAPT: Annually
+- DAST testing: Sebelum deployment production
+- VAPT: Tahunan
 
 ---
 
@@ -1448,69 +1407,69 @@ Kebijakan ini mencakup:
 
 #### **10.3.1 Business Continuity Management**
 
-PT Ecomindo memiliki formal BC program dengan 3 komponen:
+PT Ecomindo memiliki program BC formal dengan 3 komponen:
 
 **A. BC Policy & Procedures**
-- Kebijakan WAJIB formal dengan:
-  - Objectives: RTO (Recovery Time Objective), RPO (Recovery Point Objective)
-    - RTO: How long bisa kita tanpa system (2 hours? 4 hours? 1 day?)
-    - RPO: How much data loss acceptable (15 min? 1 hour? 1 day?)
-  - Prioritization: Critical systems vs non-critical
-  - Recovery procedures: Step-by-step untuk restore each system
-  - Backup procedures: How/where backed up, retention policy
-  - Testing: Annual test dengan documented results
+- Kebijakan wajib formal dengan:
+  - Tujuan: RTO (Recovery Time Objective), RPO (Recovery Point Objective)
+    - RTO: Berapa lama kita bisa tanpa sistem (2 jam? 4 jam? 1 hari?)
+    - RPO: Berapa banyak kehilangan data yang dapat diterima (15 menit? 1 jam? 1 hari?)
+  - Prioritas: Sistem kritis vs non-kritis
+  - Prosedur pemulihan: Langkah demi langkah untuk memulihkan setiap sistem
+  - Prosedur backup: Bagaimana/di mana di-backup, kebijakan retensi
+  - Pengujian: Tes tahunan dengan hasil yang didokumentasikan
 
 **B. Backup & Recovery**
-- Backup policy WAJIB:
-  - Frequency: Daily untuk critical data, weekly untuk non-critical
-  - Location: Multiple geographic locations (off-site)
-  - Encryption: All backups encrypted
-  - Testing: Monthly test restore dari backups
-  - Hardware: Verified physical backup systems working
+- Kebijakan backup wajib:
+  - Frekuensi: Harian untuk data kritis, mingguan untuk non-kritis
+  - Lokasi: Beberapa lokasi geografis (off-site)
+  - Enkripsi: Semua backup dienkripsi
+  - Pengujian: Tes restore bulanan dari backup
+  - Perangkat keras: Sistem backup fisik yang diverifikasi berfungsi
 
-- Recovery capability:
-  - Document: Backup can be restored, timeline quantified
-  - Verification: Regular test restores performed
-  - Documented: Recovery test results kept
+- Kemampuan pemulihan:
+  - Dokumentasi: Backup dapat dipulihkan, timeline dikuantifikasi
+  - Verifikasi: Tes restore reguler dilakukan
+  - Didokumentasikan: Hasil tes pemulihan disimpan
 
 #### **10.3.2 Disaster Recovery Planning**
 
-PT Ecomindo memiliki comprehensive DRP:
+PT Ecomindo memiliki DRP komprehensif:
 
 **A. DR Strategy**
-- Strategy WAJIB documented:
-  - Hot site: Fully configured backup site ready immediately
-  - Warm site: Partially configured, can be ready in hours
-  - Cold site: Basic infrastructure, takes days to configure
-  - Cloud DR: Use cloud providers untuk disaster recovery
+- Strategi wajib didokumentasikan:
+  - Hot site: Situs backup yang dikonfigurasi penuh siap segera
+  - Warm site: Dikonfigurasi sebagian, dapat siap dalam jam
+  - Cold site: Infrastruktur dasar, membutuhkan hari untuk dikonfigurasi
+  - DR Cloud: Gunakan penyedia cloud untuk disaster recovery
 
 **B. Recovery Procedures**
-- Detailed procedures untuk each critical system:
-  - Step-by-step recovery instructions
-  - Contact lists untuk recovery team
-  - Alternative procedures jika primary fails
-  - Communication plans selama recovery
+- Prosedur detail untuk setiap sistem kritis:
+  - Instruksi pemulihan langkah demi langkah
+  - Daftar kontak untuk tim pemulihan
+  - Prosedur alternatif jika primary gagal
+  - Rencana komunikasi selama pemulihan
 
 **C. Testing & Maintenance**
-- DR testing WAJIB dilakukan regularly:
-  - Tabletop exercises: Annual discussion-based testing
-  - Functional testing: Semi-annual partial recovery testing
-  - Full testing: Annual complete disaster recovery simulation
-  - Results documented dan lessons learned captured
+- Pengujian DR wajib dilakukan secara reguler:
+  - Latihan tabletop: Pengujian berbasis diskusi tahunan
+  - Pengujian fungsional: Pengujian pemulihan parsial semi-tahunan
+  - Pengujian penuh: Simulasi disaster recovery lengkap tahunan
+  - Hasil didokumentasikan dan pelajaran yang dipelajari ditangkap
 
 ### 10.4 Tanggung Jawab
 
-- **ISM**: Oversee BCP/DRP development dan testing
-- **IT Department**: Implement backup systems, recovery procedures
-- **Business Units**: Define critical processes, participate in testing
-- **Management**: Approve BCP/DRP, allocate resources
+- **ISM**: Mengawasi development dan pengujian BCP/DRP
+- **Departemen IT**: Menerapkan sistem backup, prosedur pemulihan
+- **Unit Bisnis**: Mendefinisikan proses kritis, berpartisipasi dalam pengujian
+- **Manajemen**: Menyetujui BCP/DRP, mengalokasikan sumber daya
 
 ### 10.5 Frequency & Review
 
-- BCP/DRP review: Annually
-- Backup testing: Monthly
-- DR testing: Annually
-- Policy review: Annually
+- Tinjauan BCP/DRP: Tahunan
+- Pengujian backup: Bulanan
+- Pengujian DR: Tahunan
+- Tinjauan kebijakan: Tahunan
 
 ---
 
