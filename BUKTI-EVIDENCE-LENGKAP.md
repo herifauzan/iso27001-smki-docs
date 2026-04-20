@@ -20,6 +20,7 @@ Dokumen ini berisi master checklist dan template evidence untuk memenuhi persyar
 
 ### 1.2 Struktur Evidence
 Evidence diklasifikasikan berdasarkan 10 domain keamanan informasi internasional sesuai master framework:
+
 1. Risk Management (RM) - Area 1
 2. Information Security Policy (ISP) - Area 2
 3. Organization & Awareness (ORG) - Area 3
@@ -32,6 +33,7 @@ Evidence diklasifikasikan berdasarkan 10 domain keamanan informasi internasional
 10. Business Continuity (BC) - Area 10
 
 ### 1.3 Evidence Types
+
 - **Dokumentasi**: Policies, procedures, forms
 - **Log/Record**: Access logs, audit trails, training records
 - **Screenshot**: System configurations, tool outputs
@@ -228,6 +230,7 @@ Screenshots   | 1 year           | Evidence Repo   | Secure deletion
 ## 4. Evidence Collection Procedures
 
 ### 4.1 Pengumpulan Evidence
+
 1. **Identifikasi Kebutuhan**: Review checklist untuk evidence yang diperlukan
 2. **Pengumpulan Data**: Kumpulkan dari sumber yang relevan
 3. **Validasi Evidence**: Pastikan evidence lengkap dan akurat
@@ -235,12 +238,14 @@ Screenshots   | 1 year           | Evidence Repo   | Secure deletion
 5. **Review Periodik**: Review dan update sesuai schedule
 
 ### 4.2 Penyimpanan Evidence
+
 1. **Secure Storage**: Gunakan sistem penyimpanan yang aman
 2. **Access Control**: Hanya authorized personnel yang dapat akses
 3. **Backup**: Backup evidence secara teratur
 4. **Retention**: Ikuti retention schedule yang ditetapkan
 
 ### 4.3 Audit dan Verification
+
 1. **Internal Review**: Review bulanan oleh compliance officer
 2. **External Audit**: Audit tahunan oleh auditor independen
 3. **Gap Analysis**: Identifikasi dan address gaps
@@ -276,16 +281,51 @@ Date | Domain | Control | Finding | Severity | Status | Resolution Date
 
 ## 6. Evidence Repository Structure
 
-```
-/evidence/
-├── policies/          # Policy documents
-├── procedures/        # Procedure documents
-├── logs/             # System and security logs
-├── certificates/     # Training and compliance certificates
-├── reports/          # Audit and assessment reports
-├── screenshots/      # System configuration screenshots
-├── forms/            # Completed compliance forms
-└── archives/         # Historical evidence
+```mermaid
+graph LR
+    %% Root Folder
+    Root["📂 /evidence/"]
+
+    %% Sub Folders
+    F1["📄 policies"]
+    F2["📄 procedures"]
+    F3["📄 logs"]
+    F4["📄 certificates"]
+    F5["📄 reports"]
+    F6["📄 screenshots"]
+    F7["📄 forms"]
+    F8["📄 archives"]
+
+    %% Connections
+    Root --- F1
+    Root --- F2
+    Root --- F3
+    Root --- F4
+    Root --- F5
+    Root --- F6
+    Root --- F7
+    Root --- F8
+
+    %% Descriptions (Optional using Tooltips or Annotations)
+    subgraph Keterangan
+        F1 --- D1[Policy documents]
+        F2 --- D2[Procedure documents]
+        F3 --- D3[System and security logs]
+        F4 --- D4[Training & compliance certs]
+        F5 --- D5[Audit & assessment reports]
+        F6 --- D6[Config screenshots]
+        F7 --- D7[Compliance forms]
+        F8 --- D8[Historical evidence]
+    end
+
+    %% Styling
+    classDef root fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef folder fill:#fff9c4,stroke:#fbc02d,stroke-width:1px;
+    classDef desc fill:#f5f5f5,stroke:#9e9e9e,stroke-dasharray: 5 5;
+
+    class Root root;
+    class F1,F2,F3,F4,F5,F6,F7,F8 folder;
+    class D1,D2,D3,D4,D5,D6,D7,D8 desc;
 ```
 
 ---
@@ -335,6 +375,7 @@ Tanggal: __________________
 ---
 
 **Catatan Penting:**
+
 - Semua evidence harus dapat diverifikasi dan traceable
 - Evidence harus disimpan dalam format yang tahan lama
 - Regular backup evidence repository

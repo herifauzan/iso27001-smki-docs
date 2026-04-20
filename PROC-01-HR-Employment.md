@@ -38,6 +38,7 @@ Prosedur ini memastikan bahwa semua calon karyawan yang akan bergabung dengan PT
 ### 1.2 Ruang Lingkup
 
 Prosedur ini berlaku untuk:
+
 - Semua calon karyawan baru sebelum perekrutan/joining
 - Semua posisi, terutama yang akan mengakses sistem/data sensitif
 - Transfer internal/promosi (jika akses level naik kepada data lebih sensitif)
@@ -55,6 +56,7 @@ Prosedur ini berlaku untuk:
 ### 1.4 Prasyarat
 
 Sebelum pemeriksaan latar belakang dimulai:
+
 - Deskripsi pekerjaan sudah diselesaikan
 - Kandidat sudah dipilih oleh manajer perekrutan
 - Kandidat sudah mengirimkan dokumen yang diperlukan (CV, salinan ID, referensi)
@@ -68,6 +70,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Koordinator HR
 
 1. Kirim formulir otorisasi pemeriksaan latar belakang kepada kandidat
+
    - Formulir harus mencakup:
      - Otorisasi untuk memverifikasi detail pribadi
      - Otorisasi untuk menghubungi pemberi kerja sebelumnya
@@ -77,6 +80,7 @@ Sebelum pemeriksaan latar belakang dimulai:
    - Kandidat HARUS menandatangani formulir sebelum proses bisa berjalan
 
 2. Kumpulkan dokumen yang diperlukan dari kandidat:
+
    - Identifikasi yang valid (KTP, SIM, Paspor)
    - CV/Riwayat Hidup
    - Daftar minimal 2 pemberi kerja/referensi sebelumnya
@@ -84,6 +88,7 @@ Sebelum pemeriksaan latar belakang dimulai:
    - Sertifikat pendidikan/ijazah
 
 3. Arsipkan atau unggah ke sistem pemeriksaan latar belakang
+
    - Pertahankan catatan terorganisir dengan nama kandidat, posisi pekerjaan, tanggal dikirim
    - Simpan formulir otorisasi yang ditandatangani dengan dokumentasi
 
@@ -93,17 +98,20 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang ATAU HR
 
 1. Verifikasi identifikasi pribadi:
+
    - Hubungi otoritas penerbit KTP/SIM untuk memverifikasi nomor valid
    - Periksa manipulasi atau dokumen palsu
    - Verifikasi foto cocok dengan wajah kandidat
    - Dokumentasikan hasil verifikasi
 
 2. Jalankan pencarian database:
+
    - Query database ID nasional untuk identitas palsu
    - Nomor jaminan sosial atau setara untuk catatan duplikat
    - Tandai jika identitas sudah digunakan untuk beberapa orang
 
 3. Dokumentasikan temuan:
+
    - Catat metode verifikasi
    - Hasil: LULUS atau TANDA MERAH
    - Jika ada masalah: HENTIKAN proses, eskalasi kepada ISM
@@ -114,6 +122,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Koordinator HR
 
 1. Hubungi/email pemberi kerja sebelumnya yang tercantum dalam CV:
+
    - Hubungi departemen HR dari perusahaan sebelumnya
    - Minta verifikasi dari:
      - Tanggal bekerja
@@ -124,15 +133,18 @@ Sebelum pemeriksaan latar belakang dimulai:
      - Status perekrutan ulang (apakah mereka akan merekrut kembali orang ini?)
 
 2. Bandingkan dengan CV:
+
    - Periksa konsistensi (tanggal, posisi, perusahaan)
    - Tandai jika ditemukan ketidaksesuaian
    - Hubungi kandidat untuk klarifikasi jika diperlukan
 
 3. Setidaknya 2 referensi HARUS dihubungi:
+
    - Minimal satu dari pemberi kerja sebelumnya
    - Kedua dapat dari supervisor atau referensi profesional lainnya
 
 4. Dokumentasikan hasil:
+
    - Catatan panggilan dengan siapa yang berbicara, tanggal, temuan
    - Bendera merah atau masalah yang dicatat
 
@@ -142,21 +154,25 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang
 
 1. Minta pemeriksaan catatan kriminal dari otoritas yang sesuai:
+
    - Catatan polisi nasional
    - Catatan polisi regional/lokal
    - Catatan pelanggaran lalu lintas (jika mengemudi merupakan bagian dari pekerjaan)
 
 2. Minta catatan hukum/pengadilan:
+
    - Gugatan yang belum selesai atau putusan
    - Pengajuan kebangkrutan (jika melamar untuk posisi dengan otoritas keuangan)
 
 3. Khusus untuk posisi sensitif:
+
    - Pelanggaran terkait narkoba: DISQUALIFIKASI OTOMATIS
    - Keyakinan kekerasan/serangan: DISQUALIFIKASI OTOMATIS
    - Penipuan/pencurian: DISQUALIFIKASI OTOMATIS
    - Kejahatan lainnya: Penilaian kasus per kasus dengan ISM + Manajer Perekrutan
 
 4. Dokumentasikan hasil:
+
    - Laporan dari otoritas yang menyatakan "tidak ditemukan catatan" ATAU detail dari catatan apa pun
    - File laporan dalam lokasi aman
 
@@ -166,6 +182,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Koordinator HR
 
 1. Hubungi institusi pendidikan yang tercantum dalam resume:
+
    - Universitas/kuliah/vokasi
    - Minta verifikasi dari:
      - Tanggal menghadiri
@@ -174,10 +191,12 @@ Sebelum pemeriksaan latar belakang dimulai:
      - Nilai rata-rata (opsional)
 
 2. Verifikasi kredensial:
+
    - Hubungi badan penerbit untuk mengonfirmasi gelar valid/sah
    - Tandai ijazah dari institusi non-terakreditasi sebagai bendera merah
 
 3. Dokumentasikan:
+
    - Konfirmasi verifikasi yang diterima
    - Ketidaksesuaian apa pun dengan resume
 
@@ -188,15 +207,18 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Berlaku untuk:** Posisi dengan akses ke keuangan, perbankan, atau data keuangan sensitif
 
 1. Jalankan laporan kredit (jika berlaku & dengan persetujuan):
+
    - Periksa riwayat tanggung jawab keuangan
    - Kebangkrutan, putusan, lien pajak
    - Hutang yang belum dibayar dalam jumlah besar
 
 2. Interpretasikan hasil:
+
    - Kredit buruk adalah BENDERA MERAH untuk posisi yang melibatkan tanggung jawab keuangan
    - Untuk posisi IT dengan akses data: Kurang kritis tapi dicatat
 
 3. Dokumentasikan:
+
    - Ringkasan laporan kredit
    - Temuan signifikan apa pun
 
@@ -206,6 +228,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Koordinator HR
 
 1. Layar profil media sosial (LinkedIn, Facebook, Twitter):
+
    - Cari bendera merah:
      - Konten ofensif/tidak pantas
      - Dokumentasi perilaku yang mengkhawatirkan
@@ -213,10 +236,12 @@ Sebelum pemeriksaan latar belakang dimulai:
    - TIDAK alasan untuk menolak berdasarkan kehidupan pribadi/hukum saja
 
 2. Pencarian reputasi online:
+
    - Pencarian Google nama kandidat
    - Periksa artikel berita, catatan pengadilan hasil online publik
 
 3. Dokumentasikan:
+
    - Temuan signifikan apa pun yang dicatat
    - Bendera merah untuk diskusi dengan manajer perekrutan
 
@@ -226,6 +251,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Koordinator HR + ISM
 
 1. Kompilasi semua temuan pemeriksaan latar belakang:
+
    - Buat laporan pemeriksaan latar belakang komprehensif dengan:
      - Semua hasil verifikasi
      - Bendera merah atau masalah apa pun
@@ -233,15 +259,18 @@ Sebelum pemeriksaan latar belakang dimulai:
      - Timeline
 
 2. Penilaian:
+
    - Bandingkan temuan dengan persyaratan pekerjaan
    - Nilai level risiko untuk posisi
 
 3. Rekomendasi:
+
    - LULUS: Latar belakang dapat diterima, kandidat dapat melanjutkan
    - GAGAL: Latar belakang gagal, kandidat ditolak, TIDAK direkrut
    - LULUS BERSYARAT: Masalah kecil, lanjutkan dengan syarat atau penyelidikan lebih lanjut
 
 4. Tinjauan ISM untuk posisi sensitif:
+
    - ISM meninjau laporan
    - Persetujuan ISM diperlukan SEBELUM keputusan perekrutan akhir untuk posisi yang melibatkan keamanan/kerahasiaan
 
@@ -251,26 +280,31 @@ Sebelum pemeriksaan latar belakang dimulai:
 **Penanggung Jawab:** Manajer HR
 
 1. Keputusan akhir manajer perekrutan:
+
    - Jika LULUS: Lanjutkan dengan dokumen perekrutan
    - Jika GAGAL atau masalah: Tolak kandidat atau minta informasi lebih lanjut
 
 2. Dokumentasikan persetujuan:
+
    - Formulir persetujuan yang ditandatangani
    - Tanggal pemeriksaan latar belakang disetujui
    - Tanggal direkrut
 
 3. Arsip file pemeriksaan latar belakang:
+
    - Simpan dengan aman (lemari arsip rahasia atau folder digital terenkripsi)
    - Akses terbatas kepada: HR, ISM, Manajer Perekrutan saja
    - Retensi: Simpan minimal 3 tahun setelah pekerjaan berakhir
 
 4. Komunikasikan kepada kandidat:
+
    - Beritahu kandidat hasil (biasanya tidak detail, hanya "disetujui untuk pekerjaan")
    - Berikan tanggal mulai, instruksi hari pertama
 
 ### 1.6 Bendera Merah & Eskalasi
 
 Jika APA PUN dari berikut DITEMUKAN, HENTIKAN proses dan eskalasi kepada ISM:
+
 - Identitas tidak dapat diverifikasi atau mencurigakan
 - Keyakinan kriminal untuk kejahatan serius
 - Beberapa ketidaksesuaian riwayat pekerjaan
@@ -279,6 +313,7 @@ Jika APA PUN dari berikut DITEMUKAN, HENTIKAN proses dan eskalasi kepada ISM:
 - Surat perintah yang belum selesai atau masalah hukum
 
 **Proses Eskalasi:**
+
 1. HR memberitahu ISM segera
 2. ISM meninjau semua dokumentasi
 3. ISM membuat keputusan terima/tolak akhir
@@ -307,6 +342,7 @@ Prosedur ini memastikan bahwa ketika seorang karyawan meninggalkan organisasi, s
 ### 2.2 Ruang Lingkup
 
 Prosedur ini berlaku untuk:
+
 - Semua pemutusan hubungan kerja (pengunduran diri, pensiun, pemutusan karena alasan tertentu)
 - Semua karyawan tanpa pengecualian
 - Kontraktor juga menjalani proses serupa
@@ -345,16 +381,19 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** Manajer HR
 
 1. HR menerima pemberitahuan dari manajer perekrutan/karyawan:
+
    - Surat pengunduran diri, ATAU
    - Keputusan manajemen untuk memutuskan
 
 2. Dokumentasikan detail pemutusan:
+
    - Nama karyawan, ID, posisi
    - Tanggal pemutusan (hari terakhir bekerja)
    - Alasan untuk pemutusan (pengunduran diri, pensiun, PHK, karena alasan tertentu, dll.)
    - Hari kerja terakhir (dapat segera atau periode pemberitahuan)
 
 3. Buat daftar periksa pembersihan akses:
+
    - Gunakan Formulir Pembersihan Akses (lihat Formulir 2A)
    - Dokumentasikan yang perlu dicabut/dikembalikan
 
@@ -364,6 +403,7 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** HR + Manajer Perekrutan
 
 1. Beritahu Admin Sistem IT:
+
    - Email pemberitahuan dengan detail karyawan
    - Daftar sistem yang perlu penghapusan akses:
      - Email/kotak surat
@@ -375,6 +415,7 @@ Setelah 30 hari → Arsip/hapus akun lama
      - Kartu akses fisik
 
 2. Buat daftar periksa pencabutan:
+
    - Daftar SEMUA sistem yang karyawan miliki akses
    - Diorganisir berdasarkan jenis sistem (email, database, aplikasi, dll.)
 
@@ -384,41 +425,48 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** Admin Sistem IT
 
 **3.1 Email / Kotak Surat**
+
 - [ ] Teruskan email kepada manajer atau anggota tim yang ditunjuk
 - [ ] Ubah kata sandi untuk mencegah akses
 - [ ] Atur balasan otomatis yang menyatakan orang tersebut tidak lagi dengan organisasi
 - [ ] Setelah 30 hari: Setel ulang kotak surat, arsip email lama
 
 **3.2 Akses VPN**
+
 - [ ] Cabut kredensial VPN untuk karyawan
 - [ ] Hapus sertifikat akses VPN
 - [ ] Perbarui daftar akses server VPN
 - [ ] Verifikasi pencabutan: Coba upaya login dengan kredensial lama (harus gagal)
 
 **3.3 Akses Database**
+
 - [ ] Hapus akun pengguna database
 - [ ] Cabut izin untuk database apa pun
 - [ ] Hapus dari grup/peran database
 - [ ] Jejak audit: Dokumentasikan waktu pencabutan
 
 **3.4 Aplikasi Cloud**
+
 - [ ] Nonaktifkan akun SaaS (Salesforce, Microsoft 365, Slack, dll.)
 - [ ] Cabut kunci API atau akun layanan terkait karyawan
 - [ ] Hapus dari izin sumber daya cloud apa pun
 
 **3.5 Berbagi File & Penyimpanan**
+
 - [ ] Hapus dari berbagi file jaringan
 - [ ] Hapus dari penyimpanan cloud (SharePoint, OneDrive, Google Drive)
 - [ ] Migrasikan file penting apa pun kepada manajer/tim
 - [ ] Hapus folder pribadi setelah retensi 30 hari
 
 **3.6 Kartu Lencana Akses Fisik / Lencana**
+
 - [ ] Nonaktifkan kartu akses di sistem akses bangunan
 - [ ] Ambil kartu fisik dari karyawan
 - [ ] Hapus izin kartu untuk semua pintu
 - [ ] Verifikasi: Kartu tidak dapat membuka pintu saat digesek
 
 3.7 Verifikasi:
+
 - Untuk SETIAP sistem: IT harus memverifikasi akses telah dicabut
   - Tidak dapat login dengan kredensial lama
   - Tidak muncul lagi di daftar akses
@@ -431,20 +479,24 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** Manajemen Fasilitas + IT (sistem kartu)
 
 1. Kartu akses bangunan:
+
    - [ ] Ambil kartu akses fisik dari karyawan
    - [ ] Nonaktifkan dalam sistem akses bangunan
    - [ ] Uji: Kartu tidak bekerja di pembaca kartu
 
 2. Parkir:
+
    - [ ] Batalkan izin parkir/remote opener
    - [ ] Perbarui daftar akses parkir
 
 3. Kunci fisik:
+
    - [ ] Kumpulkan kunci kantor, kunci ruang server, kunci peralatan
    - [ ] Dokumentasikan pengumpulan
    - [ ] Amankan kunci atau kunci ulang jika khawatir salinan tidak sah
 
 4. Dokumentasi fasilitas:
+
    - [ ] Hapus nama karyawan dari daftar akses
    - [ ] Verifikasi penghapusan
 
@@ -467,14 +519,17 @@ Setelah 30 hari → Arsip/hapus akun lama
 
 1. Jadwalkan pertemuan pengumpulan dengan karyawan
 2. Inventarisasi semua peralatan:
+
    - Periksa nomor seri cocok dengan daftar aset
    - Catat kondisi (bekerja, rusak, tidak lengkap)
 3. Buat Formulir Pengembalian Peralatan (lihat Formulir 2B):
+
    - Daftar semua peralatan
    - Catatan kondisi
    - Tanda tangan karyawan yang mengonfirmasi dikembalikan
    - Tanda tangan manajer perekrutan yang mengonfirmasi diterima
 4. Simpan peralatan yang dikumpulkan:
+
    - Di lokasi aman menunggu penghapusan IT
    - Label untuk pelacakan aset
 
@@ -484,6 +539,7 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** Manajer HR
 
 1. Lakukan wawancara keluar dengan karyawan:
+
    - Dokumentasikan alasan untuk meninggalkan (umpan balik untuk manajemen)
    - Diskusikan: Informasi kepemilikan apa pun atau masalah?
    - Proyek yang belum selesai atau transfer pengetahuan yang diperlukan?
@@ -491,16 +547,19 @@ Setelah 30 hari → Arsip/hapus akun lama
    - Klarifikasi gaji akhir, tunjangan, rekomendasi
 
 2. Distribusikan pembayaran akhir:
+
    - Hitung gaji akhir (termasuk cuti yang masih ada jika berlaku)
    - Proses pesangon (jika berlaku untuk jenis pemutusan)
    - Berikan opsi kelanjutan asuransi/tunjangan COBRA
 
 3. Minta tanda tangan:
+
    - Tidak ada properti perusahaan yang tersisa
    - Pemahaman dari kewajiban kerahasiaan yang terus berlanjut setelah pekerjaan
    - Pemahaman dari non-solicitation/non-compete (jika berlaku)
 
 4. Dokumentasikan:
+
    - Ringkasan wawancara keluar
    - Masalah atau bendera merah apa pun yang dicatat
 
@@ -510,11 +569,13 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** Departemen IT
 
 1. Amankan file apa pun:
+
    - Migrasikan file kerja yang sedang berlangsung kepada manajer/tim
    - Folder rumah karyawan: Arsip untuk 30 hari, lalu hapus
    - Database: Transfer kepemilikan objek kepada tim, hapus akun pengguna setelah
 
 2. Keamanan kredensial:
+
    - Jika karyawan memiliki kredensial admin/bersama: Putar kata sandi untuk SEMUA sistem
    - Jika karyawan memiliki kunci SSH: Cabut dari semua server
    - Jika karyawan memiliki kunci API: Cabut atau hasilkan ulang
@@ -526,15 +587,18 @@ Setelah 30 hari → Arsip/hapus akun lama
 **Penanggung Jawab:** IT + HR
 
 1. Arsip catatan karyawan:
+
    - File HR: Pindahkan kepada arsip aman (retensi: per persyaratan regulasi, biasanya 3+ tahun)
    - Akun IT: Hapus atau arsip
 
 2. Penghapusan peralatan:
+
    - Semua peralatan yang dikembalikan: Hapus/format dengan aman
    - Verifikasi: Perangkat memenuhi standar pembuangan aman (lihat Prosedur Manajemen Aset)
    - Dokumentasikan penghapusan
 
 3. Dokumentasi:
+
    - Simpan dokumentasi pembersihan akses secara permanen
    - Catat pemutusan di file karyawan
 
@@ -543,16 +607,19 @@ Setelah 30 hari → Arsip/hapus akun lama
 Jika karyawan dipecat karena alasan tertentu (diduga penipuan, kekerasan, pelanggaran keamanan):
 
 1. **PENCABUTAN AKSES SEGERA:**
+
    - JANGAN tunggu akhir hari atau periode pemberitahuan
    - Cabut SEMUA akses segera
    - Dalam 1 jam: Email, VPN, akses fisik dinonaktifkan
    - Dalam 2 jam: Semua sistem didokumentasikan dicabut
 
 2. **Pengumpulan Peralatan:**
+
    - Kumpulkan laptop/telepon segera
    - Miliki orang IT yang menyaksikan untuk mendokumentasikan tujuan
 
 3. **Investigasi:**
+
    - Amankan peralatan karyawan apa pun untuk analisis forensik jika diduga pelanggaran data
    - Koordinasikan dengan hukum/ISM untuk investigasi potensial
 
@@ -572,6 +639,7 @@ Setelah proses keluar selesai, verifikasi:
 ### 2.8 Dokumentasi & Catatan
 
 Dokumentasikan semuanya dengan:
+
 - Formulir pemberitahuan keluar (tanggal, alasan)
 - Daftar periksa pembersihan akses (sistem dicabut, peralatan dikembalikan)
 - Catatan wawancara keluar
@@ -608,6 +676,7 @@ Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo m
 SETIAP KONTRAKTOR HARUS:
 
 1. **Tandatangani Kontrak** dengan klausul keamanan:
+
    - Klausul kerahasiaan
    - Kewajiban perlindungan data
    - Persyaratan keamanan
@@ -615,33 +684,40 @@ SETIAP KONTRAKTOR HARUS:
    - Klausul terminasi dengan pencabutan akses segera
 
 2. **Pemeriksaan Latar Belakang**:
+
    - Level yang sama sebagai karyawan (catatan kriminal, verifikasi identitas)
    - Pemeriksaan referensi dari klien sebelumnya
 
 3. **Sertifikasi Kepatuhan**:
+
    - Konfirmasi organisasi kontraktor memiliki praktik keamanan
    - Jika organisasi kontraktor menangani data sensitif: Verifikasi mereka memiliki sertifikasi ISO 27001 atau serupa
 
 4. **Asuransi**:
+
    - Asuransi tanggung jawab profesional
    - Asuransi tanggung jawab cyber (jika menangani data sensitif)
    - Cakupan minimum yang ditentukan dalam kontrak
 
 5. **NDA Ditandatangani**:
+
    - NDA Kontraktor (lihat Prosedur 4)
    - Harus ditandatangani SEBELUM APA PUN akses ke sistem/data perusahaan
 
 6. **Kuesioner Keamanan**:
+
    - Kontraktor mengisi kuesioner keamanan (praktik keamanan apa yang mereka terapkan)
    - Tinjauan oleh ISM
    - Persetujuan sebelum engagement
 
 **Catatan Status untuk Sub-Kontraktor (Skor 2 untuk 4.1b):** 
+
 - Pemeriksaan latar belakang telah diterapkan untuk sub-kontraktor
 - Namun, mekanisme PHK untuk sub-kontraktor belum sepenuhnya terdokumentasi dan diimplementasikan
 - Dalam perencanaan untuk menyempurnakan prosedur PHK sub-kontraktor
 
 **Catatan Status untuk Penggunaan Sub-Kontraktor di MMI (Skor 1 untuk 4.3):**
+
 - Penggunaan layanan sub-kontraktor untuk lingkup kerjasama dengan MMI belum memperoleh persetujuan dari MMI
 - Proses persetujuan masih dalam tahap koordinasi dengan MMI
 - Semua engagement sub-kontraktor memerlukan persetujuan formal dari MMI sebelum dimulai
@@ -677,6 +753,7 @@ Engagement dimulai
 ### 3.7 Terminasi
 
 Ketika engagement kontraktor berakhir:
+
 - Pencabutan akses segera (proses sama sebagai pemutusan karyawan)
 - Pengumpulan peralatan (jika ada yang disediakan)
 - Verifikasi deliverables akhir
@@ -710,6 +787,7 @@ Memastikan semua personil (karyawan, kontraktor) yang akan mengakses informasi s
 ### 4.4 Persyaratan Konten NDA
 
 NDA harus mencakup elemen-elemen berikut:
+
 1. **Kerahasiaan data**: Karyawan mengakui data perusahaan adalah rahasia
 2. **Non-pengungkapan**: Karyawan tidak boleh mengungkap data perusahaan kepada pihak ketiga yang tidak sah
 3. **Pengembalian/penghancuran**: Setelah terminasi, SEMUA dokumen/perusahaan terkait data harus dikembalikan atau dihancurkan
@@ -721,14 +799,17 @@ NDA harus mencakup elemen-elemen berikut:
 #### Untuk KARYAWAN BARU:
 
 1. **Sebelum Hari Pertama**:
+
    - Kirim NDA kepada kandidat dalam surat penawaran
    - Minta pengembalian NDA yang ditandatangani dalam 24 jam
 
 2. **Pada Hari Pertama**:
+
    - Jika tidak ditandatangani: Karyawan HARUS menandatangani sebelum penyediaan akses sistem
    - HR menyaksikan tanda tangan atau mengamankan e-tanda tangan
 
 3. **Pengelolaan File**:
+
    - Asli NDA yang ditandatangani: HR menyimpan dalam file personel karyawan (aman)
    - Salinan digital: Dipindai/diarsipkan dalam folder aman
    - Indeks: Pertahankan daftar semua karyawan dengan status NDA
@@ -736,27 +817,32 @@ NDA harus mencakup elemen-elemen berikut:
 #### Untuk KONTRAKTOR:
 
 1. **Sebelum Engagement**:
+
    - Kontraktor menerima NDA dalam penawaran engagement atau kontrak
    - Kontraktor menandatangani NDA
    - Salinan yang ditandatangani dipertahankan oleh perusahaan
 
 2. **Verifikasi**:
+
    - HR memverifikasi tanda tangan sebelum onboarding
    - Jika tidak ditandatangani: Akses tidak diberikan
 
 ### 4.6 Pelacakan & Kepatuhan NDA
 
 1. **Daftar Master**:
+
    - Pertahankan spreadsheet/database dari semua NDA yang ditandatangani
    - Kolom: Nama, Posisi, Tanggal Ditandatangani, Mandiri yang Ditugaskan (Y/T), Tanggal Kedaluwarsa
    - Diperbarui setiap kali NDA baru ditandatangani
 
 2. **Pengelolaan Kedaluwarsa**:
+
    - Lacak tanggal kedaluwarsa NDA
    - Sebelum kedaluwarsa: Diskusi perpanjangan dengan karyawan
    - Pasca-pekerjaan: Kewajiban kerahasiaan NDA berlanjut per klausul kelangsungan
 
 3. **Respons Pelanggaran**:
+
    - Jika diduga pelanggaran NDA:
      - Segera beri tahu ISM
      - Selidiki insiden
