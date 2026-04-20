@@ -135,7 +135,7 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 
 ### 5.1 Governance Model (ISO 27001 Aligned)
 
-```
+```mermaid
 graph TD
     %% Define Nodes
     BOD["**BOARD OF DIRECTORS**<br/>(C-level)"]
@@ -1618,7 +1618,7 @@ Jika ditemukan non-compliance:
 
 ### 13.1 Document Hierarchy
 
-```
+```mermaid
 graph LR
     %% Main Document
     Main["**TATA KELOLA DAN KEBIJAKAN<br/>KEAMANAN INFORMASI**"]
