@@ -13,7 +13,7 @@
 |---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -26,13 +26,13 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur keamanan operasi sistem informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan Mandiri VSA Score-4. Prosedur ini mencakup manajemen operasi harian, backup data, logging, proteksi malware, dan kontrol perubahan.
+Prosedur ini mengatur keamanan operasi sistem informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup manajemen operasi harian, backup data, logging, proteksi malware, dan kontrol perubahan.
 
 ### 1.1 Tujuan
 - Memastikan operasi sistem informasi berjalan aman dan handal
 - Melindungi data dari kehilangan atau kerusakan
 - Mendeteksi dan merespons insiden keamanan secara efektif
-- Memenuhi persyaratan Mandiri VSA untuk operasi yang aman
+- Memenuhi persyaratan untuk operasi yang aman
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua operasi sistem informasi termasuk:
@@ -44,7 +44,6 @@ Berlaku untuk semua operasi sistem informasi termasuk:
 
 ### 1.3 Referensi
 - Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- Standar Mandiri VSA Assessment
 
 ---
 
@@ -273,9 +272,9 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 ---
 
-## 5. Pemenuhan Standar Mandiri VSA
+## 5. Pemenuhan Standar
 
-### Score-4 Requirements untuk Operations Security:
+### Requirements untuk Operations Security:
 - ✅ **OP-1**: Operations procedures documented - Prosedur lengkap dengan workflow
 - ✅ **OP-2**: Backup and recovery procedures - RTO/RPO defined dengan testing
 - ✅ **OP-3**: Logging and monitoring - SIEM dengan 24/7 monitoring
@@ -284,8 +283,6 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 - ✅ **OP-6**: Change management - CAB process dengan emergency procedures
 - ✅ **OP-7**: Capacity management - Monitoring resource utilization
 - ✅ **OP-8**: Incident management - Defined response times dan procedures
-
-**Status Kepatuhan:** 100% - Semua 8 kontrol OP terpenuhi
 
 ---
 
