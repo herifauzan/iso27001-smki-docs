@@ -11,9 +11,9 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
-| Direktur Utama |  |  |  |
+| CEO |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -26,12 +26,12 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur pengendalian akses ke sistem informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan Mandiri VSA Score-4. Prosedur ini mencakup manajemen akses pengguna, kontrol akses fisik dan logis, serta audit akses secara berkala.
+Prosedur ini mengatur pengendalian akses ke sistem informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup manajemen akses pengguna, kontrol akses fisik dan logis, serta audit akses secara berkala.
 
 ### 1.1 Tujuan
 - Memastikan hanya pengguna yang berwenang dapat mengakses sistem dan data
 - Mencegah akses tidak sah yang dapat menyebabkan pelanggaran keamanan
-- Memenuhi persyaratan Mandiri VSA untuk kontrol akses yang ketat
+- Memenuhi persyaratan untuk kontrol akses yang ketat
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
@@ -42,7 +42,6 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
 
 ### 1.3 Referensi
 - Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- Standar Mandiri VSA Assessment
 
 ---
 
@@ -251,9 +250,9 @@ Jika ditemukan akses tidak sah:
 
 ---
 
-## 5. Pemenuhan Standar Mandiri VSA
+## 5. Pemenuhan Standar
 
-### Score-4 Requirements untuk Access Control:
+### Requirements untuk Access Control:
 - ✅ **AC-1**: Access control policy established - Policy lengkap dengan approval
 - ✅ **AC-2**: Access rights managed - Prosedur pemberian/penghapusan akses
 - ✅ **AC-3**: User access reviews - Audit bulanan dan triwulanan
@@ -263,8 +262,6 @@ Jika ditemukan akses tidak sah:
 - ✅ **AC-7**: Physical access controls - Akses card dan CCTV
 - ✅ **AC-8**: Privileged access management - Separate admin accounts
 
-**Status Kepatuhan:** 100% - Semua 8 kontrol AC terpenuhi
-
 ---
 
 ## 6. Tanggung Jawab
@@ -273,7 +270,7 @@ Jika ditemukan akses tidak sah:
 |-------|----------------|
 | ISM | Oversight keseluruhan kontrol akses |
 | Petugas Keamanan IT | Implementasi teknis dan monitoring |
-| Manajer SDM | Koordinasi akses karyawan |
+| Manajer HR | Koordinasi akses karyawan |
 | Manajer Departemen | Persetujuan akses departemen |
 | Petugas Keamanan | Kontrol akses fisik |
 | Pengguna Akhir | Kepatuhan terhadap policy akses |
@@ -306,5 +303,5 @@ Tanggal: __________________
 
 ___________________________  
 [Nama CEO]  
-Direktur Utama  
+CEO  
 Tanggal: __________________
