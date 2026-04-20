@@ -13,7 +13,7 @@
 |---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -26,13 +26,13 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur manajemen aset informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan Mandiri VSA Score-4. Prosedur ini mencakup inventarisasi, klasifikasi, handling, dan disposal aset informasi.
+Prosedur ini mengatur manajemen aset informasi PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup inventarisasi, klasifikasi, handling, dan disposal aset informasi.
 
 ### 1.1 Tujuan
 - Mengidentifikasi dan menginventarisasi semua aset informasi
 - Mengklasifikasikan aset berdasarkan nilai dan sensitivitas
 - Memastikan handling yang aman sepanjang lifecycle aset
-- Memenuhi persyaratan Mandiri VSA untuk asset management yang komprehensif
+- Memenuhi persyaratan untuk asset management yang komprehensif
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua aset informasi termasuk:
@@ -44,7 +44,6 @@ Berlaku untuk semua aset informasi termasuk:
 
 ### 1.3 Referensi
 - Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- Standar Mandiri VSA Assessment
 
 ---
 
@@ -280,9 +279,9 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 
 ---
 
-## 5. Pemenuhan Standar Mandiri VSA
+## 5. Pemenuhan Standar
 
-### Score-4 Requirements untuk Asset Management:
+### Requirements untuk Asset Management:
 - ✅ **AM-1**: Asset inventory maintained - CMDB dengan update bulanan
 - ✅ **AM-2**: Asset ownership defined - Owner dan custodian assigned
 - ✅ **AM-3**: Data classification - 3-tier classification dengan labeling

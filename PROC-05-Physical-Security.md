@@ -13,7 +13,7 @@
 |---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -26,13 +26,13 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur keamanan fisik fasilitas PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan Mandiri VSA Score-4. Prosedur ini mencakup kontrol akses fisik, monitoring, dan proteksi terhadap aset fisik.
+Prosedur ini mengatur keamanan fisik fasilitas PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup kontrol akses fisik, monitoring, dan proteksi terhadap aset fisik.
 
 ### 1.1 Tujuan
 - Melindungi aset fisik perusahaan dari akses tidak sah
 - Mencegah kerusakan atau pencurian peralatan IT
 - Memastikan lingkungan kerja yang aman
-- Memenuhi persyaratan Mandiri VSA untuk physical security yang komprehensif
+- Memenuhi persyaratan untuk physical security yang komprehensif
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua lokasi fisik perusahaan termasuk:
@@ -44,7 +44,6 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 
 ### 1.3 Referensi
 - Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- Standar Mandiri VSA Assessment
 
 ---
 
@@ -293,9 +292,9 @@ __________________________________
 
 ---
 
-## 5. Pemenuhan Standar Mandiri VSA
+## 5. Pemenuhan Standar
 
-### Score-4 Requirements untuk Physical Security:
+### Requirements untuk Physical Security:
 - ✅ **PS-1**: Physical access controls - Multi-layer access dengan monitoring
 - ✅ **PS-2**: Secure areas protection - Server room dengan mantrap
 - ✅ **PS-3**: Equipment security - Locking dan tracking procedures
@@ -304,8 +303,6 @@ __________________________________
 - ✅ **PS-6**: Cabling security - Protected cable runs
 - ✅ **PS-7**: Clean desk policy - Clear desk procedures
 - ✅ **PS-8**: Remote working security - WFH security controls
-
-**Status Kepatuhan:** 100% - Semua 8 kontrol PS terpenuhi
 
 ---
 
