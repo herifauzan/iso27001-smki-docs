@@ -32,7 +32,7 @@ Prosedur ini mengatur manajemen aset informasi PT Ecomindo Sarana Cipta sesuai d
 - Mengidentifikasi dan menginventarisasi semua aset informasi
 - Mengklasifikasikan aset berdasarkan nilai dan sensitivitas
 - Memastikan handling yang aman sepanjang lifecycle aset
-- Memenuhi persyaratan untuk asset management yang komprehensif
+- Memenuhi persyaratan untuk asset manajemen yang komprehensif
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua aset informasi termasuk:
@@ -64,16 +64,16 @@ Berlaku untuk semua aset informasi termasuk:
      - **General**: Sistem umum, data publik
 
 3. **Pembuatan Inventory** (IT Operations - Bulanan)
-   - Update CMDB (Configuration Management Database)
+   - Pembaruan CMDB (Configuration Manajemen Database)
    - Assign owner dan custodian untuk setiap aset
    - Generate laporan inventory
 
-4. **Verifikasi Inventory** (Management - Triwulanan)
+4. **Verifikasi Inventory** (Manajemen - Triwulanan)
    - Audit fisik untuk aset critical
    - Cross-check dengan procurement records
-   - Update inventory berdasarkan perubahan
+   - Pembaruan inventory berdasarkan perubahan
 
-#### Frekuensi: Bulanan update, Triwulanan audit
+#### Frekuensi: Bulanan pembaruan, Triwulanan audit
 
 ### 2.2 Prosedur Klasifikasi Data
 
@@ -83,7 +83,7 @@ Berlaku untuk semua aset informasi termasuk:
 - **Publik (Public)**: Data yang boleh dibagikan
 
 #### Proses Klasifikasi:
-1. **Assessment Risiko** (Data Owner - Saat creation)
+1. **Penilaian Risiko** (Data Owner - Saat creation)
    - Evaluasi dampak jika bocor
    - Tentukan level klasifikasi
 
@@ -93,14 +93,14 @@ Berlaku untuk semua aset informasi termasuk:
 
 3. **Komunikasi** (Data Owner - Segera)
    - Informasikan klasifikasi ke pengguna
-   - Training handling sesuai klasifikasi
+   - Pelatihan handling sesuai klasifikasi
 
 ### 2.3 Prosedur Handling Aset
 
 #### Untuk Hardware:
 1. **Procurement** (Procurement Team)
    - Persetujuan berdasarkan business case
-   - Security assessment sebelum purchase
+   - Security penilaian sebelum purchase
 
 2. **Deployment** (IT Operations)
    - Konfigurasi security baseline
@@ -109,25 +109,25 @@ Berlaku untuk semua aset informasi termasuk:
 
 3. **Maintenance** (IT Operations)
    - Regular patching dan updates
-   - Monitoring health dan performance
+   - Pemantauan health dan performance
    - Backup sebelum maintenance
 
 4. **Transfer** (IT Operations)
    - Wipe data sebelum transfer
-   - Update inventory
+   - Pembaruan inventory
    - Reconfigure untuk user baru
 
 #### Untuk Software:
 1. **Acquisition** (IT Procurement)
-   - License compliance check
-   - Security review source code jika open source
+   - License kepatuhan check
+   - Security tinjauan source code jika open source
 
 2. **Installation** (IT Operations)
    - Test di staging environment
-   - Deploy dengan change management
-   - Update inventory software
+   - Deploy dengan change manajemen
+   - Pembaruan inventory software
 
-3. **Usage Monitoring** (IT Security)
+3. **Usage Pemantauan** (IT Security)
    - Monitor license usage
    - Detect unauthorized software
    - Regular vulnerability scanning
@@ -135,24 +135,24 @@ Berlaku untuk semua aset informasi termasuk:
 ### 2.4 Prosedur Disposal Aset
 
 #### Langkah-langkah:
-1. **Permintaan Disposal** (Asset Owner - 30 hari sebelum)
+1. **Permintaan Disposal** (Pemilik aset - 30 hari sebelum)
    - Isi Form Disposal Aset (Form-AM-01)
    - Jelaskan alasan disposal
 
-2. **Approval** (Management - 7 hari)
-   - Review business justification
+2. **Persetujuan** (Manajemen - 7 hari)
+   - Tinjauan Justifikasi bisnis
    - Approve disposal
 
-3. **Data Sanitization** (IT Security - Sebelum disposal)
+3. **Sanitasi data** (IT Security - Sebelum disposal)
    - Wipe data sesuai standard:
      - HDD: DBAN atau degaussing
      - SSD: Secure erase ATA command
      - Paper: Shredding cross-cut
 
-4. **Disposal Execution** (IT Operations - Segera)
+4. **Eksekusi Disposal** (IT Operations - Segera)
    - Serahkan ke vendor certified
    - Dapatkan certificate of destruction
-   - Update inventory
+   - Pembaruan inventory
 
 5. **Dokumentasi** (IT Operations - Segera)
    - Record disposal di asset register
@@ -166,30 +166,30 @@ Berlaku untuk semua aset informasi termasuk:
 ### 2.5 Prosedur Manajemen Supplier
 
 #### Onboarding Supplier:
-1. **Vendor Assessment** (Procurement - Sebelum kontrak)
+1. **Vendor Penilaian** (Procurement - Sebelum kontrak)
    - Security questionnaire
    - Reference check
    - Site audit jika critical
 
-2. **Contract Review** (Legal/IT Security - Sebelum kontrak)
+2. **Contract Tinjauan** (Legal/IT Security - Sebelum kontrak)
    - Include security clauses
-   - SLA untuk security incidents
+   - SLA untuk Insiden keamanan
    - Right to audit
 
 3. **Onboarding** (IT Operations - Saat kontrak)
    - Provide access sesuai least privilege
-   - Training security requirements
-   - Monitoring aktivitas
+   - Pelatihan Persyaratan keamanan
+   - Pemantauan aktivitas
 
-#### Ongoing Management:
-1. **Performance Monitoring** (Procurement - Triwulanan)
-   - Review security compliance
-   - Incident reporting
+#### Ongoing Manajemen:
+1. **Performance Pemantauan** (Procurement - Triwulanan)
+   - Tinjauan security kepatuhan
+   - Pelaporan insiden
    - Audit findings
 
 2. **Contract Renewal** (Procurement - Tahunan)
    - Re-assess security posture
-   - Update requirements jika perlu
+   - Pembaruan persyaratan jika perlu
 
 3. **Offboarding** (IT Operations - Saat kontrak berakhir)
    - Revoke semua akses
@@ -219,9 +219,9 @@ ___________________________________
 Nilai Aset: ________________________
 Tanggal Acquisition: _______________
 
-Approval:
+Persetujuan:
 ___________________________
-Manager
+Manajer
 Tanggal: __________
 
 Disposal Method: ___________________
@@ -240,7 +240,7 @@ Klasifikasi: □ Rahasia □ Internal □ Publik
 Justifikasi: ________________________
 ___________________________________
 
-Handling Requirements:
+Handling Persyaratan:
 □ Encryption □ Access Control □ Backup
 □ DLP □ Audit Logging □ Other: _____
 
@@ -250,7 +250,7 @@ Data Owner
 Tanggal: __________
 ```
 
-### Inventory-AM-01: Asset Inventory Template
+### Inventory-AM-01: Template Inventaris Aset
 ```
 Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 ----------|------|------|-------------|-------|--------|--------|-------
@@ -258,36 +258,36 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 
 ---
 
-## 4. Kontrol dan Monitoring
+## 4. Kontrol dan Pemantauan
 
 ### 4.1 Mekanisme Kontrol
 - **CMDB Integration**: Centralized asset database
 - **Automated Discovery**: Network scanning untuk hardware
 - **DLP Implementation**: Data classification enforcement
-- **Supplier SLA**: Security requirements in contracts
+- **Supplier SLA**: Persyaratan keamanan in contracts
 
-### 4.2 Monitoring dan Audit
-- Monthly inventory reconciliation
-- Quarterly supplier performance review
-- Annual asset valuation dan insurance update
+### 4.2 Pemantauan dan Audit
+- Bulanan inventory reconciliation
+- Triwulanan supplier performance tinjauan
+- Tahunan asset valuation dan insurance pembaruan
 - Audit trail untuk semua perubahan aset
 
 ### 4.3 Pelaporan Insiden
-- Asset loss/theft: Response dalam 1 jam
-- Data breach: Response dalam 1 jam
-- Supplier incident: Response sesuai SLA
+- Asset loss/theft: Respons dalam 1 jam
+- Data breach: Respons dalam 1 jam
+- Supplier insiden: Respons sesuai SLA
 
 ---
 
 ## 5. Pemenuhan Standar
 
-### Requirements untuk Asset Management:
-- ✅ **AM-1**: Asset inventory maintained - CMDB dengan update bulanan
+### Persyaratan untuk Asset Manajemen:
+- ✅ **AM-1**: Asset inventory maintained - CMDB dengan pembaruan bulanan
 - ✅ **AM-2**: Asset ownership defined - Owner dan custodian assigned
 - ✅ **AM-3**: Data classification - 3-tier classification dengan labeling
-- ✅ **AM-4**: Information handling - Procedures untuk semua lifecycle
+- ✅ **AM-4**: Information handling - Prosedur untuk semua lifecycle
 - ✅ **AM-5**: Secure disposal - Certified destruction dengan records
-- ✅ **AM-6**: Supplier management - Assessment dan monitoring
+- ✅ **AM-6**: Supplier manajemen - Penilaian dan pemantauan
 - ✅ **AM-7**: Intellectual property protection - IP classification dan controls
 - ✅ **AM-8**: Removable media controls - Encryption dan tracking
 
@@ -299,30 +299,30 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Oversight asset management |
+| ISM | Oversight asset manajemen |
 | Manajer Operasi IT | Inventory dan maintenance |
 | Petugas Keamanan IT | Classification dan disposal |
-| Manajer Pengadaan | Supplier management |
+| Manajer Pengadaan | Supplier manajemen |
 | Kepala Departemen | Asset ownership dalam departemen |
 | Pemilik Data | Data classification dan handling |
 
 ---
 
-## 7. Review dan Update
+## 7. Tinjauan dan Pembaruan
 
-- **Frekuensi Review:** Tahunan atau saat ada perubahan signifikan
-- **Tanggung Jawab Review:** IT Operations dan Security Team
-- **Approval Update:** ISM dan Management
+- **Frekuensi Peninjauan:** Tahunan atau saat ada perubahan signifikan
+- **Tanggung Jawab Peninjauan:** IT Operations dan Security Team
+- **Persetujuan Pembaruan:** ISM dan Manajemen
 
 ---
 
 ## 8. Lampiran
 
-- Lampiran A: Asset Classification Matrix
-- Lampiran B: Data Disposal Standards
+- Lampiran A: Klasifikasi aset Matrix
+- Lampiran B: Standar pemusnahan data
 - Lampiran C: Supplier Security Questionnaire
 - Lampiran D: CMDB Schema dan Fields
-- Lampiran E: Asset Valuation Guidelines
+- Lampiran E: Asset Valuation Pedoman
 
 ---
 

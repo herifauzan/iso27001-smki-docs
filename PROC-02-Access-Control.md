@@ -52,7 +52,7 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
 #### Langkah-langkah:
 1. **Permintaan Akses** (HR/Admin)
    - Pengguna baru mengisi Formulir Permintaan Akses (Form-AK-01)
-   - Manager departemen menyetujui permintaan
+   - Manajer departemen menyetujui permintaan
    - HR mengirim permintaan ke Tim IT Security
 
 2. **Verifikasi Identitas** (IT Security - 1 hari)
@@ -70,15 +70,15 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
    - Jelaskan hak dan tanggung jawab akses
    - Dokumentasikan dalam log pelatihan
 
-5. **Aktivasi dan Monitoring** (IT Security - Segera)
+5. **Aktivasi dan Pemantauan** (IT Security - Segera)
    - Aktivasi akun setelah pelatihan selesai
    - Monitor aktivitas awal pengguna selama 7 hari pertama
 
 #### Waktu Total: 5 hari kerja
 #### Tanggung Jawab:
 - HR: Permintaan dan verifikasi awal
-- IT Security: Implementasi teknis dan monitoring
-- Manager: Persetujuan
+- IT Security: Implementasi teknis dan pemantauan
+- Manajer: Persetujuan
 
 ### 2.2 Prosedur Penghapusan Akses
 
@@ -95,7 +95,7 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
 3. **Penghapusan Permanen** (IT Security - Dalam 24 jam)
    - Hapus akun dari semua sistem
    - Backup data penting sebelum penghapusan
-   - Update dokumentasi akses
+   - Pembaruan dokumentasi akses
 
 4. **Pengembalian Aset** (HR/IT - Dalam 24 jam)
    - Kumpulkan laptop, ID card, dan akses card
@@ -110,18 +110,18 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
 ### 2.3 Prosedur Perubahan Akses
 
 #### Langkah-langkah:
-1. **Permintaan Perubahan** (Pengguna/Manager)
+1. **Permintaan Perubahan** (Pengguna/Manajer)
    - Isi Formulir Perubahan Akses (Form-AK-02)
    - Jelaskan alasan perubahan dan akses tambahan/dikurangi
 
-2. **Review dan Persetujuan** (Manager/IT Security - 2 hari)
-   - Manager menyetujui perubahan
-   - IT Security review teknis feasibility
+2. **Tinjauan dan Persetujuan** (Manajer/IT Security - 2 hari)
+   - Manajer menyetujui perubahan
+   - IT Security tinjauan teknis feasibility
 
 3. **Implementasi** (IT Security - 1 hari)
-   - Update permission di sistem
+   - Pembaruan permission di sistem
    - Test akses baru
-   - Update dokumentasi
+   - Pembaruan dokumentasi
 
 4. **Verifikasi** (Pengguna - Segera)
    - Pengguna test akses baru
@@ -140,13 +140,13 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
    - Program akses card dengan zone yang sesuai
    - Test akses ke area yang diizinkan
 
-3. **Monitoring Akses** (Security Officer - Kontinyu)
+3. **Pemantauan Akses** (Security Officer - Berkelanjutan)
    - Monitor CCTV dan log akses
    - Investigasi akses mencurigakan
 
 4. **Pembaruan Akses Fisik** (Security Officer - Berkala)
-   - Review akses fisik setiap 6 bulan
-   - Update akses berdasarkan perubahan jabatan
+   - Tinjauan akses fisik setiap 6 bulan
+   - Pembaruan akses berdasarkan perubahan jabatan
 
 ### 2.5 Prosedur Audit Akses
 
@@ -156,7 +156,7 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
    - Audit triwulanan untuk semua akses
 
 2. **Pelaksanaan Audit** (IT Security - 5 hari kerja)
-   - Review log akses dan aktivitas
+   - Tinjauan log akses dan aktivitas
    - Identifikasi akses tidak sah atau tidak digunakan
    - Analisis pattern akses mencurigakan
 
@@ -164,9 +164,9 @@ Berlaku untuk semua sistem informasi, aplikasi, dan data perusahaan termasuk:
    - Dokumentasikan temuan
    - Rekomendasikan perbaikan
 
-4. **Tindak Lanjut** (Management - 30 hari)
+4. **Tindak Lanjut** (Manajemen - 30 hari)
    - Implementasi rekomendasi
-   - Update prosedur jika diperlukan
+   - Pembaruan prosedur jika diperlukan
 
 #### Frekuensi: Bulanan untuk privileged, Triwulanan untuk umum
 
@@ -194,7 +194,7 @@ Tanda Tangan Pemohon
 
 Disetujui Oleh:
 ___________________________
-Manager Departemen
+Manajer Departemen
 Tanggal: __________
 
 Dikonfigurasi Oleh:
@@ -215,7 +215,7 @@ ___________________________
 
 Disetujui Oleh:
 ___________________________
-Manager
+Manajer
 Tanggal: __________
 ```
 
@@ -227,7 +227,7 @@ Tanggal | Waktu | Pengguna | Aksi | Sistem | Status
 
 ---
 
-## 4. Kontrol dan Monitoring
+## 4. Kontrol dan Pemantauan
 
 ### 4.1 Mekanisme Kontrol
 - **Role-Based Access Control (RBAC)**: Semua akses berdasarkan role jabatan
@@ -235,10 +235,10 @@ Tanggal | Waktu | Pengguna | Aksi | Sistem | Status
 - **Multi-Factor Authentication (MFA)**: Wajib untuk akses remote dan privileged
 - **Session Timeout**: Otomatis logout setelah 30 menit tidak aktif
 
-### 4.2 Monitoring dan Audit
+### 4.2 Pemantauan dan Audit
 - Log semua aktivitas akses dicatat dan disimpan minimal 2 tahun
 - Alert otomatis untuk aktivitas mencurigakan
-- Review log akses bulanan oleh IT Security
+- Tinjauan log akses bulanan oleh IT Security
 - Audit eksternal tahunan
 
 ### 4.3 Pelaporan Insiden
@@ -246,21 +246,21 @@ Jika ditemukan akses tidak sah:
 1. Segera disable akses terkait
 2. Investigasi penyebab
 3. Laporkan ke ISM dalam 24 jam
-4. Update prosedur pencegahan
+4. Pembaruan prosedur pencegahan
 
 ---
 
 ## 5. Pemenuhan Standar
 
-### Requirements untuk Access Control:
-- ✅ **AC-1**: Access control policy established - Policy lengkap dengan approval
+### Persyaratan untuk Access Control:
+- ✅ **AC-1**: Access control kebijakan established - Kebijakan lengkap dengan persetujuan
 - ✅ **AC-2**: Access rights managed - Prosedur pemberian/penghapusan akses
 - ✅ **AC-3**: User access reviews - Audit bulanan dan triwulanan
-- ✅ **AC-4**: Secure authentication - MFA dan password policy
-- ✅ **AC-5**: Access logging and monitoring - Log lengkap dengan alert
-- ✅ **AC-6**: Remote access security - VPN dengan MFA
+- ✅ **AC-4**: Secure authentication - MFA dan Kebijakan kata sandi
+- ✅ **AC-5**: Access logging and pemantauan - Log lengkap dengan alert
+- ✅ **AC-6**: Akses jarak jauh security - VPN dengan MFA
 - ✅ **AC-7**: Physical access controls - Akses card dan CCTV
-- ✅ **AC-8**: Privileged access management - Separate admin accounts
+- ✅ **AC-8**: Privileged access manajemen - Separate admin accounts
 
 ---
 
@@ -269,26 +269,26 @@ Jika ditemukan akses tidak sah:
 | Peran | Tanggung Jawab |
 |-------|----------------|
 | ISM | Oversight keseluruhan kontrol akses |
-| Petugas Keamanan IT | Implementasi teknis dan monitoring |
+| Petugas Keamanan IT | Implementasi teknis dan pemantauan |
 | Manajer HR | Koordinasi akses karyawan |
 | Manajer Departemen | Persetujuan akses departemen |
 | Petugas Keamanan | Kontrol akses fisik |
-| Pengguna Akhir | Kepatuhan terhadap policy akses |
+| Pengguna Akhir | Kepatuhan terhadap kebijakan akses |
 
 ---
 
-## 7. Review dan Update
+## 7. Tinjauan dan Pembaruan
 
-- **Frekuensi Review:** Tahunan atau saat ada perubahan signifikan
-- **Tanggung Jawab Review:** IT Security Team
-- **Approval Update:** ISM dan Management
+- **Frekuensi Peninjauan:** Tahunan atau saat ada perubahan signifikan
+- **Tanggung Jawab Peninjauan:** IT Security Team
+- **Persetujuan Pembaruan:** ISM dan Manajemen
 
 ---
 
 ## 8. Lampiran
 
 - Lampiran A: Daftar Role dan Permission Matrix
-- Lampiran B: Password Policy Detail
+- Lampiran B: Kebijakan kata sandi Detail
 - Lampiran C: MFA Implementation Guide
 - Lampiran D: Access Control System Architecture
 

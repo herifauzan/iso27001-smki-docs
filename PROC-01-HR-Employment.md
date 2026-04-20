@@ -585,7 +585,7 @@ Dokumentasikan semuanya dengan:
 
 ### 3.1 Tujuan
 
-Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo menjalani penilaian keamanan yang ketat dan memiliki kontrol/monitoring selama engagement.
+Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo menjalani penilaian keamanan yang ketat dan memiliki kontrol/pemantauan selama engagement.
 
 ### 3.2 Ruang Lingkup
 
@@ -601,7 +601,7 @@ Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo m
 | **HR/ Pengadaan** | Mengidentifikasi kebutuhan kontraktor, memulai penilaian |
 | **ISM** | Persetujuan keamanan, verifikasi kepatuhan |
 | **Manajer Proyek** | Pengelolaan kontraktor, pengawasan |
-| **Keamanan IT** | Penyediaan akses, monitoring |
+| **Keamanan IT** | Penyediaan akses, pemantauan |
 
 ### 3.4 Daftar Periksa Penilaian Kontraktor
 
@@ -644,7 +644,7 @@ SETIAP KONTRAKTOR HARUS:
 **Catatan Status untuk Penggunaan Sub-Kontraktor di MMI (Skor 1 untuk 4.3):**
 - Penggunaan layanan sub-kontraktor untuk lingkup kerjasama dengan MMI belum memperoleh persetujuan dari MMI
 - Proses persetujuan masih dalam tahap koordinasi dengan MMI
-- Semua engagement sub-kontraktor memerlukan approval formal dari MMI sebelum dimulai
+- Semua engagement sub-kontraktor memerlukan persetujuan formal dari MMI sebelum dimulai
 
 ### 3.5 Proses Persetujuan
 
@@ -666,7 +666,7 @@ Penyediaan akses (jika akses sistem diperlukan)
 Engagement dimulai  
 ```
 
-### 3.6 Monitoring Berkelanjutan
+### 3.6 Pemantauan Berkelanjutan
 
 1. **Check-in Mingguan**: Manajer proyek memverifikasi kemajuan, tidak ada masalah
 2. **Tinjauan Akses**: Triwulanan, verifikasi kontraktor masih perlu akses

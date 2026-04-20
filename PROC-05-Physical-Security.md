@@ -26,13 +26,13 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur keamanan fisik fasilitas PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup kontrol akses fisik, monitoring, dan proteksi terhadap aset fisik.
+Prosedur ini mengatur keamanan fisik fasilitas PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001. Prosedur ini mencakup kontrol akses fisik, pemantauan, dan proteksi terhadap aset fisik.
 
 ### 1.1 Tujuan
 - Melindungi aset fisik perusahaan dari akses tidak sah
 - Mencegah kerusakan atau pencurian peralatan IT
 - Memastikan lingkungan kerja yang aman
-- Memenuhi persyaratan untuk physical security yang komprehensif
+- Memenuhi persyaratan untuk Keamanan Fisik yang komprehensif
 
 ### 1.2 Ruang Lingkup
 Berlaku untuk semua lokasi fisik perusahaan termasuk:
@@ -40,7 +40,7 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 - Server room dan data center
 - Area kerja karyawan
 - Area publik dan visitor
-- Remote sites dan home office
+- Remote sites dan kerja dari rumah
 
 ### 1.3 Referensi
 - Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
@@ -60,10 +60,10 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 2. **Akses Karyawan** (HR/Security - Saat onboarding)
    - Foto untuk ID card dan akses card
    - Program akses card sesuai role
-   - Training penggunaan sistem akses
+   - Pelatihan penggunaan sistem akses
 
-3. **Monitoring Akses** (Security Officer - Kontinyu)
-   - CCTV monitoring 24/7
+3. **Pemantauan Akses** (Security Officer - Berkelanjutan)
+   - CCTV pemantauan 24/7
    - Log semua akses masuk/keluar
    - Alert untuk akses tidak sah
 
@@ -75,20 +75,20 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 
 2. **Data Center Access** (IT Security - Restricted)
    - Pre-authorization required
-   - Escort untuk visitors
+   - Escort untuk pengunjung
    - Full audit logging
 
 ### 2.2 Prosedur Pengamanan Peralatan
 
 #### Workstation Security:
-1. **Locking Policy** (Semua Karyawan - Selalu)
+1. **Locking Kebijakan** (Semua Karyawan - Selalu)
    - Lock screen saat meninggalkan workstation
    - Password protect atau auto-lock setelah 5 menit
    - Tidak meninggalkan device tanpa pengawasan
 
 2. **Mobile Device Security** (IT Security - Saat issuance)
    - Enable device encryption
-   - Install MDM (Mobile Device Management)
+   - Install MDM (Mobile Device Manajemen)
    - Remote wipe capability
 
 3. **Portable Equipment** (IT Operations - Saat peminjaman)
@@ -97,49 +97,49 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
    - Return check sebelum deadline
 
 #### Server Room Security:
-1. **Environmental Controls** (Facilities - Kontinyu)
+1. **Environmental Controls** (Facilities - Berkelanjutan)
    - Temperature: 18-24°C
    - Humidity: 40-60%
    - Fire suppression system
    - UPS dan generator backup
 
-2. **Access Controls** (Security Officer - Kontinyu)
-   - 24/7 monitoring
+2. **Access Controls** (Security Officer - Berkelanjutan)
+   - 24/7 pemantauan
    - Restricted access list
-   - Emergency access procedures
+   - Darurat access prosedur
 
-### 2.3 Prosedur Response Insiden Fisik
+### 2.3 Prosedur Respons Insiden Fisik
 
-#### Theft/Loss Response:
-1. **Immediate Response** (Security Officer - Segera)
+#### Theft/Loss Respons:
+1. **Segera Respons** (Security Officer - Segera)
    - Secure area terdampak
    - Notify police jika theft
    - Assess damage/data exposure
 
-2. **Investigation** (Security Team - < 24 jam)
-   - Review CCTV footage
+2. **Penyelidikan** (Security Team - < 24 jam)
+   - Tinjauan CCTV footage
    - Interview saksi
    - Document findings
 
 3. **Recovery** (IT Operations - Segera)
    - Restore dari backup jika data hilang
    - Replace equipment
-   - Update security measures
+   - Pembaruan security measures
 
-#### Emergency Response:
+#### Darurat Respons:
 1. **Fire Alarm** (Semua Personil - Segera)
-   - Evacuate sesuai emergency route
+   - Evacuate sesuai darurat route
    - Head count di assembly point
    - Wait for all-clear dari security
 
-2. **Medical Emergency** (First Aid Team - Segera)
+2. **Medical Darurat** (First Aid Team - Segera)
    - Call ambulance (118)
    - Provide first aid
    - Escort to medical facility
 
 3. **Security Breach** (Security Officer - Segera)
    - Lockdown area terdampak
-   - Notify management
+   - Notify manajemen
    - Coordinate dengan police jika perlu
 
 ### 2.4 Prosedur Maintenance dan Inspeksi
@@ -148,15 +148,15 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 1. **Daily Checks** (Security Officer - Harian)
    - Periksa semua access points
    - Verify CCTV functionality
-   - Check emergency equipment
+   - Check darurat equipment
 
 2. **Weekly Inspections** (Facilities Team - Mingguan)
    - Test fire alarm system
    - Check UPS dan generator
-   - Inspect physical security devices
+   - Inspect Keamanan Fisik devices
 
-3. **Monthly Audits** (Security Team - Bulanan)
-   - Review access logs
+3. **Bulanan Audits** (Security Team - Bulanan)
+   - Tinjauan access logs
    - Test backup systems
    - Audit visitor logs
 
@@ -169,31 +169,31 @@ Berlaku untuk semua lokasi fisik perusahaan termasuk:
 ### 2.5 Prosedur Working from Home
 
 #### Setup WFH:
-1. **Approval Process** (Manager - Sebelum WFH)
-   - Business justification
-   - Risk assessment
-   - Approval dari IT Security
+1. **Persetujuan Process** (Manajer - Sebelum WFH)
+   - Justifikasi bisnis
+   - Risiko penilaian
+   - Persetujuan dari IT Security
 
 2. **Home Office Setup** (IT Operations - Saat setup)
    - Secure WiFi dengan WPA3
    - Install VPN client
-   - Setup workstation dengan security controls
+   - Setup workstation dengan Kontrol keamanan
 
-3. **Security Requirements** (Karyawan - Selama WFH)
+3. **Persyaratan keamanan** (Karyawan - Selama WFH)
    - Lock device saat tidak digunakan
    - Secure storage untuk documents
    - Regular backup data
 
-#### Monitoring WFH:
-1. **Access Monitoring** (IT Security - Kontinyu)
+#### Pemantauan WFH:
+1. **Access Pemantauan** (IT Security - Berkelanjutan)
    - VPN connection logs
-   - Device health monitoring
+   - Device health pemantauan
    - Unusual activity alerts
 
-2. **Periodic Checks** (Manager - Mingguan)
+2. **Periodic Checks** (Manajer - Mingguan)
    - Virtual check-in
-   - Productivity monitoring
-   - Security compliance verification
+   - Productivity pemantauan
+   - Security kepatuhan verification
 
 ---
 
@@ -236,9 +236,9 @@ Tujuan: ___________________________
 Lokasi Penggunaan: ________________
 Tanggal Pengembalian: _____________
 
-Approval:
+Persetujuan:
 ___________________________
-Manager
+Manajer
 Tanggal: __________
 
 Kondisi Saat Peminjaman: __________
@@ -251,7 +251,7 @@ Diterima Oleh: ___________________
 Tanggal: __________
 ```
 
-### Checklist-PS-01: Daily Security Checklist
+### Daftar Periksa-PS-01: Daily Security Daftar Periksa
 ```
 Tanggal: __________________________
 Security Officer: _________________
@@ -259,7 +259,7 @@ Security Officer: _________________
 □ Semua pintu utama terkunci
 □ CCTV system operational
 □ Access control system functional
-□ Emergency exits clear
+□ Darurat exits clear
 □ Fire extinguishers in place
 □ Server room access secure
 □ Visitor log updated
@@ -271,38 +271,38 @@ __________________________________
 
 ---
 
-## 4. Kontrol dan Monitoring
+## 4. Kontrol dan Pemantauan
 
 ### 4.1 Mekanisme Kontrol
 - **Multi-layer Access**: Card access + PIN + biometric
-- **24/7 Monitoring**: CCTV dengan recording 30 hari
+- **24/7 Pemantauan**: CCTV dengan recording 30 hari
 - **Environmental Sensors**: Temperature, humidity, smoke detectors
-- **Emergency Systems**: Fire alarm, sprinkler, emergency lighting
+- **Darurat Systems**: Fire alarm, sprinkler, darurat lighting
 
-### 4.2 Monitoring dan Audit
-- Real-time CCTV monitoring di security center
+### 4.2 Pemantauan dan Audit
+- Real-time CCTV pemantauan di security center
 - Automated alerts untuk system failures
-- Monthly physical security audits
-- Annual penetration testing untuk physical security
+- Bulanan Keamanan Fisik audits
+- Tahunan penetration testing untuk Keamanan Fisik
 
 ### 4.3 Pelaporan Insiden
-- Physical intrusion: Response dalam 2 menit
-- Equipment theft: Response dalam 5 menit
-- Environmental incident: Response dalam 10 menit
+- Physical intrusion: Respons dalam 2 menit
+- Equipment theft: Respons dalam 5 menit
+- Environmental insiden: Respons dalam 10 menit
 
 ---
 
 ## 5. Pemenuhan Standar
 
-### Requirements untuk Physical Security:
-- ✅ **PS-1**: Physical access controls - Multi-layer access dengan monitoring
+### Persyaratan untuk Keamanan Fisik:
+- ✅ **PS-1**: Physical access controls - Multi-layer access dengan pemantauan
 - ✅ **PS-2**: Secure areas protection - Server room dengan mantrap
-- ✅ **PS-3**: Equipment security - Locking dan tracking procedures
-- ✅ **PS-4**: Visitor management - Registration dan escort
+- ✅ **PS-3**: Equipment security - Locking dan tracking prosedur
+- ✅ **PS-4**: Visitor manajemen - Registration dan escort
 - ✅ **PS-5**: Environmental controls - HVAC dan fire suppression
 - ✅ **PS-6**: Cabling security - Protected cable runs
-- ✅ **PS-7**: Clean desk policy - Clear desk procedures
-- ✅ **PS-8**: Remote working security - WFH security controls
+- ✅ **PS-7**: Kebijakan clean desk - Clear desk prosedur
+- ✅ **PS-8**: Pekerja jarak jauh security - WFH Kontrol keamanan
 
 ---
 
@@ -310,30 +310,30 @@ __________________________________
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Oversight physical security |
+| ISM | Oversight Keamanan Fisik |
 | Manajer Keamanan | Daily security operations |
 | Manajer Fasilitas | Building maintenance dan environmental controls |
 | Manajer Operasi IT | Equipment security dan server room |
-| Kepala Departemen | Compliance dalam departemen |
-| Semua Karyawan | Adhere to physical security procedures |
+| Kepala Departemen | Kepatuhan dalam departemen |
+| Semua Karyawan | Adhere to Keamanan Fisik prosedur |
 
 ---
 
-## 7. Review dan Update
+## 7. Tinjauan dan Pembaruan
 
-- **Frekuensi Review:** Tahunan atau saat ada perubahan signifikan
-- **Tanggung Jawab Review:** Security dan Facilities Team
-- **Approval Update:** ISM dan Management
+- **Frekuensi Peninjauan:** Tahunan atau saat ada perubahan signifikan
+- **Tanggung Jawab Peninjauan:** Security dan Facilities Team
+- **Persetujuan Pembaruan:** ISM dan Manajemen
 
 ---
 
 ## 8. Lampiran
 
 - Lampiran A: Site Layout dengan Security Zones
-- Lampiran B: Emergency Response Procedures
+- Lampiran B: Darurat Respons Prosedur
 - Lampiran C: CCTV Camera Locations
 - Lampiran D: Access Control System Configuration
-- Lampiran E: WFH Security Guidelines
+- Lampiran E: WFH Security Pedoman
 
 ---
 
