@@ -1611,14 +1611,7 @@ Jika ditemukan non-compliance:
 
 | Role | Name | Phone | Email |
 |------|------|-------|-------|
-| ISM (Information Security Manager) / Kepala Keamanan Informasi | _________________ | _________________ | _________________ |
-| Security Team Lead | _________________ | _________________ | _________________ |
-| Incident Response Team Lead | _________________ | _________________ | _________________ |
-| IT Manager | _________________ | _________________ | _________________ |
-| CEO / Emergency Authority | _________________ | _________________ | _________________ |
-
-**24/7 Hotline untuk Security Incidents:**
-📞 [TBD - To be defined by organization]
+| ISM (Information Security Manager) / Kepala Keamanan Informasi | Heri Fauzan | 081319015745 | heri.fauzan@ecomindo.com |
 
 ---
 
