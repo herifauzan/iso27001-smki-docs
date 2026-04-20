@@ -1,0 +1,9 @@
+# Ignore all files in this directory
+*
+
+# But allow .gitignore itself
+!.gitignore
+
+# Allow specific files if needed (uncomment and modify as necessary)
+# !important-file.md
+# !*.pdf
