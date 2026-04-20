@@ -136,32 +136,31 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 ### 5.1 Governance Model (ISO 27001 Aligned)
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                   BOARD OF DIRECTORS                        │
-│                       (C-level)                             │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│             INFORMATION SECURITY MANAGER (ISM)             │
-└─────────────────────────────────────────────────────────────┘
-       │              │              │              │
-       ▼              ▼              ▼              ▼
-  ┌─────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
-  │Policies │   │ Identity │   │Physical  │   │Incident  │
-  │ & Risk  │   │ & Access │   │Security &│   │Response &│
-  │ Mgmt    │   │Management│   │Operations│   │Compliance│
-  │Team 1   │   │Team 2    │   │Team 3    │   │Team 4    │
-  ├─────────┤   ├──────────┤   ├──────────┤   ├──────────┤
-  │• Risk   │   │• User    │   │• Access  │   │• Incident│
-  │  Assess │   │  Mgmt    │   │  Control │   │  Response│
-  │• Audit  │   │• MFA/VPN │   │• CCTV &  │   │• Forensics|
-  │• Vendor │   │• Password│   │  Physical│   │• Audit   │
-  │  Onboard│   │  Policy  │   │  Access  │   │  Trail   │
-  │• Cert & │   └──────────┘   └──────────┘   └──────────┘
-  │  Compli │                 
-  │  ance   │                  
-  └─────────┘
+graph TD
+    %% Define Nodes
+    BOD["**BOARD OF DIRECTORS**<br/>(C-level)"]
+    ISM["**INFORMATION SECURITY MANAGER (ISM)**"]
+    
+    T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>• Risk Assess<br/>• Audit<br/>• Vendor Onboard<br/>• Cert & Compliance"]
+    T2["**Identity & Access Management**<br/>Team 2<br/><br/>• User Mgmt<br/>• MFA/VPN<br/>• Password Policy"]
+    T3["**Physical Security & Operations**<br/>Team 3<br/><br/>• Access Control<br/>• CCTV & Physical Access"]
+    T4["**Incident Response & Compliance**<br/>Team 4<br/><br/>• Incident Response<br/>• Forensics<br/>• Audit Trail"]
+
+    %% Define Connections
+    BOD --> ISM
+    ISM --> T1
+    ISM --> T2
+    ISM --> T3
+    ISM --> T4
+
+    %% Define Styling (Optional, to make it look nicer)
+    classDef main fill:#f9f,stroke:#333,stroke-width:2px,color:black;
+    classDef manager fill:#ccf,stroke:#333,stroke-width:2px,color:black;
+    classDef team fill:#fff,stroke:#333,stroke-width:1px,color:black,text-align:left;
+
+    class BOD main;
+    class ISM manager;
+    class T1,T2,T3,T4 team;
 ```
 
 ### 5.2 Reporting Structure
@@ -1620,20 +1619,46 @@ Jika ditemukan non-compliance:
 ### 13.1 Document Hierarchy
 
 ```
-TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI.md (Dokumen ini)
-    │
-    ├─ Procedures
-    │   ├─ PROC-01-HR-Employment.md
-    │   ├─ PROC-02-Access-Control.md
-    │   ├─ PROC-03-Operations-Security.md
-    │   ├─ PROC-04-Asset-Management.md
-    │   ├─ PROC-05-Physical-Security.md
-    │   └─ PROC-06-Awareness-Compliance.md
-    │
-    └─ Evidence
-        └─ BUKTI-EVIDENCE-LENGKAP.md
-            (Master Checklist + 10 Evidence Sections)
+graph LR
+    %% Main Document
+    Main["**TATA KELOLA DAN KEBIJAKAN<br/>KEAMANAN INFORMASI**"]
+
+    %% Folders
+    Sub1["📂 Procedures"]
+    Sub2["📂 Evidence"]
+
+    %% Procedures Files
+    P1["PROC-01-HR-Employment"]
+    P2["PROC-02-Access-Control"]
+    P3["PROC-03-Operations-Security"]
+    P4["PROC-04-Asset-Management"]
+    P5["PROC-05-Physical-Security"]
+    P6["PROC-06-Awareness-Compliance"]
+
+    %% Evidence Files
+    E1["**BUKTI-EVIDENCE-LENGKAP**<br/>*(Master Checklist + 10 Sections)*"]
+
+    %% Connections
+    Main --- Sub1
+    Main --- Sub2
+
+    Sub1 --> P1
+    Sub1 --> P2
+    Sub1 --> P3
+    Sub1 --> P4
+    Sub1 --> P5
+    Sub1 --> P6
+
+    Sub2 --> E1
+
+    %% Styling
+    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef folder fill:#fff9c4,stroke:#fbc02d,stroke-width:1px;
+    classDef file fill:#ffffff,stroke:#333,stroke-dasharray: 0;
     
+    class Main main;
+    class Sub1,Sub2 folder;
+    class P1,P2,P3,P4,P5,P6,E1 file;
 ```
 
 ### 13.2 Cross-Reference Matrix

@@ -12,10 +12,9 @@
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|
----------|------|-------------|--------|
-| CEO |  |  |  |
-| Manajer Keamanan Informasi |  |  |  |
+|---------|------|-------------|--------|
+| Direktur Operasional / COO | Dodi Darundriyo |   |   |
+| Manajer Keamanan Informasi (ISM)| Heri Fauzan |   |   |
 | Manajer HR |  |  |  |
 
 ---
