@@ -13,9 +13,9 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
-| Direktur Utama |  |  |  |
+| CEO |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -46,9 +46,9 @@ Prosedur ini berlaku untuk:
 
 | Peran | Tanggung Jawab |
 |-------|-----------------|
-| **Manajer SDM** | Mengkoordinasi perekrutan, mengidentifikasi kandidat |
+| **Manajer HR** | Mengkoordinasi perekrutan, mengidentifikasi kandidat |
 | **Manajer Perekrutan** | Menyetujui daftar kandidat, persetujuan akhir perekrutan |
-| **Koordinator SDM** | Mengeksekusi pemeriksaan latar belakang, mempertahankan catatan |
+| **Koordinator HR** | Mengeksekusi pemeriksaan latar belakang, mempertahankan catatan |
 | **ISM (Manajer Keamanan Informasi)** | Menyetujui kebijakan pemeriksaan latar belakang, meninjau kandidat tingkat tinggi |
 | Penyedia Jasa Pemeriksaan Latar Belakang | Melakukan verifikasi (outsourced atau internal) |
 
@@ -65,7 +65,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 1: Memulai Proses Pemeriksaan Latar Belakang**
 
 **Jadwal:** Segera setelah kandidat dipilih  
-**Penanggung Jawab:** Koordinator SDM
+**Penanggung Jawab:** Koordinator HR
 
 1. Kirim formulir otorisasi pemeriksaan latar belakang kepada kandidat
    - Formulir harus mencakup:
@@ -90,7 +90,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 2: Verifikasi Identitas**
 
 **Jadwal:** Hari 1-2 setelah Langkah 1  
-**Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang ATAU SDM
+**Penanggung Jawab:** Penyedia Jasa Pemeriksaan Latar Belakang ATAU HR
 
 1. Verifikasi identifikasi pribadi:
    - Hubungi otoritas penerbit KTP/SIM untuk memverifikasi nomor valid
@@ -111,10 +111,10 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 3: Verifikasi Riwayat Pekerjaan**
 
 **Jadwal:** Hari 2-5 setelah Langkah 1  
-**Penanggung Jawab:** Koordinator SDM
+**Penanggung Jawab:** Koordinator HR
 
 1. Hubungi/email pemberi kerja sebelumnya yang tercantum dalam CV:
-   - Hubungi departemen SDM dari perusahaan sebelumnya
+   - Hubungi departemen HR dari perusahaan sebelumnya
    - Minta verifikasi dari:
      - Tanggal bekerja
      - Jabatan
@@ -163,7 +163,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 5: Verifikasi Pendidikan** (jika berlaku)
 
 **Jadwal:** Hari 3-7  
-**Penanggung Jawab:** Koordinator SDM
+**Penanggung Jawab:** Koordinator HR
 
 1. Hubungi institusi pendidikan yang tercantum dalam resume:
    - Universitas/kuliah/vokasi
@@ -203,7 +203,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 7: Verifikasi Media Sosial & Online**
 
 **Jadwal:** Hari 5-7  
-**Penanggung Jawab:** Koordinator SDM
+**Penanggung Jawab:** Koordinator HR
 
 1. Layar profil media sosial (LinkedIn, Facebook, Twitter):
    - Cari bendera merah:
@@ -223,7 +223,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 8: Penilaian Akhir & Rekomendasi**
 
 **Jadwal:** Hari 7-10 setelah inisiasi  
-**Penanggung Jawab:** Koordinator SDM + ISM
+**Penanggung Jawab:** Koordinator HR + ISM
 
 1. Kompilasi semua temuan pemeriksaan latar belakang:
    - Buat laporan pemeriksaan latar belakang komprehensif dengan:
@@ -248,7 +248,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 #### **LANGKAH 9: Persetujuan Akhir & Arsip**
 
 **Jadwal:** Hari 8-10  
-**Penanggung Jawab:** Manajer SDM
+**Penanggung Jawab:** Manajer HR
 
 1. Keputusan akhir manajer perekrutan:
    - Jika LULUS: Lanjutkan dengan dokumen perekrutan
@@ -261,7 +261,7 @@ Sebelum pemeriksaan latar belakang dimulai:
 
 3. Arsip file pemeriksaan latar belakang:
    - Simpan dengan aman (lemari arsip rahasia atau folder digital terenkripsi)
-   - Akses terbatas kepada: SDM, ISM, Manajer Perekrutan saja
+   - Akses terbatas kepada: HR, ISM, Manajer Perekrutan saja
    - Retensi: Simpan minimal 3 tahun setelah pekerjaan berakhir
 
 4. Komunikasikan kepada kandidat:
@@ -279,7 +279,7 @@ Jika APA PUN dari berikut DITEMUKAN, HENTIKAN proses dan eskalasi kepada ISM:
 - Surat perintah yang belum selesai atau masalah hukum
 
 **Proses Eskalasi:**
-1. SDM memberitahu ISM segera
+1. HR memberitahu ISM segera
 2. ISM meninjau semua dokumentasi
 3. ISM membuat keputusan terima/tolak akhir
 4. Jika TOLAK: Kandidat tidak direkrut; penawaran dapat dicabut jika sudah dibuat
@@ -315,7 +315,7 @@ Prosedur ini berlaku untuk:
 
 | Peran | Tanggung Jawab |
 |-------|-----------------|
-| **Manajer SDM** | Memberitahu pemutusan, mengkoordinasi proses |
+| **Manajer HR** | Memberitahu pemutusan, mengkoordinasi proses |
 | **Manajer Perekrutan** | Menginformasikan IT, mengumpulkan peralatan |
 | **Admin Sistem IT** | Menonaktifkan akun sistem |
 | **Fasilitas** | Mencabut akses fisik kartu lencana |
@@ -342,9 +342,9 @@ Setelah 30 hari → Arsip/hapus akun lama
 #### **LANGKAH 1: Pemberitahuan Pemutusan**
 
 **Jadwal:** Segera ketika pemutusan diputuskan  
-**Penanggung Jawab:** Manajer SDM
+**Penanggung Jawab:** Manajer HR
 
-1. SDM menerima pemberitahuan dari manajer perekrutan/karyawan:
+1. HR menerima pemberitahuan dari manajer perekrutan/karyawan:
    - Surat pengunduran diri, ATAU
    - Keputusan manajemen untuk memutuskan
 
@@ -361,7 +361,7 @@ Setelah 30 hari → Arsip/hapus akun lama
 #### **LANGKAH 2: Persiapkan Pencabutan Akses**
 
 **Jadwal:** Hari 0 (segera setelah pemberitahuan pemutusan)  
-**Penanggung Jawab:** SDM + Manajer Perekrutan
+**Penanggung Jawab:** HR + Manajer Perekrutan
 
 1. Beritahu Admin Sistem IT:
    - Email pemberitahuan dengan detail karyawan
@@ -481,7 +481,7 @@ Setelah 30 hari → Arsip/hapus akun lama
 #### **LANGKAH 6: Wawancara Keluar - PADA/SEBELUM HARI TERAKHIR**
 
 **Jadwal:** Pada atau sebelum hari kerja terakhir  
-**Penanggung Jawab:** Manajer SDM
+**Penanggung Jawab:** Manajer HR
 
 1. Lakukan wawancara keluar dengan karyawan:
    - Dokumentasikan alasan untuk meninggalkan (umpan balik untuk manajemen)
@@ -523,10 +523,10 @@ Setelah 30 hari → Arsip/hapus akun lama
 #### **LANGKAH 8: Arsip & Pembersihan - SETELAH 30 HARI**
 
 **Jadwal:** 30 hari setelah hari terakhir  
-**Penanggung Jawab:** IT + SDM
+**Penanggung Jawab:** IT + HR
 
 1. Arsip catatan karyawan:
-   - File SDM: Pindahkan kepada arsip aman (retensi: per persyaratan regulasi, biasanya 3+ tahun)
+   - File HR: Pindahkan kepada arsip aman (retensi: per persyaratan regulasi, biasanya 3+ tahun)
    - Akun IT: Hapus atau arsip
 
 2. Penghapusan peralatan:
@@ -598,7 +598,7 @@ Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo m
 
 | Peran | Tanggung Jawab |
 |-------|-----------------|
-| **SDM/ Pengadaan** | Mengidentifikasi kebutuhan kontraktor, memulai penilaian |
+| **HR/ Pengadaan** | Mengidentifikasi kebutuhan kontraktor, memulai penilaian |
 | **ISM** | Persetujuan keamanan, verifikasi kepatuhan |
 | **Manajer Proyek** | Pengelolaan kontraktor, pengawasan |
 | **Keamanan IT** | Penyediaan akses, monitoring |
@@ -702,7 +702,7 @@ Memastikan semua personil (karyawan, kontraktor) yang akan mengakses informasi s
 
 | Peran | Tanggung Jawab |
 |-------|-----------------|
-| **SDM** | Mendistribusikan NDA, mengumpulkan tanda tangan |
+| **HR** | Mendistribusikan NDA, mengumpulkan tanda tangan |
 | **Manajer Perekrutan** | Memastikan NDA ditandatangani sebelum karyawan memulai |
 | **Hukum (opsional)** | Meninjau templat NDA, memberikan panduan |
 | **ISM** | Memastikan kepatuhan NDA |
@@ -726,10 +726,10 @@ NDA harus mencakup elemen-elemen berikut:
 
 2. **Pada Hari Pertama**:
    - Jika tidak ditandatangani: Karyawan HARUS menandatangani sebelum penyediaan akses sistem
-   - SDM menyaksikan tanda tangan atau mengamankan e-tanda tangan
+   - HR menyaksikan tanda tangan atau mengamankan e-tanda tangan
 
 3. **Pengelolaan File**:
-   - Asli NDA yang ditandatangani: SDM menyimpan dalam file personel karyawan (aman)
+   - Asli NDA yang ditandatangani: HR menyimpan dalam file personel karyawan (aman)
    - Salinan digital: Dipindai/diarsipkan dalam folder aman
    - Indeks: Pertahankan daftar semua karyawan dengan status NDA
 
@@ -741,7 +741,7 @@ NDA harus mencakup elemen-elemen berikut:
    - Salinan yang ditandatangani dipertahankan oleh perusahaan
 
 2. **Verifikasi**:
-   - SDM memverifikasi tanda tangan sebelum onboarding
+   - HR memverifikasi tanda tangan sebelum onboarding
    - Jika tidak ditandatangani: Akses tidak diberikan
 
 ### 4.6 Pelacakan & Kepatuhan NDA
@@ -765,7 +765,7 @@ NDA harus mencakup elemen-elemen berikut:
 
 ### 4.7 Dokumentasi
 
-- NDA yang ditandatangani: File dalam sistem SDM, cadangkan salinan yang dipindai
+- NDA yang ditandatangani: File dalam sistem HR, cadangkan salinan yang dipindai
 - Daftar master: Pertahankan up-to-date
 - Pelatihan: Karyawan memahami kewajiban NDA dalam kesadaran keamanan
 - Kepatuhan: Audit tahunan karyawan mana yang telah menandatangani NDA
@@ -805,7 +805,7 @@ informasi tambahan tentang hasil pemeriksaan latar belakang saya.
 Tanda Tangan Kandidat: ____________________________
 Tanggal: ____________________________
 
-Perwakilan SDM: ____________________________
+Perwakilan HR: ____________________________
 Tanggal: ____________________________
 ```
 
@@ -835,7 +835,7 @@ REKOMENDASI KESELURUHAN:
 Komentar/Temuan:
 [Temuan terperinci]
 
-Tinjauan ISM/SDM:
+Tinjauan ISM/HR:
 Ditinjau oleh: ____________________________
 Tanggal: ____________________________
 Tanda Tangan: ____________________________
@@ -879,7 +879,7 @@ VERIFIKASI AKHIR:
 ☐ Tidak ada properti perusahaan yang tersisa
 
 Disetujui oleh:
-Manajer SDM: ____________________________
+Manajer HR: ____________________________
 ISM: ____________________________
 Tanggal: ____________________________
 ```
@@ -935,22 +935,22 @@ Posisi/Peran: ____________________________
 Tanda Tangan Karyawan/Kontraktor: ____________________________
 Tanggal: ____________________________
 
-Tanda Tangan SDM/Manajer: ____________________________
+Tanda Tangan HR/Manajer: ____________________________
 Tanggal: ____________________________
 
-[SIMPAN ASLI - File dalam lokasi aman SDM]
+[SIMPAN ASLI - File dalam lokasi aman HR]
 ```
 
 ---
 
 ## RINGKASAN & PEMETAAN KEPATUHAN
 
-| Prosedur | Area | Pertanyaan Mandiri Q | Persyaratan Skor 4 |
-|-----------|------|----------------------|-------------------|
-| Rekrutmen | Keamanan SDM | Q4.1a | Pemeriksaan latar belakang untuk semua karyawan |
-| Pemutusan | Keamanan SDM | Q4.1a | Mekanisme PHK dengan pencabutan akses |
-| Pengelolaan Kontraktor | Keamanan SDM | Q4.1b, Q4.3 | Penilaian kontraktor + kontrak |
-| Pengelolaan NDA | Keamanan SDM | Q4.2, Q4.4 | Semua karyawan menandatangani NDA |
+| Prosedur | Area | Persyaratan |
+|-----------|------|-------------------|
+| Rekrutmen | Keamanan HR | Pemeriksaan latar belakang untuk semua karyawan |
+| Pemutusan | Keamanan HR | Mekanisme PHK dengan pencabutan akses |
+| Pengelolaan Kontraktor | Keamanan HR | Penilaian kontraktor + kontrak |
+| Pengelolaan NDA | Keamanan HR | Semua karyawan menandatangani NDA |
 
 ---
 
