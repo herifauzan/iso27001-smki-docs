@@ -1,16 +1,19 @@
 # PROC-03: Prosedur Keamanan Operasi
+## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-03: Prosedur Keamanan Operasi  
-**Dokumen ID:** PROC-03  
+**Dokumen:** PROC-03: Prosedur Keamanan Operasi
+**Dokumen ID:** PROC-03
 **Versi:** 1.0  
-**Tanggal Efektif:** 15 April 2026  
-**Departemen:** Keamanan Informasi
+**Tanggal Berlaku:** 15 April 2026  
+**Status:** Final  
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer HR |  |  |  |
@@ -319,11 +322,11 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 **Disetujui Oleh:**
 
 ___________________________  
-[Nama ISM]  
+Heri Fauzan  
 Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
-[Nama CEO]  
+Ahmad Firdaus  
 Direktur Utama  
 Tanggal: __________________

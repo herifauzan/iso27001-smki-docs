@@ -1,16 +1,19 @@
 # PROC-05: Prosedur Keamanan Fisik
+## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-05: Prosedur Keamanan Fisik  
-**Dokumen ID:** PROC-05  
+**Dokumen:** PROC-05: Prosedur Keamanan Fisik
+**Dokumen ID:** PROC-05
 **Versi:** 1.0  
-**Tanggal Efektif:** 15 April 2026  
-**Departemen:** Keamanan Informasi
+**Tanggal Berlaku:** 15 April 2026  
+**Status:** Final  
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer HR |  |  |  |
@@ -340,11 +343,11 @@ __________________________________
 **Disetujui Oleh:**
 
 ___________________________  
-[Nama ISM]  
+Heri Fauzan  
 Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
-[Nama CEO]  
+Ahmad Firdaus  
 Direktur Utama  
 Tanggal: __________________

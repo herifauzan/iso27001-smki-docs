@@ -1,16 +1,19 @@
 # PROC-02: Prosedur Kontrol Akses
+## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-02: Prosedur Kontrol Akses  
-**Dokumen ID:** PROC-02  
+**Dokumen:** PROC-02: Prosedur Kontrol Akses
+**Dokumen ID:** PROC-02
 **Versi:** 1.0  
-**Tanggal Efektif:** 15 April 2026  
-**Departemen:** Keamanan Informasi
+**Tanggal Berlaku:** 15 April 2026  
+**Status:** Final  
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | CEO |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer HR |  |  |  |
@@ -297,11 +300,11 @@ Jika ditemukan akses tidak sah:
 **Disetujui Oleh:**
 
 ___________________________  
-[Nama ISM]  
+Heri Fauzan  
 Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
-[Nama CEO]  
+Ahmad Firdaus  
 CEO  
 Tanggal: __________________

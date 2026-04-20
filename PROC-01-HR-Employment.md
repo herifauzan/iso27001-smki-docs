@@ -2,17 +2,18 @@
 ## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROSEDUR KEAMANAN SUMBER DAYA MANUSIA & PEKERJAAN  
-**Dokumen ID:** PROC-01  
+**Dokumen:** PROSEDUR KEAMANAN SUMBER DAYA MANUSIA & PEKERJAAN
+**Dokumen ID:** PROC-01
 **Versi:** 1.0  
 **Tanggal Berlaku:** 15 April 2026  
 **Status:** Final  
-**Tingkat Keamanan:** Rahasia
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | CEO |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer HR |  |  |  |

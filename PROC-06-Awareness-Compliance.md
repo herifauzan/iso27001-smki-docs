@@ -1,16 +1,19 @@
 # PROC-06: Prosedur Kesadaran dan Kepatuhan
+## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-06: Prosedur Kesadaran dan Kepatuhan  
-**Dokumen ID:** PROC-06  
+**Dokumen:** PROC-06: Prosedur Kesadaran dan Kepatuhan
+**Dokumen ID:** PROC-06
 **Versi:** 1.0  
-**Tanggal Efektif:** 15 April 2026  
-**Departemen:** Keamanan Informasi
+**Tanggal Berlaku:** 15 April 2026  
+**Status:** Final  
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer SDM |  |  |  |
@@ -365,11 +368,11 @@ Tanggal: __________
 **Disetujui Oleh:**
 
 ___________________________  
-[Nama ISM]  
+Heri Fauzan  
 Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
-[Nama CEO]  
+Ahmad Firdaus  
 Direktur Utama  
 Tanggal: __________________

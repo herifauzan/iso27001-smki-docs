@@ -1,16 +1,19 @@
 # PROC-04: Prosedur Manajemen Aset
+## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-04: Prosedur Manajemen Aset  
-**Dokumen ID:** PROC-04  
+**Dokumen:** PROC-04: Prosedur Manajemen Aset
+**Dokumen ID:** PROC-04
 **Versi:** 1.0  
-**Tanggal Efektif:** 15 April 2026  
-**Departemen:** Keamanan Informasi
+**Tanggal Berlaku:** 15 April 2026  
+**Status:** Final  
+**Tingkat Keamanan:** Confidential
 
 ## Lembar Pengesahan
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
+|
+---------|------|-------------|--------|
 | Direktur Utama |  |  |  |
 | Manajer Keamanan Informasi |  |  |  |
 | Manajer HR |  |  |  |
@@ -329,11 +332,11 @@ Asset ID | Nama | Tipe | Klasifikasi | Owner | Lokasi | Status | Nilai
 **Disetujui Oleh:**
 
 ___________________________  
-[Nama ISM]  
+Heri Fauzan  
 Manajer Keamanan Informasi  
 Tanggal: __________________
 
 ___________________________  
-[Nama CEO]  
+Ahmad Firdaus  
 Direktur Utama  
 Tanggal: __________________
