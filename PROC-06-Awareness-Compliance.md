@@ -1,8 +1,8 @@
-# PROC-06: Prosedur Kesadaran dan Kepatuhan
+# PROSEDUR KESADARAN DAN KEPATUHAN KEAMANAN INFORMASI
 ## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-06: Prosedur Kesadaran dan Kepatuhan
+**Dokumen:** PROSEDUR KESADARAN DAN KEPATUHAN KEAMANAN INFORMASI
 **Dokumen ID:** PROC-06
 **Versi:** 1.0  
 **Tanggal Berlaku:** 15 April 2026  
@@ -13,9 +13,9 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
-| Direktur Utama |  |  |  |
-| Manajer Keamanan Informasi |  |  |  |
-| Manajer SDM |  |  |  |
+| Direktur Operasional / COO | Dodi Darundriyo |   |   |
+| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
+| Manajer HR |  |  |  |
 
 ---
 
@@ -34,28 +34,28 @@
 
 ## 1. Pendahuluan
 
-Prosedur ini mengatur program kesadaran keamanan informasi dan kepatuhan terhadap kebijakan PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan keamanan informasi internasional. Prosedur ini mencakup pelatihan, komunikasi, dan pemantauan kepatuhan.
+Prosedur ini mengatur program kesadaran keamanan informasi dan kepatuhan terhadap kebijakan PT Ecomindo Sarana Cipta sesuai dengan standar ISO 27001 dan persyaratan keamanan informasi internasional. Prosedur ini mencakup pelatihan, komunikasi, pemantauan kepatuhan, serta mekanisme penegakan kedisiplinan untuk memastikan seluruh personel memahami dan menjalankan tanggung jawab keamanan informasinya.
 
 ### 1.1 Tujuan
 
-- Meningkatkan kesadaran karyawan tentang risiko keamanan informasi
-- Memastikan kepatuhan terhadap semua kebijakan dan prosedur
-- Mengurangi insiden keamanan akibat human error
-- Memenuhi persyaratan keamanan informasi internasional untuk kesadaran program yang komprehensif
+- Meningkatkan kesadaran seluruh karyawan mengenai risiko keamanan informasi
+- Memastikan kepatuhan terhadap seluruh kebijakan dan prosedur keamanan yang berlaku
+- Mengurangi insiden keamanan yang disebabkan oleh kesalahan manusia (human error)
+- Memenuhi persyaratan standar keamanan informasi internasional untuk program kesadaran yang komprehensif
 
 ### 1.2 Ruang Lingkup
-Berlaku untuk semua karyawan, kontraktor, dan pihak ketiga termasuk:
 
-- Karyawan tetap dan outsourcing
-- Manajemen dan non-manajemen
-- Pekerja jarak jauh dan kerja dari rumah
+Prosedur ini berlaku untuk seluruh karyawan, kontraktor, dan pihak ketiga, termasuk:
+
+- Karyawan tetap dan tenaga alih daya (outsourcing)
+- Personel manajemen dan non-manajemen
+- Pekerja jarak jauh dan karyawan yang bekerja dari rumah
 - Pengunjung dan staf sementara
 
 ### 1.3 Referensi
 
-- Kebijakan Keamanan Informasi Lengkap (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- TK3I Master Kebijakan Framework (Tata Kelola dan Kebijakan Keamanan Informasi.md)
-- Standar keamanan informasi internasional
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 3: Organisasi & Kesadaran Keamanan Informasi
+- Standar keamanan informasi internasional (ISO 27001, NIST, CIS)
 
 ---
 
@@ -65,192 +65,192 @@ Berlaku untuk semua karyawan, kontraktor, dan pihak ketiga termasuk:
 
 #### Orientasi Karyawan Baru:
 
-1. **Pra-Ketenagakerjaan** (HR - Saat penawaran)
+1. **Pra-Ketenagakerjaan** (HR — Saat penawaran diterima)
 
-   - Berikan ringkasan kebijakan keamanan
-   - Pemeriksaan latar belakang dan verifikasi referensi
+   - Memberikan ringkasan kebijakan keamanan informasi kepada calon karyawan
+   - Melaksanakan pemeriksaan latar belakang dan verifikasi referensi
 
-2. **Orientasi Hari Pertama** (HR/Security - Hari pertama)
+2. **Orientasi Hari Pertama** (HR/Tim Keamanan — Hari pertama bekerja)
 
-   - 4 jam pelatihan kesadaran keamanan
-   - Tandatangani formulir pengakuan (Form-AC-01)
-   - Terbitkan buku panduan keamanan
+   - Melaksanakan pelatihan kesadaran keamanan informasi selama 4 jam
+   - Meminta karyawan menandatangani formulir pengakuan (Form-AC-01)
+   - Menerbitkan buku panduan keamanan informasi kepada karyawan
 
-3. **Pelatihan Khusus Departemen** (Kepala Departemen - Minggu pertama)
+3. **Pelatihan Khusus Departemen** (Kepala Departemen — Minggu pertama)
 
-   - Prosedur keamanan khusus peran
-   - Access to relevant systems
-   - Supervisor oversight selama 30 hari
+   - Memberikan pelatihan mengenai prosedur keamanan yang spesifik untuk peran karyawan
+   - Memberikan akses ke sistem yang relevan sesuai kebutuhan
+   - Melakukan pengawasan oleh supervisor selama 30 hari pertama
 
 #### Program Pelatihan Berkelanjutan:
 
-1. **Pelatihan Keamanan Tahunan** (Security Team - Tahunan)
+1. **Pelatihan Keamanan Tahunan** (Tim Keamanan — Setiap tahun)
 
-   - 8 jam pelatihan komprehensif
-   - Cover semua aspek keamanan informasi
-   - Penilaian test dengan nilai kelulusan 80%
+   - Melaksanakan pelatihan komprehensif selama 8 jam yang mencakup seluruh aspek keamanan informasi
+   - Materi pelatihan mencakup seluruh 10 area kebijakan keamanan informasi
+   - Mengadakan penilaian tertulis dengan nilai kelulusan minimal 80%
 
-2. **Pelatihan Berbasis Topik** (Security Team - Sesuai kebutuhan)
+2. **Pelatihan Berbasis Topik** (Tim Keamanan — Sesuai kebutuhan)
 
-   - Kesadaran phishing (Bulanan)
-   - Prosedur penanganan data (Triwulanan)
-   - Pelaporan insiden (Setelah insiden)
+   - Kesadaran phishing: Dilaksanakan setiap bulan melalui simulasi dan edukasi
+   - Prosedur penanganan data: Dilaksanakan setiap triwulan
+   - Pelaporan insiden: Dilaksanakan setelah terjadinya insiden keamanan
 
-3. **Pelatihan Manajemen** (Security Team - Tahunan)
+3. **Pelatihan Manajemen** (Tim Keamanan — Setiap tahun)
 
-   - Tanggung jawab keamanan kepemimpinan
-   - Manajemen risiko overview
-   - Pelaporan kepatuhan
+   - Memberikan pemahaman mengenai tanggung jawab kepemimpinan dalam keamanan informasi
+   - Menyampaikan tinjauan umum mengenai manajemen risiko keamanan informasi
+   - Menjelaskan mekanisme pelaporan kepatuhan dan audit
 
 ### 2.2 Prosedur Komunikasi Keamanan
 
-#### Internal Communications:
+#### Komunikasi Internal:
 
-1. **Buletin Keamanan Bulanan** (Security Team - Bulanan)
+1. **Buletin Keamanan Bulanan** (Tim Keamanan — Setiap bulan)
 
-   - Security tips dan reminders
-   - Insiden terbaru (anonymized)
-   - Pembaruan kebijakan
+   - Menerbitkan tips keamanan dan pengingat praktik terbaik
+   - Membagikan ringkasan insiden terbaru (tanpa menyebut identitas pihak yang terlibat)
+   - Menginformasikan pembaruan kebijakan yang relevan
 
-2. **Security Alerts** (Security Team - Saat kebutuhan)
+2. **Peringatan Keamanan** (Tim Keamanan — Saat diperlukan)
 
-   - Peringatan otomatis untuk ancaman
-   - Komunikasi darurat
-   - Action required notifications
+   - Mengirimkan peringatan otomatis mengenai ancaman keamanan yang terdeteksi
+   - Menyampaikan komunikasi darurat jika terjadi insiden serius
+   - Memberitahukan tindakan yang perlu diambil oleh karyawan
 
-3. **Intranet Portal** (IT Operations - Berkelanjutan)
+3. **Portal Intranet Keamanan** (IT Operations — Berkelanjutan)
 
-   - Kebijakan keamanan dan prosedur
-   - Materi pelatihan
-   - Contact information untuk security team
+   - Menyediakan akses ke kebijakan dan prosedur keamanan yang berlaku
+   - Menyediakan materi pelatihan dan referensi keamanan
+   - Menampilkan informasi kontak tim keamanan informasi
 
-#### External Communications:
+#### Komunikasi Eksternal:
 
-1. **Vendor Communications** (Procurement - Saat onboarding)
+1. **Komunikasi dengan Vendor** (Pengadaan — Saat proses penerimaan vendor)
 
-   - Persyaratan keamanan dan expectations
-   - Prosedur Pelaporan Insiden
-   - Pemantauan kepatuhan
+   - Menyampaikan persyaratan keamanan dan ekspektasi kepatuhan
+   - Menjelaskan prosedur pelaporan insiden yang berlaku
+   - Menetapkan mekanisme pemantauan kepatuhan vendor
 
-2. **Customer Communications** (Marketing - Saat diperlukan)
+2. **Komunikasi dengan Pelanggan** (Marketing — Saat diperlukan)
 
-   - Security certifications
-   - Data protection assurances
-   - Pemberitahuan insiden sesuai SLA
+   - Menyampaikan informasi mengenai sertifikasi keamanan organisasi
+   - Memberikan jaminan perlindungan data sesuai kebijakan yang berlaku
+   - Menyampaikan pemberitahuan insiden sesuai SLA yang disepakati
 
 ### 2.3 Prosedur Pemantauan Kepatuhan
 
-#### Pemantauan kepatuhan:
+#### Pemantauan Kepatuhan:
 
-1. **Pemantauan Otomatis** (IT Security - Berkelanjutan)
+1. **Pemantauan Otomatis** (IT Security — Berkelanjutan)
 
-   - Log analysis untuk Pelanggaran kebijakan
-   - Pemantauan access pattern
-   - Automated alerts untuk suspicious activities
+   - Menganalisis log secara otomatis untuk mendeteksi pelanggaran kebijakan
+   - Memantau pola akses pengguna untuk mengidentifikasi anomali
+   - Mengirimkan peringatan otomatis untuk aktivitas yang mencurigakan
 
-2. **Manual Audits** (Audit Internal - Triwulanan)
+2. **Audit Manual** (Tim Audit Internal — Triwulanan)
 
-   - Sample-based Pengecekan kepatuhan
-   - Interview karyawan
-   - Tinjauan dokumentasi
+   - Melakukan pemeriksaan kepatuhan berbasis sampel
+   - Melakukan wawancara dengan karyawan untuk memverifikasi pemahaman kebijakan
+   - Meninjau dokumentasi kepatuhan yang ada
 
-3. **Self-Penilaian** (Kepala Departemen - Bulanan)
+3. **Penilaian Mandiri** (Kepala Departemen — Bulanan)
 
-   - Checklist kepatuhan departemen
-   - Identify gaps dan corrective actions
-   - Report ke security team
+   - Mengisi daftar periksa kepatuhan departemen
+   - Mengidentifikasi kesenjangan dan merumuskan tindakan korektif
+   - Melaporkan hasil penilaian kepada tim keamanan
 
-#### Non-Kepatuhan Respons:
+#### Respons Ketidakpatuhan:
 
-1. **Pelanggaran Ringan** (Supervisor - Segera)
+1. **Pelanggaran Ringan** (Supervisor — Segera)
 
-   - Verbal warning
-   - Additional pelatihan
-   - Documentation dalam file karyawan
+   - Memberikan peringatan lisan kepada karyawan yang melanggar
+   - Mengarahkan karyawan untuk mengikuti pelatihan tambahan
+   - Mendokumentasikan pelanggaran dalam catatan karyawan
 
-2. **Pelanggaran Berat** (HR/Security - < 24 jam)
+2. **Pelanggaran Berat** (HR/Tim Keamanan — Dalam 24 jam)
 
-   - Formal penyelidikan
-   - Disciplinary action sesuai company kebijakan
-   - Report ke manajemen
+   - Melakukan penyelidikan formal terhadap pelanggaran
+   - Menjatuhkan tindakan disipliner sesuai kebijakan perusahaan
+   - Melaporkan hasil penyelidikan kepada manajemen
 
-3. **Pelanggaran Berulang** (HR - Segera)
+3. **Pelanggaran Berulang** (HR — Segera)
 
-   - Escalated disciplinary action
-   - Possible termination
-   - Legal action jika diperlukan
+   - Meningkatkan tingkat tindakan disipliner sesuai eskalasinya
+   - Mempertimbangkan pemutusan hubungan kerja jika diperlukan
+   - Mengambil tindakan hukum jika situasi mengharuskannya
 
 ### 2.4 Prosedur Pelaporan Insiden
 
-#### Reporting Prosedur:
+#### Prosedur Pelaporan:
 
-1. **Segera Reporting** (Semua Karyawan - Segera)
+1. **Pelaporan Segera** (Seluruh Karyawan — Segera setelah terdeteksi)
 
-   - Report suspected insiden
-   - Use hotline atau email security@company.com
-   - Provide detail tanpa self-incrimination
+   - Melaporkan setiap insiden atau dugaan insiden keamanan yang ditemukan
+   - Menggunakan hotline atau email security@ecomindo.com untuk pelaporan
+   - Memberikan detail kejadian tanpa perlu khawatir akan konsekuensi negatif
 
-2. **Klasifikasi Insiden** (Security Team - < 1 jam)
+2. **Klasifikasi Insiden** (Tim Keamanan — Dalam 1 jam)
 
-   - Assess severity dan impact
-   - Escalate sesuai level:
-     - Level 1: Minor (respons dalam 4 jam)
-     - Level 2: Moderate (respons dalam 24 jam)
-     - Level 3: Critical (respons dalam 1 jam)
+   - Menilai tingkat keparahan dan dampak insiden yang dilaporkan
+   - Mengklasifikasikan dan mengeskalasi sesuai tingkatan:
+     - Level 1 (Minor): Respons dalam 4 jam
+     - Level 2 (Sedang): Respons dalam 24 jam
+     - Level 3 (Kritis): Respons dalam 1 jam
 
-3. **Penyelidikan** (Security Team - Sesuai severity)
+3. **Penyelidikan** (Tim Keamanan — Sesuai tingkat keparahan)
 
-   - Gather evidence
-   - Interview involved parties
-   - Root cause analysis
+   - Mengumpulkan bukti dan data yang relevan dengan insiden
+   - Mewawancarai pihak-pihak yang terlibat atau terkait
+   - Melakukan analisis akar penyebab (root cause analysis)
 
-4. **Resolution dan Lessons Learned** (Security Team - < 30 hari)
+4. **Resolusi dan Pembelajaran** (Tim Keamanan — Dalam 30 hari)
 
-   - Implement corrective actions
-   - Pembaruan prosedur jika diperlukan
-   - Share lessons learned (anonymized)
+   - Mengimplementasikan tindakan korektif yang diperlukan
+   - Memperbarui prosedur jika ditemukan kelemahan pada proses yang ada
+   - Membagikan pelajaran yang dipetik (lessons learned) secara anonim kepada organisasi
 
 #### Perlindungan Pelapor:
 
-- Anonymous reporting channel
-- Protection dari retaliation
-- Confidentiality maintained
+- Tersedia kanal pelaporan anonim untuk menjamin kerahasiaan pelapor
+- Pelapor dilindungi dari segala bentuk retaliasi atau pembalasan
+- Kerahasiaan identitas pelapor dijamin sepanjang proses investigasi
 
 ### 2.5 Prosedur Audit dan Penilaian
 
-#### Internal Audits:
+#### Audit Internal:
 
-1. **Audit Kepatuhan Triwulanan** (Audit Internal - Triwulanan)
+1. **Audit Kepatuhan Triwulanan** (Tim Audit Internal — Setiap triwulan)
 
-   - Tinjauan Kepatuhan kebijakan
-   - Test control effectiveness
-   - Identify improvement areas
+   - Meninjau tingkat kepatuhan terhadap kebijakan keamanan informasi
+   - Menguji efektivitas kontrol keamanan yang diterapkan
+   - Mengidentifikasi area yang memerlukan perbaikan
 
-2. **Penilaian Risiko Tahunan** (Security Team - Tahunan)
+2. **Penilaian Risiko Tahunan** (Tim Keamanan — Setiap tahun)
 
-   - Pembaruan risiko register
-   - Assess new ancaman
-   - Prioritize mitigation efforts
+   - Memperbarui register risiko organisasi
+   - Menilai ancaman dan kerentanan baru yang teridentifikasi
+   - Memprioritaskan upaya mitigasi berdasarkan tingkat risiko
 
-#### External Assessments:
+#### Penilaian Eksternal:
 
-1. **Third-Party Audits** (External Auditor - Tahunan)
+1. **Audit Pihak Ketiga** (Auditor Eksternal — Setiap tahun)
 
-   - ISO 27001 certification audit
-   - SOC 2 kepatuhan tinjauan
-   - External security assessments
+   - Audit sertifikasi ISO 27001 atau standar keamanan lainnya
+   - Tinjauan kepatuhan SOC 2
+   - Penilaian keamanan oleh asesor independen
 
-2. **Kepatuhan Regulasi** (Legal/Kepatuhan - Sesuai persyaratan)
+2. **Kepatuhan Regulasi** (Tim Hukum/Kepatuhan — Sesuai persyaratan)
 
-   - PDPO Pemantauan kepatuhan
-   - Industry-specific regulations
-   - Tahunan kepatuhan reports
+   - Memantau kepatuhan terhadap UU Perlindungan Data Pribadi (UU PDP)
+   - Memastikan kepatuhan terhadap regulasi industri yang berlaku
+   - Menyusun laporan kepatuhan tahunan
 
 ---
 
 ## 3. Formulir dan Template
 
-### Form-AC-01: Pelatihan Keamanan Acknowledgment
+### Form-AC-01: Formulir Pengakuan Pelatihan Keamanan
 ```
 Nama: _____________________________
 Departemen: _______________________
@@ -258,12 +258,12 @@ Tanggal Pelatihan: _________________
 
 Saya telah menerima dan memahami:
 □ Kebijakan Keamanan Informasi
-□ Prosedur Akses dan Password
-□ Prosedur penanganan data
+□ Prosedur Akses dan Kata Sandi
+□ Prosedur Penanganan Data
 □ Prosedur Pelaporan Insiden
-□ Kebijakan Acceptable Use
+□ Kebijakan Penggunaan yang Dapat Diterima (Acceptable Use Policy)
 
-Saya berkomitmen untuk mematuhi semua kebijakan keamanan informasi.
+Saya berkomitmen untuk mematuhi seluruh kebijakan keamanan informasi yang berlaku.
 
 Tanda Tangan: ____________________
 Tanggal: __________________________
@@ -271,29 +271,29 @@ Tanggal: __________________________
 
 ### Form-AC-02: Formulir Laporan Insiden
 ```
-Insiden ID: ______________________
+ID Insiden: ______________________
 Tanggal/Waktu: ___________________
 Pelapor: __________________________
 Departemen: _______________________
 
-Tipe Insiden:
-□ Phishing/Social Engineering
-□ Data Breach
-□ Unauthorized Access
-□ Malware Infection
-□ Keamanan Fisik Breach
-□ Kebijakan Violation
-□ Other: __________________________
+Jenis Insiden:
+□ Phishing / Rekayasa Sosial (Social Engineering)
+□ Pelanggaran Data (Data Breach)
+□ Akses Tidak Sah
+□ Infeksi Malware
+□ Pelanggaran Keamanan Fisik
+□ Pelanggaran Kebijakan
+□ Lainnya: __________________________
 
 Deskripsi Insiden: ________________
 ___________________________________
 ___________________________________
 
 Dampak: ___________________________
-Data Terpengaruh: _________________
-Sistem Terpengaruh: ________________
+Data yang Terpengaruh: ____________
+Sistem yang Terpengaruh: __________
 
-Action Taken: _____________________
+Tindakan yang Telah Diambil: ______
 ___________________________________
 
 Diselidiki Oleh: __________________
@@ -302,34 +302,34 @@ Tanggal: __________________________
 Kesimpulan: _______________________
 ___________________________________
 
-Corrective Actions: _______________
+Tindakan Korektif: ________________
 ___________________________________
 ```
 
-### Daftar Periksa-AC-01: Bulanan Daftar Periksa Kepatuhan
+### Daftar Periksa-AC-01: Daftar Periksa Kepatuhan Bulanan
 ```
 Departemen: _______________________
 Bulan: ____________________________
 Disusun Oleh: _____________________
 
-□ Semua karyawan telah pelatihan tahunan
-□ Kebijakan kata sandi dipatuhi
-□ Data classification labeling digunakan
-□ Prosedur Pelaporan Insiden diketahui
-□ Kebijakan clean desk diikuti
-□ Akses jarak jauh menggunakan VPN
-□ Software updates dilakukan
-□ Backup verification dilakukan
+□ Seluruh karyawan telah menyelesaikan pelatihan keamanan tahunan
+□ Kebijakan kata sandi dipatuhi oleh seluruh pengguna
+□ Pelabelan klasifikasi data diterapkan secara konsisten
+□ Prosedur pelaporan insiden dipahami oleh seluruh karyawan
+□ Kebijakan meja bersih (clean desk) diikuti secara konsisten
+□ Akses jarak jauh menggunakan VPN sesuai ketentuan
+□ Pembaruan perangkat lunak telah dilakukan tepat waktu
+□ Verifikasi backup telah dilaksanakan sesuai jadwal
 
-Temuan Non-Kepatuhan: ___________
+Temuan Ketidakpatuhan: ____________
 ___________________________________
 
-Corrective Actions: _______________
+Tindakan Korektif: ________________
 ___________________________________
 
 Persetujuan:
 ___________________________
-Department Head
+Kepala Departemen
 Tanggal: __________
 ```
 
@@ -339,38 +339,38 @@ Tanggal: __________
 
 ### 4.1 Mekanisme Kontrol
 
-- **Automated Pelatihan Tracking**: LMS dengan completion pemantauan
-- **Kebijakan Acknowledgment**: Mandatory sign-off untuk semua kebijakan
-- **Insiden Hotline**: 24/7 anonymous reporting
-- **Dashboard Kepatuhan**: Real-time Pemantauan kepatuhan
+- **Pelacakan Pelatihan Otomatis**: Sistem LMS (Learning Management System) dengan pemantauan penyelesaian pelatihan
+- **Pengakuan Kebijakan**: Penandatanganan wajib atas seluruh kebijakan yang berlaku
+- **Hotline Pelaporan Insiden**: Layanan pelaporan anonim yang tersedia 24 jam sehari, 7 hari seminggu
+- **Dashboard Kepatuhan**: Pemantauan kepatuhan secara real-time melalui dashboard terpusat
 
 ### 4.2 Pemantauan dan Audit
 
-- Laporan kepatuhan bulanan ke manajemen
-- Audit internal triwulanan
-- Assessment eksternal tahunan
-- Pelacakan penyelesaian pelatihan
+- Laporan kepatuhan bulanan disampaikan kepada manajemen
+- Audit internal dilaksanakan setiap triwulan
+- Penilaian oleh pihak eksternal dilaksanakan setiap tahun
+- Pelacakan penyelesaian pelatihan dilakukan secara berkelanjutan
 
 ### 4.3 Pelaporan Insiden
 
-- Insiden keamanan: Report dalam 24 jam
-- Pelanggaran kepatuhan: Investigate dalam 48 jam
-- Pelatihan tidak selesai: Reminder dalam 7 hari
+- Insiden keamanan: Dilaporkan dalam waktu maksimal 24 jam
+- Pelanggaran kepatuhan: Diselidiki dalam waktu maksimal 48 jam
+- Pelatihan yang belum diselesaikan: Pengingat dikirimkan dalam 7 hari
 
 ---
 
 ## 5. Pemenuhan Standar Keamanan Informasi Internasional
 
-### Score-4 Persyaratan untuk Kesadaran & Kepatuhan:
+### Persyaratan Kesadaran & Kepatuhan:
 
-- ✅ **AC-1**: Program kesadaran keamanan - pelatihan komprehensif program
-- ✅ **AC-2**: Perekaman log pelatihan - LMS tracking dengan certificates
-- ✅ **AC-3**: Pemantauan kepatuhan - Automated dan manual pemantauan
-- ✅ **AC-4**: Prosedur Pelaporan Insiden - Multiple channels dengan protection
-- ✅ **AC-5**: Prosedur disipliner - Defined violation respons
-- ✅ **AC-6**: Komitmen manajemen - Pelatihan kepemimpinan dan oversight
-- ✅ **AC-7**: Prosedur komunikasi - Multi-channel communications
-- ✅ **AC-8**: Audit dan penilaian - Regular internal/external audits
+- ✅ **AC-1**: Program kesadaran keamanan diterapkan melalui program pelatihan yang komprehensif
+- ✅ **AC-2**: Pencatatan pelatihan dilakukan melalui LMS dengan penerbitan sertifikat kelulusan
+- ✅ **AC-3**: Pemantauan kepatuhan dilaksanakan secara otomatis dan manual
+- ✅ **AC-4**: Prosedur pelaporan insiden tersedia melalui berbagai kanal dengan perlindungan pelapor
+- ✅ **AC-5**: Prosedur disipliner ditetapkan dengan respons bertingkat sesuai tingkat pelanggaran
+- ✅ **AC-6**: Komitmen manajemen ditunjukkan melalui pelatihan kepemimpinan dan pengawasan aktif
+- ✅ **AC-7**: Prosedur komunikasi diterapkan melalui berbagai kanal komunikasi
+- ✅ **AC-8**: Audit dan penilaian dilaksanakan secara berkala baik internal maupun eksternal
 
 ---
 
@@ -378,30 +378,30 @@ Tanggal: __________
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Program oversight dan strategy |
-| Petugas Kesadaran Keamanan | Pelatihan delivery dan materials |
-| Manajer SDM | Employee onboarding dan disciplinary |
-| Kepala Departemen | Department Pemantauan kepatuhan |
-| Audit Internal | Kepatuhan audits |
-| Semua Karyawan | Kepatuhan kebijakan dan reporting |
+| ISM | Mengawasi keseluruhan program dan menetapkan strategi keamanan |
+| Petugas Kesadaran Keamanan | Menyelenggarakan pelatihan dan menyusun materi edukasi |
+| Manajer HR | Mengoordinasikan orientasi karyawan dan proses disipliner |
+| Kepala Departemen | Memantau kepatuhan keamanan di departemen masing-masing |
+| Tim Audit Internal | Melaksanakan audit kepatuhan secara berkala |
+| Seluruh Karyawan | Mematuhi kebijakan dan melaporkan insiden keamanan |
 
 ---
 
 ## 7. Tinjauan dan Pembaruan
 
-- **Frekuensi Peninjauan:** Tahunan atau saat ada perubahan signifikan
-- **Tanggung Jawab Peninjauan:** Security dan HR Team
+- **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan pada kebijakan atau lingkungan ancaman
+- **Tanggung Jawab Peninjauan:** Tim Keamanan dan Tim HR
 - **Persetujuan Pembaruan:** ISM dan Manajemen
 
 ---
 
 ## 8. Lampiran
 
-- Lampiran A: Pelatihan Keamanan Curriculum
-- Lampiran B: Insiden Respons Flowchart
-- Lampiran C: Daftar Periksa Kepatuhan Templates
-- Lampiran D: Pedoman Disciplinary Action
-- Lampiran E: Communication Plan Template
+- Lampiran A: Kurikulum Pelatihan Keamanan Informasi
+- Lampiran B: Diagram Alur Respons Insiden
+- Lampiran C: Template Daftar Periksa Kepatuhan
+- Lampiran D: Pedoman Tindakan Disipliner
+- Lampiran E: Template Rencana Komunikasi Keamanan
 
 ---
 
@@ -413,6 +413,6 @@ Manajer Keamanan Informasi
 Tanggal: __________________
 
 ___________________________  
-Ahmad Firdaus  
-Direktur Utama  
+Dodi Darundriyo  
+Direktur Operasional / COO  
 Tanggal: __________________

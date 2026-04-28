@@ -1,8 +1,8 @@
-# PROC-03: Prosedur Keamanan Operasi
+# PROSEDUR KEAMANAN OPERASI
 ## PT ECOMINDO SARANA CIPTA
 
 ## Cover
-**Dokumen:** PROC-03: Prosedur Keamanan Operasi
+**Dokumen:** PROSEDUR KEAMANAN OPERASI
 **Dokumen ID:** PROC-03
 **Versi:** 1.0  
 **Tanggal Berlaku:** 15 April 2026  
@@ -13,9 +13,9 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
-| Direktur Utama |  |  |  |
-| Manajer Keamanan Informasi |  |  |  |
-| Manajer HR |  |  |  |
+| Direktur Operasional / COO | Dodi Darundriyo |   |   |
+| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
+| Manajer IT Operations |  |  |  |
 
 ---
 
@@ -56,7 +56,7 @@ Berlaku untuk semua operasi sistem informasi termasuk:
 
 ### 1.3 Referensi
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (Tata Kelola dan Kebijakan Keamanan Informasi.md)
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 8: Keamanan Operasi, Area 9: Pengembangan Aman, dan Area 10: Kelangsungan Bisnis
 
 ---
 
@@ -321,11 +321,14 @@ Prosedur ini mengatur proses identifikasi, evaluasi, pengujian, dan penerapan pa
 
    - Jalankan vulnerability scanner (mis. Nessus, OpenVAS, atau setara) terhadap seluruh inventarisasi sistem
    - Hasilkan laporan kerentanan yang merinci: sistem terdampak, deskripsi kerentanan, dan skor CVSS
-   - Kategorikan kerentanan berdasarkan prioritas:
-     - **Kritis (CVSS 9.0–10.0):** Patch wajib diterapkan dalam **7 hari kalender**
-     - **Tinggi (CVSS 7.0–8.9):** Patch wajib diterapkan dalam **30 hari kalender**
-     - **Sedang (CVSS 4.0–6.9):** Patch diterapkan dalam **90 hari kalender**
-     - **Rendah (CVSS 0.1–3.9):** Patch dijadwalkan pada siklus maintenance berikutnya
+   - Kategorikan kerentanan berdasarkan prioritas dan tenggat waktu remediasi:
+
+   | Tingkat | Skor CVSS | Tenggat Remediasi |
+   |---------|-----------|-------------------|
+   | **Kritis** | 9.0–10.0 | Dalam **30 hari kalender** |
+   | **Tinggi** | 7.0–8.9 | Dalam **60 hari kalender** |
+   | **Sedang** | 4.0–6.9 | Dalam **90 hari kalender** |
+   | **Rendah** | 0.1–3.9 | Dijadwalkan pada siklus maintenance berikutnya |
 
 2. **Review dan Prioritisasi** (IT Security & IT Operations - Setelah pemindaian)
 
@@ -460,8 +463,9 @@ Prosedur ini mengatur proses permohonan, evaluasi, persetujuan, implementasi, da
 
    - Terapkan perubahan sesuai rencana implementasi yang tertulis dalam RFC
    - Lakukan implementasi selama change window yang disetujui (biasanya di luar jam kerja)
-   - Libatkan supervisor atau second-level reviewer selama implementasi perubahan berisiko tinggi
-   - Dokumentasikan setiap langkah yang dilakukan selama implementasi
+   - **Wajib dihadiri minimal 2 personel IT**: satu melaksanakan implementasi, satu memantau dan siap melakukan rollback — berlaku untuk seluruh perubahan Normal Change dan Emergency Change
+   - Komunikasikan kepada pengguna terdampak jika terjadi downtime yang tidak terduga
+   - Dokumentasikan setiap langkah yang dilakukan selama implementasi beserta timestamp-nya
 
 3. **Verifikasi Segera Pasca-Implementasi** (IT Operations - Segera setelah implementasi)
 
@@ -961,47 +965,47 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
 ```
 ID RFC: ___________________________
 Tanggal: __________________________
-Requestor: ________________________
+Pemohon: __________________________
 Departemen: _______________________
 
 Deskripsi Perubahan: ______________
 ___________________________________
 ___________________________________
 
-Sistem Terpengaruh: _______________
-Risiko Penilaian: __________________
-Business Impact: __________________
+Sistem yang Terpengaruh: __________
+Penilaian Risiko: __________________
+Dampak Bisnis: ____________________
 
 Persetujuan CAB:
 ___________________________
-CAB Chairman
+Ketua CAB
 Tanggal: __________
 
-Status Implementation:
-□ Planned □ Darurat □ Completed □ Failed
+Status Implementasi:
+□ Terjadwal □ Darurat □ Selesai □ Gagal
 
-Post-Implementation Notes:
+Catatan Pasca-Implementasi:
 ___________________________________
 ```
 
-### Form-OP-02: Insiden Report
+### Form-OP-02: Laporan Insiden
 ```
-Insiden ID: ______________________
+ID Insiden: ______________________
 Tanggal/Waktu: ___________________
 Pelapor: __________________________
-Kategori: □ Security □ Availability □ Performance
+Kategori: □ Keamanan □ Ketersediaan □ Kinerja
 
 Deskripsi: ________________________
 ___________________________________
-Impact: ___________________________
+Dampak: ___________________________
 
-Action Taken: _____________________
+Tindakan yang Diambil: ____________
 ___________________________________
 
-Resolution: _______________________
-Time to Resolve: __________________
+Resolusi: _________________________
+Waktu Penyelesaian: _______________
 
-Lessons Learned: _________________
+Pelajaran yang Dipetik: ___________
 ```
 
 ### Log-OP-01: Backup Log
@@ -1016,40 +1020,40 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 ### 4.1 Mekanisme Kontrol
 
-- **Automated Backup**: Jadwal backup otomatis dengan verifikasi
-- **SIEM Integration**: Centralized logging dengan correlation
-- **Endpoint Detection**: Real-time malware protection
-- **Change Control**: Mandatory RFC untuk semua perubahan
+- **Backup Otomatis**: Jadwal backup otomatis dengan verifikasi integritas harian
+- **Integrasi SIEM**: Pencatatan log terpusat dengan korelasi event keamanan
+- **Deteksi Endpoint**: Perlindungan malware secara real-time pada seluruh perangkat
+- **Pengendalian Perubahan**: RFC wajib untuk seluruh perubahan pada sistem produksi
 
 ### 4.2 Pemantauan dan Audit
 
-- Daily health checks untuk semua sistem critical
-- Weekly vulnerability scanning
-- Bulanan penetration testing
-- Triwulanan disaster recovery testing
+- Pemeriksaan kesehatan harian untuk seluruh sistem kritis
+- Pemindaian kerentanan dilakukan setiap minggu
+- Pengujian penetrasi dilakukan setiap bulan
+- Pengujian pemulihan bencana dilakukan setiap triwulan
 
 ### 4.3 Pelaporan Insiden
 
-- Critical insiden: Respons dalam 1 jam
-- High priority: Respons dalam 4 jam
-- Medium/Low: Respons dalam 24 jam
+- Insiden kritis: Respons dalam 1 jam
+- Prioritas tinggi: Respons dalam 4 jam
+- Prioritas sedang/rendah: Respons dalam 24 jam
 
 ---
 
 ## 5. Pemenuhan Standar
 
-### Persyaratan untuk Operations Security:
+### Persyaratan Keamanan Operasi:
 
-- ✅ **OP-1**: Operations prosedur documented - Prosedur lengkap dengan workflow
-- ✅ **OP-2**: Backup and recovery prosedur - RTO/RPO defined dengan testing
-- ✅ **OP-3**: Logging and pemantauan - SIEM dengan 24/7 pemantauan
-- ✅ **OP-4**: Malware protection - Multi-layer protection dengan respons plan
-- ✅ **OP-5**: Patch manajemen - Prioritized patching dengan testing
-- ✅ **OP-6**: Change manajemen - CAB process dengan darurat prosedur
-- ✅ **OP-7**: Capacity manajemen - Pemantauan resource utilization
-- ✅ **OP-8**: Insiden manajemen - Defined respons times dan prosedur
-- ✅ **OP-9**: Audit trail - Pengaktifan, review, dan retensi log pada OS, Database, dan Aplikasi
-- ✅ **OP-10**: Pengamanan jaringan - Pemisahan lingkungan, firewall/WAF, dan monitoring koneksi
+- ✅ **OP-1**: Prosedur operasi telah didokumentasikan secara lengkap dengan alur kerja yang jelas
+- ✅ **OP-2**: Prosedur backup dan recovery telah ditetapkan dengan target RTO/RPO dan pengujian berkala
+- ✅ **OP-3**: Logging dan pemantauan diterapkan melalui SIEM dengan pemantauan 24/7
+- ✅ **OP-4**: Perlindungan malware diterapkan secara berlapis dengan rencana respons
+- ✅ **OP-5**: Manajemen patch diterapkan dengan prioritisasi dan pengujian sebelum deployment
+- ✅ **OP-6**: Manajemen perubahan dikelola melalui proses CAB dengan prosedur darurat
+- ✅ **OP-7**: Manajemen kapasitas diterapkan melalui pemantauan utilisasi sumber daya
+- ✅ **OP-8**: Manajemen insiden ditetapkan dengan waktu respons dan prosedur yang jelas
+- ✅ **OP-9**: Audit trail diterapkan mencakup pengaktifan, peninjauan, dan retensi log pada OS, basis data, dan aplikasi
+- ✅ **OP-10**: Pengamanan jaringan diterapkan melalui pemisahan lingkungan, firewall/WAF, dan pemantauan koneksi
 
 ---
 
@@ -1057,31 +1061,31 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Oversight operasi keamanan dan Pemantauan keamanan dan insiden respons |
-| IT Operation | Daily operations dan change manajemen |
-| Developer | Pengawasan pengembangan sistem, secure coding, dan keamanan repository |
-| IT Security | Vulnerability manajemen dan patch deployment |
+| ISM | Mengawasi keseluruhan operasi keamanan, memantau insiden, dan mengoordinasikan respons |
+| IT Operations | Mengelola operasi harian dan melaksanakan proses manajemen perubahan |
+| Developer | Melaksanakan pengembangan sistem yang aman, menerapkan secure coding, dan mengelola keamanan repository |
+| IT Security | Mengelola kerentanan dan melaksanakan deployment patch keamanan |
 
 ---
 
 ## 7. Tinjauan dan Pembaruan
 
-- **Frekuensi Peninjauan:** Tahunan atau saat ada perubahan signifikan
-- **Tanggung Jawab Peninjauan:** IT Operations dan Security Team
+- **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan pada infrastruktur atau kebijakan
+- **Tanggung Jawab Peninjauan:** Tim IT Operations dan Tim Security
 - **Persetujuan Pembaruan:** ISM dan Manajemen
 
 ---
 
 ## 8. Lampiran
 
-- Lampiran A: Backup Schedule dan Retention Kebijakan
-- Lampiran B: SIEM Configuration Guide
-- Lampiran C: Insiden Respons Playbook
-- Lampiran D: Change Manajemen Workflow Diagram
-- Lampiran E: Disaster Recovery Test Results
-- Lampiran F: Audit Trail Configuration Baseline (OS, Database, Aplikasi)
-- Lampiran G: Network Security Architecture Diagram dan Firewall Ruleset Baseline
-- Lampiran H: Secure Coding Checklist dan SAST Tool Configuration Guide
+- Lampiran A: Jadwal Backup dan Kebijakan Retensi
+- Lampiran B: Panduan Konfigurasi SIEM
+- Lampiran C: Playbook Respons Insiden
+- Lampiran D: Diagram Alur Manajemen Perubahan
+- Lampiran E: Hasil Pengujian Pemulihan Bencana
+- Lampiran F: Baseline Konfigurasi Audit Trail (OS, Basis Data, Aplikasi)
+- Lampiran G: Diagram Arsitektur Keamanan Jaringan dan Baseline Ruleset Firewall
+- Lampiran H: Daftar Periksa Secure Coding dan Panduan Konfigurasi SAST Tools
 
 ---
 
@@ -1093,6 +1097,6 @@ Manajer Keamanan Informasi
 Tanggal: __________________
 
 ___________________________  
-Ahmad Firdaus  
-Direktur Utama  
+Dodi Darundriyo  
+Direktur Operasional / COO  
 Tanggal: __________________

@@ -653,14 +653,14 @@ Dokumentasikan semuanya dengan:
 
 ### 3.1 Tujuan
 
-Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo menjalani penilaian keamanan yang ketat dan memiliki kontrol/pemantauan selama engagement.
+Memastikan semua kontraktor dan sub-kontraktor yang bekerja dengan PT Ecomindo menjalani penilaian keamanan yang ketat dan memiliki kontrol serta pemantauan yang memadai selama masa perjanjian kerja berlangsung.
 
 ### 3.2 Ruang Lingkup
 
 - Semua kontraktor (sementara, paruh waktu, konsultan)
 - Semua sub-kontraktor (bagian dari pengaturan outsource)
 - Vendor eksternal dengan akses kepada sistem/data
-- Kontraktor untuk layanan sekali jalan atau jangka panjang
+- Kontraktor untuk layanan satu kali maupun jangka panjang
 
 ### 3.3 Pihak yang Bertanggung Jawab
 
@@ -1042,7 +1042,7 @@ Tanggal: ____________________________
 
 **AKHIR DOKUMEN PROSEDUR**
 
-*Dokumen ini adalah Rahasia. Distribusi tanpa izin ISM dilarang.*
+*Dokumen ini bersifat Confidential dan hanya diperuntukkan bagi kebutuhan internal PT ECOMINDO SARANA CIPTA. Distribusi tanpa izin dari ISM dilarang.*
 
 Tanggal Berlaku: 15 April 2026  
 Tinjauan Selanjutnya: 15 April 2027
