@@ -13,7 +13,7 @@
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
 | Direktur Utama / CEO | Ahmad Firdaus |   |   |
-| Direktur Operasional / CTO | Dodi Darundriyo |   |   |
+| Direktur Operasional / COO | Dodi Darundriyo |   |   |
 | Manajer Keamanan Informasi (ISM)| Heri Fauzan |   |   |
 ---
 
@@ -38,12 +38,13 @@
    - [Area 10: Kontinuitas Bisnis & Pemulihan Bencana](#area-10)
 8. [Prosedur Operasional](#prosedur-operasional)
 9. [Bukti dan Evidence](#bukti-dan-evidence)
-10. [Proses Review dan Update](#proses-review-update)
-11. [Compliance dan Audit](#compliance-audit)
-12. [Emergency Contacts](#emergency-contacts)
-13. [Document References & Integration Map](#document-references-integration-map)
-14. [Approval & Distribution](#approval-distribution)
-15. [Effective Date & Amendments](#effective-date-amendments)
+10. [Proses Peninjauan dan Pembaruan](#proses-review-update)
+11. [Kepatuhan, Audit, dan Evaluasi Rutin](#compliance-audit)
+12. [Mekanisme Pengecualian (Exception Management)](#mekanisme-pengecualian)
+13. [Kontak Darurat](#emergency-contacts)
+14. [Referensi Dokumen & Peta Integrasi](#document-references-integration-map)
+15. [Persetujuan & Distribusi](#approval-distribution)
+16. [Tanggal Efektif & Amendemen](#effective-date-amendments)
 
 ---
 
@@ -54,11 +55,11 @@
 PT ECOMINDO SARANA CIPTA (Ecomindo) adalah perusahaan yang menyediakan layanan teknologi informasi dan jasa terkait. Dalam era digital ini, keamanan informasi menjadi aset strategis yang kritis untuk memastikan keberlanjutan bisnis, kepercayaan pelanggan, dan kepatuhan terhadap regulasi.
 
 Dokumen Tata Kelola dan Kebijakan Keamanan Informasi ini dirancang untuk:
-- Menetapkan kerangka kerja komprehensif untuk pengelolaan keamanan informasi di seluruh organisasi
-- Memastikan perlindungan aset informasi dari ancaman dan risiko
-- Memenuhi standar internasional dan best practices (ISO 27001, CIS, NIST)
-- Memenuhi persyaratan compliance dan stakeholder lainnya
-- Mengkomunikasikan komitmen manajemen terhadap keamanan informasi
+- Menetapkan kerangka kerja yang komprehensif bagi pengelolaan keamanan informasi di seluruh organisasi
+- Memastikan perlindungan aset informasi dari berbagai ancaman dan risiko yang teridentifikasi
+- Memenuhi standar internasional dan praktik terbaik (ISO 27001, CIS, NIST)
+- Memenuhi persyaratan kepatuhan dari regulator, klien, dan pemangku kepentingan lainnya
+- Mengkomunikasikan komitmen manajemen puncak terhadap keamanan informasi
 
 ### 1.2 Definisi Istilah Penting
 
@@ -83,22 +84,22 @@ Dokumen Tata Kelola dan Kebijakan Keamanan Informasi ini dirancang untuk:
 
 1. **Perlindungan**: Melindungi semua aset informasi PT Ecomindo dari ancaman internal maupun eksternal
 2. **Kesadaran**: Meningkatkan kesadaran dan komitmen seluruh karyawan terhadap keamanan informasi
-3. **Compliance**: Memastikan kepatuhan terhadap regulasi, standar industri, dan persyaratan klien
-4. **Inovasi**: Terus meningkatkan efektivitas kontrol keamanan dengan teknologi dan proses terkini
-5. **Respon Cepat**: Mendeteksi dan merespons insiden keamanan dengan cepat dan efektif
+3. **Kepatuhan**: Memastikan kepatuhan terhadap regulasi, standar industri, dan persyaratan klien
+4. **Inovasi**: Terus meningkatkan efektivitas kontrol keamanan melalui pemanfaatan teknologi dan proses terkini
+5. **Respons Cepat**: Mendeteksi dan merespons insiden keamanan secara cepat dan efektif
 
 ---
 
 ## 3. TUJUAN TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI {#tujuan-tk3i}
 
-Tujuan TK3I PT Ecomindo adalah untuk:
+Tujuan TK3I PT Ecomindo adalah sebagai berikut:
 
-1. **Perlindungan Aset**: Melindungi kerahasiaan, integritas, dan ketersediaan informasi organisasi
-2. **Manajemen Risiko**: Mengidentifikasi, menganalisis, dan mengelola risiko keamanan informasi secara sistematis
-3. **Compliance**: Memenuhi persyaratan hukum, regulasi, dan standar industri yang berlaku
-4. **Kontinuitas Bisnis**: Memastikan kontinuitas layanan bisnis melalui disaster recovery dan business continuity planning
-5. **Reputasi dan Kepercayaan**: Menjaga reputasi organisasi dan kepercayaan stakeholder
-6. **Efisiensi Operasional**: Mengoptimalkan proses keamanan informasi untuk efisiensi biaya dan operasional
+1. **Perlindungan Aset**: Melindungi kerahasiaan, integritas, dan ketersediaan informasi organisasi dari ancaman internal maupun eksternal
+2. **Manajemen Risiko**: Mengidentifikasi, menganalisis, dan mengelola risiko keamanan informasi secara sistematis dan terukur
+3. **Kepatuhan**: Memenuhi persyaratan hukum, regulasi, dan standar industri yang berlaku di Indonesia maupun internasional
+4. **Kontinuitas Bisnis**: Memastikan kelangsungan layanan bisnis melalui perencanaan Disaster Recovery dan Business Continuity
+5. **Reputasi dan Kepercayaan**: Menjaga reputasi organisasi serta mempertahankan kepercayaan pemangku kepentingan
+6. **Efisiensi Operasional**: Mengoptimalkan proses keamanan informasi guna mencapai efisiensi biaya dan operasional
 
 ---
 
@@ -163,15 +164,15 @@ graph TD
     class T1,T2,T3,T4 team;
 ```
 
-### 5.2 Reporting Structure
+### 5.2 Struktur Pelaporan
 
 **ISM melapor kepada:**
-- CEO atau CTO (Information Security Strategy & Compliance)
-- Board/Audit Committee (Quarterly Report on Security Posture)
+- CEO atau COO dalam hal strategi dan kepatuhan keamanan informasi
+- Board/Audit Committee melalui laporan postur keamanan setiap kuartal
 
 **ISM mengawasi:**
-- 4 Security Teams (Policies, Identity, Physical, Incident Response)
-- Kolaborasi dengan IT Department, HR, Finance, dll.
+- 4 Tim Keamanan (Policies, Identity, Physical, Incident Response)
+- Berkolaborasi dengan Departemen IT, HR, Finance, dan departemen lainnya
 
 ---
 
@@ -180,21 +181,21 @@ graph TD
 ### 6.1 Board of Directors
 
 **Peran:**
-- Pengawasan terhadap tata kelola keamanan informasi
-- Approval terhadap strategic information security initiatives
-- Executive Sponsor untuk TK3I dan compliance initiatives
-- Final authority untuk security policy approval
+- Mengawasi tata kelola keamanan informasi secara menyeluruh
+- Memberikan persetujuan terhadap inisiatif strategis keamanan informasi
+- Bertindak sebagai Executive Sponsor untuk TK3I dan inisiatif kepatuhan
+- Otoritas tertinggi untuk persetujuan kebijakan keamanan
 
 **Tanggung Jawab:**
-- Memastikan TK3I selaras dengan strategi bisnis
-- Review quarterly security reports dari Manajer Keamanan Informasi (ISM)
-- Approval atas strategi risk tolerance dan risk mitigation
-- Memastikan alokasi sumber daya untuk keamanan informasi
-- Menunjukkan komitmen terhadap keamanan informasi
-- Menyetujui major policies dan procedures
-- Mendukung alokasi budget untuk security program
-- Memastikan security awareness di seluruh organisasi
-- Approval atas high-level risk decisions
+- Memastikan TK3I selaras dengan strategi bisnis organisasi
+- Meninjau laporan keamanan kuartalan dari Manajer Keamanan Informasi (ISM)
+- Menyetujui strategi toleransi risiko dan mitigasi risiko
+- Memastikan ketersediaan alokasi sumber daya yang memadai untuk keamanan informasi
+- Menunjukkan komitmen nyata terhadap keamanan informasi kepada seluruh organisasi
+- Menyetujui kebijakan dan prosedur utama yang berkaitan dengan keamanan informasi
+- Mendukung alokasi anggaran untuk program keamanan
+- Memastikan terselenggaranya program kesadaran keamanan di seluruh organisasi
+- Memberikan persetujuan atas keputusan risiko tingkat tinggi
 
 
 ### 6.2 Manajer Keamanan Informasi (ISM)
@@ -285,17 +286,17 @@ graph TD
 - Memfasilitasi proses pencabutan akses
 - Memelihara dokumentasi keamanan personel
 
-### 6.7 Management (Semua Levels)
+### 6.7 Manajemen (Seluruh Tingkatan)
 
 **Peran:**
-- Mendukung inisiatif keamanan di departemen mereka
+- Mendukung implementasi inisiatif keamanan informasi di departemen masing-masing
 
 **Tanggung Jawab:**
-- Menegakkan kepatuhan terhadap kebijakan keamanan
-- Memastikan anggota tim menyelesaikan pelatihan keamanan
-- Melaporkan insiden keamanan dan masalah
-- Menyetujui anggaran untuk keamanan di departemen
-- Mempromosikan kesadaran keamanan di antara tim
+- Menegakkan kepatuhan seluruh anggota tim terhadap kebijakan keamanan informasi
+- Memastikan seluruh anggota tim menyelesaikan pelatihan keamanan yang diwajibkan
+- Melaporkan insiden keamanan dan permasalahan terkait secara segera
+- Menyetujui alokasi anggaran untuk keamanan di lingkup departemen
+- Mendorong budaya kesadaran keamanan di antara anggota tim
 
 ---
 
@@ -373,11 +374,11 @@ PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar b
 - **IT Department**: Menerapkan persyaratan keamanan, memelihara dokumentasi
 - **Management**: Menyetujui ruang lingkup audit, meninjau temuan audit, menyetujui anggaran remediasi
 
-### 1.5 Frequency & Review
+### 1.5 Frekuensi & Peninjauan
 
-- Review kebijakan: Annually atau ketika ada perubahan persyaratan
-- Audit internal: Minimum yearly
-- Audit eksternal: Jika dibutuhkan
+- Peninjauan kebijakan: Dilakukan setiap tahun atau ketika terjadi perubahan persyaratan
+- Audit internal: Minimal satu kali per tahun
+- Audit eksternal: Dilakukan jika diperlukan berdasarkan kebutuhan sertifikasi, regulasi, atau permintaan klien
 
 ---
 
@@ -463,11 +464,11 @@ PT Ecomindo memiliki kebijakan security baseline yang disahkan formal dan direvi
 - **HR**: Memfasilitasi pelaksanaan pelatihan
 - **All Employees**: Mematuhi kebijakan, menghadiri pelatihan
 
-### 2.5 Frequency & Review
+### 2.5 Frekuensi & Peninjauan
 
-- Policy review: Annually atau ketika ada perubahan kebutuhan
-- Training: Minimum annually untuk seluruh karyawan
-- Exception review & renewal: Minimum quarterly
+- Peninjauan kebijakan: Dilakukan setiap tahun atau ketika terjadi perubahan kebutuhan
+- Pelatihan: Minimal satu kali per tahun untuk seluruh karyawan
+- Peninjauan dan perpanjangan pengecualian: Minimal setiap kuartal
 
 ---
 
@@ -558,12 +559,12 @@ PT Ecomindo menetapkan program kesadaran keamanan yang dijalankan melalui komuni
 - **All Managers**: Memastikan tim menghadiri pelatihan
 - **All Employees**: Menghadiri pelatihan wajib, menerapkan praktik keamanan
 
-### 3.5 Frequency & Review
+### 3.5 Frekuensi & Peninjauan
 
-- Tinjauan struktur tim: Setiap tahun
-- Deskripsi jabatan: Update setiap ada perubahan peran
-- Pelatihan awareness: Wajib 1x per tahun untuk semua
-- Ongoing activities: Regular sepanjang tahun
+- Tinjauan struktur tim: Dilakukan setiap tahun
+- Deskripsi jabatan: Diperbarui setiap kali terjadi perubahan peran atau tanggung jawab
+- Pelatihan awareness: Wajib dilaksanakan minimal 1 kali per tahun untuk seluruh karyawan
+- Aktivitas berkelanjutan: Dilaksanakan secara reguler sepanjang tahun
 
 ---
 
@@ -674,12 +675,12 @@ PT Ecomindo memiliki kebijakan NDA formal:
 - **IT/Admin**: Melaksanakan pencabutan akses di sistem
 - **Managers**: Memberitahu HR tentang terminasi segera
 
-### 4.5 Frequency & Review
+### 4.5 Frekuensi & Peninjauan
 
-- Pemeriksaan latar belakang: Untuk setiap rekrutmen
-- Pengelolaan NDA: Berkelanjutan, dipantau triwulanan
-- Proses terminasi: Untuk setiap terminasi
-- Tinjauan kebijakan: Setiap tahun
+- Pemeriksaan latar belakang: Dilakukan untuk setiap proses rekrutmen
+- Pengelolaan NDA: Berjalan berkelanjutan dan dipantau setiap triwulan
+- Proses terminasi: Dilaksanakan untuk setiap kasus terminasi
+- Tinjauan kebijakan: Dilakukan setiap tahun
 
 ---
 
@@ -799,12 +800,12 @@ Untuk organisasi yang menggunakan cloud services, kebijakan ini mencakup 6 compo
 - **IT Department**: Terapkan enkripsi, jalankan pembuangan, pantau kepatuhan
 - **ISM**: Setujui kebijakan penanganan data, audit kepatuhan
 
-### 5.5 Frequency & Review
+### 5.5 Frekuensi & Peninjauan
 
-- Data classification: Ongoing (review annually)
-- Encryption audit: Semi-annually
-- Disposal verification: Upon each disposal
-- Policy review: Annually
+- Klasifikasi data: Berjalan berkelanjutan dengan peninjauan tahunan
+- Audit enkripsi: Dilakukan setiap semester (dua kali per tahun)
+- Verifikasi pembuangan: Dilakukan pada setiap proses pembuangan perangkat
+- Peninjauan kebijakan: Dilakukan setiap tahun
 
 ---
 
@@ -894,12 +895,12 @@ PT Ecomindo menetapkan kebijakan akses jarak jauh dengan keamanan kuat:
 - **IT Department**: Mengimplementasikan di sistem, memelihara infrastruktur
 - **All Managers**: Meminta akses, berpartisipasi dalam tinjauan akses
 
-### 6.5 Frequency & Review
+### 6.5 Frekuensi & Peninjauan
 
-- Siklus hidup pengguna: Sesuai kebutuhan (segera)
-- Tinjauan akses: Triwulanan (minimum) + tahunan komprehensif
-- Tinjauan kebijakan: Setiap tahun
-- Pemantauan VPN: Berkelanjutan, ditinjau bulanan
+- Siklus hidup pengguna: Dilaksanakan segera sesuai kebutuhan
+- Tinjauan akses: Minimal setiap triwulan ditambah tinjauan komprehensif tahunan
+- Tinjauan kebijakan: Dilakukan setiap tahun
+- Pemantauan VPN: Berjalan berkelanjutan dengan tinjauan bulanan
 
 ---
 
@@ -944,11 +945,11 @@ PT Ecomindo mengimplementasikan kontrol akses fisik untuk lingkungan kerja dan m
 - **Facilities Manager**: Pemeliharaan sistem kartu akses, penerapan CCTV
 - **ISM**: Menyetujui tingkat akses, meninjau log
 
-### 7.5 Frequency & Review
+### 7.5 Frekuensi & Peninjauan
 
-- Tinjauan kartu akses: Triwulanan
-- Tinjauan CCTV: Berkelanjutan, ringkasan bulanan
-- Tinjauan kebijakan: Tahunan
+- Tinjauan kartu akses: Setiap triwulan
+- Tinjauan CCTV: Berjalan berkelanjutan dengan ringkasan laporan bulanan
+- Tinjauan kebijakan: Dilakukan setiap tahun
 
 ---
 
@@ -1047,8 +1048,8 @@ PT Ecomindo menerapkan 3 komponen security configuration WAJIB:
   3. **Pengujian**: Uji patch di environment non-produksi terlebih dahulu
   4. **Penerapan**: Penerapan terjadwal pada jendela pemeliharaan
   5. **Verifikasi**: Verifikasi patch diterapkan, fungsionalitas sistem diverifikasi
-  6. **Reporting**: Monthly report dari patches applied
-  7. **Timeline**: Critical patches applied within 30 days, regular patches quarterly
+  6. **Pelaporan**: Laporan bulanan mengenai patch yang telah diterapkan
+  7. **Timeline**: Patch kritis harus diterapkan dalam 30 hari, patch reguler secara triwulanan
 
 #### **8.3.2 Change Management**
 
@@ -1060,7 +1061,7 @@ PT Ecomindo menetapkan proses manajemen perubahan formal untuk semua perubahan p
   - Formulir permintaan perubahan dengan detail
   - Penilaian dampak (risiko, rencana rollback)
   - Jendela pemeliharaan terjadwal
-  - Hierarki persetujuan (manajer, ISM, CTO)
+  - Hierarki persetujuan (manajer, ISM, COO)
 
 **B. Change Request Process**
 1. **Kirim**: Staf IT mengirim permintaan perubahan dengan:
@@ -1290,14 +1291,14 @@ PT Ecomindo memiliki perencanaan pemulihan bencana formal:
 - **IT Operations**: Menerapkan pengerasan, mengelola perubahan, memantau sistem
 - **Security Teams**: Melakukan VAPT, mengelola insiden, meninjau log
 
-### 8.5 Frequency & Review
+### 8.5 Frekuensi & Peninjauan
 
-- Configuration audit: Semi-tahunan
-- Change management: Untuk setiap perubahan produksi
-- VAPT: Triwulanan (VA) + tahunan (PT)
-- Network monitoring: Berkelanjutan
-- Incident response: Sesuai kebutuhan
-- Log review: Bulanan
+- Audit konfigurasi: Setiap semester (dua kali per tahun)
+- Manajemen perubahan: Dilaksanakan untuk setiap perubahan pada sistem produksi
+- VAPT: Triwulanan untuk Vulnerability Assessment, tahunan untuk Penetration Testing
+- Pemantauan jaringan: Berjalan berkelanjutan
+- Respons insiden: Dilaksanakan sesuai kebutuhan ketika insiden terjadi
+- Tinjauan log: Dilakukan setiap bulan
 
 ---
 
@@ -1379,12 +1380,12 @@ PT Ecomindo melindungi source code dengan 3 komponen:
 - **Security Team**: Scanning SAST/DAST, pengujian keamanan
 - **ISM**: Menyetujui kebijakan keamanan development
 
-### 9.5 Frequency & Review
+### 9.5 Frekuensi & Peninjauan
 
-- Code review: Setiap commit/merge
-- SAST scanning: Continuous integration
-- DAST testing: Sebelum deployment production
-- VAPT: Tahunan
+- Code review: Dilakukan pada setiap commit/merge request
+- Pemindaian SAST: Terintegrasi dalam proses Continuous Integration
+- Pengujian DAST: Dilaksanakan sebelum setiap deployment ke lingkungan produksi
+- VAPT: Dilakukan setiap tahun
 
 ---
 
@@ -1463,12 +1464,12 @@ PT Ecomindo memiliki DRP komprehensif:
 - **Unit Bisnis**: Mendefinisikan proses kritis, berpartisipasi dalam pengujian
 - **Manajemen**: Menyetujui BCP/DRP, mengalokasikan sumber daya
 
-### 10.5 Frequency & Review
+### 10.5 Frekuensi & Peninjauan
 
-- Tinjauan BCP/DRP: Tahunan
-- Pengujian backup: Bulanan
-- Pengujian DR: Tahunan
-- Tinjauan kebijakan: Tahunan
+- Tinjauan BCP/DRP: Dilakukan setiap tahun
+- Pengujian backup: Dilakukan setiap bulan
+- Pengujian DR: Dilakukan setiap tahun
+- Tinjauan kebijakan: Dilakukan setiap tahun
 
 ---
 
@@ -1536,87 +1537,656 @@ Evidence Framework melakukan mapping lengkap:
 
 ---
 
-## 10. PROSES REVIEW DAN UPDATE {#proses-review-update}
+## 10. PROSES PENINJAUAN DAN PEMBARUAN {#proses-review-update}
 
-### 10.1 Review Frequency
+### 10.1 Frekuensi Peninjauan
 
-| Dokumen / Area | Review Frequency | Responsible |
-|----------------|------------------|-------------|
-| Tata Kelola dan Kebijakan Keamanan Informasi | Annually, or when requirements change | BOD + Policy Owner + ISM |
-| Procedures (All 6 docs) | Semi-annually or when policy changes | Procedure Owner + ISM |
-| Evidence Collection | Quarterly (for audit readiness) | Compliance Manager |
-| Risk Assessment | Semi-annually | Risk Management Team |
+| Dokumen / Area | Frekuensi Peninjauan | Penanggung Jawab |
+|----------------|---------------------|------------------|
+| Tata Kelola dan Kebijakan Keamanan Informasi | Setiap tahun, atau ketika terjadi perubahan persyaratan | BOD + Pemilik Kebijakan + ISM |
+| Prosedur (seluruh 6 dokumen) | Setiap semester atau ketika kebijakan berubah | Pemilik Prosedur + ISM |
+| Koleksi Bukti (Evidence) | Setiap kuartal (untuk kesiapan audit) | Compliance Manager |
+| Penilaian Risiko | Setiap semester | Tim Risk Management |
 
-### 10.2 Approval Process untuk Updates
+### 10.2 Proses Persetujuan untuk Pembaruan
 
 ```
-Policy/Procedure Owner → ISM Review → Management Approval (CEO/Director) 
-→ Distribution & Acknowledgment → Effective Date
+Pemilik Kebijakan/Prosedur → Peninjauan ISM → Persetujuan Manajemen (CEO/Direktur) 
+→ Distribusi & Penerimaan → Tanggal Berlaku
 ```
 
-### 10.3 Version Control
+### 10.3 Pengendalian Versi
 
-Setiap dokumen menggunakan version numbering:
-- **Major Version** (1.0, 2.0) = Significant content changes
-- **Minor Version** (1.1, 1.2) = Clarifications atau small updates
-- **Change Log** = Track perubahan di setiap dokumen
+Setiap dokumen menggunakan penomoran versi sebagai berikut:
+- **Versi Mayor** (1.0, 2.0) = Perubahan konten yang signifikan
+- **Versi Minor** (1.1, 1.2) = Klarifikasi atau pembaruan kecil
+- **Log Perubahan** = Pencatatan setiap perubahan di masing-masing dokumen
 
-### 10.4 Communication & Training
+### 10.4 Komunikasi & Pelatihan
 
-Ketika ada policy/procedure update:
-1. Draft dokumen selesai
-2. Review & approval dari stakeholders
-3. Final version release ke seluruh organisasi
-4. Training session untuk pengguna affected
-5. Acknowledgment form signed by employees
-6. Monitoring compliance implementation
+Ketika terdapat pembaruan kebijakan atau prosedur, langkah-langkah berikut harus dilaksanakan:
+1. Penyelesaian draft dokumen
+2. Peninjauan dan persetujuan dari pemangku kepentingan terkait
+3. Rilis versi final ke seluruh organisasi
+4. Pelaksanaan sesi pelatihan bagi pengguna yang terdampak
+5. Penandatanganan formulir penerimaan oleh seluruh karyawan yang terkait
+6. Pemantauan implementasi kepatuhan terhadap pembaruan
 
 ---
 
-## 11. COMPLIANCE DAN AUDIT {#compliance-audit}
+## 11. KEPATUHAN, AUDIT, DAN EVALUASI RUTIN {#compliance-audit}
 
-### 11.1 Compliance Objectives
+### 11.1 Tujuan Evaluasi
 
-PT Ecomindo berkomitmen untuk:
-1. **Standar Internasional** - Achieve compliance dengan ISO 27001, CIS, NIST, dan best practices lainnya
-2. **Regulatory** - Comply dengan hukum dan regulasi yang berlaku (GDPR, PDPA, dll)
-3. **Contractual** - Meet semua security requirements dari contracts dengan customers
+Mekanisme evaluasi rutin ini bertujuan untuk:
+1. **Memastikan Efektivitas** — Memverifikasi bahwa seluruh kebijakan, prosedur, dan kontrol keamanan informasi berjalan efektif sesuai tujuannya
+2. **Kepatuhan Standar** — Mengukur tingkat kepatuhan terhadap ISO 27001, CIS, NIST, dan best practices lainnya
+3. **Kepatuhan Regulasi** — Memastikan kepatuhan terhadap hukum dan regulasi yang berlaku (UU PDP, GDPR, PDPA, dll.)
+4. **Kepatuhan Kontraktual** — Memenuhi seluruh persyaratan keamanan dari kontrak dengan klien dan mitra
+5. **Perbaikan Berkelanjutan** — Mengidentifikasi area perbaikan dan mendorong peningkatan postur keamanan secara terus-menerus
 
-### 11.2 Audit & Assessment Schedule
+### 11.2 Prinsip Evaluasi
 
-| Type | Frequency | Conducted By |
-|------|-----------|--------------|
-| Internal Security Audit | Semi-annually | Internal Audit Team |
-| Vulnerability Assessment | Quarterly | IT Security Team |
-| Penetration Testing | Annually | External Vendor (3rd party) |
-| Compliance Assessment | As required | External Assessor |
-| Management Review | Quarterly | ISM + Leadership |
+1. **Independen** — Evaluasi dilakukan oleh pihak yang tidak terlibat langsung dalam implementasi kontrol yang dievaluasi
+2. **Berbasis Risiko** — Prioritas evaluasi ditentukan berdasarkan tingkat risiko area yang dievaluasi
+3. **Terdokumentasi** — Seluruh proses dan hasil evaluasi harus terdokumentasi secara formal
+4. **Ditindaklanjuti** — Setiap temuan harus memiliki rencana tindak lanjut dengan timeline yang jelas
+5. **Berkala dan Konsisten** — Evaluasi dilakukan secara rutin sesuai jadwal yang telah ditetapkan
 
-### 11.3 Non-Compliance & Remediation
+### 11.3 Kalender Evaluasi Rutin
 
-Jika ditemukan non-compliance:
-1. Document temuan
-2. Assess risiko
-3. Develop remediation plan dengan timeline
-4. Implement remediation
-5. Verify effectiveness
-6. Report status ke management
+| Aktivitas Evaluasi | Frekuensi | Pelaksana | Output |
+|---------------------|-----------|-----------|--------|
+| Audit Internal Keamanan Informasi | Tahunan (minimum) | Tim Audit Internal / ISM | Laporan Audit Internal |
+| Audit Eksternal | Jika diperlukan (lihat 11.5) | Auditor Eksternal Independen | Laporan Audit Eksternal |
+| Management Review | Kuartalan | ISM + Manajemen Senior | Notulen Management Review |
+| Vulnerability Assessment | Kuartalan | Tim IT Security | Laporan VA |
+| Penetration Testing | Tahunan | Vendor Pihak Ketiga | Laporan Pentest |
+| Review Kebijakan & Prosedur | Tahunan | Policy Owner + ISM | Dokumen Revisi (jika ada) |
+| Review Risk Assessment | Semi-tahunan | Tim Risk Management | Risk Register Terbaru |
+| Review Exception Register | Bulanan | ISM | Laporan Status Exception |
+| Compliance Self-Assessment | Semi-tahunan | ISM + Manajer Departemen | Checklist Kepatuhan |
+
+### 11.4 Audit Internal Tahunan
+
+#### **11.4.1 Tujuan Audit Internal**
+
+Audit internal bertujuan untuk mengevaluasi secara independen apakah:
+- Kebijakan dan prosedur keamanan informasi diimplementasikan dengan benar
+- Kontrol keamanan berfungsi efektif dalam melindungi aset informasi
+- Organisasi mematuhi persyaratan standar, regulasi, dan kontraktual
+- Terdapat area yang memerlukan perbaikan atau peningkatan
+
+#### **11.4.2 Ruang Lingkup Audit Internal**
+
+Audit internal mencakup seluruh 10 area kebijakan keamanan informasi:
+
+| Area Audit | Fokus Evaluasi |
+|------------|----------------|
+| Area 1: Manajemen Risiko | Kecukupan proses risk assessment, risk register, risk treatment plan |
+| Area 2: Kebijakan & Baseline | Kelengkapan kebijakan, penerapan security baseline, sosialisasi |
+| Area 3: Organisasi & Awareness | Struktur tim keamanan, efektivitas program awareness |
+| Area 4: Keamanan HR | Kepatuhan background check, NDA, proses terminasi |
+| Area 5: Manajemen Aset | Klasifikasi data, enkripsi, disposal, removable media |
+| Area 6: Pengendalian Akses | IAM lifecycle, MFA, VPN, access review |
+| Area 7: Keamanan Fisik | Akses fisik, CCTV, log pengunjung |
+| Area 8: Keamanan Operasional | Hardening, change management, VAPT, incident response, logging |
+| Area 9: Pengembangan Sistem | Secure coding, SAST/DAST, source code protection |
+| Area 10: Kontinuitas Bisnis | BCP/DRP, backup/restore, pengujian DR |
+
+#### **11.4.3 Metodologi Audit Internal**
+
+Audit internal menggunakan pendekatan berbasis risiko dengan metode:
+
+**A. Metode Pengumpulan Bukti**
+- **Document Review** — Tinjauan kebijakan, prosedur, log, dan rekaman
+- **Interview** — Wawancara dengan pemilik proses, operator, dan pengguna
+- **Observation** — Pengamatan langsung terhadap proses dan kontrol
+- **Technical Testing** — Verifikasi teknis terhadap konfigurasi dan kontrol (sampling)
+- **Walkthrough** — Penelusuran proses end-to-end untuk memvalidasi implementasi
+
+**B. Kriteria Penilaian Temuan**
+
+| Kategori Temuan | Definisi | SLA Remediasi |
+|-----------------|----------|---------------|
+| **Major Non-Conformity** | Ketiadaan total atau kegagalan sistematis dari kontrol yang dipersyaratkan | 30 hari |
+| **Minor Non-Conformity** | Ketidaksesuaian parsial atau insidentil dari kontrol yang dipersyaratkan | 60 hari |
+| **Observation** | Area yang belum menjadi ketidaksesuaian tetapi berpotensi menjadi masalah | 90 hari |
+| **Opportunity for Improvement (OFI)** | Rekomendasi perbaikan untuk meningkatkan efektivitas kontrol | Sesuai prioritas |
+
+#### **11.4.4 Proses Pelaksanaan Audit Internal**
+
+```mermaid
+flowchart LR
+    %% Definisi Node
+    Step1(1. PERSIAPAN)
+    Step2(2. PERENCANAAN)
+    Step3(3. PELAKSANAAN)
+    Step4(4. PELAPORAN)
+    Step5(5. TINDAK LANJUT)
+    Step6(6. VERIFIKASI)
+    Step7(7. PENUTUPAN AUDIT)
+
+    %% Alur Baris Pertama
+    Step1 --> Step2 --> Step3 --> Step4
+    
+    %% Koneksi antar baris
+    Step4 --> Step5
+    
+    %% Alur Baris Kedua
+    Step5 --> Step6 --> Step7
+
+    %% Styling untuk estetika
+    style Step1 fill:#f9f,stroke:#333,stroke-width:2px
+    style Step7 fill:#bbf,stroke:#333,stroke-width:2px
+    style Step4 fill:#fff,stroke:#f66,stroke-width:2px
+```
+
+**Langkah 1: Persiapan**
+- ISM menunjuk Lead Auditor dan tim audit (minimal 2 orang)
+- Lead Auditor harus independen dari area yang diaudit
+- Pelatihan auditor internal dilakukan jika diperlukan
+
+**Langkah 2: Perencanaan**
+- Penyusunan Audit Plan yang mencakup: ruang lingkup, jadwal, area prioritas, dan kriteria audit
+- Pemberitahuan kepada auditee minimal 2 minggu sebelum pelaksanaan
+- Persiapan audit checklist berdasarkan kebijakan dan prosedur yang berlaku
+
+**Langkah 3: Pelaksanaan**
+- Opening meeting dengan auditee untuk menjelaskan tujuan dan proses
+- Pengumpulan bukti melalui document review, interview, observation, dan technical testing
+- Pencatatan temuan audit secara real-time
+- Daily briefing antara tim audit untuk konsolidasi temuan
+
+**Langkah 4: Pelaporan**
+- Penyusunan Draft Laporan Audit Internal yang mencakup:
+  - Ringkasan Eksekutif (untuk manajemen)
+  - Ruang lingkup dan metodologi audit
+  - Temuan audit (dikategorikan berdasarkan severity)
+  - Bukti pendukung untuk setiap temuan
+  - Rekomendasi perbaikan
+  - Rencana tindak lanjut dengan timeline dan penanggung jawab
+- Review draft dengan auditee untuk memastikan akurasi fakta
+- Finalisasi dan distribusi Laporan Audit kepada ISM, COO, dan CEO
+
+**Langkah 5: Tindak Lanjut (Corrective Action)**
+- Auditee menyusun Corrective Action Plan (CAP) untuk setiap temuan
+- CAP harus mencakup: akar penyebab, tindakan korektif, penanggung jawab, dan target penyelesaian
+- ISM memonitor progress CAP secara berkala
+
+**Langkah 6: Verifikasi**
+- Tim audit memverifikasi bahwa tindakan korektif telah diimplementasikan
+- Verifikasi mencakup: review bukti, re-testing, atau re-audit jika diperlukan
+- Status temuan diperbarui: Open → In Progress → Closed
+
+**Langkah 7: Penutupan Audit**
+- Semua temuan Major harus ditutup sebelum audit dinyatakan selesai
+- Closing meeting dengan auditee dan manajemen
+- Lessons learned didokumentasikan untuk perbaikan proses audit berikutnya
+
+#### **11.4.5 Pelaporan Audit Internal**
+
+| Laporan | Penerima | Timeline |
+|---------|----------|----------|
+| Draft Laporan Audit | Auditee | Maksimal 5 hari kerja setelah audit |
+| Laporan Audit Final | ISM, COO, CEO | Maksimal 10 hari kerja setelah audit |
+| Ringkasan Eksekutif | Board of Directors | Pada Management Review kuartalan berikutnya |
+| Status Tindak Lanjut | ISM, COO | Bulanan hingga semua temuan ditutup |
+
+### 11.5 Audit Eksternal
+
+#### **11.5.1 Kondisi yang Memerlukan Audit Eksternal**
+
+Audit eksternal dilakukan dalam kondisi berikut:
+
+| # | Kondisi Pemicu | Keterangan |
+|---|----------------|------------|
+| 1 | **Persyaratan Sertifikasi** | Untuk mendapatkan atau mempertahankan sertifikasi (ISO 27001, SOC 2, dll.) |
+| 2 | **Persyaratan Klien/Kontraktual** | Klien mensyaratkan audit independen sebagai bagian dari vendor assessment |
+| 3 | **Persyaratan Regulasi** | Regulasi pemerintah mewajibkan audit oleh pihak independen |
+| 4 | **Pasca-Insiden Keamanan Major** | Setelah terjadi insiden keamanan signifikan yang memerlukan investigasi independen |
+| 5 | **Keputusan Manajemen** | Board of Directors atau CEO memutuskan perlunya evaluasi independen |
+| 6 | **Temuan Audit Internal Signifikan** | Hasil audit internal menunjukkan kelemahan sistematis yang memerlukan validasi independen |
+
+#### **11.5.2 Jenis Audit Eksternal**
+
+| Jenis Audit | Tujuan | Frekuensi |
+|-------------|--------|-----------|
+| **Certification Audit** | Sertifikasi ISO 27001 atau standar lainnya | Sesuai siklus sertifikasi (3 tahun + surveillance tahunan) |
+| **Compliance Audit** | Verifikasi kepatuhan terhadap regulasi atau persyaratan kontraktual | Sesuai kebutuhan |
+| **Penetration Testing** | Pengujian keamanan teknis oleh ethical hacker | Tahunan (minimum) |
+| **Third-Party Risk Assessment** | Penilaian risiko oleh assessor independen atas permintaan klien | Sesuai permintaan klien |
+| **Forensic Audit** | Investigasi pasca-insiden keamanan | Ad-hoc (setelah insiden major) |
+
+#### **11.5.3 Pemilihan Auditor Eksternal**
+
+Auditor eksternal harus memenuhi kriteria:
+- Memiliki akreditasi atau sertifikasi yang relevan (ISO 27001 Lead Auditor, CISA, CISSP, dll.)
+- Independen dari PT Ecomindo (tidak ada konflik kepentingan)
+- Memiliki pengalaman minimal 3 tahun dalam audit keamanan informasi
+- Menandatangani NDA sebelum memulai audit
+- Memiliki rekam jejak yang dapat diverifikasi
+
+#### **11.5.4 Proses Audit Eksternal**
+
+1. **Inisiasi** — ISM mengidentifikasi kebutuhan audit, menyusun Terms of Reference (ToR), dan memperoleh persetujuan anggaran dari manajemen
+2. **Seleksi Vendor** — Pemilihan auditor eksternal melalui proses seleksi formal (minimal 2 kandidat)
+3. **Kontrak & NDA** — Penandatanganan kontrak layanan dan NDA dengan auditor terpilih
+4. **Perencanaan** — Koordinasi jadwal, ruang lingkup, dan kebutuhan akses antara ISM dan auditor
+5. **Pelaksanaan** — Auditor melakukan audit sesuai metodologi yang disepakati; ISM mendampingi selama proses
+6. **Pelaporan** — Auditor menyerahkan laporan temuan, rekomendasi, dan opini audit
+7. **Tindak Lanjut** — ISM menyusun Corrective Action Plan berdasarkan temuan audit eksternal
+8. **Pelaporan ke Manajemen** — Hasil audit dan rencana tindak lanjut dipresentasikan kepada Board of Directors
+
+### 11.6 Management Review
+
+#### **11.6.1 Jadwal dan Peserta**
+
+Management Review dilaksanakan setiap **kuartal** dengan peserta:
+- CEO / Direktur Utama (atau perwakilan)
+- COO / Direktur Operasional
+- ISM (Information Security Manager)
+- Manajer Departemen terkait (sesuai agenda)
+
+#### **11.6.2 Agenda Management Review**
+
+Setiap Management Review membahas:
+
+| # | Topik | Sumber Data |
+|---|-------|-------------|
+| 1 | Status tindak lanjut dari review sebelumnya | Notulen review sebelumnya |
+| 2 | Hasil audit internal dan/atau eksternal | Laporan audit |
+| 3 | Status temuan dan Corrective Action Plan | Tracking register |
+| 4 | Tinjauan insiden keamanan dan lessons learned | Incident register |
+| 5 | Status pengecualian aktif dan mitigasinya | Exception Register |
+| 6 | Hasil vulnerability assessment dan pentest | Laporan VAPT |
+| 7 | Perubahan pada lingkungan ancaman (threat landscape) | Threat intelligence |
+| 8 | Kecukupan sumber daya keamanan informasi | Laporan ISM |
+| 9 | Key Performance Indicators (KPI) keamanan | Dashboard KPI |
+| 10 | Rekomendasi perbaikan dan rencana aksi | ISM & tim security |
+
+#### **11.6.3 Key Performance Indicators (KPI) Keamanan Informasi**
+
+| # | KPI | Target | Frekuensi Pengukuran |
+|---|-----|--------|---------------------|
+| 1 | Persentase kepatuhan terhadap security baseline | ≥ 95% | Kuartalan |
+| 2 | Jumlah insiden keamanan (severity High/Critical) | 0 per kuartal | Kuartalan |
+| 3 | Mean Time to Detect (MTTD) insiden | ≤ 4 jam | Per insiden |
+| 4 | Mean Time to Respond (MTTR) insiden | ≤ 8 jam | Per insiden |
+| 5 | Persentase karyawan yang menyelesaikan security awareness training | 100% per tahun | Tahunan |
+| 6 | Jumlah temuan audit Major yang belum ditutup | 0 (dalam SLA) | Bulanan |
+| 7 | Persentase patch critical yang diterapkan tepat waktu | ≥ 95% dalam 30 hari | Bulanan |
+| 8 | Persentase access review yang diselesaikan tepat waktu | 100% per kuartal | Kuartalan |
+| 9 | Jumlah pengecualian aktif | Minimum yang diperlukan | Bulanan |
+| 10 | Hasil simulasi DR/BCP (keberhasilan restore) | 100% sukses | Tahunan |
+
+### 11.7 Siklus Perbaikan Berkelanjutan (PDCA)
+
+PT Ecomindo menerapkan siklus **Plan-Do-Check-Act** untuk evaluasi dan perbaikan keamanan informasi:
+
+```mermaid    
+flowchart TD
+    subgraph PDCA_Cycle [Siklus Perbaikan Berkelanjutan]
+        direction TB
+        
+        P["**PLAN**<br/>• Review kebijakan<br/>• Risk assessment<br/>• Tetapkan target KPI<br/>• Susun rencana audit"]
+        
+        D["**DO**<br/>• Implementasi kebijakan & kontrol<br/>• Pelaksanaan training & awareness<br/>• Operasional keamanan sehari-hari"]
+        
+        C["**CHECK**<br/>• Audit internal tahunan<br/>• Audit eksternal<br/>• Management review<br/>• Monitoring KPI<br/>• VAPT & compliance check"]
+        
+        A["**ACT**<br/>• Corrective & Preventive Actions (CAPA)<br/>• Update kebijakan & prosedur<br/>• Perbaikan kontrol & proses<br/>• Eskalasi ke manajemen"]
+
+        %% Koneksi alur
+        P --> D
+        D --> C
+        C --> A
+        A -.->|Continuous Improvement| P
+    end
+
+    %% Styling
+    style P fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style D fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style C fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    style A fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+```
+
+### 11.8 Corrective & Preventive Actions (CAPA)
+
+#### **11.8.1 Corrective Actions (Tindakan Korektif)**
+
+Tindakan korektif dilakukan untuk mengatasi ketidaksesuaian yang ditemukan:
+1. Identifikasi akar penyebab (Root Cause Analysis) menggunakan metode 5-Why atau Fishbone
+2. Rancang tindakan korektif yang menghilangkan akar penyebab
+3. Implementasi tindakan korektif sesuai SLA:
+   - Major Non-Conformity: **30 hari**
+   - Minor Non-Conformity: **60 hari**
+   - Observation: **90 hari**
+4. Verifikasi efektivitas tindakan korektif
+5. Dokumentasi dan penutupan temuan
+
+#### **11.8.2 Preventive Actions (Tindakan Preventif)**
+
+Tindakan preventif dilakukan untuk mencegah potensi ketidaksesuaian:
+1. Analisis tren dari temuan audit, insiden, dan near-miss
+2. Identifikasi area yang berpotensi menjadi masalah
+3. Rancang dan implementasi tindakan pencegahan
+4. Monitor efektivitas tindakan preventif
+5. Dokumentasi dan laporkan ke Management Review
+
+### 11.9 Tanggung Jawab Evaluasi
+
+| Peran | Tanggung Jawab |
+|-------|----------------|
+| **Board of Directors** | Meninjau hasil audit, menyetujui anggaran audit, memastikan tindak lanjut strategis |
+| **CEO/COO** | Menghadiri Management Review, menyetujui Corrective Action Plan, mengalokasikan sumber daya |
+| **ISM** | Merencanakan dan mengkoordinasikan seluruh aktivitas evaluasi, mengelola CAPA register, melaporkan KPI |
+| **Tim Audit Internal** | Melaksanakan audit internal, menyusun laporan, memverifikasi tindakan korektif |
+| **Manajer Departemen** | Memfasilitasi pelaksanaan audit di departemennya, melaksanakan tindakan korektif |
+| **Seluruh Karyawan** | Bekerja sama selama proses audit, melaksanakan perbaikan yang diperlukan |
+
+### 11.10 Dokumentasi Evaluasi
+
+Seluruh dokumentasi evaluasi harus disimpan dan dipelihara:
+
+| Dokumen | Retensi Minimum | Penyimpanan |
+|---------|-----------------|-------------|
+| Laporan Audit Internal | 3 tahun | Repositori ISM (digital) |
+| Laporan Audit Eksternal | 5 tahun | Repositori ISM + Finance |
+| Notulen Management Review | 3 tahun | Repositori ISM |
+| CAPA Register | 3 tahun setelah penutupan | Repositori ISM |
+| KPI Dashboard | 3 tahun | Repositori ISM |
+| Exception Register | 3 tahun setelah penutupan | Repositori ISM |
+
+### 11.11 Frekuensi & Peninjauan
+
+- Audit internal: Minimal setiap tahun, atau lebih sering jika diperlukan berdasarkan profil risiko
+- Audit eksternal: Dilaksanakan sesuai kebutuhan (lihat kondisi pemicu di 11.5.1)
+- Management Review: Setiap kuartal
+- Pemantauan KPI: Bulanan (operasional), kuartalan (strategis)
+- Peninjauan mekanisme evaluasi: Setiap tahun (bersamaan dengan peninjauan TK3I)
 
 ---
 
-## 12. EMERGENCY CONTACTS {#emergency-contacts}
+## 12. MEKANISME PENGECUALIAN (EXCEPTION MANAGEMENT) {#mekanisme-pengecualian}
 
-**Incident Response / Keamanan Darurat:**
+### 12.1 Tujuan
 
-| Role | Name | Phone | Email |
-|------|------|-------|-------|
+Mekanisme ini menetapkan proses formal untuk mengajukan, mengevaluasi, menyetujui, mendokumentasikan, dan memonitor pengecualian (exception) terhadap kebijakan keamanan informasi PT Ecomindo. Pengecualian hanya diperbolehkan dalam kondisi tertentu yang dapat dijustifikasi secara bisnis, dan WAJIB disertai dengan langkah-langkah mitigasi risiko yang memadai selama masa berlakunya.
+
+### 12.2 Ruang Lingkup
+
+Mekanisme ini berlaku untuk:
+- Seluruh kebijakan dan prosedur keamanan informasi dalam dokumen TK3I ini (Area 1–10)
+- Seluruh security baseline (OS, database, aplikasi, endpoint, jaringan)
+- Seluruh kontrol teknis dan operasional yang ditetapkan oleh ISM
+- Seluruh karyawan, kontraktor, dan pihak ketiga yang tunduk pada kebijakan PT Ecomindo
+
+### 12.3 Prinsip Dasar Pengecualian
+
+1. **Pengecualian bukan hak** — Pengecualian hanya diberikan dalam kondisi luar biasa, bukan sebagai standar operasional
+2. **Bersifat sementara** — Setiap pengecualian memiliki batas waktu yang jelas dan WAJIB ditinjau ulang sebelum diperpanjang
+3. **Wajib dimitigasi** — Tidak ada pengecualian yang diberikan tanpa rencana mitigasi risiko yang disetujui
+4. **Terdokumentasi penuh** — Seluruh siklus hidup pengecualian harus terdokumentasi dalam Exception Register
+5. **Dapat dicabut** — ISM berhak mencabut pengecualian kapan saja jika profil risiko berubah
+
+### 12.4 Klasifikasi Pengecualian
+
+| Kategori | Deskripsi | Contoh | Durasi Maksimum |
+|----------|-----------|--------|------------------|
+| **Teknis** | Ketidakmampuan teknis untuk memenuhi kontrol tertentu | Sistem legacy yang tidak mendukung TLS 1.2+, perangkat yang tidak kompatibel MFA | 90 hari |
+| **Operasional** | Kebutuhan bisnis mendesak yang mengharuskan penyimpangan sementara | Deployment darurat tanpa full change management, akses sementara di luar kebijakan least privilege | 30 hari |
+| **Kontraktual** | Persyaratan klien atau vendor yang bertentangan dengan kebijakan internal | Klien meminta penggunaan protokol spesifik, vendor memerlukan akses langsung ke sistem | Sesuai durasi kontrak (maks. 180 hari) |
+| **Regulasi** | Persyaratan hukum atau regulasi yang menuntut perlakuan berbeda | Retensi data lebih lama dari kebijakan internal karena regulasi, akses khusus untuk auditor eksternal | Sesuai durasi regulasi berlaku |
+
+### 12.5 Proses Pengajuan Pengecualian
+
+#### **12.5.1 Alur Proses (Exception Lifecycle)**
+
+```mermaid
+graph LR
+    A[PENGAJUAN<br/>Request] --> B[PENILAIAN<br/>RISIKO]
+    B --> C[PERSETUJUAN<br/>Approval]
+    C --> D[IMPLEMENTASI<br/>MITIGASI]
+    D --> E[MONITORING<br/>BERKELANJUTAN]
+    E --> F[REVIEW<br/>BERKALA]
+    F --> G[PENUTUPAN<br/>Closure]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
+```
+
+#### **12.5.2 Langkah 1: Pengajuan (Request)**
+
+Pemohon (karyawan, manajer departemen, atau tim IT) mengisi **Formulir Permintaan Pengecualian** yang mencakup:
+
+| # | Komponen Formulir | Keterangan |
+|---|-------------------|------------|
+| 1 | **ID Pengecualian** | Nomor unik (format: EXC-[TAHUN]-[NOMOR], contoh: EXC-2026-001) |
+| 2 | **Pemohon** | Nama, jabatan, departemen |
+| 3 | **Tanggal Pengajuan** | Tanggal formulir diajukan |
+| 4 | **Kebijakan yang Dikecualikan** | Referensi spesifik ke area/pasal kebijakan (contoh: Area 8, Pasal 8.3.1.A - Password Policy) |
+| 5 | **Deskripsi Pengecualian** | Penjelasan detail tentang kontrol mana yang tidak dapat dipenuhi |
+| 6 | **Justifikasi Bisnis** | Alasan bisnis yang jelas mengapa pengecualian diperlukan |
+| 7 | **Dampak jika Tidak Diberikan** | Dampak terhadap operasional, proyek, atau layanan jika pengecualian ditolak |
+| 8 | **Durasi yang Diminta** | Periode waktu yang diminta (harus dalam batas maksimum per kategori) |
+| 9 | **Rencana Remediasi** | Langkah-langkah yang akan diambil untuk kembali patuh (compliance) setelah periode pengecualian |
+| 10 | **Rencana Mitigasi** | Kontrol pengganti/kompensasi yang akan diterapkan selama masa pengecualian |
+
+#### **12.5.3 Langkah 2: Penilaian Risiko (Risk Assessment)**
+
+ISM atau tim Risk Management wajib melakukan penilaian risiko terhadap setiap permintaan pengecualian:
+
+**A. Analisis Risiko Residual**
+- Identifikasi ancaman dan kerentanan yang timbul akibat pengecualian
+- Evaluasi probabilitas terjadinya insiden (Likelihood: 1-5)
+- Evaluasi dampak jika insiden terjadi (Impact: 1-5)
+- Hitung skor risiko residual: **Risk Score = Likelihood × Impact**
+
+**B. Matriks Risiko Pengecualian**
+
+| Risk Score | Level Risiko | Keputusan |
+|------------|-------------|----------|
+| 1–4 | **Rendah** | Dapat disetujui oleh ISM |
+| 5–9 | **Sedang** | Memerlukan persetujuan ISM + Manajer Departemen terkait |
+| 10–15 | **Tinggi** | Memerlukan persetujuan ISM + COO/Direktur Operasional |
+| 16–25 | **Kritis** | Memerlukan persetujuan ISM + COO + CEO/Board of Directors |
+
+**C. Evaluasi Kelayakan Mitigasi**
+- Apakah kontrol mitigasi yang diusulkan cukup menurunkan risiko ke level yang dapat diterima?
+- Apakah kontrol mitigasi dapat diimplementasikan secara efektif?
+- Apakah ada kontrol mitigasi tambahan yang harus diterapkan?
+
+#### **12.5.4 Langkah 3: Persetujuan (Approval)**
+
+**Hierarki Persetujuan Berdasarkan Level Risiko:**
+
+| Level Risiko | Approver | SLA Persetujuan |
+|-------------|----------|------------------|
+| **Rendah** | ISM | 3 hari kerja |
+| **Sedang** | ISM + Manajer Departemen | 5 hari kerja |
+| **Tinggi** | ISM + COO/Direktur Operasional | 7 hari kerja |
+| **Kritis** | ISM + COO + CEO/Board of Directors | 10 hari kerja |
+
+**Kriteria Penolakan:**
+Pengecualian WAJIB ditolak jika:
+- Tidak ada justifikasi bisnis yang valid
+- Tidak ada rencana mitigasi yang memadai
+- Risiko residual setelah mitigasi masih berada di level Kritis
+- Pengecualian melanggar regulasi hukum yang berlaku
+- Pengecualian berpotensi membahayakan data klien atau PII tanpa kontrol kompensasi yang memadai
+
+#### **12.5.5 Langkah 4: Implementasi Mitigasi**
+
+Setelah persetujuan diberikan, pemohon dan tim terkait WAJIB mengimplementasikan seluruh kontrol mitigasi sebelum pengecualian berlaku efektif.
+
+### 12.6 Mitigasi Wajib per Kategori Pengecualian
+
+Setiap pengecualian HARUS disertai kontrol mitigasi minimum sesuai kategori berikut:
+
+#### **12.6.1 Pengecualian Teknis**
+
+| Pengecualian | Mitigasi Wajib |
+|-------------|----------------|
+| Sistem tidak mendukung TLS 1.2+ | • Isolasi jaringan (VLAN terpisah) untuk sistem terkait<br>• Implementasi VPN/IPSec tunnel untuk semua komunikasi<br>• Monitoring traffic khusus pada sistem terkait<br>• Percepatan rencana migrasi/upgrade sistem |
+| Perangkat tidak kompatibel MFA | • Pembatasan akses IP (IP whitelisting)<br>• Peningkatan frekuensi password rotation (30 hari)<br>• Monitoring aktivitas login secara real-time<br>• Pembatasan jam akses (hanya jam kerja) |
+| Sistem legacy tidak mendukung enkripsi standar | • Enkripsi pada level jaringan (IPSec/VPN)<br>• Pembatasan akses fisik dan logis ke sistem<br>• Implementasi DLP pada perimeter jaringan<br>• Audit log akses harian |
+| Tidak dapat menerapkan hardening penuh | • Dokumentasi deviasi spesifik dari CIS Benchmark<br>• Compensating controls untuk setiap deviasi<br>• Vulnerability scanning mingguan<br>• Network segmentation tambahan |
+| Ketidakmampuan patching tepat waktu | • Virtual patching melalui WAF/IPS<br>• Isolasi sistem yang belum di-patch<br>• Monitoring ancaman terkait CVE spesifik<br>• Rencana patch dengan timeline yang jelas |
+
+#### **12.6.2 Pengecualian Operasional**
+
+| Pengecualian | Mitigasi Wajib |
+|-------------|----------------|
+| Emergency deployment tanpa full change management | • Dokumentasi retroaktif dalam 24 jam<br>• Post-implementation review dalam 48 jam<br>• Monitoring intensif pasca-deployment (7 hari)<br>• Rollback plan yang siap dieksekusi |
+| Akses sementara di luar kebijakan least privilege | • Batas waktu akses maksimal 48 jam<br>• Logging detail seluruh aktivitas dengan akses elevated<br>• Supervision oleh ISM atau security officer<br>• Pencabutan otomatis akses setelah periode berakhir |
+| Penggunaan removable media di luar kebijakan | • Enkripsi wajib pada removable media<br>• DLP monitoring aktif<br>• Logging koneksi USB dan transfer data<br>• Persetujuan per-penggunaan dari ISM |
+| Bypass VPN untuk kebutuhan operasional | • Implementasi koneksi alternatif yang terenkripsi<br>• IP restriction ketat<br>• Session monitoring real-time<br>• Durasi bypass maksimal 24 jam |
+
+#### **12.6.3 Pengecualian Kontraktual**
+
+| Pengecualian | Mitigasi Wajib |
+|-------------|----------------|
+| Klien meminta protokol/standar berbeda | • Risk assessment bersama dengan klien<br>• Isolasi environment klien dari environment internal<br>• Monitoring khusus pada koneksi/integrasi klien<br>• Dokumentasi formal persetujuan bersama |
+| Vendor memerlukan akses langsung ke sistem | • Dedicated account dengan least privilege<br>• Session recording untuk seluruh aktivitas vendor<br>• Time-limited access (dicabut setelah selesai)<br>• NDA tambahan spesifik untuk akses tersebut |
+| Penggunaan tools/platform non-standar sesuai kontrak | • Sandboxing/isolasi tools dalam environment terpisah<br>• Security assessment terhadap tools sebelum deployment<br>• Monitoring dan logging aktivitas tools<br>• Exit plan untuk migrasi ke standar internal |
+
+#### **12.6.4 Pengecualian Regulasi**
+
+| Pengecualian | Mitigasi Wajib |
+|-------------|----------------|
+| Retensi data melebihi kebijakan internal | • Enkripsi tambahan untuk data yang diretain lebih lama<br>• Access control ketat (hanya compliance team)<br>• Audit trail untuk setiap akses data<br>• Review berkala kelayakan retensi |
+| Akses khusus untuk auditor/regulator | • Dedicated read-only account<br>• Pendampingan selama sesi akses<br>• Logging komprehensif seluruh aktivitas<br>• Pencabutan akses segera setelah audit selesai |
+
+### 12.7 Monitoring dan Review Pengecualian
+
+#### **12.7.1 Monitoring Berkelanjutan**
+
+Selama masa berlaku pengecualian, ISM wajib memastikan:
+- Kontrol mitigasi diimplementasikan dan berfungsi efektif
+- Tidak ada peningkatan risiko di luar yang telah dinilai
+- Rencana remediasi berjalan sesuai jadwal
+- Insiden terkait pengecualian dilaporkan dan dianalisis
+
+#### **12.7.2 Review Berkala**
+
+| Kategori Pengecualian | Frekuensi Review |
+|----------------------|------------------|
+| Operasional (≤30 hari) | Setiap 15 hari |
+| Teknis (≤90 hari) | Setiap 30 hari |
+| Kontraktual (≤180 hari) | Setiap 60 hari |
+| Regulasi | Setiap 90 hari |
+
+**Setiap review WAJIB mencakup:**
+1. Status implementasi mitigasi — apakah masih efektif?
+2. Progress rencana remediasi — apakah on-track?
+3. Perubahan profil risiko — apakah ada ancaman baru?
+4. Keputusan: perpanjang, modifikasi, atau tutup pengecualian
+
+#### **12.7.3 Perpanjangan Pengecualian**
+
+Jika pengecualian perlu diperpanjang:
+- Pemohon harus mengajukan **Formulir Perpanjangan Pengecualian** sebelum tanggal kedaluwarsa (minimal 10 hari kerja sebelumnya)
+- Penilaian risiko ulang WAJIB dilakukan
+- Perpanjangan memerlukan persetujuan **satu level lebih tinggi** dari persetujuan awal
+- Perpanjangan maksimal: 2 kali perpanjangan, setelah itu harus di-eskalasi ke Board of Directors
+
+### 12.8 Pencabutan dan Penutupan Pengecualian
+
+#### **12.8.1 Pencabutan Otomatis**
+
+Pengecualian OTOMATIS dicabut jika:
+- Masa berlaku habis tanpa perpanjangan
+- Kontrol mitigasi tidak diimplementasikan dalam 5 hari kerja setelah persetujuan
+- Terjadi insiden keamanan yang terkait langsung dengan pengecualian
+- Pemohon tidak melaksanakan review berkala sesuai jadwal
+
+#### **12.8.2 Pencabutan Darurat**
+
+ISM berhak mencabut pengecualian secara darurat (tanpa pemberitahuan terlebih dahulu) jika:
+- Terdeteksi ancaman aktif yang mengeksploitasi kerentanan terkait pengecualian
+- Terjadi perubahan signifikan pada lingkungan ancaman (threat landscape)
+- Kontrol mitigasi terbukti tidak efektif
+- Ditemukan pelanggaran terhadap ketentuan pengecualian oleh pemohon
+
+#### **12.8.3 Penutupan (Closure)**
+
+Setiap pengecualian yang ditutup harus didokumentasikan dengan:
+- Tanggal penutupan
+- Alasan penutupan (kedaluwarsa, remediasi selesai, dicabut)
+- Konfirmasi bahwa kontrol standar telah diterapkan kembali
+- Lessons learned untuk perbaikan proses di masa depan
+
+### 12.9 Exception Register (Daftar Pengecualian)
+
+ISM wajib memelihara **Exception Register** terpusat yang mencakup:
+
+| # | Field | Keterangan |
+|---|-------|------------|
+| 1 | ID Pengecualian | Nomor unik (EXC-[TAHUN]-[NOMOR]) |
+| 2 | Pemohon | Nama dan departemen |
+| 3 | Kebijakan yang Dikecualikan | Referensi area/pasal kebijakan |
+| 4 | Kategori | Teknis / Operasional / Kontraktual / Regulasi |
+| 5 | Deskripsi | Ringkasan pengecualian |
+| 6 | Level Risiko | Rendah / Sedang / Tinggi / Kritis |
+| 7 | Mitigasi | Daftar kontrol mitigasi yang diterapkan |
+| 8 | Approver | Pihak yang menyetujui |
+| 9 | Tanggal Mulai | Tanggal efektif pengecualian |
+| 10 | Tanggal Berakhir | Tanggal kedaluwarsa |
+| 11 | Status | Aktif / Dalam Review / Diperpanjang / Ditutup / Dicabut |
+| 12 | Tanggal Review Berikutnya | Jadwal review berkala |
+
+**Exception Register direview oleh ISM setiap bulan dan dilaporkan kepada manajemen setiap kuartal.**
+
+### 12.10 Pelaporan Pengecualian
+
+| Laporan | Frekuensi | Penerima | Isi |
+|---------|-----------|----------|-----|
+| Exception Status Report | Bulanan | ISM, COO | Daftar pengecualian aktif, status mitigasi, progress remediasi |
+| Exception Summary Report | Kuartalan | Board of Directors, CEO | Ringkasan eksekutif, tren, risiko residual, rekomendasi |
+| Exception Incident Report | Ad-hoc | ISM, COO, CEO | Laporan jika terjadi insiden terkait pengecualian aktif |
+
+### 12.11 Tanggung Jawab
+
+| Peran | Tanggung Jawab |
+|-------|----------------|
+| **Pemohon** | Mengisi formulir permintaan, mengimplementasikan mitigasi, menjalankan rencana remediasi |
+| **Manajer Departemen** | Mendukung justifikasi bisnis, memastikan mitigasi dilaksanakan di departemennya |
+| **ISM** | Melakukan penilaian risiko, mengelola Exception Register, memonitor kepatuhan, melaporkan ke manajemen |
+| **COO/Direktur Operasional** | Menyetujui pengecualian level Tinggi, eskalasi ke Board jika diperlukan |
+| **CEO/Board of Directors** | Menyetujui pengecualian level Kritis, meninjau laporan kuartalan |
+| **Tim IT** | Mengimplementasikan kontrol mitigasi teknis, melaporkan status implementasi |
+
+### 12.12 Sanksi Pelanggaran
+
+Pelanggaran terhadap mekanisme pengecualian ini dapat mengakibatkan:
+- **Operasi tanpa pengecualian yang disetujui**: Teguran tertulis, eskalasi ke manajemen
+- **Tidak mengimplementasikan mitigasi yang disetujui**: Pencabutan pengecualian, teguran tertulis
+- **Pemalsuan informasi dalam formulir pengecualian**: Tindakan disipliner sesuai kebijakan HR
+- **Pelanggaran berulang**: Eskalasi ke Board of Directors, potensi sanksi hingga terminasi
+
+### 12.13 Frekuensi & Peninjauan Mekanisme Pengecualian
+
+- Peninjauan mekanisme: Dilakukan setiap tahun (bersamaan dengan peninjauan TK3I)
+- Peninjauan Exception Register: Setiap bulan oleh ISM
+- Pelaporan ke manajemen: Setiap kuartal
+- Audit pengecualian: Setiap semester sebagai bagian dari audit keamanan internal
+
+---
+
+## 13. KONTAK DARURAT {#emergency-contacts}
+
+**Respons Insiden / Keamanan Darurat:**
+
+| Peran | Nama | Telepon | Email |
+|-------|------|---------|-------|
 | ISM (Information Security Manager) / Kepala Keamanan Informasi | Heri Fauzan | 081319015745 | heri.fauzan@ecomindo.com |
 
 ---
 
-## 13. DOCUMENT REFERENCES & INTEGRATION MAP {#document-references-integration-map}
+## 14. REFERENSI DOKUMEN & PETA INTEGRASI {#document-references-integration-map}
 
-### 13.1 Document Hierarchy
+### 14.1 Hierarki Dokumen
 
 ```mermaid
 graph LR
@@ -1661,66 +2231,66 @@ graph LR
     class P1,P2,P3,P4,P5,P6,E1 file;
 ```
 
-### 13.2 Cross-Reference Matrix
+### 14.2 Matriks Referensi Silang
 
-| If You Need | See Document | Section |
-|-------------|--------------|---------|
-| All 10 Policy Areas | This Document | Sections 7.1-7.10 |
-| HR Procedures | PROC-01-HR-Employment.md | All |
-| Access Control Procedures | PROC-02-Access-Control.md | All |
-| Operations Procedures | PROC-03-Operations-Security.md | All |
-| Asset Management Procedures | PROC-04-Asset-Management.md | All |
-| Physical Security Procedures | PROC-05-Physical-Security.md | All |
-| Awareness & Compliance Procedures | PROC-06-Awareness-Compliance.md | All |
-| Evidence Templates & Samples | BUKTI-EVIDENCE-LENGKAP.md | Sections 1-11 |
-| Assessment Checklist | BUKTI-EVIDENCE-LENGKAP.md | Section 1 |
+| Kebutuhan Informasi | Lihat Dokumen | Bagian |
+|---------------------|---------------|--------|
+| Seluruh 10 Area Kebijakan | Dokumen ini | Bagian 7.1-7.10 |
+| Prosedur HR | PROC-01-HR-Employment.md | Seluruh bagian |
+| Prosedur Pengendalian Akses | PROC-02-Access-Control.md | Seluruh bagian |
+| Prosedur Operasional | PROC-03-Operations-Security.md | Seluruh bagian |
+| Prosedur Manajemen Aset | PROC-04-Asset-Management.md | Seluruh bagian |
+| Prosedur Keamanan Fisik | PROC-05-Physical-Security.md | Seluruh bagian |
+| Prosedur Awareness & Kepatuhan | PROC-06-Awareness-Compliance.md | Seluruh bagian |
+| Template & Sampel Bukti | BUKTI-EVIDENCE-LENGKAP.md | Bagian 1-11 |
+| Daftar Periksa Penilaian | BUKTI-EVIDENCE-LENGKAP.md | Bagian 1 |
 
 ---
 
-## 14. APPROVAL & DISTRIBUTION {#approval-distribution}
+## 15. PERSETUJUAN & DISTRIBUSI {#approval-distribution}
 
-### 14.1 Approval Signatures (See Top of Document)
+### 15.1 Tanda Tangan Persetujuan (Lihat Bagian Awal Dokumen)
 
-### 14.2 Distribution List
+### 15.2 Daftar Distribusi
 
 - [ ] Board of Directors
 - [ ] CEO / Direktur Utama
 - [ ] ISM (Information Security Manager) / Kepala Keamanan Informasi
-- [ ] All Information Security Team Members
-- [ ] IT Department Leadership
-- [ ] HR Department Leadership
-- [ ] Finance Department Leadership
-- [ ] All Department Heads
-- [ ] All Employees (via orientation & email)
+- [ ] Seluruh Anggota Tim Keamanan Informasi
+- [ ] Pimpinan Departemen IT
+- [ ] Pimpinan Departemen HR
+- [ ] Pimpinan Departemen Finance
+- [ ] Seluruh Kepala Departemen
+- [ ] Seluruh Karyawan (melalui orientasi & email)
 
-### 14.3 Acknowledgment
+### 15.3 Penerimaan dan Pengakuan
 
-Setiap karyawan harus:
-1. Membaca dan memahami Tata Kelola dan Kebijakan Keamanan Informasi
-2. Meninjau kebijakan yang relevan dengan peran mereka
-3. Menyelesaikan security awareness training
-4. Menandatangani acknowledgment form
-5. Mematuhi semua policies dan procedures
+Setiap karyawan wajib:
+1. Membaca dan memahami Tata Kelola dan Kebijakan Keamanan Informasi ini
+2. Meninjau kebijakan yang relevan dengan peran dan tanggung jawabnya
+3. Menyelesaikan pelatihan security awareness yang diwajibkan
+4. Menandatangani formulir penerimaan (acknowledgment form)
+5. Mematuhi seluruh kebijakan dan prosedur yang ditetapkan
 
 ---
 
-## 15. EFFECTIVE DATE & AMENDMENTS {#effective-date-amendments}
+## 16. TANGGAL EFEKTIF & AMENDEMEN {#effective-date-amendments}
 
-**Document Status:** Effective as of **15 April 2026**
+**Status Dokumen:** Berlaku sejak **15 April 2026**
 
-**Next Review Date:** 15 April 2027 (or sooner if major changes occur)
+**Tanggal Peninjauan Berikutnya:** 15 April 2027 (atau lebih awal jika terjadi perubahan signifikan)
 
-### Amendment Log
+### Log Amendemen
 
-| Version | Date | Changes | Approved By |
-|---------|------|---------|------------|
-| 1.0 | 15 Apr 2026 | Initial consolidated version | CEO, ISM |
+| Versi | Tanggal | Perubahan | Disetujui Oleh |
+|-------|---------|-----------|----------------|
+| 1.0 | 15 Apr 2026 | Versi konsolidasi awal | CEO, ISM |
 | | | | |
 
 ---
 
-**END OF DOCUMENT**
+**AKHIR DOKUMEN**
 
 ---
 
-*Dokumen ini adalah Confidential dan hanya untuk kebutuhan internal PT ECOMINDO SARANA CIPTA. Distribusi tanpa izin dari ISM dilarang.*
+*Dokumen ini bersifat Confidential dan hanya diperuntukkan bagi kebutuhan internal PT ECOMINDO SARANA CIPTA. Distribusi tanpa izin dari ISM dilarang.*
