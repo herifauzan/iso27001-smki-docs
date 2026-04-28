@@ -17,7 +17,6 @@
 | Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
 | Manajer HR |  |  |  |
 
----
 
 ## Daftar Isi
 
@@ -30,7 +29,6 @@
 - [7. Tinjauan dan Pembaruan](#7-tinjauan-dan-pembaruan)
 - [8. Lampiran](#8-lampiran)
 
----
 
 ## 1. Pendahuluan
 
@@ -55,7 +53,6 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
 
 - Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 6: Pengendalian Akses & Identitas
 
----
 
 ## 2. Prosedur Utama
 
@@ -69,25 +66,25 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
    - Manajer departemen meninjau dan menyetujui permintaan tersebut
    - HR mengirimkan permintaan yang telah disetujui kepada Tim IT Security
 
-2. **Verifikasi Identitas** (IT Security — 1 hari kerja)
+2. **Verifikasi Identitas** (IT Security â€” 1 hari kerja)
 
    - Memverifikasi data karyawan dengan sistem HR
    - Memvalidasi kebutuhan akses berdasarkan deskripsi jabatan dan prinsip least privilege
    - Melakukan pemeriksaan latar belakang tambahan jika diperlukan
 
-3. **Konfigurasi Akses** (IT Security — 2 hari kerja)
+3. **Konfigurasi Akses** (IT Security â€” 2 hari kerja)
 
    - Membuat akun pengguna di sistem Active Directory
    - Menetapkan role dan permission sesuai prinsip least privilege
    - Mengonfigurasi akses ke aplikasi dan basis data yang relevan
 
-4. **Pelatihan dan Orientasi** (IT Security — 1 hari kerja)
+4. **Pelatihan dan Orientasi** (IT Security â€” 1 hari kerja)
 
    - Memberikan pelatihan keamanan akses kepada pengguna baru
    - Menjelaskan hak dan tanggung jawab terkait akses yang diberikan
    - Mendokumentasikan pelaksanaan pelatihan dalam log pelatihan
 
-5. **Aktivasi dan Pemantauan** (IT Security — Segera)
+5. **Aktivasi dan Pemantauan** (IT Security â€” Segera)
 
    - Mengaktifkan akun setelah pelatihan selesai
    - Memantau aktivitas awal pengguna selama 7 hari pertama untuk mendeteksi anomali
@@ -103,30 +100,30 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
 
 #### Langkah-langkah:
 
-1. **Pemberitahuan Pengunduran Diri / Pemutusan Hubungan Kerja** (HR — Segera)
+1. **Pemberitahuan Pengunduran Diri / Pemutusan Hubungan Kerja** (HR â€” Segera)
 
    - HR memberitahu IT Security mengenai karyawan yang mengundurkan diri atau diberhentikan
    - Pemberitahuan harus menyertakan tanggal efektif pemutusan hubungan kerja
 
-2. **Penonaktifan Sementara** (IT Security — Dalam 1 jam)
+2. **Penonaktifan Sementara** (IT Security â€” Dalam 1 jam)
 
    - Menonaktifkan akun Active Directory karyawan terkait
    - Memblokir akses VPN dan email
    - Mencatat seluruh tindakan dalam log akses
 
-3. **Penghapusan Permanen** (IT Security — Dalam 24 jam)
+3. **Penghapusan Permanen** (IT Security â€” Dalam 24 jam)
 
    - Menghapus akun dari seluruh sistem yang digunakan
    - Melakukan backup data penting sebelum penghapusan
    - Memperbarui dokumentasi akses organisasi
 
-4. **Pengembalian Aset** (HR/IT — Dalam 24 jam)
+4. **Pengembalian Aset** (HR/IT â€” Dalam 24 jam)
 
    - Mengumpulkan laptop, kartu identitas, dan kartu akses
    - Melakukan penghapusan data (wipe) pada perangkat yang dikembalikan
    - Mendokumentasikan proses pengembalian secara lengkap
 
-#### Waktu Total: 24–48 jam
+#### Waktu Total: 24â€“48 jam
 #### Tanggung Jawab:
 
 - HR: Koordinasi keseluruhan dan pengembalian aset
@@ -141,18 +138,18 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
    - Mengisi Formulir Perubahan Akses (Form-AK-02)
    - Menjelaskan alasan perubahan serta akses yang ditambahkan atau dikurangi
 
-2. **Tinjauan dan Persetujuan** (Manajer/IT Security — 2 hari kerja)
+2. **Tinjauan dan Persetujuan** (Manajer/IT Security â€” 2 hari kerja)
 
    - Manajer departemen meninjau dan menyetujui perubahan
    - IT Security melakukan tinjauan teknis terhadap kelayakan perubahan
 
-3. **Implementasi** (IT Security — 1 hari kerja)
+3. **Implementasi** (IT Security â€” 1 hari kerja)
 
    - Memperbarui permission di sistem sesuai perubahan yang disetujui
    - Menguji akses baru untuk memastikan fungsionalitas yang benar
    - Memperbarui dokumentasi akses
 
-4. **Verifikasi** (Pengguna — Segera)
+4. **Verifikasi** (Pengguna â€” Segera)
 
    - Pengguna menguji akses baru yang telah diberikan
    - Mengonfirmasi bahwa fungsionalitas berjalan sesuai harapan
@@ -168,17 +165,17 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
    - Memverifikasi identitas karyawan dengan KTP atau kartu identitas perusahaan
    - Mengambil foto untuk pembuatan kartu akses
 
-2. **Konfigurasi Kartu Akses** (Sistem Keamanan — Segera)
+2. **Konfigurasi Kartu Akses** (Sistem Keamanan â€” Segera)
 
    - Memprogram kartu akses dengan zona yang sesuai dengan peran karyawan
    - Menguji akses ke area yang diizinkan untuk memastikan konfigurasi benar
 
-3. **Pemantauan Akses** (Security Officer — Berkelanjutan)
+3. **Pemantauan Akses** (Security Officer â€” Berkelanjutan)
 
    - Memantau CCTV dan log akses secara kontinu
    - Menginvestigasi setiap akses yang mencurigakan
 
-4. **Pembaruan Akses Fisik** (Security Officer — Berkala)
+4. **Pembaruan Akses Fisik** (Security Officer â€” Berkala)
 
    - Meninjau akses fisik setiap 6 bulan
    - Memperbarui akses berdasarkan perubahan jabatan atau penugasan
@@ -187,23 +184,23 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
 
 #### Langkah-langkah:
 
-1. **Penjadwalan Audit** (IT Security — Bulanan)
+1. **Penjadwalan Audit** (IT Security â€” Bulanan)
 
    - Audit akses bulanan untuk akun dengan hak istimewa (privileged accounts)
    - Audit triwulanan untuk seluruh akses pengguna
 
-2. **Pelaksanaan Audit** (IT Security — 5 hari kerja)
+2. **Pelaksanaan Audit** (IT Security â€” 5 hari kerja)
 
    - Meninjau log akses dan aktivitas pengguna
    - Mengidentifikasi akses yang tidak sah atau tidak lagi digunakan
    - Menganalisis pola akses yang mencurigakan
 
-3. **Pembuatan Laporan** (IT Security — 2 hari kerja)
+3. **Pembuatan Laporan** (IT Security â€” 2 hari kerja)
 
    - Mendokumentasikan seluruh temuan audit
    - Merumuskan rekomendasi perbaikan
 
-4. **Tindak Lanjut** (Manajemen — 30 hari)
+4. **Tindak Lanjut** (Manajemen â€” 30 hari)
 
    - Mengimplementasikan rekomendasi yang disetujui
    - Memperbarui prosedur jika diperlukan
@@ -218,13 +215,13 @@ PT Ecomindo menggunakan layanan cloud (IaaS/PaaS/SaaS). Pengelolaan identitas da
 
 #### Langkah-langkah:
 
-1. **Manajemen Akun Cloud** (IT Security — Berkelanjutan)
+1. **Manajemen Akun Cloud** (IT Security â€” Berkelanjutan)
 
    - Seluruh akun cloud (AWS, Azure, GCP, atau setara) dikelola dengan prinsip yang sama seperti akun on-premise: pembuatan, perubahan, dan penonaktifan melalui proses formal
    - Akun layanan (service account) untuk aplikasi dibuat terpisah dari akun pengguna manusia
    - Tidak ada akun yang berbagi kredensial antar pengguna
 
-2. **MFA Wajib untuk Akun Cloud** (IT Security — Sebelum akses diberikan)
+2. **MFA Wajib untuk Akun Cloud** (IT Security â€” Sebelum akses diberikan)
 
    - Multi-Factor Authentication (MFA) **wajib** diaktifkan untuk **seluruh** akun cloud tanpa pengecualian, termasuk:
      - Akun administrator dan akun dengan hak istimewa
@@ -233,14 +230,14 @@ PT Ecomindo menggunakan layanan cloud (IaaS/PaaS/SaaS). Pengelolaan identitas da
    - Jenis MFA yang digunakan: TOTP (Google Authenticator, Microsoft Authenticator) atau hardware token (Yubikey)
    - Kode backup MFA harus dibuat dan disimpan dengan aman di brankas kata sandi
 
-3. **Pemisahan Tugas (Separation of Duties)** (IT Security — Saat konfigurasi)
+3. **Pemisahan Tugas (Separation of Duties)** (IT Security â€” Saat konfigurasi)
 
    - Akun admin cloud dipisahkan berdasarkan fungsi:
      - Contoh: akun terpisah untuk Billing vs Security vs Development
    - Satu akun tidak boleh memiliki kendali penuh atas seluruh lingkungan cloud
    - Matriks akun admin dan privilege-nya didokumentasikan dan ditinjau triwulanan
 
-4. **Rotasi Kredensial Cloud** (IT Security — Rutin)
+4. **Rotasi Kredensial Cloud** (IT Security â€” Rutin)
 
    - API key dan access token dirotasi minimal setiap 90 hari
    - Kredensial yang tidak aktif lebih dari 90 hari dicabut secara otomatis
@@ -248,7 +245,6 @@ PT Ecomindo menggunakan layanan cloud (IaaS/PaaS/SaaS). Pengelolaan identitas da
 
 #### Frekuensi: Pemantauan berkelanjutan, tinjauan triwulanan
 
----
 
 ## 3. Formulir dan Template
 
@@ -259,12 +255,12 @@ Departemen: _____________________________
 Jabatan: ________________________________
 Email: __________________________________
 Akses yang Diperlukan:
-□ Email
-□ Sistem ERP
-□ Akses Basis Data
-□ Akses Server
-□ Akses Internet
-□ Akses VPN
+â–¡ Email
+â–¡ Sistem ERP
+â–¡ Akses Basis Data
+â–¡ Akses Server
+â–¡ Akses Internet
+â–¡ Akses VPN
 
 Alasan: _________________________________
 ___________________________
@@ -303,7 +299,6 @@ Tanggal | Waktu | Pengguna | Tindakan | Sistem | Status
 --------|-------|----------|----------|--------|--------
 ```
 
----
 
 ## 4. Kontrol dan Pemantauan
 
@@ -322,7 +317,7 @@ Tanggal | Waktu | Pengguna | Tindakan | Sistem | Status
 | Kompleksitas | Wajib mengandung huruf besar, huruf kecil, angka, dan simbol |
 | Masa berlaku | Kadaluwarsa setiap **90 hari** |
 | Riwayat | Tidak dapat menggunakan ulang **5 kata sandi terakhir** |
-| Penguncian akun | Akun dikunci setelah **3–5 percobaan gagal** selama 30 menit |
+| Penguncian akun | Akun dikunci setelah **3â€“5 percobaan gagal** selama 30 menit |
 | Kata sandi admin | Unik per sistem, disimpan di vault, dirotasi setiap 90 hari |
 | Kata sandi akun layanan | Disimpan di secrets manager, tidak hardcoded, dirotasi triwulanan |
 
@@ -356,24 +351,22 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 3. Melaporkan insiden kepada ISM dalam waktu maksimal 24 jam
 4. Memperbarui prosedur pencegahan berdasarkan hasil investigasi
 
----
 
 ## 5. Pemenuhan Standar
 
 ### Persyaratan Pengendalian Akses:
 
-- ✅ **AC-1**: Kebijakan pengendalian akses telah ditetapkan secara lengkap dengan persetujuan manajemen
-- ✅ **AC-2**: Hak akses dikelola melalui prosedur pemberian dan penghapusan akses yang formal
-- ✅ **AC-3**: Tinjauan akses pengguna dilaksanakan secara bulanan dan triwulanan
-- ✅ **AC-4**: Otentikasi yang aman diterapkan melalui MFA, kebijakan kata sandi kuat (min 12 karakter, 90 hari), dan penguncian akun
-- ✅ **AC-5**: Pencatatan dan pemantauan akses dilengkapi dengan sistem peringatan otomatis
-- ✅ **AC-6**: Keamanan akses jarak jauh dijamin melalui VPN (AES-256) + MFA + sertifikat per pengguna
-- ✅ **AC-7**: Kontrol akses fisik diterapkan melalui kartu akses dan pemantauan CCTV
-- ✅ **AC-8**: Akses dengan hak istimewa dikelola melalui akun administratif terpisah
-- ✅ **AC-9**: Pengendalian akses cloud diterapkan melalui IAM, MFA wajib, dan pemisahan tugas
-- ✅ **AC-10**: Sertifikat VPN dikelola dengan rotasi tahunan dan pencabutan saat terminasi
+- âœ… **AC-1**: Kebijakan pengendalian akses telah ditetapkan secara lengkap dengan persetujuan manajemen
+- âœ… **AC-2**: Hak akses dikelola melalui prosedur pemberian dan penghapusan akses yang formal
+- âœ… **AC-3**: Tinjauan akses pengguna dilaksanakan secara bulanan dan triwulanan
+- âœ… **AC-4**: Otentikasi yang aman diterapkan melalui MFA, kebijakan kata sandi kuat (min 12 karakter, 90 hari), dan penguncian akun
+- âœ… **AC-5**: Pencatatan dan pemantauan akses dilengkapi dengan sistem peringatan otomatis
+- âœ… **AC-6**: Keamanan akses jarak jauh dijamin melalui VPN (AES-256) + MFA + sertifikat per pengguna
+- âœ… **AC-7**: Kontrol akses fisik diterapkan melalui kartu akses dan pemantauan CCTV
+- âœ… **AC-8**: Akses dengan hak istimewa dikelola melalui akun administratif terpisah
+- âœ… **AC-9**: Pengendalian akses cloud diterapkan melalui IAM, MFA wajib, dan pemisahan tugas
+- âœ… **AC-10**: Sertifikat VPN dikelola dengan rotasi tahunan dan pencabutan saat terminasi
 
----
 
 ## 6. Tanggung Jawab
 
@@ -386,7 +379,6 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 | Security Officer | Mengelola kontrol akses fisik ke fasilitas |
 | Pengguna Akhir | Mematuhi kebijakan akses dan melaporkan insiden |
 
----
 
 ## 7. Tinjauan dan Pembaruan
 
@@ -394,7 +386,6 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 - **Tanggung Jawab Peninjauan:** Tim IT Security
 - **Persetujuan Pembaruan:** ISM dan Manajemen
 
----
 
 ## 8. Lampiran
 
@@ -403,16 +394,11 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 - Lampiran C: Panduan Implementasi MFA
 - Lampiran D: Arsitektur Sistem Pengendalian Akses
 
----
+**AKHIR DOKUMEN PROSEDUR**
 
-**Disetujui Oleh:**
 
-___________________________  
-Heri Fauzan  
-Manajer Keamanan Informasi  
-Tanggal: __________________
+*Dokumen ini bersifat Confidential dan hanya diperuntukkan bagi kebutuhan internal PT ECOMINDO SARANA CIPTA. Distribusi tanpa izin dari ISM dilarang.*
 
-___________________________  
-Dodi Darundriyo  
-Direktur Operasional / COO  
-Tanggal: __________________
+
+Tanggal Berlaku: 15 April 2026  
+Tinjauan Selanjutnya: 15 April 2027
