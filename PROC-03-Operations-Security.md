@@ -65,7 +65,7 @@ Berlaku untuk semua operasi sistem informasi termasuk:
 ### 1.3 Referensi
 
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 8: Keamanan Operasi, Area 9: Pengembangan Aman, dan Area 10: Kelangsungan Bisnis
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), khususnya Area 8: Keamanan Operasi, Area 9: Pengembangan Aman, dan Area 10: Kelangsungan Bisnis
 
 
 ## 2. Prosedur Utama
@@ -89,8 +89,8 @@ Prosedur ini mengatur tata cara pencadangan (backup) dan pemulihan (recovery) da
 
    - Konfigurasi backup otomatis menggunakan backup software yang telah ditentukan
    - Jadwal backup yang wajib diterapkan:
-     - **Backup Inkremental Harian:** Pukul 22:00 WIB setiap hari kerja â€” mencakup perubahan data sejak backup terakhir
-     - **Backup Full Mingguan:** Setiap Minggu pukul 23:00 WIB â€” mencakup seluruh sistem dan data
+     - **Backup Inkremental Harian:** Pukul 22:00 WIB setiap hari kerja - mencakup perubahan data sejak backup terakhir
+     - **Backup Full Mingguan:** Setiap Minggu pukul 23:00 WIB - mencakup seluruh sistem dan data
      - **Backup Snapshot Database:** Setiap 4 jam sekali untuk database yang mengandung data transaksi kritis
    - Pastikan cakupan backup meliputi: data aplikasi, konfigurasi sistem, database, dan aset konfigurasi penting lainnya
 
@@ -100,7 +100,7 @@ Prosedur ini mengatur tata cara pencadangan (backup) dan pemulihan (recovery) da
 
    - Periksa status eksekusi backup (sukses/gagal) dari backup management console
    - Lakukan verifikasi checksum/hash untuk memastikan integritas file backup tidak rusak
-   - Lakukan uji restore parsial (test restore) secara rutin â€” minimal satu kali per minggu pada data sampel
+   - Lakukan uji restore parsial (test restore) secara rutin - minimal satu kali per minggu pada data sampel
    - Dokumentasikan hasil verifikasi dalam Log Backup Harian (Log-OP-01)
    - Jika backup gagal, lakukan investigasi dan perbaikan segera, kemudian jalankan backup ulang manual
 
@@ -136,7 +136,7 @@ Prosedur ini mengatur tata cara pencadangan (backup) dan pemulihan (recovery) da
 2. **Pemilihan dan Persiapan Backup** (IT Operations - Dalam 30 menit)
 
 
-   - Pilih titik backup (restore point) yang paling tepat â€” biasanya backup valid terakhir sebelum insiden
+   - Pilih titik backup (restore point) yang paling tepat - biasanya backup valid terakhir sebelum insiden
    - Verifikasi integritas backup yang dipilih sebelum digunakan untuk restore
    - Siapkan lingkungan restore (server tujuan, storage yang cukup, akses jaringan)
 
@@ -245,7 +245,7 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 
    - ISM memantau dashboard SIEM secara berkelanjutan
    - Alert otomatis dikonfigurasi untuk event berikut:
-     - Percobaan login gagal berulang (brute force) â€” threshold: 5 kali gagal dalam 10 menit
+     - Percobaan login gagal berulang (brute force) - threshold: 5 kali gagal dalam 10 menit
      - Akses ke sistem di luar jam kerja tanpa otorisasi
      - Penggunaan akun administrator di luar jadwal maintenance
      - Pola akses data yang tidak lazim (volume besar dalam waktu singkat)
@@ -333,7 +333,7 @@ Prosedur ini mengatur penerapan perlindungan berlapis terhadap ancaman malware (
 
    - Alert otomatis dari solusi EDR/EPP diterima dan ditangani oleh ISM
    - ISM melakukan verifikasi apakah deteksi merupakan true positive atau false positive
-   - Lakukan pemindaian manual (on-demand scan) secara berkala â€” minimal satu kali per bulan untuk semua server
+   - Lakukan pemindaian manual (on-demand scan) secara berkala - minimal satu kali per bulan untuk semua server
 
 
 2. **Isolasi dan Penahanan** (IT Security - Dalam 30 menit setelah konfirmasi insiden)
@@ -408,10 +408,10 @@ Prosedur ini mengatur proses identifikasi, evaluasi, pengujian, dan penerapan pa
 
    | Tingkat | Skor CVSS | Tenggat Remediasi |
    |---------|-----------|-------------------|
-   | **Kritis** | 9.0â€“10.0 | Dalam **30 hari kalender** |
-   | **Tinggi** | 7.0â€“8.9 | Dalam **60 hari kalender** |
-   | **Sedang** | 4.0â€“6.9 | Dalam **90 hari kalender** |
-   | **Rendah** | 0.1â€“3.9 | Dijadwalkan pada siklus maintenance berikutnya |
+   | **Kritis** | 9.0-10.0 | Dalam **30 hari kalender** |
+   | **Tinggi** | 7.0-8.9 | Dalam **60 hari kalender** |
+   | **Sedang** | 4.0-6.9 | Dalam **90 hari kalender** |
+   | **Rendah** | 0.1-3.9 | Dijadwalkan pada siklus maintenance berikutnya |
 
 
 2. **Review dan Prioritisasi** (IT Security & IT Operations - Setelah pemindaian)
@@ -587,7 +587,7 @@ Prosedur ini mengatur proses permohonan, evaluasi, persetujuan, implementasi, da
 
    - Terapkan perubahan sesuai rencana implementasi yang tertulis dalam RFC
    - Lakukan implementasi selama change window yang disetujui (biasanya di luar jam kerja)
-   - **Wajib dihadiri minimal 2 personel IT**: satu melaksanakan implementasi, satu memantau dan siap melakukan rollback â€” berlaku untuk seluruh perubahan Normal Change dan Emergency Change
+   - **Wajib dihadiri minimal 2 personel IT**: satu melaksanakan implementasi, satu memantau dan siap melakukan rollback - berlaku untuk seluruh perubahan Normal Change dan Emergency Change
    - Komunikasikan kepada pengguna terdampak jika terjadi downtime yang tidak terduga
    - Dokumentasikan setiap langkah yang dilakukan selama implementasi beserta timestamp-nya
 
@@ -604,7 +604,7 @@ Prosedur ini mengatur proses permohonan, evaluasi, persetujuan, implementasi, da
 
 
 **Penanggung Jawab:** IT Operations & CAB  
-**Frekuensi:** Dalam 24â€“48 jam setelah implementasi selesai
+**Frekuensi:** Dalam 24-48 jam setelah implementasi selesai
 
 
 1. **Pemantauan Pasca-Implementasi** (IT Operations - Minimal 24 jam)
@@ -642,7 +642,7 @@ Prosedur ini mengatur proses permohonan, evaluasi, persetujuan, implementasi, da
 
    - Persetujuan dapat diberikan langsung oleh ISM atau Manajer IT tanpa menunggu rapat CAB penuh
    - Implementasi dapat dilakukan segera setelah persetujuan verbal/tertulis dari ISM
-   - RFC Form **tetap wajib** diisi â€” boleh dilakukan setelah implementasi (post-facto documentation)
+   - RFC Form **tetap wajib** diisi - boleh dilakukan setelah implementasi (post-facto documentation)
    - Tinjauan pasca-implementasi oleh CAB penuh dilakukan dalam **48 jam**
 
 
@@ -824,7 +824,7 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
 
 
    - **Penyimpanan Panas (Hot Storage):** 3 bulan terakhir disimpan di SIEM server untuk akses cepat
-   - **Penyimpanan Hangat (Warm Storage):** 3â€“12 bulan disimpan di NAS atau object storage internal
+   - **Penyimpanan Hangat (Warm Storage):** 3-12 bulan disimpan di NAS atau object storage internal
    - **Penyimpanan Dingin (Cold Storage):** >12 bulan diarsipkan ke cold storage terenkripsi (cloud atau tape)
 
 
@@ -877,7 +877,7 @@ Prosedur ini mengatur implementasi pengamanan jaringan di PT Ecomindo Sarana Cip
 
 
    - Akses dari DEV ke PROD **dilarang keras** secara langsung
-   - Promosi kode dari DEV â†’ UAT â†’ PROD hanya boleh melalui proses Change Manajemen (RFC, lihat Prosedur 2.5)
+   - Promosi kode dari DEV → UAT → PROD hanya boleh melalui proses Change Manajemen (RFC, lihat Prosedur 2.5)
    - Data produksi **tidak boleh** disalin ke lingkungan DEV tanpa proses anonimisasi/masking terlebih dahulu
    - Kredensial akun (username, password, API key) untuk setiap lingkungan harus berbeda dan tidak boleh dibagikan lintas lingkungan
    - Prinsip least privilege diterapkan: developer hanya memiliki akses ke DEV, QA ke UAT, dan operator ke PROD
@@ -920,7 +920,7 @@ Prosedur ini mengatur implementasi pengamanan jaringan di PT Ecomindo Sarana Cip
 
 
    - Firewall jaringan (Network Firewall) dikonfigurasi dengan:
-     - Kebijakan default **deny all** â€” hanya traffic yang secara eksplisit diizinkan yang dapat masuk/keluar
+     - Kebijakan default **deny all** - hanya traffic yang secara eksplisit diizinkan yang dapat masuk/keluar
      - Whitelist port dan protokol yang dibutuhkan (mis. HTTPS/443, SMTP/587, DNS/53)
      - Blokir seluruh akses langsung dari internet ke jaringan internal
      - Logging seluruh traffic yang diblokir maupun yang diizinkan
@@ -1049,7 +1049,7 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
 1. **Prinsip Dasar Secure Coding yang Wajib Diterapkan** (Developer - Setiap pengembangan)
 
 
-   - **Validasi Input:** Semua input dari pengguna atau sistem eksternal wajib divalidasi dan di-sanitasi sebelum diproses â€” tidak ada kepercayaan implisit terhadap data yang masuk (zero-trust input)
+   - **Validasi Input:** Semua input dari pengguna atau sistem eksternal wajib divalidasi dan di-sanitasi sebelum diproses - tidak ada kepercayaan implisit terhadap data yang masuk (zero-trust input)
    - **Parameterized Query / Prepared Statement:** Seluruh query database wajib menggunakan parameterized query atau stored procedure untuk mencegah SQL Injection
    - **Output Encoding:** Output yang ditampilkan ke browser wajib di-encode untuk mencegah Cross-Site Scripting (XSS)
    - **Autentikasi yang Kuat:** Implementasikan mekanisme autentikasi yang aman:
@@ -1113,7 +1113,7 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
    - Seluruh source code yang dimiliki PT Ecomindo Sarana Cipta wajib disimpan dalam sistem version control yang terpusat dan terkelola (mis. Git melalui GitLab self-hosted, GitHub Enterprise, atau Azure DevOps)
    - Penggunaan penyimpanan source code di lokasi tidak terkelola (USB drive, Google Drive pribadi, laptop lokal tanpa sinkronisasi) dilarang keras
    - Setiap repository wajib dikonfigurasi dengan pengaturan berikut:
-     - Akses private â€” tidak ada repository yang boleh bersifat public tanpa persetujuan tertulis ISM
+     - Akses private - tidak ada repository yang boleh bersifat public tanpa persetujuan tertulis ISM
      - Branch protection pada branch utama (`main`/`master`): wajib melalui pull/merge request dan code review sebelum dapat di-merge
      - Mandatory code review oleh minimal satu reviewer sebelum merge ke branch produksi
 
@@ -1130,7 +1130,7 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
      - Akun personal yang unik (tidak boleh berbagi akun)
      - SSH key atau Personal Access Token (PAT) yang terdaftar; tidak menggunakan password akun langsung
      - Multi-Factor Authentication (MFA) jika platform mendukung
-   - Review hak akses repository dilakukan minimal **setiap 3 bulan** â€” akses yang tidak diperlukan segera dicabut
+   - Review hak akses repository dilakukan minimal **setiap 3 bulan** - akses yang tidak diperlukan segera dicabut
 
 
 3. **Pencegahan Kebocoran Data Sensitif dalam Source Code** (Developer - Wajib dipatuhi)
@@ -1163,7 +1163,7 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
    - Sebelum memberikan akses source code kepada pihak ketiga (kontraktor, vendor pengembangan), wajib:
      - Menandatangani NDA yang mencakup klausul kerahasiaan source code (lihat PROC-01 Prosedur 4)
      - Mendapatkan persetujuan tertulis dari ISM
-   - Akses pihak ketiga bersifat sementara â€” wajib dicabut segera setelah keterlibatan berakhir
+   - Akses pihak ketiga bersifat sementara - wajib dicabut segera setelah keterlibatan berakhir
    - Pemantauan aktivitas git (commit history, file yang diakses) dari akun pihak ketiga dilakukan selama masa keterlibatan
 
 
@@ -1240,7 +1240,7 @@ Tanggal: __________
 
 
 Status Implementasi:
-â–¡ Terjadwal â–¡ Darurat â–¡ Selesai â–¡ Gagal
+□ Terjadwal □ Darurat □ Selesai □ Gagal
 
 
 Catatan Pasca-Implementasi:
@@ -1253,7 +1253,7 @@ ___________________________________
 ID Insiden: ______________________
 Tanggal/Waktu: ___________________
 Pelapor: __________________________
-Kategori: â–¡ Keamanan â–¡ Ketersediaan â–¡ Kinerja
+Kategori: □ Keamanan □ Ketersediaan □ Kinerja
 
 
 Deskripsi: ________________________
@@ -1315,16 +1315,16 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 ### Persyaratan Keamanan Operasi:
 
 
-- âœ… **OP-1**: Prosedur operasi telah didokumentasikan secara lengkap dengan alur kerja yang jelas
-- âœ… **OP-2**: Prosedur backup dan recovery telah ditetapkan dengan target RTO/RPO dan pengujian berkala
-- âœ… **OP-3**: Logging dan pemantauan diterapkan melalui SIEM dengan pemantauan 24/7
-- âœ… **OP-4**: Perlindungan malware diterapkan secara berlapis dengan rencana respons
-- âœ… **OP-5**: Manajemen patch diterapkan dengan prioritisasi dan pengujian sebelum deployment
-- âœ… **OP-6**: Manajemen perubahan dikelola melalui proses CAB dengan prosedur darurat
-- âœ… **OP-7**: Manajemen kapasitas diterapkan melalui pemantauan utilisasi sumber daya
-- âœ… **OP-8**: Manajemen insiden ditetapkan dengan waktu respons dan prosedur yang jelas
-- âœ… **OP-9**: Audit trail diterapkan mencakup pengaktifan, peninjauan, dan retensi log pada OS, basis data, dan aplikasi
-- âœ… **OP-10**: Pengamanan jaringan diterapkan melalui pemisahan lingkungan, firewall/WAF, dan pemantauan koneksi
+- ✅ **OP-1**: Prosedur operasi telah didokumentasikan secara lengkap dengan alur kerja yang jelas
+- ✅ **OP-2**: Prosedur backup dan recovery telah ditetapkan dengan target RTO/RPO dan pengujian berkala
+- ✅ **OP-3**: Logging dan pemantauan diterapkan melalui SIEM dengan pemantauan 24/7
+- ✅ **OP-4**: Perlindungan malware diterapkan secara berlapis dengan rencana respons
+- ✅ **OP-5**: Manajemen patch diterapkan dengan prioritisasi dan pengujian sebelum deployment
+- ✅ **OP-6**: Manajemen perubahan dikelola melalui proses CAB dengan prosedur darurat
+- ✅ **OP-7**: Manajemen kapasitas diterapkan melalui pemantauan utilisasi sumber daya
+- ✅ **OP-8**: Manajemen insiden ditetapkan dengan waktu respons dan prosedur yang jelas
+- ✅ **OP-9**: Audit trail diterapkan mencakup pengaktifan, peninjauan, dan retensi log pada OS, basis data, dan aplikasi
+- ✅ **OP-10**: Pengamanan jaringan diterapkan melalui pemisahan lingkungan, firewall/WAF, dan pemantauan koneksi
 
 
 ## 6. Tanggung Jawab

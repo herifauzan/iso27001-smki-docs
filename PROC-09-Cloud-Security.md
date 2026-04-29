@@ -53,8 +53,8 @@ Prosedur ini berlaku untuk:
 
 ### 1.3 Referensi
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), Area 5: Manajemen Aset & Pengamanan Data (Cloud Data Security Policy)
-- PROC-02-Access-Control.md (Prosedur Pengendalian Akses Cloud dan IAM)
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), Area 5: Manajemen Aset & Pengamanan Data (Cloud Data Security Policy)
+- PROC-02-Access-Control (Prosedur Pengendalian Akses Cloud dan IAM)
 
 
 ## 2. Prosedur Utama
@@ -98,13 +98,13 @@ Prosedur ini berlaku untuk:
 
 | Area Keamanan | Tanggung Jawab Provider | Tanggung Jawab Perusahaan |
 |---|:---:|:---:|
-| Infrastruktur fisik & Fasilitas | âœ” | âœ– |
-| Perangkat Keras & Jaringan Dasar | âœ” | âœ– |
-| Virtualization Layer | âœ” | âœ– |
-| OS & Aplikasi (Patching, Konfigurasi) | âœ– | âœ” |
-| Data (Enkripsi, Klasifikasi, Backup) | âœ– | âœ” |
-| Identity & Access Management | âœ– | âœ” |
-| Network Traffic & Firewall Configuration | âœ– | âœ” |
+| Infrastruktur fisik & Fasilitas | ✔ | ✖ |
+| Perangkat Keras & Jaringan Dasar | ✔ | ✖ |
+| Virtualization Layer | ✔ | ✖ |
+| OS & Aplikasi (Patching, Konfigurasi) | ✖ | ✔ |
+| Data (Enkripsi, Klasifikasi, Backup) | ✖ | ✔ |
+| Identity & Access Management | ✖ | ✔ |
+| Network Traffic & Firewall Configuration | ✖ | ✔ |
 
 #### Langkah-langkah:
 

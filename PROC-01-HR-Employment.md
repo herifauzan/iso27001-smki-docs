@@ -430,8 +430,8 @@ Jika APA PUN dari berikut DITEMUKAN, HENTIKAN proses dan eskalasi kepada ISM:
 ### 1.8 Templat & Formulir
 
 
-â†’ Lihat Bagian 8: [Formulir 1A: Otorisasi Pemeriksaan Latar Belakang](#form-1a)  
-â†’ Lihat Bagian 8: [Formulir 1B: Laporan Pemeriksaan Latar Belakang](#form-1b)
+→ Lihat Bagian 8: [Formulir 1A: Otorisasi Pemeriksaan Latar Belakang](#form-1a)  
+→ Lihat Bagian 8: [Formulir 1B: Laporan Pemeriksaan Latar Belakang](#form-1b)
 
 
 ## PROSEDUR 2: PEMUTUSAN HUBUNGAN KERJA KARYAWAN & PEMBERSIHAN AKSES {#proc-2}
@@ -469,18 +469,24 @@ Prosedur ini berlaku untuk:
 ### 2.4 Daftar Periksa Timeline Pembersihan Akses
 
 
-```
-Pemberitahuan Pemutusan Diumumkan â†’ Hari 0
-    â†“
-Dalam 24 jam â†’ Hari 1: Cabut semua akses sistem
-     â†“
-Dalam 24 jam â†’ Hari 1: Cabut akses fisik
-     â†“
-Pada Hari Terakhir â†’ Wawancara keluar, kumpulkan peralatan
-     â†“
-Setelah Hari Terakhir â†’ Pembersihan akun akhir (setelah file/data dimigrasi)
-     â†“
-Setelah 30 hari â†’ Arsip/hapus akun lama
+```mermaid
+flowchart TD
+    Start([Pemberitahuan Pemutusan Diumumkan]) --> H0[Hari 0: Pengumuman Resmi]
+    
+    H0 --> H1_Sistem[Hari 1 - Dalam 24 Jam:<br/>Cabut Semua Akses Sistem]
+    H1_Sistem --> H1_Fisik[Hari 1 - Dalam 24 Jam:<br/>Cabut Akses Fisik / ID Card]
+    
+    H1_Fisik --> H_Last[Hari Terakhir:<br/>Wawancara Keluar & Pengumpulan Peralatan]
+    
+    H_Last --> H_Post[Setelah Hari Terakhir:<br/>Pembersihan Akun Akhir & Migrasi Data]
+    
+    H_Post --> H30[Setelah 30 Hari:<br/>Arsip atau Hapus Akun Permanen]
+
+    %% Styling
+    style Start fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style H1_Sistem fill:#fff3e0,stroke:#ef6c00,stroke-width:1px
+    style H1_Fisik fill:#fff3e0,stroke:#ef6c00,stroke-width:1px
+    style H30 fill:#eceff1,stroke:#455a64,stroke-width:2px
 ```
 
 
@@ -947,22 +953,24 @@ SETIAP KONTRAKTOR HARUS:
 ### 3.5 Proses Persetujuan
 
 
-```
-Kontraktor Diidentifikasi  
-    â†“  
-Kontrak dirancang dengan klausul keamanan  
-    â†“  
-Pemeriksaan latar belakang dipesan  
-    â†“  
-NDA ditandatangani  
-    â†“  
-Kuesioner keamanan diselesaikan  
-    â†“  
-Tinjauan keamanan ISM & persetujuan  
-    â†“  
-Penyediaan akses (jika akses sistem diperlukan)  
-    â†“  
-Engagement dimulai  
+```mermaid
+flowchart TD
+    Start([Kontraktor Diidentifikasi]) --> Step1[Kontrak dirancang dengan klausul keamanan]
+    Step1 --> Step2[Pemeriksaan latar belakang dipesan]
+    Step2 --> Step3[NDA ditandatangani]
+    Step3 --> Step4[Kuesioner keamanan diselesaikan]
+    Step4 --> Step5[Tinjauan keamanan ISM & persetujuan]
+    Step5 --> Step6{Akses Sistem Diperlukan?}
+    
+    Step6 -- Ya --> Step7[Penyediaan akses terbatas]
+    Step6 -- Tidak --> Step8[Engagement dimulai]
+    Step7 --> Step8
+
+    %% Styling
+    style Start fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style Step3 fill:#fff3e0,stroke:#e65100,stroke-width:1px
+    style Step5 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style Step8 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
 ```
 
 

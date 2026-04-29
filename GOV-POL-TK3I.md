@@ -1,4 +1,4 @@
-# TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI
+﻿# TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI
 ## PT ECOMINDO SARANA CIPTA
 
 ## Cover
@@ -138,10 +138,10 @@ graph TD
     BOD["**BOARD OF DIRECTORS**<br/>(C-level)"]
     ISM["**INFORMATION SECURITY MANAGER (ISM)**"]
     
-    T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>â€¢ Risk Assess<br/>â€¢ Audit<br/>â€¢ Vendor Onboard<br/>â€¢ Cert & Compliance"]
-    T2["**Identity & Access Management**<br/>Team 2<br/><br/>â€¢ User Mgmt<br/>â€¢ MFA/VPN<br/>â€¢ Password Policy"]
-    T3["**Physical Security & Operations**<br/>Team 3<br/><br/>â€¢ Access Control<br/>â€¢ CCTV & Physical Access"]
-    T4["**Incident Response & Compliance**<br/>Team 4<br/><br/>â€¢ Incident Response<br/>â€¢ Forensics<br/>â€¢ Audit Trail"]
+    T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>- Risk Assess<br/>- Audit<br/>- Vendor Onboard<br/>- Cert & Compliance"]
+    T2["**Identity & Access Management**<br/>Team 2<br/><br/>- User Mgmt<br/>- MFA/VPN<br/>- Password Policy"]
+    T3["**Physical Security & Operations**<br/>Team 3<br/><br/>- Access Control<br/>- CCTV & Physical Access"]
+    T4["**Incident Response & Compliance**<br/>Team 4<br/><br/>- Incident Response<br/>- Forensics<br/>- Audit Trail"]
 
     %% Define Connections
     BOD --> ISM
@@ -1573,15 +1573,15 @@ Setiap kebijakan didukung oleh prosedur operasional terperinci yang menjelaskan 
 
 **Dokumen Referensi:**
 
-- ðŸ‘‰ **PROC-01-HR-Employment.md** (Prosedur HR: Recruitment, Termination, Contractors, NDA)
-- ðŸ‘‰ **PROC-02-Access-Control.md** (Prosedur Akses: User Lifecycle, Access Review, VPN/MFA, Cloud IAM)
-- ðŸ‘‰ **PROC-03-Operations-Security.md** (Prosedur Operasi: Hardening, Change Mgmt, VAPT, Incident Response)
-- ðŸ‘‰ **PROC-04-Asset-Management.md** (Prosedur Aset: Data Classification 4-Level, Encryption, Device Disposal, Cloud Security)
-- ðŸ‘‰ **PROC-05-Physical-Security.md** (Prosedur Fisik: Access Control, Datacenter, Logbook)
-- ðŸ‘‰ **PROC-06-Awareness-Compliance.md** (Prosedur Awareness: Training Program, Obsolete Tech)
-- ðŸ‘‰ **PROC-07-Risk-Management.md** (Prosedur Manajemen Risiko: Risk Assessment, Risk Register, Risk Treatment)
-- ðŸ‘‰ **PROC-08-BCP-DRP.md** (Prosedur BCP/DRP: Business Continuity, Disaster Recovery, DR Testing)
-- ðŸ‘‰ **PROC-09-Cloud-Security.md** (Prosedur Keamanan Cloud: Cloud Onboarding, Shared Responsibility Model, Data Location & Residency)
+- ðŸ‘‰ **PROC-01-HR-Employment** (Prosedur HR: Recruitment, Termination, Contractors, NDA)
+- ðŸ‘‰ **PROC-02-Access-Control** (Prosedur Akses: User Lifecycle, Access Review, VPN/MFA, Cloud IAM)
+- ðŸ‘‰ **PROC-03-Operations-Security** (Prosedur Operasi: Hardening, Change Mgmt, VAPT, Incident Response)
+- ðŸ‘‰ **PROC-04-Asset-Management** (Prosedur Aset: Data Classification 4-Level, Encryption, Device Disposal, Cloud Security)
+- ðŸ‘‰ **PROC-05-Physical-Security** (Prosedur Fisik: Access Control, Datacenter, Logbook)
+- ðŸ‘‰ **PROC-06-Awareness-Compliance** (Prosedur Awareness: Training Program, Obsolete Tech)
+- ðŸ‘‰ **PROC-07-Risk-Management** (Prosedur Manajemen Risiko: Risk Assessment, Risk Register, Risk Treatment)
+- ðŸ‘‰ **PROC-08-BCP-DRP** (Prosedur BCP/DRP: Business Continuity, Disaster Recovery, DR Testing)
+- ðŸ‘‰ **PROC-09-Cloud-Security** (Prosedur Keamanan Cloud: Cloud Onboarding, Shared Responsibility Model, Data Location & Residency)
 
 ### 8.2 Struktur Umum Setiap Prosedur
 
@@ -1606,13 +1606,13 @@ Setiap dokumen prosedur mengikuti struktur standar:
 Seluruh bukti dan evidence yang diperlukan untuk membuktikan compliance terhadap standar keamanan informasi internasional telah dikumpulkan dan terdokumentasi dalam satu dokumen komprehensif.
 
 **Dokumen Referensi:**
-ðŸ‘‰ **BUKTI-EVIDENCE-LENGKAP.md**
+ðŸ‘‰ **BUKTI-EVIDENCE-LENGKAP**
 
 ### 9.2 Evidence Mapping ke Assessment Questions
 
 Evidence Framework melakukan mapping lengkap:
 
-- **23 Assessment Questions** â†’ Required Policies â†’ Required Procedures â†’ Evidence Requirements
+- **23 Assessment Questions** → Required Policies → Required Procedures → Evidence Requirements
 - Setiap question memiliki evidence checklist yang jelas
 - Semua templates dan samples tersedia
 - Ready untuk audit atau assessment
@@ -1621,15 +1621,15 @@ Evidence Framework melakukan mapping lengkap:
 
 | Tipe Evidence | Contoh | Disimpan Di |
 |---------------|--------|------------|
-| **Certifications** | ISO 27001, PCI-DSS, SOC 2 | BUKTI-EVIDENCE-LENGKAP.md Section 2 |
-| **Audit Reports** | Internal/External Audit Reports | BUKTI-EVIDENCE-LENGKAP.md Section 2 |
-| **Policies & Docs** | Policy cover pages, distribution logs | BUKTI-EVIDENCE-LENGKAP.md Section 3 |
-| **Org Charts** | Security team structure documentation | BUKTI-EVIDENCE-LENGKAP.md Section 4 |
-| **Training Records** | Awareness attendance, certificates | BUKTI-EVIDENCE-LENGKAP.md Section 4 |
-| **NDA & Contracts** | Signed NDAs, contractor agreements | BUKTI-EVIDENCE-LENGKAP.md Section 5 |
-| **User Matrices** | Access control matrices, provisioning forms | BUKTI-EVIDENCE-LENGKAP.md Section 7 |
-| **System Logs** | Audit trails, change logs, incident logs | BUKTI-EVIDENCE-LENGKAP.md Section 9 |
-| **Configuration Docs** | Hardening checklist, firewall configs | BUKTI-EVIDENCE-LENGKAP.md Section 9 |
+| **Certifications** | ISO 27001, PCI-DSS, SOC 2 | BUKTI-EVIDENCE-LENGKAP Section 2 |
+| **Audit Reports** | Internal/External Audit Reports | BUKTI-EVIDENCE-LENGKAP Section 2 |
+| **Policies & Docs** | Policy cover pages, distribution logs | BUKTI-EVIDENCE-LENGKAP Section 3 |
+| **Org Charts** | Security team structure documentation | BUKTI-EVIDENCE-LENGKAP Section 4 |
+| **Training Records** | Awareness attendance, certificates | BUKTI-EVIDENCE-LENGKAP Section 4 |
+| **NDA & Contracts** | Signed NDAs, contractor agreements | BUKTI-EVIDENCE-LENGKAP Section 5 |
+| **User Matrices** | Access control matrices, provisioning forms | BUKTI-EVIDENCE-LENGKAP Section 7 |
+| **System Logs** | Audit trails, change logs, incident logs | BUKTI-EVIDENCE-LENGKAP Section 9 |
+| **Configuration Docs** | Hardening checklist, firewall configs | BUKTI-EVIDENCE-LENGKAP Section 9 |
 
 
 ## 10. PROSES PENINJAUAN DAN PEMBARUAN {#proses-review-update}
@@ -1646,8 +1646,8 @@ Evidence Framework melakukan mapping lengkap:
 ### 10.2 Proses Persetujuan untuk Pembaruan
 
 ```
-Pemilik Kebijakan/Prosedur â†’ Peninjauan ISM â†’ Persetujuan Manajemen (CEO/Direktur) 
-â†’ Distribusi & Penerimaan â†’ Tanggal Berlaku
+Pemilik Kebijakan/Prosedur → Peninjauan ISM → Persetujuan Manajemen (CEO/Direktur) 
+→ Distribusi & Penerimaan → Tanggal Berlaku
 ```
 
 ### 10.3 Pengendalian Versi
@@ -1676,19 +1676,19 @@ Ketika terdapat pembaruan kebijakan atau prosedur, langkah-langkah berikut harus
 
 Mekanisme evaluasi rutin ini bertujuan untuk:
 
-1. **Memastikan Efektivitas** â€” Memverifikasi bahwa seluruh kebijakan, prosedur, dan kontrol keamanan informasi berjalan efektif sesuai tujuannya
-2. **Kepatuhan Standar** â€” Mengukur tingkat kepatuhan terhadap ISO 27001, CIS, NIST, dan best practices lainnya
-3. **Kepatuhan Regulasi** â€” Memastikan kepatuhan terhadap hukum dan regulasi yang berlaku (UU PDP, GDPR, PDPA, dll.)
-4. **Kepatuhan Kontraktual** â€” Memenuhi seluruh persyaratan keamanan dari kontrak dengan klien dan mitra
-5. **Perbaikan Berkelanjutan** â€” Mengidentifikasi area perbaikan dan mendorong peningkatan postur keamanan secara terus-menerus
+1. **Memastikan Efektivitas** - Memverifikasi bahwa seluruh kebijakan, prosedur, dan kontrol keamanan informasi berjalan efektif sesuai tujuannya
+2. **Kepatuhan Standar** - Mengukur tingkat kepatuhan terhadap ISO 27001, CIS, NIST, dan best practices lainnya
+3. **Kepatuhan Regulasi** - Memastikan kepatuhan terhadap hukum dan regulasi yang berlaku (UU PDP, GDPR, PDPA, dll.)
+4. **Kepatuhan Kontraktual** - Memenuhi seluruh persyaratan keamanan dari kontrak dengan klien dan mitra
+5. **Perbaikan Berkelanjutan** - Mengidentifikasi area perbaikan dan mendorong peningkatan postur keamanan secara terus-menerus
 
 ### 11.2 Prinsip Evaluasi
 
-1. **Independen** â€” Evaluasi dilakukan oleh pihak yang tidak terlibat langsung dalam implementasi kontrol yang dievaluasi
-2. **Berbasis Risiko** â€” Prioritas evaluasi ditentukan berdasarkan tingkat risiko area yang dievaluasi
-3. **Terdokumentasi** â€” Seluruh proses dan hasil evaluasi harus terdokumentasi secara formal
-4. **Ditindaklanjuti** â€” Setiap temuan harus memiliki rencana tindak lanjut dengan timeline yang jelas
-5. **Berkala dan Konsisten** â€” Evaluasi dilakukan secara rutin sesuai jadwal yang telah ditetapkan
+1. **Independen** - Evaluasi dilakukan oleh pihak yang tidak terlibat langsung dalam implementasi kontrol yang dievaluasi
+2. **Berbasis Risiko** - Prioritas evaluasi ditentukan berdasarkan tingkat risiko area yang dievaluasi
+3. **Terdokumentasi** - Seluruh proses dan hasil evaluasi harus terdokumentasi secara formal
+4. **Ditindaklanjuti** - Setiap temuan harus memiliki rencana tindak lanjut dengan timeline yang jelas
+5. **Berkala dan Konsisten** - Evaluasi dilakukan secara rutin sesuai jadwal yang telah ditetapkan
 
 ### 11.3 Kalender Evaluasi Rutin
 
@@ -1738,11 +1738,11 @@ Audit internal menggunakan pendekatan berbasis risiko dengan metode:
 
 **A. Metode Pengumpulan Bukti**
 
-- **Document Review** â€” Tinjauan kebijakan, prosedur, log, dan rekaman
-- **Interview** â€” Wawancara dengan pemilik proses, operator, dan pengguna
-- **Observation** â€” Pengamatan langsung terhadap proses dan kontrol
-- **Technical Testing** â€” Verifikasi teknis terhadap konfigurasi dan kontrol (sampling)
-- **Walkthrough** â€” Penelusuran proses end-to-end untuk memvalidasi implementasi
+- **Document Review** - Tinjauan kebijakan, prosedur, log, dan rekaman
+- **Interview** - Wawancara dengan pemilik proses, operator, dan pengguna
+- **Observation** - Pengamatan langsung terhadap proses dan kontrol
+- **Technical Testing** - Verifikasi teknis terhadap konfigurasi dan kontrol (sampling)
+- **Walkthrough** - Penelusuran proses end-to-end untuk memvalidasi implementasi
 
 **B. Kriteria Penilaian Temuan**
 
@@ -1822,7 +1822,7 @@ flowchart LR
 
 - Tim audit memverifikasi bahwa tindakan korektif telah diimplementasikan
 - Verifikasi mencakup: review bukti, re-testing, atau re-audit jika diperlukan
-- Status temuan diperbarui: Open â†’ In Progress â†’ Closed
+- Status temuan diperbarui: Open → In Progress → Closed
 
 **Langkah 7: Penutupan Audit**
 
@@ -1876,14 +1876,14 @@ Auditor eksternal harus memenuhi kriteria:
 
 #### **11.5.4 Proses Audit Eksternal**
 
-1. **Inisiasi** â€” ISM mengidentifikasi kebutuhan audit, menyusun Terms of Reference (ToR), dan memperoleh persetujuan anggaran dari manajemen
-2. **Seleksi Vendor** â€” Pemilihan auditor eksternal melalui proses seleksi formal (minimal 2 kandidat)
-3. **Kontrak & NDA** â€” Penandatanganan kontrak layanan dan NDA dengan auditor terpilih
-4. **Perencanaan** â€” Koordinasi jadwal, ruang lingkup, dan kebutuhan akses antara ISM dan auditor
-5. **Pelaksanaan** â€” Auditor melakukan audit sesuai metodologi yang disepakati; ISM mendampingi selama proses
-6. **Pelaporan** â€” Auditor menyerahkan laporan temuan, rekomendasi, dan opini audit
-7. **Tindak Lanjut** â€” ISM menyusun Corrective Action Plan berdasarkan temuan audit eksternal
-8. **Pelaporan ke Manajemen** â€” Hasil audit dan rencana tindak lanjut dipresentasikan kepada Board of Directors
+1. **Inisiasi** - ISM mengidentifikasi kebutuhan audit, menyusun Terms of Reference (ToR), dan memperoleh persetujuan anggaran dari manajemen
+2. **Seleksi Vendor** - Pemilihan auditor eksternal melalui proses seleksi formal (minimal 2 kandidat)
+3. **Kontrak & NDA** - Penandatanganan kontrak layanan dan NDA dengan auditor terpilih
+4. **Perencanaan** - Koordinasi jadwal, ruang lingkup, dan kebutuhan akses antara ISM dan auditor
+5. **Pelaksanaan** - Auditor melakukan audit sesuai metodologi yang disepakati; ISM mendampingi selama proses
+6. **Pelaporan** - Auditor menyerahkan laporan temuan, rekomendasi, dan opini audit
+7. **Tindak Lanjut** - ISM menyusun Corrective Action Plan berdasarkan temuan audit eksternal
+8. **Pelaporan ke Manajemen** - Hasil audit dan rencana tindak lanjut dipresentasikan kepada Board of Directors
 
 ### 11.6 Management Review
 
@@ -1937,13 +1937,13 @@ flowchart TD
     subgraph PDCA_Cycle [Siklus Perbaikan Berkelanjutan]
         direction TB
         
-        P["**PLAN**<br/>â€¢ Review kebijakan<br/>â€¢ Risk assessment<br/>â€¢ Tetapkan target KPI<br/>â€¢ Susun rencana audit"]
+        P["**PLAN**<br/>- Review kebijakan<br/>- Risk assessment<br/>- Tetapkan target KPI<br/>- Susun rencana audit"]
         
-        D["**DO**<br/>â€¢ Implementasi kebijakan & kontrol<br/>â€¢ Pelaksanaan training & awareness<br/>â€¢ Operasional keamanan sehari-hari"]
+        D["**DO**<br/>- Implementasi kebijakan & kontrol<br/>- Pelaksanaan training & awareness<br/>- Operasional keamanan sehari-hari"]
         
-        C["**CHECK**<br/>â€¢ Audit internal tahunan<br/>â€¢ Audit eksternal<br/>â€¢ Management review<br/>â€¢ Monitoring KPI<br/>â€¢ VAPT & compliance check"]
+        C["**CHECK**<br/>- Audit internal tahunan<br/>- Audit eksternal<br/>- Management review<br/>- Monitoring KPI<br/>- VAPT & compliance check"]
         
-        A["**ACT**<br/>â€¢ Corrective & Preventive Actions (CAPA)<br/>â€¢ Update kebijakan & prosedur<br/>â€¢ Perbaikan kontrol & proses<br/>â€¢ Eskalasi ke manajemen"]
+        A["**ACT**<br/>- Corrective & Preventive Actions (CAPA)<br/>- Update kebijakan & prosedur<br/>- Perbaikan kontrol & proses<br/>- Eskalasi ke manajemen"]
 
         %% Koneksi alur
         P --> D
@@ -2027,18 +2027,18 @@ Mekanisme ini menetapkan proses formal untuk mengajukan, mengevaluasi, menyetuju
 
 Mekanisme ini berlaku untuk:
 
-- Seluruh kebijakan dan prosedur keamanan informasi dalam dokumen TK3I ini (Area 1â€“10)
+- Seluruh kebijakan dan prosedur keamanan informasi dalam dokumen TK3I ini (Area 1-10)
 - Seluruh security baseline (OS, database, aplikasi, endpoint, jaringan)
 - Seluruh kontrol teknis dan operasional yang ditetapkan oleh ISM
 - Seluruh karyawan, kontraktor, dan pihak ketiga yang tunduk pada kebijakan PT Ecomindo
 
 ### 12.3 Prinsip Dasar Pengecualian
 
-1. **Pengecualian bukan hak** â€” Pengecualian hanya diberikan dalam kondisi luar biasa, bukan sebagai standar operasional
-2. **Bersifat sementara** â€” Setiap pengecualian memiliki batas waktu yang jelas dan WAJIB ditinjau ulang sebelum diperpanjang
-3. **Wajib dimitigasi** â€” Tidak ada pengecualian yang diberikan tanpa rencana mitigasi risiko yang disetujui
-4. **Terdokumentasi penuh** â€” Seluruh siklus hidup pengecualian harus terdokumentasi dalam Exception Register
-5. **Dapat dicabut** â€” ISM berhak mencabut pengecualian kapan saja jika profil risiko berubah
+1. **Pengecualian bukan hak** - Pengecualian hanya diberikan dalam kondisi luar biasa, bukan sebagai standar operasional
+2. **Bersifat sementara** - Setiap pengecualian memiliki batas waktu yang jelas dan WAJIB ditinjau ulang sebelum diperpanjang
+3. **Wajib dimitigasi** - Tidak ada pengecualian yang diberikan tanpa rencana mitigasi risiko yang disetujui
+4. **Terdokumentasi penuh** - Seluruh siklus hidup pengecualian harus terdokumentasi dalam Exception Register
+5. **Dapat dicabut** - ISM berhak mencabut pengecualian kapan saja jika profil risiko berubah
 
 ### 12.4 Klasifikasi Pengecualian
 
@@ -2098,10 +2098,10 @@ ISM atau tim Risk Management wajib melakukan penilaian risiko terhadap setiap pe
 
 | Risk Score | Level Risiko | Keputusan |
 |------------|-------------|----------|
-| 1â€“4 | **Rendah** | Dapat disetujui oleh ISM |
-| 5â€“9 | **Sedang** | Memerlukan persetujuan ISM + Manajer Departemen terkait |
-| 10â€“15 | **Tinggi** | Memerlukan persetujuan ISM + COO/Direktur Operasional |
-| 16â€“25 | **Kritis** | Memerlukan persetujuan ISM + COO + CEO/Board of Directors |
+| 1-4 | **Rendah** | Dapat disetujui oleh ISM |
+| 5-9 | **Sedang** | Memerlukan persetujuan ISM + Manajer Departemen terkait |
+| 10-15 | **Tinggi** | Memerlukan persetujuan ISM + COO/Direktur Operasional |
+| 16-25 | **Kritis** | Memerlukan persetujuan ISM + COO + CEO/Board of Directors |
 
 **C. Evaluasi Kelayakan Mitigasi**
 
@@ -2141,35 +2141,35 @@ Setiap pengecualian HARUS disertai kontrol mitigasi minimum sesuai kategori beri
 
 | Pengecualian | Mitigasi Wajib |
 |-------------|----------------|
-| Sistem tidak mendukung TLS 1.2+ | â€¢ Isolasi jaringan (VLAN terpisah) untuk sistem terkait<br>â€¢ Implementasi VPN/IPSec tunnel untuk semua komunikasi<br>â€¢ Monitoring traffic khusus pada sistem terkait<br>â€¢ Percepatan rencana migrasi/upgrade sistem |
-| Perangkat tidak kompatibel MFA | â€¢ Pembatasan akses IP (IP whitelisting)<br>â€¢ Peningkatan frekuensi password rotation (30 hari)<br>â€¢ Monitoring aktivitas login secara real-time<br>â€¢ Pembatasan jam akses (hanya jam kerja) |
-| Sistem legacy tidak mendukung enkripsi standar | â€¢ Enkripsi pada level jaringan (IPSec/VPN)<br>â€¢ Pembatasan akses fisik dan logis ke sistem<br>â€¢ Implementasi DLP pada perimeter jaringan<br>â€¢ Audit log akses harian |
-| Tidak dapat menerapkan hardening penuh | â€¢ Dokumentasi deviasi spesifik dari CIS Benchmark<br>â€¢ Compensating controls untuk setiap deviasi<br>â€¢ Vulnerability scanning mingguan<br>â€¢ Network segmentation tambahan |
-| Ketidakmampuan patching tepat waktu | â€¢ Virtual patching melalui WAF/IPS<br>â€¢ Isolasi sistem yang belum di-patch<br>â€¢ Monitoring ancaman terkait CVE spesifik<br>â€¢ Rencana patch dengan timeline yang jelas |
+| Sistem tidak mendukung TLS 1.2+ | - Isolasi jaringan (VLAN terpisah) untuk sistem terkait<br>- Implementasi VPN/IPSec tunnel untuk semua komunikasi<br>- Monitoring traffic khusus pada sistem terkait<br>- Percepatan rencana migrasi/upgrade sistem |
+| Perangkat tidak kompatibel MFA | - Pembatasan akses IP (IP whitelisting)<br>- Peningkatan frekuensi password rotation (30 hari)<br>- Monitoring aktivitas login secara real-time<br>- Pembatasan jam akses (hanya jam kerja) |
+| Sistem legacy tidak mendukung enkripsi standar | - Enkripsi pada level jaringan (IPSec/VPN)<br>- Pembatasan akses fisik dan logis ke sistem<br>- Implementasi DLP pada perimeter jaringan<br>- Audit log akses harian |
+| Tidak dapat menerapkan hardening penuh | - Dokumentasi deviasi spesifik dari CIS Benchmark<br>- Compensating controls untuk setiap deviasi<br>- Vulnerability scanning mingguan<br>- Network segmentation tambahan |
+| Ketidakmampuan patching tepat waktu | - Virtual patching melalui WAF/IPS<br>- Isolasi sistem yang belum di-patch<br>- Monitoring ancaman terkait CVE spesifik<br>- Rencana patch dengan timeline yang jelas |
 
 #### **12.6.2 Pengecualian Operasional**
 
 | Pengecualian | Mitigasi Wajib |
 |-------------|----------------|
-| Emergency deployment tanpa full change management | â€¢ Dokumentasi retroaktif dalam 24 jam<br>â€¢ Post-implementation review dalam 48 jam<br>â€¢ Monitoring intensif pasca-deployment (7 hari)<br>â€¢ Rollback plan yang siap dieksekusi |
-| Akses sementara di luar kebijakan least privilege | â€¢ Batas waktu akses maksimal 48 jam<br>â€¢ Logging detail seluruh aktivitas dengan akses elevated<br>â€¢ Supervision oleh ISM atau security officer<br>â€¢ Pencabutan otomatis akses setelah periode berakhir |
-| Penggunaan removable media di luar kebijakan | â€¢ Enkripsi wajib pada removable media<br>â€¢ DLP monitoring aktif<br>â€¢ Logging koneksi USB dan transfer data<br>â€¢ Persetujuan per-penggunaan dari ISM |
-| Bypass VPN untuk kebutuhan operasional | â€¢ Implementasi koneksi alternatif yang terenkripsi<br>â€¢ IP restriction ketat<br>â€¢ Session monitoring real-time<br>â€¢ Durasi bypass maksimal 24 jam |
+| Emergency deployment tanpa full change management | - Dokumentasi retroaktif dalam 24 jam<br>- Post-implementation review dalam 48 jam<br>- Monitoring intensif pasca-deployment (7 hari)<br>- Rollback plan yang siap dieksekusi |
+| Akses sementara di luar kebijakan least privilege | - Batas waktu akses maksimal 48 jam<br>- Logging detail seluruh aktivitas dengan akses elevated<br>- Supervision oleh ISM atau security officer<br>- Pencabutan otomatis akses setelah periode berakhir |
+| Penggunaan removable media di luar kebijakan | - Enkripsi wajib pada removable media<br>- DLP monitoring aktif<br>- Logging koneksi USB dan transfer data<br>- Persetujuan per-penggunaan dari ISM |
+| Bypass VPN untuk kebutuhan operasional | - Implementasi koneksi alternatif yang terenkripsi<br>- IP restriction ketat<br>- Session monitoring real-time<br>- Durasi bypass maksimal 24 jam |
 
 #### **12.6.3 Pengecualian Kontraktual**
 
 | Pengecualian | Mitigasi Wajib |
 |-------------|----------------|
-| Klien meminta protokol/standar berbeda | â€¢ Risk assessment bersama dengan klien<br>â€¢ Isolasi environment klien dari environment internal<br>â€¢ Monitoring khusus pada koneksi/integrasi klien<br>â€¢ Dokumentasi formal persetujuan bersama |
-| Vendor memerlukan akses langsung ke sistem | â€¢ Dedicated account dengan least privilege<br>â€¢ Session recording untuk seluruh aktivitas vendor<br>â€¢ Time-limited access (dicabut setelah selesai)<br>â€¢ NDA tambahan spesifik untuk akses tersebut |
-| Penggunaan tools/platform non-standar sesuai kontrak | â€¢ Sandboxing/isolasi tools dalam environment terpisah<br>â€¢ Security assessment terhadap tools sebelum deployment<br>â€¢ Monitoring dan logging aktivitas tools<br>â€¢ Exit plan untuk migrasi ke standar internal |
+| Klien meminta protokol/standar berbeda | - Risk assessment bersama dengan klien<br>- Isolasi environment klien dari environment internal<br>- Monitoring khusus pada koneksi/integrasi klien<br>- Dokumentasi formal persetujuan bersama |
+| Vendor memerlukan akses langsung ke sistem | - Dedicated account dengan least privilege<br>- Session recording untuk seluruh aktivitas vendor<br>- Time-limited access (dicabut setelah selesai)<br>- NDA tambahan spesifik untuk akses tersebut |
+| Penggunaan tools/platform non-standar sesuai kontrak | - Sandboxing/isolasi tools dalam environment terpisah<br>- Security assessment terhadap tools sebelum deployment<br>- Monitoring dan logging aktivitas tools<br>- Exit plan untuk migrasi ke standar internal |
 
 #### **12.6.4 Pengecualian Regulasi**
 
 | Pengecualian | Mitigasi Wajib |
 |-------------|----------------|
-| Retensi data melebihi kebijakan internal | â€¢ Enkripsi tambahan untuk data yang diretain lebih lama<br>â€¢ Access control ketat (hanya compliance team)<br>â€¢ Audit trail untuk setiap akses data<br>â€¢ Review berkala kelayakan retensi |
-| Akses khusus untuk auditor/regulator | â€¢ Dedicated read-only account<br>â€¢ Pendampingan selama sesi akses<br>â€¢ Logging komprehensif seluruh aktivitas<br>â€¢ Pencabutan akses segera setelah audit selesai |
+| Retensi data melebihi kebijakan internal | - Enkripsi tambahan untuk data yang diretain lebih lama<br>- Access control ketat (hanya compliance team)<br>- Audit trail untuk setiap akses data<br>- Review berkala kelayakan retensi |
+| Akses khusus untuk auditor/regulator | - Dedicated read-only account<br>- Pendampingan selama sesi akses<br>- Logging komprehensif seluruh aktivitas<br>- Pencabutan akses segera setelah audit selesai |
 
 ### 12.7 Monitoring dan Review Pengecualian
 
@@ -2193,9 +2193,9 @@ Selama masa berlaku pengecualian, ISM wajib memastikan:
 
 **Setiap review WAJIB mencakup:**
 
-1. Status implementasi mitigasi â€” apakah masih efektif?
-2. Progress rencana remediasi â€” apakah on-track?
-3. Perubahan profil risiko â€” apakah ada ancaman baru?
+1. Status implementasi mitigasi - apakah masih efektif?
+2. Progress rencana remediasi - apakah on-track?
+3. Perubahan profil risiko - apakah ada ancaman baru?
 4. Keputusan: perpanjang, modifikasi, atau tutup pengecualian
 
 #### **12.7.3 Perpanjangan Pengecualian**
@@ -2307,46 +2307,62 @@ Pelanggaran terhadap mekanisme pengecualian ini dapat mengakibatkan:
 ### 14.1 Hierarki Dokumen
 
 ```mermaid
-graph LR
-    %% Main Document
-    Main["**TATA KELOLA DAN KEBIJAKAN<br/>KEAMANAN INFORMASI**"]
+graph TD
+    %% Level 1: Dokumen Induk
+    Main["**GOV-POL-TK3I**<br/>Tata Kelola & Kebijakan<br/>Keamanan Informasi"]
 
-    %% Folders
-    Sub1["ðŸ“‚ Procedures"]
-    Sub2["ðŸ“‚ Evidence"]
+    %% Jalur 1: SDM & Akses
+    subgraph Jalur_A [Struktur SDM & Akses]
+        direction TB
+        GrpHR["**Keamanan SDM**"] --> P1["PROC-01<br/>HR-Employment"]
+        GrpAccess["**Pengendalian Akses**"] --> P2["PROC-02<br/>Access-Control"]
+    end
 
-    %% Procedures Files
-    P1["PROC-01-HR-Employment"]
-    P2["PROC-02-Access-Control"]
-    P3["PROC-03-Operations-Security"]
-    P4["PROC-04-Asset-Management"]
-    P5["PROC-05-Physical-Security"]
-    P6["PROC-06-Awareness-Compliance"]
+    %% Jalur 2: Ops & Asset
+    subgraph Jalur_B [Operasional & Aset]
+        direction TB
+        GrpOps["**Keamanan Operasional**"] --> P3["PROC-03<br/>Operations-Security"]
+        GrpAsset["**Manajemen Aset**"] --> P4["PROC-04<br/>Asset-Management"]
+    end
 
-    %% Evidence Files
-    E1["**BUKTI-EVIDENCE-LENGKAP**<br/>*(Master Checklist + 10 Sections)*"]
+    %% Jalur 3: Fisik & Kepatuhan
+    subgraph Jalur_C [Fisik & Kepatuhan]
+        direction TB
+        GrpPhys["**Keamanan Fisik**"] --> P5["PROC-05<br/>Physical-Security"]
+        GrpAware["**Kesadaran & Kepatuhan**"] --> P6["PROC-06<br/>Awareness-Compliance"]
+    end
 
-    %% Connections
-    Main --- Sub1
-    Main --- Sub2
+    %% Jalur 4: Risiko & BCP
+    subgraph Jalur_D [Risiko & Kontinuitas]
+        direction TB
+        GrpRisk["**Manajemen Risiko**"] --> P7["PROC-07<br/>Risk-Management"]
+        GrpBCP["**Kelangsungan Bisnis**"] --> P8["PROC-08<br/>BCP-DRP"]
+    end
 
-    Sub1 --> P1
-    Sub1 --> P2
-    Sub1 --> P3
-    Sub1 --> P4
-    Sub1 --> P5
-    Sub1 --> P6
+    %% Jalur 5: Cloud & Evidence
+    subgraph Jalur_E [Teknologi & Bukti]
+        direction TB
+        GrpCloud["**Keamanan Cloud**"] --> P9["PROC-09<br/>Cloud-Security"]
+        GrpEvidence["**Bukti & Audit**"] --> E1["**BUKTI-EVIDENCE-LENGKAP**<br/>*(Master Checklist)*"]
+    end
 
-    Sub2 --> E1
+    %% Koneksi Utama Menurun
+    Main --> Jalur_A
+    Jalur_A --> Jalur_B
+    Jalur_B --> Jalur_C
+    Jalur_C --> Jalur_D
+    Jalur_D --> Jalur_E
 
     %% Styling
-    classDef main fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef folder fill:#fff9c4,stroke:#fbc02d,stroke-width:1px;
-    classDef file fill:#ffffff,stroke:#333,stroke-dasharray: 0;
-    
+    classDef main fill:#01579b,color:#fff,stroke:#01579b,stroke-width:2px,font-weight:bold;
+    classDef group fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,font-weight:bold;
+    classDef proc fill:#ffffff,stroke:#546e7a,stroke-width:1px;
+    classDef evidence fill:#fff9c4,stroke:#f9a825,stroke-width:1px;
+
     class Main main;
-    class Sub1,Sub2 folder;
-    class P1,P2,P3,P4,P5,P6,E1 file;
+    class GrpHR,GrpAccess,GrpOps,GrpAsset,GrpPhys,GrpAware,GrpRisk,GrpBCP,GrpCloud group;
+    class GrpEvidence,E1 evidence;
+    class P1,P2,P3,P4,P5,P6,P7,P8,P9 proc;
 ```
 
 ### 14.2 Matriks Referensi Silang
@@ -2354,17 +2370,17 @@ graph LR
 | Kebutuhan Informasi | Lihat Dokumen | Bagian |
 |---------------------|---------------|--------|
 | Seluruh 10 Area Kebijakan | Dokumen ini | Bagian 7.1-7.10 |
-| Prosedur HR | PROC-01-HR-Employment.md | Seluruh bagian |
-| Prosedur Pengendalian Akses | PROC-02-Access-Control.md | Seluruh bagian |
-| Prosedur Operasional | PROC-03-Operations-Security.md | Seluruh bagian |
-| Prosedur Manajemen Aset | PROC-04-Asset-Management.md | Seluruh bagian |
-| Prosedur Keamanan Fisik | PROC-05-Physical-Security.md | Seluruh bagian |
-| Prosedur Awareness & Kepatuhan | PROC-06-Awareness-Compliance.md | Seluruh bagian |
-| Prosedur Manajemen Risiko | PROC-07-Risk-Management.md | Seluruh bagian |
-| Prosedur BCP & DRP | PROC-08-BCP-DRP.md | Seluruh bagian |
-| Prosedur Keamanan Cloud | PROC-09-Cloud-Security.md | Seluruh bagian |
-| Template & Sampel Bukti | BUKTI-EVIDENCE-LENGKAP.md | Bagian 1-11 |
-| Daftar Periksa Penilaian | BUKTI-EVIDENCE-LENGKAP.md | Bagian 1 |
+| Prosedur HR | PROC-01-HR-Employment | Seluruh bagian |
+| Prosedur Pengendalian Akses | PROC-02-Access-Control | Seluruh bagian |
+| Prosedur Operasional | PROC-03-Operations-Security | Seluruh bagian |
+| Prosedur Manajemen Aset | PROC-04-Asset-Management | Seluruh bagian |
+| Prosedur Keamanan Fisik | PROC-05-Physical-Security | Seluruh bagian |
+| Prosedur Awareness & Kepatuhan | PROC-06-Awareness-Compliance | Seluruh bagian |
+| Prosedur Manajemen Risiko | PROC-07-Risk-Management | Seluruh bagian |
+| Prosedur BCP & DRP | PROC-08-BCP-DRP | Seluruh bagian |
+| Prosedur Keamanan Cloud | PROC-09-Cloud-Security | Seluruh bagian |
+| Template & Sampel Bukti | BUKTI-EVIDENCE-LENGKAP | Bagian 1-11 |
+| Daftar Periksa Penilaian | BUKTI-EVIDENCE-LENGKAP | Bagian 1 |
 
 
 ## 15. PERSETUJUAN & DISTRIBUSI {#approval-distribution}

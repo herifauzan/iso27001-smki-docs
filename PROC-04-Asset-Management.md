@@ -53,7 +53,7 @@ Prosedur ini berlaku untuk seluruh aset informasi, termasuk:
 
 ### 1.3 Referensi
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 5: Manajemen Aset & Pengamanan Data
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), khususnya Area 5: Manajemen Aset & Pengamanan Data
 
 
 ## 2. Prosedur Utama
@@ -62,26 +62,26 @@ Prosedur ini berlaku untuk seluruh aset informasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Pengumpulan Data Aset** (IT Operations â€” Bulanan)
+1. **Pengumpulan Data Aset** (IT Operations - Bulanan)
 
    - Melakukan pemindaian jaringan secara otomatis untuk mendeteksi perangkat keras
    - Melakukan survei manual untuk perangkat lunak dan data
    - Melakukan wawancara dengan departemen terkait untuk mendata aset non-IT
 
-2. **Klasifikasi Aset** (IT Security â€” Bulanan)
+2. **Klasifikasi Aset** (IT Security - Bulanan)
 
    - Mengklasifikasikan aset berdasarkan kriteria berikut:
      - **Kritis (Critical)**: Sistem bisnis inti dan data sensitif yang memiliki dampak tinggi jika terganggu
      - **Penting (Important)**: Sistem pendukung dan data rahasia internal
      - **Umum (General)**: Sistem umum dan data yang bersifat publik
 
-3. **Pembuatan Inventaris** (IT Operations â€” Bulanan)
+3. **Pembuatan Inventaris** (IT Operations - Bulanan)
 
    - Memperbarui CMDB (Configuration Management Database) dengan data terkini
    - Menetapkan pemilik (owner) dan penanggung jawab (custodian) untuk setiap aset
    - Menghasilkan laporan inventaris yang komprehensif
 
-4. **Verifikasi Inventaris** (Manajemen â€” Triwulanan)
+4. **Verifikasi Inventaris** (Manajemen - Triwulanan)
 
    - Melakukan audit fisik terhadap aset yang bersifat kritis
    - Mencocokkan data inventaris dengan catatan pengadaan
@@ -91,15 +91,15 @@ Prosedur ini berlaku untuk seluruh aset informasi, termasuk:
 
 ### 2.2 Prosedur Klasifikasi Data
 
-#### Kriteria Klasifikasi (4 Tingkat â€” sesuai GOV-POL-TK3I Area 5):
+#### Kriteria Klasifikasi (4 Tingkat - sesuai GOV-POL-TK3I Area 5):
 
 Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat tingkat berikut:
 
 | Tingkat | Nama | Deskripsi | Contoh |
 |---------|------|-----------|--------|
-| **1** | **Terbatas (Restricted)** | Data dengan sensitivitas tertinggi â€” akses sangat dibatasi | Kredensial sistem, data pelanggan sensitif, data PII, kunci enkripsi |
-| **2** | **Rahasia (Confidential)** | Data bisnis sensitif â€” hanya untuk pihak tertentu yang berwenang | Data keuangan, rencana strategis, kekayaan intelektual |
-| **3** | **Internal** | Data internal â€” hanya untuk karyawan yang berwenang | Prosedur operasional, memo internal, laporan non-sensitif |
+| **1** | **Terbatas (Restricted)** | Data dengan sensitivitas tertinggi - akses sangat dibatasi | Kredensial sistem, data pelanggan sensitif, data PII, kunci enkripsi |
+| **2** | **Rahasia (Confidential)** | Data bisnis sensitif - hanya untuk pihak tertentu yang berwenang | Data keuangan, rencana strategis, kekayaan intelektual |
+| **3** | **Internal** | Data internal - hanya untuk karyawan yang berwenang | Prosedur operasional, memo internal, laporan non-sensitif |
 | **4** | **Publik (Public)** | Data yang dapat dibagikan kepada publik | Materi pemasaran, informasi publik perusahaan |
 
 **Aturan Penanganan per Tingkat:**
@@ -111,19 +111,19 @@ Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat ting
 
 #### Proses Klasifikasi:
 
-1. **Penilaian Risiko** (Pemilik Data â€” Saat data dibuat)
+1. **Penilaian Risiko** (Pemilik Data - Saat data dibuat)
 
    - Mengevaluasi dampak potensial jika data bocor atau diakses secara tidak sah
    - Menentukan tingkat klasifikasi yang sesuai berdasarkan hasil evaluasi
    - Mempertimbangkan persyaratan regulasi (UU PDP, GDPR jika berlaku)
 
-2. **Pelabelan** (IT Security â€” Segera)
+2. **Pelabelan** (IT Security - Segera)
 
    - Memberi label pada file dan basis data sesuai dengan klasifikasi yang ditetapkan
    - Mengimplementasikan DLP (Data Loss Prevention) untuk menegakkan aturan klasifikasi
    - Memastikan label klasifikasi tampil pada header/footer dokumen fisik dan digital
 
-3. **Komunikasi** (Pemilik Data â€” Segera)
+3. **Komunikasi** (Pemilik Data - Segera)
 
    - Menginformasikan klasifikasi data kepada seluruh pengguna yang terkait
    - Memberikan pelatihan mengenai tata cara penanganan data sesuai klasifikasinya
@@ -178,30 +178,30 @@ Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat ting
 
 #### Langkah-langkah:
 
-1. **Permintaan Pembuangan** (Pemilik Aset â€” 30 hari sebelum pembuangan)
+1. **Permintaan Pembuangan** (Pemilik Aset - 30 hari sebelum pembuangan)
 
    - Mengisi Formulir Pembuangan Aset (Form-AM-01)
    - Menjelaskan alasan pembuangan secara jelas
 
-2. **Persetujuan** (Manajemen â€” 7 hari kerja)
+2. **Persetujuan** (Manajemen - 7 hari kerja)
 
    - Meninjau justifikasi bisnis yang disampaikan
    - Memberikan persetujuan pembuangan
 
-3. **Sanitasi Data** (IT Security â€” Sebelum pembuangan)
+3. **Sanitasi Data** (IT Security - Sebelum pembuangan)
 
    - Menghapus data secara aman sesuai standar yang berlaku:
      - HDD: Menggunakan DBAN atau degaussing
      - SSD: Menggunakan perintah secure erase ATA
      - Dokumen kertas: Penghancuran dengan mesin cross-cut shredder
 
-4. **Eksekusi Pembuangan** (IT Operations â€” Segera setelah sanitasi)
+4. **Eksekusi Pembuangan** (IT Operations - Segera setelah sanitasi)
 
    - Menyerahkan perangkat kepada vendor pembuangan yang bersertifikat
    - Memperoleh sertifikat pemusnahan (certificate of destruction) dari vendor
    - Memperbarui catatan inventaris
 
-5. **Dokumentasi** (IT Operations â€” Segera)
+5. **Dokumentasi** (IT Operations - Segera)
 
    - Mencatat pembuangan dalam register aset
    - Menyimpan catatan pembuangan minimal selama 3 tahun
@@ -216,19 +216,19 @@ Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat ting
 
 #### Proses Penerimaan Pemasok (Onboarding):
 
-1. **Penilaian Vendor** (Pengadaan â€” Sebelum kontrak)
+1. **Penilaian Vendor** (Pengadaan - Sebelum kontrak)
 
    - Memberikan kuesioner keamanan kepada vendor untuk diisi
    - Melakukan pemeriksaan referensi dari klien vendor sebelumnya
    - Melakukan audit lokasi jika vendor menangani aset atau data kritis
 
-2. **Tinjauan Kontrak** (Hukum/IT Security â€” Sebelum kontrak ditandatangani)
+2. **Tinjauan Kontrak** (Hukum/IT Security - Sebelum kontrak ditandatangani)
 
    - Memastikan kontrak mencakup klausul keamanan informasi
    - Menyertakan SLA untuk penanganan insiden keamanan
    - Memastikan adanya hak audit (right to audit) dalam kontrak
 
-3. **Penerimaan Vendor** (IT Operations â€” Saat kontrak berlaku)
+3. **Penerimaan Vendor** (IT Operations - Saat kontrak berlaku)
 
    - Memberikan akses sesuai prinsip least privilege
    - Memberikan pelatihan mengenai persyaratan keamanan organisasi
@@ -236,18 +236,18 @@ Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat ting
 
 #### Pengelolaan Berkelanjutan:
 
-1. **Pemantauan Kinerja** (Pengadaan â€” Triwulanan)
+1. **Pemantauan Kinerja** (Pengadaan - Triwulanan)
 
    - Meninjau kepatuhan vendor terhadap persyaratan keamanan
    - Meninjau laporan insiden dari vendor
    - Mengevaluasi temuan audit terkait vendor
 
-2. **Perpanjangan Kontrak** (Pengadaan â€” Tahunan)
+2. **Perpanjangan Kontrak** (Pengadaan - Tahunan)
 
    - Mengevaluasi kembali postur keamanan vendor
    - Memperbarui persyaratan keamanan jika diperlukan
 
-3. **Pemutusan Kontrak (Offboarding)** (IT Operations â€” Saat kontrak berakhir)
+3. **Pemutusan Kontrak (Offboarding)** (IT Operations - Saat kontrak berakhir)
 
    - Mencabut seluruh akses yang diberikan kepada vendor
    - Melakukan serah terima data secara aman
@@ -292,14 +292,14 @@ Nama Data/File: ____________________
 Lokasi: ____________________________
 Pemilik: ___________________________
 
-Klasifikasi: â–¡ Rahasia â–¡ Internal â–¡ Publik
+Klasifikasi: □ Rahasia □ Internal □ Publik
 
 Justifikasi: ________________________
 ___________________________________
 
 Persyaratan Penanganan:
-â–¡ Enkripsi â–¡ Kontrol Akses â–¡ Backup
-â–¡ DLP â–¡ Pencatatan Audit â–¡ Lainnya: _____
+□ Enkripsi □ Kontrol Akses □ Backup
+□ DLP □ Pencatatan Audit □ Lainnya: _____
 
 Disetujui Oleh:
 ___________________________
@@ -341,14 +341,14 @@ ID Aset | Nama | Jenis | Klasifikasi | Pemilik | Lokasi | Status | Nilai
 
 ### Persyaratan Manajemen Aset:
 
-- âœ… **AM-1**: Inventaris aset dipelihara melalui CMDB dengan pembaruan bulanan
-- âœ… **AM-2**: Kepemilikan aset didefinisikan secara jelas dengan penetapan pemilik dan penanggung jawab
-- âœ… **AM-3**: Klasifikasi data diterapkan dalam 3 tingkat dengan pelabelan yang konsisten
-- âœ… **AM-4**: Penanganan informasi diatur melalui prosedur yang mencakup seluruh siklus hidup aset
-- âœ… **AM-5**: Pembuangan yang aman dilaksanakan dengan pemusnahan bersertifikat dan pencatatan lengkap
-- âœ… **AM-6**: Manajemen pemasok dilakukan melalui penilaian dan pemantauan berkala
-- âœ… **AM-7**: Perlindungan kekayaan intelektual diterapkan melalui klasifikasi dan kontrol yang sesuai
-- âœ… **AM-8**: Kontrol terhadap media lepas pasang (removable media) diterapkan melalui enkripsi dan pelacakan
+- ✅ **AM-1**: Inventaris aset dipelihara melalui CMDB dengan pembaruan bulanan
+- ✅ **AM-2**: Kepemilikan aset didefinisikan secara jelas dengan penetapan pemilik dan penanggung jawab
+- ✅ **AM-3**: Klasifikasi data diterapkan dalam 3 tingkat dengan pelabelan yang konsisten
+- ✅ **AM-4**: Penanganan informasi diatur melalui prosedur yang mencakup seluruh siklus hidup aset
+- ✅ **AM-5**: Pembuangan yang aman dilaksanakan dengan pemusnahan bersertifikat dan pencatatan lengkap
+- ✅ **AM-6**: Manajemen pemasok dilakukan melalui penilaian dan pemantauan berkala
+- ✅ **AM-7**: Perlindungan kekayaan intelektual diterapkan melalui klasifikasi dan kontrol yang sesuai
+- ✅ **AM-8**: Kontrol terhadap media lepas pasang (removable media) diterapkan melalui enkripsi dan pelacakan
 
 
 ## 6. Tanggung Jawab

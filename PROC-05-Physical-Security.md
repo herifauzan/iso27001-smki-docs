@@ -53,7 +53,7 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 ### 1.3 Referensi
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), khususnya Area 7: Keamanan Fisik & Lingkungan
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), khususnya Area 7: Keamanan Fisik & Lingkungan
 
 
 ## 2. Prosedur Utama
@@ -62,26 +62,26 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Akses Bangunan:
 
-1. **Registrasi Pengunjung** (Security Officer â€” Saat kedatangan)
+1. **Registrasi Pengunjung** (Security Officer - Saat kedatangan)
 
    - Memverifikasi identitas pengunjung dengan KTP atau SIM
    - Mengisi log pengunjung (Form-PS-01) dengan lengkap
    - Menerbitkan kartu akses sementara jika diperlukan untuk mengakses area tertentu
 
-2. **Akses Karyawan** (HR/Security â€” Saat proses penerimaan karyawan)
+2. **Akses Karyawan** (HR/Security - Saat proses penerimaan karyawan)
 
    - Mengambil foto untuk pembuatan kartu identitas dan kartu akses
    - Memprogram kartu akses sesuai dengan peran dan area kerja karyawan
    - Memberikan pelatihan mengenai penggunaan sistem akses gedung
 
-3. **Pembaruan Berkala Hak Akses Fisik** (Security Officer â€” Setiap triwulan)
+3. **Pembaruan Berkala Hak Akses Fisik** (Security Officer - Setiap triwulan)
 
    - Meninjau daftar seluruh pemegang kartu akses aktif setiap 3 bulan
    - Memverifikasi apakah hak akses masih sesuai dengan peran karyawan saat ini
    - Mencabut atau menyesuaikan akses yang sudah tidak relevan akibat perubahan jabatan, transfer departemen, atau pemutusan hubungan kerja
    - Mendokumentasikan hasil tinjauan dalam Log Tinjauan Akses Fisik (Log-PS-02)
 
-3. **Pemantauan Akses** (Security Officer â€” Berkelanjutan)
+3. **Pemantauan Akses** (Security Officer - Berkelanjutan)
 
    - Memantau CCTV selama 24 jam setiap hari, 7 hari seminggu
    - Mencatat seluruh aktivitas masuk dan keluar dalam log akses
@@ -89,13 +89,13 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Akses Area Sensitif:
 
-1. **Akses Ruang Server** (IT Security â€” Terbatas)
+1. **Akses Ruang Server** (IT Security - Terbatas)
 
    - Akses hanya diberikan kepada personel yang berwenang dan terdaftar
    - Menggunakan otentikasi ganda (kartu akses + PIN) untuk masuk
    - Menerapkan sistem mantrap untuk area dengan keamanan tertinggi
 
-2. **Akses Pusat Data (Data Center)** (IT Security â€” Terbatas)
+2. **Akses Pusat Data (Data Center)** (IT Security - Terbatas)
 
    - Otorisasi terlebih dahulu (pre-authorization) wajib diperoleh sebelum akses
    - Pengunjung wajib didampingi oleh personel berwenang selama berada di area
@@ -105,19 +105,19 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Keamanan Workstation:
 
-1. **Kebijakan Penguncian Layar** (Seluruh Karyawan â€” Selalu)
+1. **Kebijakan Penguncian Layar** (Seluruh Karyawan - Selalu)
 
    - Mengunci layar setiap kali meninggalkan workstation
    - Mengaktifkan penguncian otomatis setelah 5 menit tanpa aktivitas
    - Tidak meninggalkan perangkat tanpa pengawasan di area publik
 
-2. **Keamanan Perangkat Mobile** (IT Security â€” Saat penerbitan perangkat)
+2. **Keamanan Perangkat Mobile** (IT Security - Saat penerbitan perangkat)
 
    - Mengaktifkan enkripsi pada seluruh perangkat mobile
    - Menginstal MDM (Mobile Device Management) untuk pengelolaan jarak jauh
    - Memastikan tersedianya kemampuan penghapusan data jarak jauh (remote wipe)
 
-3. **Peralatan Portabel** (IT Operations â€” Saat peminjaman)
+3. **Peralatan Portabel** (IT Operations - Saat peminjaman)
 
    - Mengisi formulir peminjaman peralatan (Form-PS-02)
    - Melacak lokasi dan kondisi peralatan selama masa peminjaman
@@ -125,14 +125,14 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Keamanan Ruang Server:
 
-1. **Kontrol Lingkungan** (Tim Fasilitas â€” Berkelanjutan)
+1. **Kontrol Lingkungan** (Tim Fasilitas - Berkelanjutan)
 
-   - Mempertahankan suhu ruangan pada rentang 18â€“24Â°C
-   - Mempertahankan kelembapan pada rentang 40â€“60%
+   - Mempertahankan suhu ruangan pada rentang 18-24Â°C
+   - Mempertahankan kelembapan pada rentang 40-60%
    - Memastikan sistem pemadaman kebakaran berfungsi dengan baik
    - Memastikan ketersediaan UPS dan generator cadangan
 
-2. **Kontrol Akses** (Security Officer â€” Berkelanjutan)
+2. **Kontrol Akses** (Security Officer - Berkelanjutan)
 
    - Melakukan pemantauan selama 24 jam setiap hari, 7 hari seminggu
    - Memelihara daftar akses terbatas (restricted access list)
@@ -142,19 +142,19 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Respons Pencurian/Kehilangan:
 
-1. **Respons Segera** (Security Officer â€” Segera)
+1. **Respons Segera** (Security Officer - Segera)
 
    - Mengamankan area yang terdampak
    - Menghubungi kepolisian jika terjadi pencurian
    - Menilai tingkat kerusakan dan potensi paparan data
 
-2. **Penyelidikan** (Tim Keamanan â€” Kurang dari 24 jam)
+2. **Penyelidikan** (Tim Keamanan - Kurang dari 24 jam)
 
    - Meninjau rekaman CCTV yang relevan
    - Mewawancarai saksi-saksi yang terkait
    - Mendokumentasikan seluruh temuan penyelidikan
 
-3. **Pemulihan** (IT Operations â€” Segera)
+3. **Pemulihan** (IT Operations - Segera)
 
    - Memulihkan data dari backup jika terjadi kehilangan data
    - Mengganti peralatan yang hilang atau rusak
@@ -162,19 +162,19 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Respons Darurat:
 
-1. **Alarm Kebakaran** (Seluruh Personel â€” Segera)
+1. **Alarm Kebakaran** (Seluruh Personel - Segera)
 
    - Melakukan evakuasi sesuai jalur darurat yang telah ditetapkan
    - Melakukan penghitungan kepala (head count) di titik kumpul
    - Menunggu konfirmasi situasi aman dari petugas keamanan
 
-2. **Darurat Medis** (Tim Pertolongan Pertama â€” Segera)
+2. **Darurat Medis** (Tim Pertolongan Pertama - Segera)
 
    - Menghubungi ambulans (118 atau 119)
    - Memberikan pertolongan pertama sesuai pelatihan yang diterima
    - Mendampingi korban ke fasilitas medis terdekat
 
-3. **Pelanggaran Keamanan Fisik** (Security Officer â€” Segera)
+3. **Pelanggaran Keamanan Fisik** (Security Officer - Segera)
 
    - Memberlakukan penguncian (lockdown) pada area yang terdampak
    - Memberitahu manajemen mengenai situasi yang terjadi
@@ -184,19 +184,19 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Inspeksi Rutin:
 
-1. **Pemeriksaan Harian** (Security Officer â€” Setiap hari)
+1. **Pemeriksaan Harian** (Security Officer - Setiap hari)
 
    - Memeriksa seluruh titik akses (pintu, gerbang) untuk memastikan keamanannya
    - Memverifikasi bahwa sistem CCTV berfungsi dengan baik
    - Memeriksa kelengkapan dan kesiapan peralatan darurat
 
-2. **Inspeksi Mingguan** (Tim Fasilitas â€” Setiap minggu)
+2. **Inspeksi Mingguan** (Tim Fasilitas - Setiap minggu)
 
    - Menguji sistem alarm kebakaran
    - Memeriksa kondisi UPS dan generator cadangan
    - Menginspeksi seluruh perangkat keamanan fisik
 
-3. **Audit Bulanan** (Tim Keamanan â€” Setiap bulan)
+3. **Audit Bulanan** (Tim Keamanan - Setiap bulan)
 
    - Meninjau log akses untuk mengidentifikasi anomali
    - Menguji sistem backup dan pemulihan
@@ -213,19 +213,19 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Persiapan Kerja dari Rumah:
 
-1. **Proses Persetujuan** (Manajer â€” Sebelum WFH dimulai)
+1. **Proses Persetujuan** (Manajer - Sebelum WFH dimulai)
 
    - Menyampaikan justifikasi bisnis untuk kebutuhan kerja dari rumah
    - Melakukan penilaian risiko keamanan terhadap lingkungan kerja dari rumah
    - Memperoleh persetujuan dari IT Security sebelum akses jarak jauh diaktifkan
 
-2. **Pengaturan Lingkungan Kerja** (IT Operations â€” Saat persiapan)
+2. **Pengaturan Lingkungan Kerja** (IT Operations - Saat persiapan)
 
    - Memastikan koneksi WiFi aman dengan enkripsi WPA3
    - Menginstal klien VPN pada perangkat karyawan
    - Mengonfigurasi workstation dengan kontrol keamanan yang sesuai
 
-3. **Persyaratan Keamanan** (Karyawan â€” Selama WFH)
+3. **Persyaratan Keamanan** (Karyawan - Selama WFH)
 
    - Mengunci perangkat saat tidak digunakan
    - Menyimpan dokumen kerja di tempat yang aman dan terkunci
@@ -233,13 +233,13 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Pemantauan Kerja dari Rumah:
 
-1. **Pemantauan Akses** (IT Security â€” Berkelanjutan)
+1. **Pemantauan Akses** (IT Security - Berkelanjutan)
 
    - Memantau log koneksi VPN secara kontinu
    - Memantau kondisi dan keamanan perangkat
    - Mengirimkan peringatan jika terdeteksi aktivitas yang tidak biasa
 
-2. **Pemeriksaan Berkala** (Manajer â€” Mingguan)
+2. **Pemeriksaan Berkala** (Manajer - Mingguan)
 
    - Melakukan pertemuan virtual untuk memastikan kelangsungan kerja
    - Memantau produktivitas dan kepatuhan terhadap kebijakan keamanan
@@ -259,7 +259,7 @@ Pihak yang Dikunjungi: ____________
 Waktu Masuk: _____________________
 Waktu Keluar: ____________________
 
-Kartu Akses Diterbitkan: â–¡ Ya â–¡ Tidak
+Kartu Akses Diterbitkan: □ Ya □ Tidak
 Nomor Kartu: _____________________
 
 Catatan: __________________________
@@ -277,7 +277,7 @@ Peminjam: _________________________
 Departemen: _______________________
 
 Peralatan:
-â–¡ Laptop â–¡ Perangkat Mobile â–¡ Proyektor â–¡ Lainnya: _____
+□ Laptop □ Perangkat Mobile □ Proyektor □ Lainnya: _____
 Nomor Seri: ______________________
 Aksesori: ________________________
 
@@ -305,14 +305,14 @@ Tanggal: __________
 Tanggal: __________________________
 Security Officer: _________________
 
-â–¡ Seluruh pintu utama dalam keadaan terkunci
-â–¡ Sistem CCTV beroperasi dengan normal
-â–¡ Sistem kontrol akses berfungsi dengan baik
-â–¡ Jalur darurat tidak terhalang
-â–¡ Alat pemadam kebakaran tersedia di tempatnya
-â–¡ Akses ruang server dalam keadaan aman
-â–¡ Log pengunjung telah diperbarui
-â–¡ Aktivitas mencurigakan telah dilaporkan
+□ Seluruh pintu utama dalam keadaan terkunci
+□ Sistem CCTV beroperasi dengan normal
+□ Sistem kontrol akses berfungsi dengan baik
+□ Jalur darurat tidak terhalang
+□ Alat pemadam kebakaran tersedia di tempatnya
+□ Akses ruang server dalam keadaan aman
+□ Log pengunjung telah diperbarui
+□ Aktivitas mencurigakan telah dilaporkan
 
 Catatan: __________________________
 __________________________________
@@ -346,14 +346,14 @@ __________________________________
 
 ### Persyaratan Keamanan Fisik:
 
-- âœ… **PS-1**: Kontrol akses fisik diterapkan secara berlapis dengan pemantauan menyeluruh
-- âœ… **PS-2**: Perlindungan area sensitif dijamin melalui sistem mantrap di ruang server
-- âœ… **PS-3**: Keamanan peralatan diterapkan melalui prosedur penguncian dan pelacakan
-- âœ… **PS-4**: Manajemen pengunjung dikelola melalui registrasi dan pendampingan
-- âœ… **PS-5**: Kontrol lingkungan diterapkan melalui sistem HVAC dan pemadaman kebakaran
-- âœ… **PS-6**: Keamanan kabel dijamin melalui jalur kabel yang terlindungi
-- âœ… **PS-7**: Kebijakan meja bersih (clean desk) diterapkan secara konsisten
-- âœ… **PS-8**: Keamanan kerja jarak jauh dijamin melalui kontrol keamanan khusus WFH
+- ✅ **PS-1**: Kontrol akses fisik diterapkan secara berlapis dengan pemantauan menyeluruh
+- ✅ **PS-2**: Perlindungan area sensitif dijamin melalui sistem mantrap di ruang server
+- ✅ **PS-3**: Keamanan peralatan diterapkan melalui prosedur penguncian dan pelacakan
+- ✅ **PS-4**: Manajemen pengunjung dikelola melalui registrasi dan pendampingan
+- ✅ **PS-5**: Kontrol lingkungan diterapkan melalui sistem HVAC dan pemadaman kebakaran
+- ✅ **PS-6**: Keamanan kabel dijamin melalui jalur kabel yang terlindungi
+- ✅ **PS-7**: Kebijakan meja bersih (clean desk) diterapkan secara konsisten
+- ✅ **PS-8**: Keamanan kerja jarak jauh dijamin melalui kontrol keamanan khusus WFH
 
 
 ## 6. Tanggung Jawab

@@ -13,9 +13,10 @@
 
 | Jabatan | Nama | Tanda Tangan | Tanggal |
 |---------|------|-------------|--------|
+| Direktur Utama / CEO | Ahmad Firdaus |   |   |
 | Direktur Operasional / COO | Dodi Darundriyo |   |   |
 | Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Direktur Utama / CEO | Ahmad Firdaus |   |   |
+
 
 
 ## Daftar Isi
@@ -54,9 +55,9 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 ### 1.3 Referensi
 
-- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I.md), Area 1: Manajemen Risiko Keamanan Informasi
-- ISO/IEC 27001:2022 â€” Annex A.8 (Information security risk assessment)
-- NIST SP 800-30 â€” Guide for Conducting Risk Assessments
+- Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), Area 1: Manajemen Risiko Keamanan Informasi
+- ISO/IEC 27001:2022 - Annex A.8 (Information security risk assessment)
+- NIST SP 800-30 - Guide for Conducting Risk Assessments
 
 
 ## 2. Prosedur Utama
@@ -65,13 +66,13 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Inventarisasi Aset** (IT Operations & Pemilik Aset â€” Tahunan dan saat ada perubahan)
+1. **Inventarisasi Aset** (IT Operations & Pemilik Aset - Tahunan dan saat ada perubahan)
 
    - Mengidentifikasi seluruh aset informasi: perangkat keras, perangkat lunak, data, infrastruktur, dan personel kunci
    - Menetapkan nilai aset berdasarkan dampak bisnis jika terganggu (Kritis, Tinggi, Sedang, Rendah)
    - Mendokumentasikan kepemilikan aset dalam register aset (lihat PROC-04)
 
-2. **Identifikasi Ancaman** (ISM & Tim Security â€” Tahunan)
+2. **Identifikasi Ancaman** (ISM & Tim Security - Tahunan)
 
    - Mengidentifikasi ancaman relevan untuk setiap kategori aset, meliputi:
      - **Ancaman Internal**: Kesalahan manusia, penyalahgunaan hak akses, sabotase
@@ -79,13 +80,13 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
      - **Ancaman Teknis**: Kegagalan sistem, kerentanan perangkat lunak, kesalahan konfigurasi
    - Mengacu pada sumber ancaman terkini: CVE database, laporan ancaman BSSN, threat intelligence
 
-3. **Identifikasi Kerentanan** (IT Security â€” Triwulanan)
+3. **Identifikasi Kerentanan** (IT Security - Triwulanan)
 
    - Melaksanakan pemindaian kerentanan teknis pada seluruh sistem (lihat PROC-03, Bagian 2.4)
    - Meninjau hasil audit keamanan sebelumnya
    - Mengidentifikasi kelemahan pada proses, prosedur, dan kontrol yang ada
 
-4. **Dokumentasi Risiko Awal** (ISM â€” Setelah identifikasi)
+4. **Dokumentasi Risiko Awal** (ISM - Setelah identifikasi)
 
    - Mendokumentasikan setiap risiko yang teridentifikasi dalam Risk Register (Form-RM-01)
    - Memberikan ID unik untuk setiap risiko
@@ -97,43 +98,43 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Penilaian Dampak** (Pemilik Aset & ISM â€” Per risiko)
+1. **Penilaian Dampak** (Pemilik Aset & ISM - Per risiko)
 
    Menilai dampak potensial jika risiko terwujud menggunakan skala berikut:
 
    | Skala | Nilai | Kriteria Dampak |
    |-------|-------|-----------------|
    | Sangat Tinggi | 5 | Gangguan operasional parah, kerugian finansial besar (>Rp 1 M), dampak hukum serius |
-   | Tinggi | 4 | Gangguan operasional signifikan, kerugian finansial sedang (Rp 100 jt â€“ 1 M) |
-   | Sedang | 3 | Gangguan terbatas, kerugian finansial kecil (Rp 10 jt â€“ 100 jt) |
+   | Tinggi | 4 | Gangguan operasional signifikan, kerugian finansial sedang (Rp 100 jt - 1 M) |
+   | Sedang | 3 | Gangguan terbatas, kerugian finansial kecil (Rp 10 jt - 100 jt) |
    | Rendah | 2 | Dampak minimal, kerugian sangat kecil (<Rp 10 jt) |
    | Sangat Rendah | 1 | Dampak dapat diabaikan, tanpa kerugian signifikan |
 
-2. **Penilaian Kemungkinan** (ISM & Tim Security â€” Per risiko)
+2. **Penilaian Kemungkinan** (ISM & Tim Security - Per risiko)
 
    Menilai kemungkinan terjadinya risiko menggunakan skala berikut:
 
    | Skala | Nilai | Kriteria Kemungkinan |
    |-------|-------|---------------------|
    | Hampir Pasti | 5 | >80% kemungkinan terjadi dalam 1 tahun |
-   | Kemungkinan Besar | 4 | 50â€“80% kemungkinan terjadi dalam 1 tahun |
-   | Mungkin | 3 | 20â€“50% kemungkinan terjadi dalam 1 tahun |
-   | Tidak Mungkin | 2 | 5â€“20% kemungkinan terjadi dalam 1 tahun |
+   | Kemungkinan Besar | 4 | 50-80% kemungkinan terjadi dalam 1 tahun |
+   | Mungkin | 3 | 20-50% kemungkinan terjadi dalam 1 tahun |
+   | Tidak Mungkin | 2 | 5-20% kemungkinan terjadi dalam 1 tahun |
    | Sangat Tidak Mungkin | 1 | <5% kemungkinan terjadi dalam 1 tahun |
 
-3. **Perhitungan Skor Risiko** (ISM â€” Per risiko)
+3. **Perhitungan Skor Risiko** (ISM - Per risiko)
 
    - **Skor Risiko = Dampak Ã— Kemungkinan**
    - Klasifikasi risiko berdasarkan skor:
 
    | Skor | Tingkat Risiko | Warna | Tindakan |
    |------|---------------|-------|---------|
-   | 20â€“25 | Kritis | ðŸ”´ Merah | Tindakan segera, eskalasi ke manajemen |
-   | 12â€“19 | Tinggi | ðŸŸ  Oranye | Tindakan dalam 30 hari, laporan rutin |
-   | 6â€“11 | Sedang | ðŸŸ¡ Kuning | Tindakan dalam 90 hari, pemantauan |
-   | 1â€“5 | Rendah | ðŸŸ¢ Hijau | Pantau, tangani pada siklus berikutnya |
+   | 20-25 | Kritis | Merah | Tindakan segera, eskalasi ke manajemen |
+   | 12-19 | Tinggi | Oranye | Tindakan dalam 30 hari, laporan rutin |
+   | 6-11 | Sedang | Kuning | Tindakan dalam 90 hari, pemantauan |
+   | 1-5 | Rendah | Hijau | Pantau, tangani pada siklus berikutnya |
 
-4. **Heat Map Risiko** (ISM â€” Setelah penilaian)
+4. **Heat Map Risiko** (ISM - Setelah penilaian)
 
    - Membuat matriks risiko visual (heat map) yang menggambarkan distribusi risiko
    - Mempresentasikan heat map kepada manajemen dalam Management Review triwulanan
@@ -144,7 +145,7 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Penentuan Opsi Penanganan** (ISM & Pemilik Aset â€” Per risiko)
+1. **Penentuan Opsi Penanganan** (ISM & Pemilik Aset - Per risiko)
 
    Untuk setiap risiko, pilih satu atau kombinasi opsi berikut:
 
@@ -153,9 +154,9 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
    - **Penghindaran (Avoid)**: Menghentikan aktivitas yang menimbulkan risiko
    - **Penerimaan (Accept)**: Menerima risiko jika berada dalam batas toleransi dan biaya mitigasi tidak sebanding
 
-   > **Catatan:** Risiko dengan skor Kritis (20â€“25) TIDAK BOLEH hanya diterima tanpa tindakan mitigasi apapun. Harus ada persetujuan tertulis dari COO.
+   > **Catatan:** Risiko dengan skor Kritis (20-25) TIDAK BOLEH hanya diterima tanpa tindakan mitigasi apapun. Harus ada persetujuan tertulis dari COO.
 
-2. **Penyusunan Rencana Penanganan Risiko** (ISM â€” Per risiko)
+2. **Penyusunan Rencana Penanganan Risiko** (ISM - Per risiko)
 
    Untuk setiap risiko yang akan dimitigasi:
    - Mendefinisikan kontrol keamanan yang akan diterapkan
@@ -163,13 +164,13 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
    - Memperkirakan biaya implementasi
    - Mendefinisikan indikator keberhasilan (KPI)
 
-3. **Persetujuan Rencana** (Manajemen â€” Dalam 7 hari kerja)
+3. **Persetujuan Rencana** (Manajemen - Dalam 7 hari kerja)
 
    - Rencana penanganan risiko tinggi/kritis disampaikan kepada COO dan ISM untuk disetujui
    - Risiko sedang/rendah dapat disetujui oleh ISM secara mandiri
    - Keputusan persetujuan didokumentasikan dalam Risk Register
 
-4. **Implementasi Kontrol** (IT Operations & Tim Security â€” Sesuai tenggat)
+4. **Implementasi Kontrol** (IT Operations & Tim Security - Sesuai tenggat)
 
    - Melaksanakan kontrol keamanan sesuai rencana yang disetujui
    - Mendokumentasikan bukti implementasi (screenshot konfigurasi, laporan pengujian, dll.)
@@ -181,25 +182,25 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Pemantauan Risiko Berkelanjutan** (ISM â€” Terus-menerus)
+1. **Pemantauan Risiko Berkelanjutan** (ISM - Terus-menerus)
 
    - Memantau perubahan pada lingkungan ancaman (ancaman baru, kerentanan baru yang dipublikasikan)
    - Memantau efektivitas kontrol yang telah diterapkan melalui log, audit, dan insiden
    - Memperbarui Risk Register jika terjadi perubahan skor risiko
 
-2. **Peninjauan Triwulanan Risiko Kritis/Tinggi** (ISM & Manajemen â€” Setiap triwulan)
+2. **Peninjauan Triwulanan Risiko Kritis/Tinggi** (ISM & Manajemen - Setiap triwulan)
 
    - Meninjau status penanganan seluruh risiko dengan skor Kritis dan Tinggi
    - Mengevaluasi efektivitas kontrol yang telah diimplementasikan
    - Melaporkan hasil tinjauan kepada COO
 
-3. **Penilaian Risiko Tahunan Penuh** (ISM & Tim Security â€” Setiap tahun)
+3. **Penilaian Risiko Tahunan Penuh** (ISM & Tim Security - Setiap tahun)
 
    - Melaksanakan siklus penilaian risiko lengkap dari awal (identifikasi ulang)
    - Memperbarui seluruh Risk Register
    - Mempresentasikan hasil kepada Board of Directors
 
-4. **Penilaian Risiko Ad-Hoc** (ISM â€” Saat diperlukan)
+4. **Penilaian Risiko Ad-Hoc** (ISM - Saat diperlukan)
 
    Penilaian risiko tambahan wajib dilakukan saat:
    - Terjadi insiden keamanan signifikan
@@ -213,20 +214,20 @@ Prosedur ini berlaku untuk seluruh aset informasi organisasi, termasuk:
 
 #### Langkah-langkah:
 
-1. **Laporan Risiko Bulanan** (ISM â€” Setiap bulan)
+1. **Laporan Risiko Bulanan** (ISM - Setiap bulan)
 
    - Menyusun ringkasan status risiko aktif (jumlah per tingkat, perubahan skor)
    - Melaporkan kemajuan implementasi kontrol
    - Menyampaikan kepada manajemen melalui email atau rapat bulanan
 
-2. **Laporan Risiko Triwulanan kepada Manajemen** (ISM â€” Setiap triwulan)
+2. **Laporan Risiko Triwulanan kepada Manajemen** (ISM - Setiap triwulan)
 
    - Menyajikan heat map risiko terkini
    - Melaporkan risiko baru yang teridentifikasi
    - Melaporkan risiko yang berhasil dimitigasi
    - Merekomendasikan alokasi anggaran untuk mitigasi risiko prioritas
 
-3. **Laporan Risiko Tahunan kepada Board** (ISM & COO â€” Setiap tahun)
+3. **Laporan Risiko Tahunan kepada Board** (ISM & COO - Setiap tahun)
 
    - Menyajikan postur risiko keamanan informasi secara menyeluruh
    - Mengevaluasi pencapaian program manajemen risiko tahun berjalan
@@ -253,17 +254,17 @@ PENILAIAN RISIKO:
 Dampak (1-5): _____________________
 Kemungkinan (1-5): ________________
 Skor Risiko: ______________________
-Tingkat Risiko: â–¡ Kritis â–¡ Tinggi â–¡ Sedang â–¡ Rendah
+Tingkat Risiko: □ Kritis □ Tinggi □ Sedang □ Rendah
 
 PENANGANAN RISIKO:
-Opsi: â–¡ Mitigasi â–¡ Transfer â–¡ Hindari â–¡ Terima
+Opsi: □ Mitigasi □ Transfer □ Hindari □ Terima
 Kontrol yang Direncanakan: _________
 __________________________________
 Penanggung Jawab (PIC): ___________
 Tenggat Waktu: ____________________
 
 STATUS IMPLEMENTASI:
-â–¡ Belum Dimulai â–¡ Sedang Berjalan â–¡ Selesai â–¡ Ditangguhkan
+□ Belum Dimulai □ Sedang Berjalan □ Selesai □ Ditangguhkan
 Tanggal Update: ___________________
 Catatan: __________________________
 
@@ -330,14 +331,14 @@ Tanggal: __________                 Tanggal: __________
 
 ### Persyaratan Manajemen Risiko (ISO 27001):
 
-- âœ… **RM-1**: Proses penilaian risiko formal ditetapkan dengan metodologi yang konsisten
-- âœ… **RM-2**: Risk register dipelihara dan diperbarui secara berkala
-- âœ… **RM-3**: Skala penilaian dampak dan kemungkinan didefinisikan dengan jelas
-- âœ… **RM-4**: Rencana penanganan risiko disusun dan disetujui manajemen
-- âœ… **RM-5**: Pemantauan dan peninjauan risiko dilaksanakan secara berkala
-- âœ… **RM-6**: Pelaporan risiko kepada manajemen dilakukan secara rutin
-- âœ… **RM-7**: Penilaian risiko ad-hoc dilakukan saat terjadi perubahan signifikan
-- âœ… **RM-8**: Bukti pelaksanaan penilaian risiko didokumentasikan
+- ✅ **RM-1**: Proses penilaian risiko formal ditetapkan dengan metodologi yang konsisten
+- ✅ **RM-2**: Risk register dipelihara dan diperbarui secara berkala
+- ✅ **RM-3**: Skala penilaian dampak dan kemungkinan didefinisikan dengan jelas
+- ✅ **RM-4**: Rencana penanganan risiko disusun dan disetujui manajemen
+- ✅ **RM-5**: Pemantauan dan peninjauan risiko dilaksanakan secara berkala
+- ✅ **RM-6**: Pelaporan risiko kepada manajemen dilakukan secara rutin
+- ✅ **RM-7**: Penilaian risiko ad-hoc dilakukan saat terjadi perubahan signifikan
+- ✅ **RM-8**: Bukti pelaksanaan penilaian risiko didokumentasikan
 
 
 ## 6. Tanggung Jawab
