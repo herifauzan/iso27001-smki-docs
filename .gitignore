@@ -7,3 +7,7 @@
 # Allow specific files if needed (uncomment and modify as necessary)
 # !important-file
 # !*.pdf
+
+# Allow benchmarking-azure folder
+!benchmarking-azure
+!benchmarking-azure/**
