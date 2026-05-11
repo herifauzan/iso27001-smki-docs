@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Direktur Utama / CEO | Ahmad Firdaus |   |   |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Utama / CEO | Ahmad Firdaus | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -159,10 +160,10 @@ Business Impact Analysis adalah fondasi dari seluruh perencanaan BCP/DRP. BIA me
 
    | Strategi | Deskripsi | RTO Tipikal | Biaya |
    |----------|-----------|-------------|-------|
-   | **Hot Site** | Infrastruktur identik yang selalu aktif dan siap | < 1 jam | Tinggi |
-   | **Warm Site** | Infrastruktur sebagian dikonfigurasi, dapat aktif dalam jam | 2-8 jam | Sedang |
-   | **Cold Site** | Infrastruktur dasar tersedia, perlu konfigurasi | 24-72 jam | Rendah |
-   | **Cloud DR** | Menggunakan layanan cloud sebagai DR site | 1-8 jam | Sesuai penggunaan |
+   | **Multi-Region Active-Active** | Layanan berjalan bersamaan di beberapa region cloud | < 15 menit | Sangat Tinggi |
+   | **Warm Standby (Cloud)** | Infrastruktur inti berjalan di region sekunder, siap di-scale | 1-4 jam | Sedang |
+   | **Pilot Light (Cloud)** | Data direplikasi, layanan dimatikan hingga dibutuhkan | 4-12 jam | Rendah |
+   | **Backup & Restore (Cloud)** | Memulihkan layanan dari backup di cloud storage | 12-24 jam | Sangat Rendah |
 
 2. **Penyusunan Prosedur Pemulihan per Sistem** (IT Operations - Per sistem kritis)
 
@@ -444,6 +445,7 @@ BCP/DRP harus segera diperbarui jika terjadi:
 |-------|----------------|
 | COO | Menyetujui BCP/DRP, mendeklarasikan bencana, memimpin Crisis Management Team |
 | ISM | Mengembangkan dan memelihara BCP/DRP, mengkoordinasikan pengujian dan pemulihan |
+| Kepala Audit Internal | Melakukan audit independen terhadap program BCP/DRP dan hasil pengujiannya |
 | IT Operations | Melaksanakan pemulihan sistem, memelihara infrastruktur DR, menguji backup |
 | Kepala Departemen | Mendefinisikan proses kritis, menyetujui prosedur operasi darurat departemen |
 | Koordinator Komunikasi | Mengelola komunikasi dengan klien, vendor, dan publik selama krisis |
@@ -455,7 +457,7 @@ BCP/DRP harus segera diperbarui jika terjadi:
 
 - **Frekuensi Peninjauan Prosedur:** Setiap tahun, atau setelah setiap insiden atau pengujian DR
 - **Tanggung Jawab Peninjauan:** ISM, IT Operations, dan Kepala Departemen
-- **Persetujuan Pembaruan:** ISM dan COO
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

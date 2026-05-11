@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Manajer HR |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer HR | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -54,6 +55,7 @@ Prosedur ini berlaku untuk seluruh aset informasi, termasuk:
 ### 1.3 Referensi
 
 - Tata Kelola dan Kebijakan Keamanan Informasi (GOV-POL-TK3I), khususnya Area 5: Manajemen Aset & Pengamanan Data
+- UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP)
 
 
 ## 2. Prosedur Utama
@@ -97,7 +99,7 @@ Seluruh data organisasi **wajib** diklasifikasikan ke salah satu dari empat ting
 
 | Tingkat | Nama | Deskripsi | Contoh |
 |---------|------|-----------|--------|
-| **1** | **Terbatas (Restricted)** | Data dengan sensitivitas tertinggi - akses sangat dibatasi | Kredensial sistem, data pelanggan sensitif, data PII, kunci enkripsi |
+| **1** | **Terbatas (Restricted)** | Data dengan sensitivitas tertinggi - akses sangat dibatasi | Kredensial sistem, data pelanggan sensitif, Data Pribadi Sensitif (UU PDP), kunci enkripsi |
 | **2** | **Rahasia (Confidential)** | Data bisnis sensitif - hanya untuk pihak tertentu yang berwenang | Data keuangan, rencana strategis, kekayaan intelektual |
 | **3** | **Internal** | Data internal - hanya untuk karyawan yang berwenang | Prosedur operasional, memo internal, laporan non-sensitif |
 | **4** | **Publik (Public)** | Data yang dapat dibagikan kepada publik | Materi pemasaran, informasi publik perusahaan |
@@ -355,19 +357,20 @@ ID Aset | Nama | Jenis | Klasifikasi | Pemilik | Lokasi | Status | Nilai
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Mengawasi keseluruhan manajemen aset dan menyetujui kebijakan |
+| ISM | Mengawasi keseluruhan manajemen aset dan menyiapkan kebijakan |
+| Kepala Audit Internal | Melakukan audit independen terhadap proses manajemen aset dan penghapusan |
 | Manajer IT Operations | Mengelola inventaris dan pemeliharaan aset |
 | Petugas IT Security | Melaksanakan klasifikasi dan pembuangan aset secara aman |
 | Manajer Pengadaan | Mengelola hubungan dan kepatuhan pemasok |
-| Kepala Departemen | Bertanggung jawab atas kepemilikan aset dalam departemennya |
-| Pemilik Data | Menentukan klasifikasi dan mengawasi penanganan data |
+| Kepala Departemen (Asset Owners) | Bertanggung jawab atas kepemilikan aset informasi yang ada di departemen mereka, menyetujui akses ke aset sesuai kebutuhan bisnis |
+| Pemilik Data (Data Owners) | Menentukan klasifikasi data, mengawasi penanganan data, menyetujui akses data, serta berkoordinasi dengan DPO terkait pelindungan data pribadi |
 
 
 ## 7. Tinjauan dan Pembaruan
 
 - **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan
 - **Tanggung Jawab Peninjauan:** Tim IT Operations dan Tim Security
-- **Persetujuan Pembaruan:** ISM dan Manajemen
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

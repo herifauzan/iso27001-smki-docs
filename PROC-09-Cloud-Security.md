@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Direktur Utama / CEO | Ahmad Firdaus |   |   |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Utama / CEO | Ahmad Firdaus | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -203,6 +204,7 @@ Tanggal: _______________         Tanggal: _______________
 |-------|----------------|
 | **User / Business Owner** | Mengajukan kebutuhan cloud dan mengklasifikasikan data. |
 | **IT Security / ISM** | Melakukan evaluasi risiko vendor, mendefinisikan tanggung jawab bersama, dan menyetujui pengajuan. |
+| **Kepala Audit Internal** | Melakukan audit independen terhadap tata kelola dan keamanan cloud |
 | **IT Operations / Cloud Admin**| Melakukan konfigurasi teknis (network, IAM, region) sesuai kebijakan. |
 | **Data Owner** | Memastikan klasifikasi data akurat untuk penentuan lokasi region penyimpanan. |
 
@@ -211,7 +213,7 @@ Tanggal: _______________         Tanggal: _______________
 
 - **Frekuensi Peninjauan Prosedur:** Tahunan, atau apabila terjadi perubahan besar pada lingkungan arsitektur cloud perusahaan atau regulasi nasional.
 - **Tanggung Jawab Peninjauan:** Tim IT Security dan IT Operations.
-- **Persetujuan Pembaruan:** Manajer Keamanan Informasi (ISM) dan COO.
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 **AKHIR DOKUMEN PROSEDUR**
 

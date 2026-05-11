@@ -15,6 +15,8 @@
 | Direktur Utama / CEO | Ahmad Firdaus |   |   |
 | Direktur Operasional / COO | Dodi Darundriyo |   |   |
 | Manajer Keamanan Informasi (ISM)| Heri Fauzan |   |   |
+| Pejabat Pelindungan Data Pribadi (DPO) | TBD |   |   |
+| Kepala Audit Internal | TBD |   |   |
 
 ## Daftar Isi
 
@@ -57,8 +59,18 @@ Dokumen Tata Kelola dan Kebijakan Keamanan Informasi ini dirancang untuk:
 - Menetapkan kerangka kerja yang komprehensif bagi pengelolaan keamanan informasi di seluruh organisasi
 - Memastikan perlindungan aset informasi dari berbagai ancaman dan risiko yang teridentifikasi
 - Memenuhi standar internasional dan praktik terbaik (ISO 27001, CIS, NIST)
-- Memenuhi persyaratan kepatuhan dari regulator, klien, dan pemangku kepentingan lainnya
+- Memenuhi persyaratan kepatuhan dari regulator, klien, dan pemangku kepentingan lainnya termasuk UU PDP, OJK POJK 11/2022 (untuk klien FSI), dan BSSN regulations
 - Mengkomunikasikan komitmen manajemen puncak terhadap keamanan informasi
+
+**Catatan Penting tentang ISMS PT Ecomindo:**
+
+Sistem manajemen keamanan informasi (ISMS) PT Ecomindo terdiri dari dua komponen terintegrasi yang saling melengkapi:
+
+1. **Tata Kelola dan Kebijakan Keamanan Informasi (TK3I)** - dokumen ini: Menyajikan kebijakan, governance structure, peran dan tanggung jawab, serta prinsip-prinsip keamanan di tingkat strategis dan taktis.
+
+2. **Prosedur Operasional Keamanan Informasi (PROC-01 hingga PROC-09)**: Dokumentasi terpisah yang mendetailkan cara implementasi setiap kebijakan TK3I dalam aktivitas operasional sehari-hari dengan prosedur step-by-step, checklist, form, dan evidence requirements.
+
+Pembaca dokumen ini diharapkan juga merujuk ke prosedur operasional untuk memahami cara implementasi praktis dari setiap kebijakan yang ditetapkan di sini.
 
 ### 1.2 Definisi Istilah Penting
 
@@ -70,6 +82,7 @@ Dokumen Tata Kelola dan Kebijakan Keamanan Informasi ini dirancang untuk:
 | **Kontrol Keamanan** | Mekanisme atau prosedur untuk meminimalkan risiko keamanan informasi |
 | **Compliance** | Kepatuhan terhadap kebijakan, prosedur, standar, dan regulasi yang berlaku |
 | **Insiden Keamanan** | Kejadian yang mengindikasikan atau mengakibatkan gangguan pada keamanan informasi |
+| **ISMS (Information Security Management System)** | Sistem manajemen keamanan informasi PT Ecomindo yang terdiri dari: (1) Dokumen Tata Kelola dan Kebijakan Keamanan Informasi (TK3I - dokumen ini), dan (2) Prosedur Operasional Keamanan Informasi (PROC-01 hingga PROC-09) yang mendukung implementasi kebijakan |
 
 
 ## 2. VISI DAN MISI {#visi-dan-misi}
@@ -107,8 +120,9 @@ Pedoman TK3I ini berlaku untuk:
 
 - Semua unit organisasi dan departemen di PT Ecomindo
 - Semua karyawan, kontraktor, dan pihak ketiga yang bekerja atas nama organisasi
-- Semua sistem informasi, aplikasi, dan infrastruktur IT yang digunakan organisasi
+- Semua sistem informasi, aplikasi, cloud infrastructure (Azure, SaaS), dan aset digital yang digunakan organisasi
 - Semua data dan aset informasi milik organisasi atau klien
+- Semua aktivitas pengolahan data pribadi yang tunduk pada UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP)
 
 ### 4.2 10 Area Keamanan Informasi
 
@@ -132,31 +146,44 @@ Pedoman ini mencakup 10 area utama sesuai standar keamanan informasi internasion
 
 ### 5.1 Governance Model (ISO 27001 Aligned)
 
+**Catatan Penting tentang ISMS:** 
+ISMS (Information Security Management System) PT Ecomindo terdiri dari dua komponen terintegrasi:
+1. **Dokumen TK3I (Tata Kelola dan Kebijakan Keamanan Informasi)** - dokumen ini, yang menetapkan kebijakan, peran, dan tanggung jawab di tingkat strategis dan taktis
+2. **Prosedur Operasional Keamanan Informasi (PROC-01 hingga PROC-09)** - dokumentasi operasional yang mendetailkan cara mengimplementasikan kebijakan TK3I dalam aktivitas sehari-hari
+
+Struktur organisasi di bawah menunjukkan governance model untuk mengelola kedua komponen ISMS ini secara terintegrasi.
+
 ```mermaid
 graph TD
     %% Define Nodes
     BOD["**BOARD OF DIRECTORS**<br/>(C-level)"]
-    ISM["**INFORMATION SECURITY MANAGER (ISM)**"]
+    ISM["**INFORMATION SECURITY MANAGER (ISM)**<br/>Reports to CEO directly"]
+    IA["**KEPALA AUDIT INTERNAL**<br/>Reports to CEO/Board"]
+    DPO["**PEJABAT PELINDUNGAN DATA PRIBADI (DPO)**<br/>Reports to CEO directly"]
     
-    T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>- Risk Assess<br/>- Audit<br/>- Vendor Onboard<br/>- Cert & Compliance"]
-    T2["**Identity & Access Management**<br/>Team 2<br/><br/>- User Mgmt<br/>- MFA/VPN<br/>- Password Policy"]
-    T3["**Physical Security & Operations**<br/>Team 3<br/><br/>- Access Control<br/>- CCTV & Physical Access"]
-    T4["**Incident Response & Compliance**<br/>Team 4<br/><br/>- Incident Response<br/>- Forensics<br/>- Audit Trail"]
+    T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>- Risk Assess<br/>- Vendor Security<br/>- Compliance"]
+    T2["**Identity & Access Management**<br/>Team 2<br/><br/>- User Access<br/>- MFA/VPN<br/>- Password Policy"]
+    T3["**Cloud & Operations Security**<br/>Team 3<br/><br/>- Cloud Security<br/>- Infrastructure<br/>- Patch Mgmt"]
+    T4["**Incident Response & Monitoring**<br/>Team 4<br/><br/>- Incident Response<br/>- SIEM Monitoring<br/>- Forensics"]
 
     %% Define Connections
     BOD --> ISM
+    BOD --> IA
+    BOD --> DPO
     ISM --> T1
     ISM --> T2
     ISM --> T3
     ISM --> T4
+    IA -.->|Independent Review| ISM
+    DPO -.->|Privacy Coordination| T1
 
     %% Define Styling (Optional, to make it look nicer)
     classDef main fill:#f9f,stroke:#333,stroke-width:2px,color:black;
-    classDef manager fill:#ccf,stroke:#333,stroke-width:2px,color:black;
+    classDef governance fill:#fcc,stroke:#333,stroke-width:2px,color:black;
     classDef team fill:#fff,stroke:#333,stroke-width:1px,color:black,text-align:left;
 
     class BOD main;
-    class ISM manager;
+    class ISM,IA,DPO governance;
     class T1,T2,T3,T4 team;
 ```
 
@@ -164,13 +191,27 @@ graph TD
 
 **ISM melapor kepada:**
 
-- CEO atau COO dalam hal strategi dan kepatuhan keamanan informasi
-- Board/Audit Committee melalui laporan postur keamanan setiap kuartal
+- **Langsung kepada CEO** (bukan COO) untuk memastikan independensi ISMS
+- Board/ISMS Steering Committee melalui laporan postur keamanan setiap kuartal
+- ISM memiliki otoritas untuk mengescalate langsung ke CEO jika terjadi isu keamanan kritis
+
+**Kepala Audit Internal melapor kepada:**
+
+- **Langsung kepada CEO dan/atau Audit Committee** untuk memastikan independensi audit
+- Melakukan audit internal ISMS minimal satu kali per tahun
+- Tidak melaporkan kepada ISM (menghindari conflict of interest)
+
+**Pejabat Pelindungan Data Pribadi (DPO) melapor kepada:**
+
+- **Langsung kepada CEO** untuk memastikan independensi dalam perlindungan data pribadi
+- Bertanggung jawab atas kepatuhan UU PDP dan penanganan data subject rights
+- Berkoordinasi dengan ISM dalam hal keamanan data
 
 **ISM mengawasi:**
 
-- 4 Tim Keamanan (Policies, Identity, Physical, Incident Response)
-- Berkolaborasi dengan Departemen IT, HR, Finance, dan departemen lainnya
+- 4 Tim Keamanan (Policies & Risk Mgmt, Identity & Access Mgmt, Cloud & Operations Security, Incident Response & Monitoring)
+- Berkolaborasi dengan Departemen IT, HR, Finance, Legal, dan departemen lainnya
+- Berkoordinasi dengan DPO dalam hal privacy impact assessment
 
 
 ## 6. PERAN DAN TANGGUNG JAWAB {#peran-dan-tanggung-jawab}
@@ -195,28 +236,47 @@ graph TD
 - Mendukung alokasi anggaran untuk program keamanan
 - Memastikan terselenggaranya program kesadaran keamanan di seluruh organisasi
 - Memberikan persetujuan atas keputusan risiko tingkat tinggi
+- Memastikan fungsi Internal Audit independen dan beroperasi dengan efektif
+- Melakukan review kebijakan perlindungan data pribadi dan kepatuhan UU PDP
 
 
-### 6.2 Manajer Keamanan Informasi (ISM)
+### 6.2 Manajer Keamanan Informasi (ISM) / CISO
 
 **Peran:**
 
-- Pemilik TK3I dan program keamanan informasi
+- Pemilik ISMS (Information Security Management System) dan program keamanan informasi secara end-to-end
+  - **ISMS mencakup**: TK3I (dokumen kebijakan ini) + Prosedur Operasional PROC-01 hingga PROC-09
 - Penghubung utama antara IT, bisnis, dan kepatuhan
+- Memiliki independensi penuh untuk mengaudit dan mengevaluasi keamanan di seluruh organisasi
+- Otoritas untuk mengescalate ke CEO langsung tanpa melalui COO untuk isu keamanan kritis
 
 **Tanggung Jawab:**
 
-- Mengembangkan, mengimplementasikan, dan memelihara TK3I
+- Mengembangkan, mengimplementasikan, dan memelihara ISMS dan TK3I
+  - **ISMS implementation**: Memastikan TK3I (kebijakan) diterjemahkan ke prosedur operasional (PROC-01 hingga PROC-09) yang detail
+  - **Policy maintenance**: TK3I direview dan diperbarui minimal tahunan atau saat terjadi perubahan regulasi/bisnis
+  - **Procedure maintenance**: Prosedur operasional disesuaikan dengan perubahan kebijakan TK3I
 - Mendefinisikan kebijakan keamanan, standar, dan prosedur
-- Mengelola tim keamanan informasi
-- Melakukan penilaian risiko dan pengelolaan kerentanan
-- Mengawasi semua 10 domain keamanan
-- Melaporkan metrik keamanan kepada manajemen setiap bulan
-- Mengelola kepatuhan terhadap regulasi dan persyaratan pemangku kepentingan
-- Memimpin perencanaan respons insiden dan latihan
-- Melakukan pelatihan kesadaran keamanan secara teratur
-- Mengkoordinasikan dengan auditor eksternal dan penilai
-- Mengelola alokasi anggaran keamanan
+- Mengelola tim keamanan informasi (4 tim di bawah)
+- Melakukan penilaian risiko dan pengelolaan kerentanan secara komprehensif
+- Mengawasi semua 10 domain keamanan informasi
+- Melaporkan metrik keamanan kepada manajemen setiap bulan dan Board setiap kuartal
+- Mengelola kepatuhan terhadap regulasi (ISO 27001, UU PDP, OJK POJK untuk klien FSI, BSSN)
+- Memimpin perencanaan respons insiden dan latihan tabletop
+- Melakukan pelatihan kesadaran keamanan secara teratur untuk seluruh organisasi
+- Mengkoordinasikan dengan auditor eksternal dan penilai sertifikasi
+- Mengelola alokasi anggaran keamanan dan investasi keamanan
+- Berkoordinasi dengan DPO dalam hal Privacy Impact Assessment dan data protection compliance
+- Menyetujui semua exception dari security baseline dengan penilaian risiko
+- Memastikan semua tim keamanan mengikuti segregation of duties principles
+
+**Kualifikasi yang Diperlukan:**
+
+- Min. 7 tahun pengalaman keamanan informasi, dengan 3+ tahun di industri terregulasi (FSI, telco, healthcare)
+- Sertifikasi ISO/IEC 27001 Lead Implementer (PECB/IRCA) — wajib
+- Sertifikasi CISM atau CISSP — wajib
+- Pengalaman memimpin minimal 1 siklus sertifikasi ISO 27001
+- Pemahaman mendalam tentang UU PDP, OJK POJK, dan regulasi Indonesia lainnya
 
 ### 6.3 Information Security Teams
 
@@ -234,22 +294,26 @@ graph TD
 - Pengelolaan akses jarak jauh dan VPN
 - Tinjauan dan audit akses
 
-#### **Team 3: Physical Security & Operations**
+#### **Team 3: Cloud & Operations Security**
 
-- Implementasi kontrol akses fisik
-- Keamanan CCTV dan pusat data
-- Konfigurasi dan pengerasan keamanan
-- Firewall dan keamanan jaringan
-- Pengelolaan perubahan
-- Penilaian kerentanan dan patching
+- Cloud security posture management (Azure, SaaS infrastructure)
+- Keamanan Entra ID dan privileged access management (PAM)
+- Infrastructure-as-Code security review (Terraform, Bicep, ARM templates)
+- Konfigurasi dan pengerasan keamanan cloud resources
+- Firewall cloud dan segmentasi jaringan
+- Pengelolaan perubahan (change management)
+- Penilaian kerentanan dan patch management
+- Key Vault dan secrets management
+- Monitoring dan logging (Azure Defender, Sentinel)
 
-#### **Team 4: Incident Response & Compliance**
+#### **Team 4: Incident Response & Monitoring**
 
-- Deteksi dan respons insiden
+- Deteksi dan respons insiden keamanan (triage, containment, remediation)
+- SIEM dan centralized logging (Azure Sentinel atau MSSP)
 - Forensik digital dan pengumpulan bukti
-- Perencanaan pemulihan bencana dan kontinuitas bisnis
-- Pengelolaan jejak audit
-- Pemantauan kepatuhan
+- Perencanaan pemulihan bencana (DRP) dan kontinuitas bisnis (BCP)
+- Pengelolaan jejak audit dan compliance logging
+- Pemantauan kepatuhan real-time
 
 ### 6.4 IT Department
 
@@ -265,7 +329,81 @@ graph TD
 - Mendukung aktivitas respons insiden
 - Melaporkan insiden keamanan kepada ISM (Information Security Manager)
 
-### 6.5 Seluruh Karyawan
+### 6.5 Kepala Audit Internal
+
+**Peran:**
+
+- Melaksanakan audit internal ISMS secara independen
+- Memverifikasi efektivitas kontrol keamanan informasi
+- Melaporkan temuan audit kepada top management (CEO dan Board)
+- Liaison dengan auditor eksternal dan certification bodies
+
+**Tanggung Jawab:**
+
+- Merencanakan dan melaksanakan audit internal ISMS minimal 1 kali per tahun
+- Mengevaluasi kesesuaian ISMS dengan ISO 27001, standar best practices, dan regulasi yang berlaku
+- Menguji keefektifan kontrol keamanan informasi
+- Mendokumentasikan findings dan recommendations dalam audit report formal
+- Melacak remediation status temuan audit
+- Melaporkan langsung ke CEO dan/atau Audit Committee (jika ada)
+- Berkoordinasi dengan internal stakeholders untuk verifikasi corrective actions
+- Memastikan tidak ada segregation of duties conflict (tidak boleh mengaudit pekerjaan sendiri)
+
+**Kualifikasi yang Diperlukan:**
+
+- Min. 5 tahun pengalaman audit atau internal control
+- Sertifikasi ISO 27001 Lead Auditor (IRCA-accredited) — wajib
+- Sertifikasi CISA — direkomendasikan
+- Kemampuan menulis audit report dalam Bahasa Indonesia formal
+
+### 6.6 Pejabat Pelindungan Data Pribadi (DPO)
+
+**Peran:**
+
+- Memimpin kepatuhan UU PDP (UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi)
+- Melindungi hak-hak data subject (individu pemilik data pribadi)
+- Liaison dengan Otoritas Perlindungan Data Indonesia untuk breach notification
+- Mengevaluasi privacy impact dari semua pengolahan data pribadi
+
+**Tanggung Jawab:**
+
+- Memastikan kepatuhan UU PDP di semua pengolahan data pribadi organisasi dan klien
+- Mengelola Data Protection Impact Assessment (DPIA) sebelum pemrosesan data sensitif baru
+- Menangani data subject rights requests (akses data, koreksi, penghapusan)
+- Mengelola breach notification process (notifikasi ke autoritas dalam 72 jam)
+- Melakukan privacy training untuk karyawan yang menangani data pribadi
+- Melakukan kontrol data vendor dan third-party processor (DPA - Data Processing Agreement)
+- Melaporkan ke CEO dan Board tentang privacy compliance status
+- Berkoordinasi dengan ISM dalam hal security controls untuk data pribadi
+- Melacak perubahan regulasi PDP dan memastikan adaptasi prosedur
+- Mengelola consent mechanism untuk pemrosesan data pribadi
+
+**Kualifikasi yang Diperlukan:**
+
+- Latar belakang legal atau compliance
+- Pemahaman mendalam tentang UU PDP, BSSN regulations, OJK SE 21/2017 (untuk klien FSI)
+- Sertifikasi CIPM atau CIPP/E — direkomendasikan
+- Min. 4 tahun pengalaman privacy atau compliance
+
+### 6.7 Kepala IT Operations
+
+**Peran:**
+
+- Mengelola operasi cloud infrastructure (Azure, SaaS) sehari-hari
+- Mengimplementasikan security controls yang didefinisikan ISM
+- Pemilik asset cloud infrastructure dan backup/recovery
+
+**Tanggung Jawab:**
+
+- Menjalankan operasi cloud infrastructure sesuai security baseline
+- Mengimplementasikan patch management dan vulnerability remediation
+- Mengelola backup dan disaster recovery procedures
+- Menjalankan change management process (CAB approval)
+- Mendukung aktivitas monitoring dan logging
+- Melaporkan incident dan operational issues ke ISM
+- Tidak memiliki otoritas untuk approve perubahan yang mereka sendiri implementasikan (CAB adalah pihak ketiga)
+
+### 6.8 Seluruh Karyawan
 
 **Peran:**
 
@@ -283,7 +421,7 @@ graph TD
 - Buang dokumen sensitif dengan benar
 - Laporkan semua masalah keamanan kepada ISM atau IT
 
-### 6.6 HR Department
+### 6.9 HR Department
 
 **Peran:**
 
@@ -297,7 +435,7 @@ graph TD
 - Memfasilitasi proses pencabutan akses
 - Memelihara dokumentasi keamanan personel
 
-### 6.7 Manajemen (Seluruh Tingkatan)
+### 6.10 Manajemen (Seluruh Tingkatan)
 
 **Peran:**
 
@@ -314,7 +452,113 @@ graph TD
 
 ## 7. KEBIJAKAN KEAMANAN INFORMASI {#kebijakan-keamanan-informasi}
 
+### 7.1 ISMS Steering Committee
+
+PT Ecomindo membentuk komite steering untuk governance ISMS (TK3I + Procedures) secara berkala:
+
+**Komposisi:**
+
+- CEO (Chair)
+- COO
+- ISM (CISO) - pemilik ISMS
+- Kepala Audit Internal (Observer)
+- DPO (khusus untuk agenda privacy)
+- CTO/Head of Engineering (untuk agenda development security)
+
+**Cadence:**
+
+- Minimal sekali per kuartal
+- Selama tahun implementasi ISO 27001: bulanan
+
+**Agenda/Topik:**
+
+- Risk register review dan risk acceptance decisions
+- ISMS control implementation status (progress on TK3I policies + procedures)
+- Incident review dan post-incident actions
+- Audit findings dan remediation tracking
+- Policy approvals dan updates (perubahan TK3I)
+- Procedure updates (perubahan PROC-01 hingga PROC-09)
+- Resource allocation untuk keamanan
+- Compliance status vs. ISO 27001, UU PDP, regulasi lainnya
+
+**Dokumentasi:**
+
+- Meeting minutes dicatat formal
+- Decisions dan action items didokumentasikan
+- Escalation dari ISM atau Audit Internal ditangani dalam meeting ini
+- Tracking perubahan pada TK3I atau prosedur operasional yang diputuskan dalam komite
+
+### 7.2 Distributed Roles dan Responsibilities
+
+Selain struktur formal di atas, PT Ecomindo menunjuk tanggung jawab keamanan terdistribusi kepada staff existing untuk memastikan efektivitas ISMS:
+
+#### **Asset Owners (per departemen)**
+
+**Definisi:** Staff senior di setiap departemen yang bertanggung jawab atas aset informasi yang ada dalam departemen mereka
+
+**Tanggung Jawab:**
+
+- Mengidentifikasi dan mengklasifikasikan aset informasi di departemen
+- Menyetujui akses ke aset sesuai business need
+- Melaporkan perubahan kepemilikan aset atau kebutuhan akses kepada ISM
+- Berpartisipasi dalam risk assessment untuk aset mereka
+
+#### **Data Owners (per kategori data)**
+
+**Definisi:** Staff senior yang bertanggung jawab atas klasifikasi dan perlindungan data tertentu
+
+**Tanggung Jawab:**
+
+- Mengklasifikasikan data sesuai 4-tier classification: Public, Internal, Confidential, Restricted
+- Menyetujui akses ke data berdasarkan business need
+- Memastikan data dienkripsi sesuai level klasifikasi
+- Menangani data subject requests (untuk personal data di bawah UU PDP)
+- Melaporkan data classification disputes ke ISM
+
+**Hubungan dengan DPO:** Untuk personal data, Data Owner berkoordinasi dengan DPO untuk UU PDP compliance
+
+#### **Risk Owners (per domain)**
+
+**Definisi:** Staff senior atau process owner yang bertanggung jawab atas manajemen risiko dalam domain mereka
+
+**Tanggung Jawab:**
+
+- Mengidentifikasi risiko keamanan dalam domain/departemen mereka
+- Melakukan risk assessment dengan ISM menggunakan methodology formal
+- Menyetujui risk treatment plans dan accept residual risk
+- Melaporkan risk status kepada ISM dan ISMS Steering Committee
+- Mengimplementasikan mitigasi risiko sesuai timeline yang disepakati
+
+#### **Security Champions (1 per development team)**
+
+**Definisi:** Senior engineer atau tech lead yang bertindak sebagai liaison keamanan untuk tim mereka
+
+**Tanggung Jawab:**
+
+- Mempromosikan secure coding practices di tim
+- Melakukan security code review (minimal peer review)
+- Mengintegrasikan SAST/DAST/SCA tools ke development pipeline
+- Melaporkan security issues atau vulnerabilities ke ISM
+- Menghadiri AppSec training dan knowledge sharing
+- Time commitment: ~2-5 jam per minggu
+
 Dokumen ini adalah konsolidasi dari 10 kebijakan keamanan informasi utama yang mengacu pada standar keamanan informasi internasional dengan praktik terbaik.
+
+**Catatan Struktur ISMS:** 
+Setiap AREA di bawah (Area 1-10) menyajikan kebijakan strategis yang didukung oleh prosedur operasional detail:
+- **Kebijakan (TK3I)**: Dalam dokumen ini - menetapkan TUJUAN, RUANG LINGKUP, KEBIJAKAN UTAMA, TANGGUNG JAWAB
+- **Prosedur Operasional (PROC-01 hingga PROC-09)**: Dokumen terpisah yang mendetailkan CARA implementasi setiap kebijakan (langkah demi langkah, form, checklist, evidence)
+
+**Mapping AREA ke Prosedur:**
+- AREA 1-2: Dukungan PROC-06 (Awareness & Compliance), PROC-07 (Risk Management)
+- AREA 3: Dukungan PROC-06 (Awareness), struktur organisasi per bab 5-6 TK3I
+- AREA 4: Dukungan PROC-02 (Access Control & Lifecycle), PROC-01 (Employment)
+- AREA 5: Dukungan PROC-04 (Asset Management & Data Protection)
+- AREA 6: Dukungan PROC-02 (Access Control)
+- AREA 7: Dukungan PROC-05 (Physical Security)
+- AREA 8: Dukungan PROC-03 (Operational Security)
+- AREA 9: Dukungan PROC-09 (System Development & Security)
+- AREA 10: Dukungan PROC-08 (Business Continuity & DR)
 
 
 ## AREA 1: MANAJEMEN RISIKO KEAMANAN INFORMASI {#area-1}
@@ -355,9 +599,9 @@ PT Ecomindo wajib melaksanakan audit keamanan internal dan eksternal secara tera
 - Audit eksternal dilakukan oleh pihak independen
 - Setiap aktivitas audit menghasilkan ringkasan eksekutif dan dokumentasi lengkap
 
-#### **1.3.3 Penerapan Security Requirements Berdasarkan Best Practices**
+#### **1.3.3 Penerapan Security Requirements Berdasarkan Best Practices untuk Cloud-Native Organization**
 
-PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar best practices.
+PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar best practices. Karena infrastruktur PT Ecomindo adalah cloud-native (Azure, SaaS), fokus keamanan adalah pada cloud security, application security, dan data protection bukan on-premises infrastructure.
 
 **Standar yang Diikuti:**
 
@@ -365,18 +609,21 @@ PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar b
 - NIST Cybersecurity Framework - Core functions: Identify, Protect, Detect, Respond, Recover
 - CIS Critical Security Controls - Top 18-20 security controls
 - OWASP Top 10 - Untuk application security
+- CIS Azure Foundations Benchmark - Untuk Azure cloud security
+- UU PDP (UU No. 27/2022) - Untuk personal data protection
+- OJK POJK 11/POJK.03/2022 - Untuk klien FSI
 
 **Kebijakan Implementasi:**
 
-- OS Hardening (Windows, Linux) dilakukan sesuai CIS Benchmark
-- Database Hardening dilakukan sesuai standar vendor
-- Network Hardening mencakup firewall, WAF, dan segmentasi
-- Application Security meliputi secure coding, SAST/DAST
-- Encryption Standards meliputi TLS 1.2+ dan AES-256 untuk data at rest
-- Identity & Access menerapkan RBAC, MFA, dan password policy
-- Monitoring & Logging menggunakan SIEM dan centralized logging
-- Incident Response didokumentasikan secara formal
-- Business Continuity mencakup DRP dan BCP
+- **Cloud Infrastructure Hardening (Azure)**: Azure Defender, Network Security Groups, firewall rules, private endpoints
+- **Identity & Access Management**: Entra ID, MFA, Privileged Access Management (PAM), RBAC
+- **Data Protection**: Encryption at-rest (AES-256 in Key Vault), encryption in-transit (TLS 1.2+), data classification
+- **Application Security**: Secure coding (OWASP ASVS), SAST/DAST/SCA, dependency scanning, code review
+- **Monitoring & Logging**: Azure Sentinel/SIEM, centralized logging, alert rules for security events
+- **Incident Response**: Formal IR procedures, containment, remediation, post-incident review
+- **Business Continuity**: DRP dan BCP dengan RPO/RTO targets
+- **Vendor Security**: Vendor due diligence, SLA security clauses, continuous monitoring
+- **Personal Data Protection**: Data subject rights handling per UU PDP, DPIA, breach notification (72 hours)
 
 **Kebijakan Verifikasi:**
 
@@ -483,10 +730,14 @@ PT Ecomindo memiliki kebijakan security baseline yang disahkan formal dan direvi
 
 ### 2.4 Tanggung Jawab
 
-- **ISM (Manajer Keamanan Informasi)**: Merancang dan memelihara kebijakan, menyetujui pengecualian
-- **IT Department**: Menerapkan baseline, memelihara dokumentasi
-- **HR**: Memfasilitasi pelaksanaan pelatihan
-- **All Employees**: Mematuhi kebijakan, menghadiri pelatihan
+| Fungsi | Tanggung Jawab |
+|--------|----------------|
+| **ISM** | Merancang dan memelihara kebijakan, menyetujui pengecualian dengan formal risk assessment |
+| **Kepala Audit Internal** | Memverifikasi implementasi kebijakan sesuai ISO 27001 dan best practices |
+| **DPO** | Memastikan kebijakan UU PDP-compliant, khususnya untuk personal data handling |
+| **IT Department** | Menerapkan baseline cloud security, memelihara dokumentasi, melaporkan compliance status |
+| **HR** | Memfasilitasi pelaksanaan awareness training, melacak completion rate, dokumentasi kehadiran |
+| **All Employees** | Mematuhi kebijakan, menghadiri training, melaporkan violations segera |
 
 ### 2.5 Frekuensi & Peninjauan
 
@@ -511,25 +762,28 @@ Kebijakan ini meliputi:
 
 ### 3.3 Requirement
 
-#### **3.3.1 Struktur Organisasi Keamanan Informasi**
+#### **3.3.1 Struktur Organisasi Keamanan Informasi (Aligned ISO 27001 Clause 5 & 7)**
 
-PT Ecomindo memiliki tim keamanan informasi yang khusus (bukan digabung dengan fungsi lain):
+PT Ecomindo memiliki struktur organisasi keamanan informasi yang formal dengan pelaporan langsung ke C-level:
 
-**Minimal Struktur yang Diperlukan:**
+**Struktur Mandatory yang Wajib Ada (per Section 6 dokumen ini):**
 
-1. **ISM (Information Security Manager)** - Melapor kepada CEO/Direktur
-2. **Security Policy & Compliance Officer** - Mengelola kebijakan, audit, kepatuhan
-3. **Identity & Access Management Officer** - Mengelola akses pengguna, autentikasi
-4. **Operations Security Officer** - Mengelola jaringan, operasi, respons insiden
-5. **Physical & Environmental Security Officer** - Mengelola akses fisik, pusat data
-
-**Posisi dapat dijabat oleh 1 orang (organisasi kecil) atau beberapa orang (organisasi besar) - tapi HARUS ada dedikasi yang jelas.**
+1. **ISM (Information Security Manager) / CISO** - Melapor LANGSUNG ke CEO (tidak boleh melalui COO)
+2. **Kepala Audit Internal** - Melapor ke CEO/Board (independent dari ISM)
+3. **Pejabat Pelindungan Data Pribadi (DPO)** - Melapor ke CEO (untuk UU PDP compliance)
+4. **Team 1: Policy & Risk Management** - Di bawah ISM
+5. **Team 2: Identity & Access Management** - Di bawah ISM  
+6. **Team 3: Cloud & Operations Security** - Di bawah ISM
+7. **Team 4: Incident Response & Monitoring** - Di bawah ISM
 
 **Dokumentasi Wajib:**
 
-- Bagan Organisasi yang menunjukkan struktur keamanan informasi
-- Jalur pelaporan yang jelas dengan CEO
-- Dokumentasi formal bahwa ini adalah posisi khusus
+- Bagan Organisasi formal yang menunjukkan struktur keamanan informasi dan reporting lines
+- Jalur pelaporan yang jelas dengan CEO (ISM HARUS report langsung ke CEO, TIDAK ke COO)
+- Dokumentasi formal bahwa ISM, DPO, dan Kepala Audit adalah posisi independent
+- Peraturan CEO atau Board yang menunjukkan appointment formal ISM, DPO, dan Kepala Audit
+- Deskripsi formal tentang Internal Audit function (in-house atau outsourced)
+- Dokumentasi ISMS Steering Committee dengan komposisi dan cadence
 
 #### **3.3.2 Job Description untuk Posisi Keamanan Informasi**
 
@@ -586,10 +840,14 @@ PT Ecomindo menetapkan program kesadaran keamanan yang dijalankan melalui komuni
 
 ### 3.4 Tanggung Jawab
 
-- **ISM (Information Security Manager)**: Memimpin program awareness, mengembangkan konten
-- **HR**: Mendukung pelaksanaan pelatihan, memelihara rekaman
-- **All Managers**: Memastikan tim menghadiri pelatihan
-- **All Employees**: Menghadiri pelatihan wajib, menerapkan praktik keamanan
+| Fungsi | Tanggung Jawab |
+|--------|----------------|
+| **ISM** | Memimpin program awareness, mengembangkan konten training, koordinasi dengan HR |
+| **Kepala Audit Internal** | Memverifikasi efektivitas program awareness dan compliance |
+| **DPO** | Memastikan content awareness mencakup UU PDP dan privacy rights |
+| **HR** | Mendukung pelaksanaan pelatihan, melacak attendance, maintain records |
+| **All Managers** | Memastikan tim menghadiri pelatihan wajib, reinforce security culture |
+| **All Employees** | Menghadiri pelatihan wajib, menerapkan praktik keamanan, melaporkan issues |
 
 ### 3.5 Frekuensi & Peninjauan
 
@@ -709,10 +967,13 @@ PT Ecomindo memiliki kebijakan NDA formal:
 
 ### 4.4 Tanggung Jawab
 
-- **HR Department**: Memimpin rekrutmen, memelihara salinan NDA, mengkoordinasikan terminasi
-- **ISM**: Persetujuan untuk kebijakan rekrutmen, audit kepatuhan NDA
-- **IT/Admin**: Melaksanakan pencabutan akses di sistem
-- **Managers**: Memberitahu HR tentang terminasi segera
+| Fungsi | Tanggung Jawab |
+|--------|----------------|
+| **HR Department** | Memimpin rekrutmen, memelihara salinan NDA, mengkoordinasikan terminasi, maintain background check records |
+| **ISM** | Persetujuan kebijakan rekrutmen, audit NDA compliance, coordinate with DPO for UU PDP checks |
+| **DPO** | Memastikan background check compliant dengan UU PDP, handle data subject rights |
+| **IT/Admin** | Melaksanakan pencabutan akses di sistem dalam 24 jam dari termination date |
+| **Managers** | Memberitahu HR tentang terminasi segera, memfasilitasi exit process |
 
 ### 4.5 Frekuensi & Peninjauan
 
@@ -726,15 +987,17 @@ PT Ecomindo memiliki kebijakan NDA formal:
 
 ### 5.1 Tujuan Kebijakan
 
-Kebijakan ini mengatur perlindungan komprehensif untuk semua data dan aset informasi PT Ecomindo, mencakup klasifikasi, enkripsi, secure disposal, dan removable media protection.
+Kebijakan ini mengatur perlindungan komprehensif untuk semua data dan aset informasi PT Ecomindo, mencakup klasifikasi, enkripsi, secure disposal, dan removable media protection. Kebijakan ini juga memastikan kepatuhan terhadap UU PDP (UU No. 27/2022) untuk perlindungan data pribadi yang diproses oleh organisasi.
 
 ### 5.2 Ruang Lingkup
 
 Kebijakan ini berlaku untuk:
 
-- Semua data (transisional, historical, backup)
-- Semua perangkat (servers, workstations, removable media)
+- Semua data organisasi (transisional, historical, backup) termasuk personal data (data pribadi)
+- Semua perangkat cloud (Azure storage, databases) dan workstations lokal
+- Semua removable media (USB drives, external drives, SD cards)
 - Semua aset informasi milik organisasi atau klien
+- Semua pemrosesan data pribadi yang tunduk pada UU PDP
 
 ### 5.3 Requirement 
 
@@ -742,18 +1005,19 @@ Kebijakan ini berlaku untuk:
 
 PT Ecomindo menetapkan 4 komponen WAJIB dalam kebijakan pengamanan data:
 
-**A. Data Classification**
+**A. Data Classification (per ISO 27001 & UU PDP)**
 
 - Semua data harus diklasifikasikan ke dalam salah satu level:
   1. **Public** - Data yang dapat dibagikan ke publik (marketing materials, public info)
   2. **Internal** - Data internal only (policies, non-sensitive memos)
   3. **Confidential** - Sensitive business data (financial, strategic plans)
-  4. **Restricted** - Highest sensitivity (personal data, security credentials, data sensitif perusahaan)
+  4. **Restricted** - Highest sensitivity (personal data, security credentials, sensitive customer data)
 
+- Untuk **Personal Data** (di bawah UU PDP): minimal harus Confidential atau Restricted
 - Setiap data harus memiliki label/tag dengan klasifikasi
-- Pemilik yang berbeda untuk setiap level
+- Data Owner ditunjuk formal untuk setiap kategori data
 - Pembatasan penanganan yang berbeda sesuai klasifikasi
-- Kebijakan klasifikasi formal dan terdokumentasi
+- Kebijakan klasifikasi formal dan terdokumentasi dengan example data types
 
 **B. Encryption Standards**
 
@@ -797,56 +1061,61 @@ PT Ecomindo menetapkan 4 komponen WAJIB dalam kebijakan pengamanan data:
      - Monitoring logs of USB connections
   4. **Disposal**: Proses pembuangan aman yang sama sebagai perangkat lainnya
 
-#### **5.3.2 Cloud Data Security Policy (PaaS/SaaS/IaaS)**
+#### **5.3.2 Cloud Data Security Policy untuk Azure & SaaS Services**
 
-Untuk organisasi yang menggunakan cloud services, kebijakan ini mencakup 6 components:
+Karena PT Ecomindo adalah cloud-native organization (Azure, SaaS), kebijakan ini fokus pada cloud data security:
 
-**A. Data Classification** - Sama seperti 5.3.1.A untuk cloud data
+**A. Data Classification** - Sama seperti 5.3.1.A untuk cloud data dengan tagging di Azure
 
-**B. Encryption**
+**B. Encryption untuk Azure**
 
-- Data-at-transit dienkripsi (TLS 1.2+) ke/dari cloud provider
-- Data-at-rest dienkripsi di cloud storage
-- Encryption keys: Baik dikelola pelanggan atau dikelola penyedia cloud yang diverifikasi
-- Backup encryption: Semua cloud backups harus dienkripsi
+- **Azure Storage Encryption**:
+  - Gunakan Storage Service Encryption (SSE) dengan Azure-managed atau customer-managed keys
+  - Customer-managed keys disimpan di Azure Key Vault dengan access controls
+  - Key rotation: Implement automatic key rotation di Key Vault
+  
+- **Azure SQL Database Encryption**:
+  - Gunakan Transparent Data Encryption (TDE) untuk database-level encryption
+  - Always Encrypted untuk column-level encryption untuk PII columns
+  - Backup encryption: Backups harus dienkripsi automatic
 
-**C. Personal Data & PII Protection**
+- **Encryption in-transit**:
+  - TLS 1.2 minimum untuk Azure services
+  - Azure Private Link untuk private connectivity
 
-- Requirement: Identifikasi dan lindungi PII (names, emails, phone, addresses, SSN, etc.)
-- Encryption: PII harus dienkripsi
-- Masking: Untuk development/testing, PII harus ditutupi/dianonimkan
-- Privacy: Patuhi regulasi privasi data (GDPR, PDPA, etc.)
+**C. Personal Data & UU PDP Compliance**
 
-**D. Backup & Restore**
+- **Data Discovery**: Identify semua PII columns/fields
+- **Encryption**: PII harus encrypted
+- **Masking**: Development/testing gunakan Dynamic Data Masking
+- **Data Subject Rights**: Implement access, deletion, correction processes
+- **Retention**: Automatic retention policies (tidak selamanya)
 
-- Cloud provider harus menyediakan:
-  - Automated backup frequency (minimal harian)
-  - Multiple geographic locations untuk redundancy
-  - Clear RTO/RPO SLA dalam contract
-  - Test restore capability secara teratur (minimal triwulanan)
-  - Encryption untuk backups
+**D. Azure Backup & Disaster Recovery**
 
-**E. Secure Disposal**
+- **Automated Backups**: Daily dengan RTO/RPO SLA
+- **Test Restores**: Minimal triwulanan
+- **Geographic Redundancy**: Multi-region backup
 
-- Kebijakan jelas untuk penghapusan data dari cloud:
-  - When contract ends: Semua data harus dihapus atau dikembalikan
-  - Timeline: Penghapusan dalam 30-90 hari (per contract)
-  - Verification: Certificate of deletion
-  - Residual data check: Pastikan tidak ada salinan yang tersisa di sistem penyedia cloud
+**E. Secure Deletion**
 
-**F. Secure Deletion from Cache**
+- Hard delete dengan audit trail
+- Certificate of deletion untuk compliance
 
-- Cloud provider harus menghapus secara aman:
-  - Cache data ketika objek dihapus
-  - Temporary files setelah operasi
-  - Logs retention sesuai kebijakan (tidak selamanya)
-  - Documentation: Kebijakan retention jelas dalam kontrak
+**F. SaaS Data Security**
+
+- **MFA**: Wajib untuk semua SaaS accounts
+- **Audit Logging**: Enable untuk track access
+- **DPA**: Wajib untuk SaaS handling personal data
 
 ### 5.4 Tanggung Jawab
 
-- **Data Owner**: Klasifikasikan data, setujui pembuangan
-- **IT Department**: Terapkan enkripsi, jalankan pembuangan, pantau kepatuhan
-- **ISM**: Setujui kebijakan penanganan data, audit kepatuhan
+| Fungsi | Tanggung Jawab |
+|--------|----------------|
+| **Data Owner** | Klasifikasikan data sesuai 4-tier, approve data access requests, handle data subject requests (UU PDP) |
+| **DPO** | Memastikan personal data dikode sesuai UU PDP, coordinate data subject rights |
+| **IT Department** | Terapkan enkripsi di cloud dan lokal, jalankan secure disposal, maintain audit logs |
+| **ISM** | Setujui kebijakan penanganan data, audit kepatuhan encryption dan disposal |
 
 ### 5.5 Frekuensi & Peninjauan
 

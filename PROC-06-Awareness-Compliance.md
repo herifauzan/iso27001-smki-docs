@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Manajer HR |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer HR | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -84,13 +85,13 @@ Prosedur ini berlaku untuk seluruh karyawan, kontraktor, dan pihak ketiga, terma
 1. **Pelatihan Keamanan Tahunan** (Tim Keamanan - Setiap tahun)
 
    - Melaksanakan pelatihan komprehensif selama 8 jam yang mencakup seluruh aspek keamanan informasi
-   - Materi pelatihan mencakup seluruh 10 area kebijakan keamanan informasi
+   - Materi pelatihan mencakup seluruh 10 area kebijakan keamanan informasi serta prinsip pelindungan data pribadi sesuai UU PDP
    - Mengadakan penilaian tertulis dengan nilai kelulusan minimal 80%
 
 2. **Pelatihan Berbasis Topik** (Tim Keamanan - Sesuai kebutuhan)
 
    - Kesadaran phishing: Dilaksanakan setiap bulan melalui simulasi dan edukasi
-   - Prosedur penanganan data: Dilaksanakan setiap triwulan
+   - Prosedur penanganan data dan pelindungan data pribadi (UU PDP): Dilaksanakan setiap triwulan
    - Pelaporan insiden: Dilaksanakan setelah terjadinya insiden keamanan
 
 3. **Pelatihan Manajemen** (Tim Keamanan - Setiap tahun)
@@ -375,7 +376,7 @@ Tanggal: __________
 | Petugas Kesadaran Keamanan | Menyelenggarakan pelatihan dan menyusun materi edukasi |
 | Manajer HR | Mengoordinasikan orientasi karyawan dan proses disipliner |
 | Kepala Departemen | Memantau kepatuhan keamanan di departemen masing-masing |
-| Tim Audit Internal | Melaksanakan audit kepatuhan secara berkala |
+| Kepala Audit Internal | Melakukan audit independen terhadap efektivitas program kesadaran dan tingkat kepatuhan |
 | Seluruh Karyawan | Mematuhi kebijakan dan melaporkan insiden keamanan |
 
 
@@ -383,7 +384,7 @@ Tanggal: __________
 
 - **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan pada kebijakan atau lingkungan ancaman
 - **Tanggung Jawab Peninjauan:** Tim Keamanan dan Tim HR
-- **Persetujuan Pembaruan:** ISM dan Manajemen
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

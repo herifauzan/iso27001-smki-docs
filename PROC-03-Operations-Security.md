@@ -14,11 +14,12 @@
 ## Lembar Pengesahan
 
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Manajer IT Operations |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer IT Operations | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -108,8 +109,8 @@ Prosedur ini mengatur tata cara pencadangan (backup) dan pemulihan (recovery) da
 3. **Penyimpanan dan Retensi Backup** (IT Operations - Berkelanjutan)
 
 
-   - **Penyimpanan Lokal:** Backup disimpan di perangkat NAS (Network Attached Storage) terenkripsi di lokasi server utama
-   - **Penyimpanan Offsite:** Backup full mingguan dikirim ke cloud storage atau lokasi terpisah secara geografis
+   - **Penyimpanan Utama:** Backup disimpan di layanan storage terenkripsi (mis. Azure Blob Storage) dengan redundansi LRS/ZRS
+   - **Penyimpanan Sekunder/Offsite:** Backup full mingguan direplikasi ke *secondary Azure region* atau penyedia cloud terpisah secara geografis
    - Enkripsi backup wajib diterapkan baik saat penyimpanan (at rest) maupun pengiriman (in transit)
    - Kebijakan retensi backup yang berlaku:
      - Backup harian disimpan selama **30 hari**
@@ -824,7 +825,7 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
 
 
    - **Penyimpanan Panas (Hot Storage):** 3 bulan terakhir disimpan di SIEM server untuk akses cepat
-   - **Penyimpanan Hangat (Warm Storage):** 3-12 bulan disimpan di NAS atau object storage internal
+   - **Penyimpanan Hangat (Warm Storage):** 3-12 bulan disimpan di Azure Blob Storage (Cool Tier) atau object storage setara
    - **Penyimpanan Dingin (Cold Storage):** >12 bulan diarsipkan ke cold storage terenkripsi (cloud atau tape)
 
 
@@ -1048,7 +1049,9 @@ Prosedur ini mengatur standar pengembangan perangkat lunak yang aman dan mekanis
 
 1. **Prinsip Dasar Secure Coding yang Wajib Diterapkan** (Developer - Setiap pengembangan)
 
-
+   - **Konteks Khusus Pengembangan:**
+     - **Untuk Consulting Delivery:** Praktik secure coding dan pengamanan source code wajib menyesuaikan dengan lingkungan dan standar klien. Source code klien tidak boleh di-clone atau disimpan di repository Ecomindo kecuali terdapat perjanjian tertulis (NDA/SLA).
+     - **Untuk Product Development:** Pengembangan produk internal tunduk penuh pada standar OWASP ASVS dan pengamanan source code repositori internal Ecomindo.
    - **Validasi Input:** Semua input dari pengguna atau sistem eksternal wajib divalidasi dan di-sanitasi sebelum diproses - tidak ada kepercayaan implisit terhadap data yang masuk (zero-trust input)
    - **Parameterized Query / Prepared Statement:** Seluruh query database wajib menggunakan parameterized query atau stored procedure untuk mencegah SQL Injection
    - **Output Encoding:** Output yang ditampilkan ke browser wajib di-encode untuk mencegah Cross-Site Scripting (XSS)
@@ -1332,7 +1335,8 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Mengawasi keseluruhan operasi keamanan, memantau insiden, dan mengoordinasikan respons |
+| ISM | Mengawasi keseluruhan operasi keamanan, memantau insiden, menyiapkan kebijakan, dan mengoordinasikan respons |
+| Kepala Audit Internal | Melakukan audit independen terhadap operasi keamanan, log, dan manajemen perubahan |
 | IT Operations | Mengelola operasi harian dan melaksanakan proses manajemen perubahan |
 | Developer | Melaksanakan pengembangan sistem yang aman, menerapkan secure coding, dan mengelola keamanan repository |
 | IT Security | Mengelola kerentanan dan melaksanakan deployment patch keamanan |
@@ -1343,7 +1347,7 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 - **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan pada infrastruktur atau kebijakan
 - **Tanggung Jawab Peninjauan:** Tim IT Operations dan Tim Security
-- **Persetujuan Pembaruan:** ISM dan Manajemen
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

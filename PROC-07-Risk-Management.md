@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Utama / CEO | Ahmad Firdaus |   |   |
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Utama / CEO | Ahmad Firdaus | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 
@@ -345,7 +346,8 @@ Tanggal: __________                 Tanggal: __________
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Memimpin seluruh proses manajemen risiko, memelihara Risk Register, melaporkan kepada manajemen |
+| ISM | Memimpin seluruh proses manajemen risiko, memelihara Risk Register, menyiapkan laporan |
+| Kepala Audit Internal | Melakukan audit independen terhadap efektivitas proses manajemen risiko |
 | Tim Risk Management (Team 1) | Melaksanakan penilaian risiko, menganalisis ancaman dan kerentanan |
 | IT Security | Menyediakan data kerentanan teknis, melaksanakan kontrol mitigasi |
 | Pemilik Aset / Kepala Departemen | Menilai dampak bisnis, menyetujui opsi penanganan risiko |
@@ -357,7 +359,7 @@ Tanggal: __________                 Tanggal: __________
 
 - **Frekuensi Peninjauan Prosedur:** Setiap tahun atau ketika terjadi perubahan signifikan pada metodologi atau standar
 - **Tanggung Jawab Peninjauan:** ISM dan Tim Risk Management
-- **Persetujuan Pembaruan:** ISM dan COO
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

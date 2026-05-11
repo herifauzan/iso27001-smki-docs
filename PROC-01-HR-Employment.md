@@ -14,11 +14,12 @@
 ## Lembar Pengesahan
 
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM)| Heri Fauzan |   |   |
-| Manajer HR |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer HR | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -60,6 +61,7 @@ Prosedur ini berlaku untuk:
 | **Manajer Perekrutan** | Menyetujui daftar kandidat, persetujuan akhir perekrutan |
 | **Koordinator HR** | Mengeksekusi pemeriksaan latar belakang, mempertahankan catatan |
 | **ISM (Manajer Keamanan Informasi)** | Menyetujui kebijakan pemeriksaan latar belakang, meninjau kandidat tingkat tinggi |
+| **Kepala Audit Internal** | Memverifikasi kepatuhan proses rekrutmen terhadap prosedur keamanan (audit tahunan) |
 | Penyedia Jasa Pemeriksaan Latar Belakang | Melakukan verifikasi (outsourced atau internal) |
 
 
@@ -464,6 +466,7 @@ Prosedur ini berlaku untuk:
 | **Admin Sistem IT** | Menonaktifkan akun sistem |
 | **Fasilitas** | Mencabut akses fisik kartu lencana |
 | **ISM** | Pengawasan, verifikasi |
+| **Kepala Audit Internal** | Mengaudit kepatuhan proses pencabutan akses secara berkala |
 
 
 ### 2.4 Daftar Periksa Timeline Pembersihan Akses

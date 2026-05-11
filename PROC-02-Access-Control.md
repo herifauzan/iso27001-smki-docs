@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Manajer HR |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer HR | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -46,8 +47,9 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
 
 - Sistem ERP dan basis data internal
 - Akses jaringan dan internet
-- Akses fisik ke ruang server dan workstation
+- Akses fisik ke kantor dan workstation
 - Akses jarak jauh dan VPN
+- Lingkungan klien (Consulting) dan lingkungan kode internal (Product Development)
 
 ### 1.3 Referensi
 
@@ -64,6 +66,9 @@ Prosedur ini berlaku untuk seluruh sistem informasi, aplikasi, dan data perusaha
 
    - Pengguna baru mengisi Formulir Permintaan Akses (Form-AK-01)
    - Manajer departemen meninjau dan menyetujui permintaan tersebut
+   - **Konteks Khusus Pekerjaan:**
+     - **Untuk Consulting Delivery:** Akses ke lingkungan klien memerlukan persetujuan tambahan dari Head of Consulting Delivery dan penandatanganan NDA spesifik klien.
+     - **Untuk Product Development:** Akses ke source code internal dan infrastruktur cloud pengembangan memerlukan persetujuan dari Head of Software Engineering.
    - HR mengirimkan permintaan yang telah disetujui kepada Tim IT Security
 
 2. **Verifikasi Identitas** (IT Security - 1 hari kerja)
@@ -372,7 +377,8 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Mengawasi keseluruhan pengendalian akses dan menyetujui kebijakan |
+| ISM | Mengawasi keseluruhan pengendalian akses dan menyiapkan kebijakan |
+| Kepala Audit Internal | Melakukan audit independen terhadap proses pemberian dan penghapusan akses |
 | Petugas IT Security | Melaksanakan implementasi teknis dan pemantauan akses |
 | Manajer HR | Mengoordinasikan akses karyawan dan proses pengembalian aset |
 | Manajer Departemen | Memberikan persetujuan akses untuk anggota departemennya |
@@ -384,7 +390,7 @@ Jika ditemukan akses yang tidak sah, langkah-langkah berikut harus segera dilaku
 
 - **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan terhadap sistem atau kebijakan
 - **Tanggung Jawab Peninjauan:** Tim IT Security
-- **Persetujuan Pembaruan:** ISM dan Manajemen
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran

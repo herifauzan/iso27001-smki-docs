@@ -11,11 +11,12 @@
 
 ## Lembar Pengesahan
 
-| Jabatan | Nama | Tanda Tangan | Tanggal |
-|---------|------|-------------|--------|
-| Direktur Operasional / COO | Dodi Darundriyo |   |   |
-| Manajer Keamanan Informasi (ISM) | Heri Fauzan |   |   |
-| Manajer Fasilitas |  |  |  |
+| Peran | Jabatan | Nama | Tanda Tangan | Tanggal |
+|-------|---------|------|-------------|---------|
+| Disiapkan oleh | Manajer Keamanan Informasi (ISM) | Heri Fauzan | | |
+| Disiapkan oleh | Manajer Fasilitas | | | |
+| Direview oleh | Kepala Audit Internal | TBD | | |
+| Disetujui oleh | Direktur Operasional / COO | Dodi Darundriyo | | |
 
 
 ## Daftar Isi
@@ -46,7 +47,7 @@ Prosedur ini mengatur keamanan fisik fasilitas PT Ecomindo Sarana Cipta sesuai d
 Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 - Kantor pusat dan kantor cabang
-- Ruang server dan pusat data (data center)
+- Ruang jaringan/komunikasi (Network Room) kantor
 - Area kerja karyawan
 - Area publik dan area penerimaan pengunjung
 - Lokasi kerja jarak jauh (remote sites) dan lingkungan kerja dari rumah
@@ -89,16 +90,10 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
 
 #### Akses Area Sensitif:
 
-1. **Akses Ruang Server** (IT Security - Terbatas)
+1. **Akses Ruang Jaringan/Komunikasi** (IT Security - Terbatas)
 
    - Akses hanya diberikan kepada personel yang berwenang dan terdaftar
    - Menggunakan otentikasi ganda (kartu akses + PIN) untuk masuk
-   - Menerapkan sistem mantrap untuk area dengan keamanan tertinggi
-
-2. **Akses Pusat Data (Data Center)** (IT Security - Terbatas)
-
-   - Otorisasi terlebih dahulu (pre-authorization) wajib diperoleh sebelum akses
-   - Pengunjung wajib didampingi oleh personel berwenang selama berada di area
    - Seluruh aktivitas akses dicatat secara lengkap dalam log audit
 
 ### 2.2 Prosedur Pengamanan Peralatan
@@ -123,7 +118,7 @@ Prosedur ini berlaku untuk seluruh lokasi fisik perusahaan, termasuk:
    - Melacak lokasi dan kondisi peralatan selama masa peminjaman
    - Melakukan pemeriksaan kondisi saat pengembalian sebelum tenggat waktu
 
-#### Keamanan Ruang Server:
+#### Keamanan Ruang Jaringan/Komunikasi:
 
 1. **Kontrol Lingkungan** (Tim Fasilitas - Berkelanjutan)
 
@@ -310,7 +305,7 @@ Security Officer: _________________
 □ Sistem kontrol akses berfungsi dengan baik
 □ Jalur darurat tidak terhalang
 □ Alat pemadam kebakaran tersedia di tempatnya
-□ Akses ruang server dalam keadaan aman
+□ Akses ruang jaringan/komunikasi dalam keadaan aman
 □ Log pengunjung telah diperbarui
 □ Aktivitas mencurigakan telah dilaporkan
 
@@ -347,7 +342,7 @@ __________________________________
 ### Persyaratan Keamanan Fisik:
 
 - ✅ **PS-1**: Kontrol akses fisik diterapkan secara berlapis dengan pemantauan menyeluruh
-- ✅ **PS-2**: Perlindungan area sensitif dijamin melalui sistem mantrap di ruang server
+- ✅ **PS-2**: Perlindungan area sensitif dijamin melalui kontrol akses ketat di ruang jaringan/komunikasi
 - ✅ **PS-3**: Keamanan peralatan diterapkan melalui prosedur penguncian dan pelacakan
 - ✅ **PS-4**: Manajemen pengunjung dikelola melalui registrasi dan pendampingan
 - ✅ **PS-5**: Kontrol lingkungan diterapkan melalui sistem HVAC dan pemadaman kebakaran
@@ -360,10 +355,11 @@ __________________________________
 
 | Peran | Tanggung Jawab |
 |-------|----------------|
-| ISM | Mengawasi keseluruhan program keamanan fisik |
+| ISM | Mengawasi keseluruhan program keamanan fisik dan menyiapkan kebijakan |
+| Kepala Audit Internal | Melakukan audit independen terhadap kontrol keamanan fisik kantor dan fasilitas |
 | Manajer Keamanan | Mengelola operasional keamanan harian |
 | Manajer Fasilitas | Mengelola pemeliharaan gedung dan kontrol lingkungan |
-| Manajer IT Operations | Mengelola keamanan peralatan dan ruang server |
+| Manajer IT Operations | Mengelola keamanan peralatan dan ruang jaringan/komunikasi |
 | Kepala Departemen | Memastikan kepatuhan keamanan fisik dalam departemennya |
 | Seluruh Karyawan | Mematuhi prosedur keamanan fisik yang berlaku |
 
@@ -372,7 +368,7 @@ __________________________________
 
 - **Frekuensi Peninjauan:** Dilakukan setiap tahun atau ketika terjadi perubahan signifikan pada fasilitas atau kebijakan
 - **Tanggung Jawab Peninjauan:** Tim Keamanan dan Tim Fasilitas
-- **Persetujuan Pembaruan:** ISM dan Manajemen
+- **Persetujuan Pembaruan:** Disiapkan oleh ISM, disetujui oleh CEO/COO
 
 
 ## 8. Lampiran
