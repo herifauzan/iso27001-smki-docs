@@ -208,10 +208,10 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 **Frekuensi:** Konfigurasi awal saat setup sistem, review tahunan
 
 
-1. **Centralized Logging dengan SIEM** (IT Security - Wajib aktif)
+1. **Centralized Logging dengan Log Analytics/Monitoring tools** (IT Security - Wajib aktif)
 
 
-   - Semua sistem (server, workstation, perangkat jaringan, aplikasi) wajib mengirimkan log ke SIEM terpusat secara real-time
+   - Semua sistem (server, workstation, perangkat jaringan, aplikasi) wajib mengirimkan log ke Log Analytics/Monitoring tools terpusat secara real-time
    - Gunakan agen log shipper (mis. Filebeat, Syslog forwarder) untuk memastikan pengiriman log yang andal
    - Log dienkripsi saat transit (TLS 1.2+) dan saat penyimpanan (AES-256)
    - Pastikan sinkronisasi waktu (NTP) aktif di semua sistem agar timestamp log konsisten
@@ -229,7 +229,7 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 3. **Validasi Konfigurasi Logging** (IT Security - Setelah setup dan setiap perubahan konfigurasi)
 
 
-   - Verifikasi bahwa semua sistem mengirimkan log ke SIEM dengan benar
+   - Verifikasi bahwa semua sistem mengirimkan log ke Log Analytics/Monitoring tools dengan benar
    - Pastikan tidak ada gap atau delay yang signifikan dalam pengiriman log
    - Dokumentasikan daftar sistem yang terpantau sebagai baseline
 
@@ -244,7 +244,7 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 1. **Pemantauan Real-Time** (ISM - 24/7 berkelanjutan)
 
 
-   - ISM memantau dashboard SIEM secara berkelanjutan
+   - ISM memantau dashboard Log Analytics/Monitoring tools secara berkelanjutan
    - Alert otomatis dikonfigurasi untuk event berikut:
      - Percobaan login gagal berulang (brute force) - threshold: 5 kali gagal dalam 10 menit
      - Akses ke sistem di luar jam kerja tanpa otorisasi
@@ -256,7 +256,7 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 2. **Tinjauan Harian** (IT Operations - Setiap hari kerja)
 
 
-   - Review ringkasan log harian dari SIEM untuk anomali yang tidak terpantau oleh alert otomatis
+   - Review ringkasan log harian dari Log Analytics/Monitoring tools untuk anomali yang tidak terpantau oleh alert otomatis
    - Periksa kondisi kesehatan (health check) semua sistem kritis: CPU, memori, storage, availability
    - Dokumentasikan temuan dalam Log Pemantauan Harian
 
@@ -274,7 +274,7 @@ Prosedur ini mengatur pengumpulan, penyimpanan, dan pemantauan log dari seluruh 
 
 
    - Audit menyeluruh atas efektivitas konfigurasi logging dan alerting
-   - Review dan tuning rule/threshold di SIEM untuk mengurangi false positive
+   - Review dan tuning rule/threshold di Log Analytics/Monitoring tools untuk mengurangi false positive
    - Dokumentasikan temuan dalam Laporan Audit Bulanan
    - Laporan disampaikan kepada ISM dan Manajemen
 
@@ -758,7 +758,7 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
 3. **Integrasi dengan Centralized Logging** (IT Operations - Saat deployment)
 
 
-   - Konfigurasi aplikasi untuk mengirimkan log ke SIEM server terpusat
+   - Konfigurasi aplikasi untuk mengirimkan log ke Log Analytics/Monitoring tools server terpusat
    - Gunakan agen log shipper (Filebeat, Fluentd, atau setara) untuk forward log
    - Pastikan log dienkripsi saat transit dan saat penyimpanan
 
@@ -772,7 +772,7 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
 1. **Tinjauan Harian** (ISM / IT Security - Setiap hari kerja)
 
 
-   - Review alert otomatis dari SIEM untuk anomali dan kejadian kritis
+   - Review alert otomatis dari Log Analytics/Monitoring tools untuk anomali dan kejadian kritis
    - Investigasi setiap alert dengan prioritas HIGH atau CRITICAL
    - Dokumentasikan hasil investigasi dalam log harian SOC
 
@@ -801,7 +801,7 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
 
    - Lakukan audit sampling komprehensif terhadap seluruh audit trail
    - Verifikasi kepatuhan terhadap prosedur ini
-   - Review dan perbarui ruleset deteksi di SIEM
+   - Review dan perbarui ruleset deteksi di Log Analytics/Monitoring tools
    - Laporkan temuan kepada manajemen (ISM dan Direktur)
 
 
@@ -817,14 +817,14 @@ Prosedur ini mengatur pengaktifan, pemantauan, review, dan retensi audit trail p
    - **Log OS (Windows Event Log, syslog/auditd):** Disimpan minimal **2 (dua) tahun**
    - **Log Database (audit log database):** Disimpan minimal **3 (tiga) tahun**
    - **Log Aplikasi:** Disimpan minimal **2 (dua) tahun**
-   - **Log SIEM (centralized log):** Disimpan minimal **2 (dua) tahun**
+   - **Log Log Analytics/Monitoring tools (centralized log):** Disimpan minimal **2 (dua) tahun**
    - **Log terkait insiden keamanan:** Disimpan minimal **5 (lima) tahun** atau sesuai persyaratan hukum yang berlaku
 
 
 2. **Arsitektur Penyimpanan Log**
 
 
-   - **Penyimpanan Panas (Hot Storage):** 3 bulan terakhir disimpan di SIEM server untuk akses cepat
+   - **Penyimpanan Panas (Hot Storage):** 3 bulan terakhir disimpan di Log Analytics/Monitoring tools server untuk akses cepat
    - **Penyimpanan Hangat (Warm Storage):** 3-12 bulan disimpan di Azure Blob Storage (Cool Tier) atau object storage setara
    - **Penyimpanan Dingin (Cold Storage):** >12 bulan diarsipkan ke cold storage terenkripsi (cloud atau tape)
 
@@ -976,14 +976,14 @@ Prosedur ini mengatur implementasi pengamanan jaringan di PT Ecomindo Sarana Cip
      - **IDS/IPS (Intrusion Detection/Prevention System):** Untuk mendeteksi dan memblokir aktivitas mencurigakan di jaringan
      - **NetFlow/sFlow Collector:** Untuk analisis trafik dan deteksi anomali pola koneksi
      - **Network Performance Monitoring (NPM):** Untuk pemantauan bandwidth, latency, dan availability
-     - **SIEM (Security Information and Event Management):** Untuk korelasi log dari firewall, IDS/IPS, dan perangkat jaringan
-   - Seluruh log dari perangkat jaringan (firewall, switch, router, WAF) dikirimkan ke SIEM terpusat secara real-time
+     - **Log Analytics/Monitoring tools (Security Information and Event Management):** Untuk korelasi log dari firewall, IDS/IPS, dan perangkat jaringan
+   - Seluruh log dari perangkat jaringan (firewall, switch, router, WAF) dikirimkan ke Log Analytics/Monitoring tools terpusat secara real-time
 
 
 2. **Pemantauan Real-Time (24/7)** (ISM - Berkelanjutan)
 
 
-   - ISM memantau dashboard SIEM dan NPM secara terus-menerus
+   - ISM memantau dashboard Log Analytics/Monitoring tools dan NPM secara terus-menerus
    - Alert otomatis dikonfigurasi untuk kondisi berikut:
      - Lonjakan trafik tidak normal yang mengindikasikan DDoS atau data exfiltration
      - Koneksi ke/dari IP address yang masuk blacklist atau threat intelligence
@@ -997,7 +997,7 @@ Prosedur ini mengatur implementasi pengamanan jaringan di PT Ecomindo Sarana Cip
 3. **Tinjauan Harian** (IT Security / ISM - Setiap hari kerja)
 
 
-   - Review ringkasan alert harian dari SIEM dan firewall
+   - Review ringkasan alert harian dari Log Analytics/Monitoring tools dan firewall
    - Identifikasi dan investigasi anomali traffic yang terdeteksi
    - Verifikasi status operasional firewall, WAF, dan IDS/IPS
    - Dokumentasikan temuan dalam Log Pemantauan Harian
@@ -1290,7 +1290,7 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 
 - **Backup Otomatis**: Jadwal backup otomatis dengan verifikasi integritas harian
-- **Integrasi SIEM**: Pencatatan log terpusat dengan korelasi event keamanan
+- **Integrasi Log Analytics/Monitoring tools**: Pencatatan log terpusat dengan korelasi event keamanan
 - **Deteksi Endpoint**: Perlindungan malware secara real-time pada seluruh perangkat
 - **Pengendalian Perubahan**: RFC wajib untuk seluruh perubahan pada sistem produksi
 
@@ -1320,7 +1320,7 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 - ✅ **OP-1**: Prosedur operasi telah didokumentasikan secara lengkap dengan alur kerja yang jelas
 - ✅ **OP-2**: Prosedur backup dan recovery telah ditetapkan dengan target RTO/RPO dan pengujian berkala
-- ✅ **OP-3**: Logging dan pemantauan diterapkan melalui SIEM dengan pemantauan 24/7
+- ✅ **OP-3**: Logging dan pemantauan diterapkan melalui Log Analytics/Monitoring tools dengan pemantauan 24/7
 - ✅ **OP-4**: Perlindungan malware diterapkan secara berlapis dengan rencana respons
 - ✅ **OP-5**: Manajemen patch diterapkan dengan prioritisasi dan pengujian sebelum deployment
 - ✅ **OP-6**: Manajemen perubahan dikelola melalui proses CAB dengan prosedur darurat
@@ -1354,7 +1354,7 @@ Tanggal | Waktu | Tipe Backup | Sistem | Status | Size | Lokasi
 
 
 - Lampiran A: Jadwal Backup dan Kebijakan Retensi
-- Lampiran B: Panduan Konfigurasi SIEM
+- Lampiran B: Panduan Konfigurasi Log Analytics/Monitoring tools
 - Lampiran C: Playbook Respons Insiden
 - Lampiran D: Diagram Alur Manajemen Perubahan
 - Lampiran E: Hasil Pengujian Pemulihan Bencana

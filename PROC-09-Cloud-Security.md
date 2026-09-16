@@ -86,7 +86,7 @@ Prosedur ini berlaku untuk:
    - **Identity & Access:** Menerapkan kontrol akses berbasis peran (RBAC) dan mewajibkan MFA untuk semua pengguna cloud (Sesuai PROC-02).
 
 4. **Aktivasi Monitoring & Logging** (IT Security / SOC)
-   - Mengintegrasikan log aktivitas cloud (seperti AWS CloudTrail, Azure Monitor) dengan SIEM terpusat.
+   - Mengintegrasikan log aktivitas cloud (seperti AWS CloudTrail, Azure Monitor) dengan Log Analytics/Monitoring tools terpusat.
    - Mengaktifkan peringatan (alerts) untuk aktivitas anomali (misalnya login dari lokasi tak dikenal, pembuatan resource diluar batas).
 
 ### 2.2 Shared Responsibility Model (Model Tanggung Jawab Bersama)

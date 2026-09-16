@@ -1,4 +1,4 @@
-﻿# TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI
+# TATA KELOLA DAN KEBIJAKAN KEAMANAN INFORMASI
 ## PT ECOMINDO SARANA CIPTA
 
 ## Cover
@@ -164,7 +164,7 @@ graph TD
     T1["**Policies & Risk Mgmt**<br/>Team 1<br/><br/>- Risk Assess<br/>- Vendor Security<br/>- Compliance"]
     T2["**Identity & Access Management**<br/>Team 2<br/><br/>- User Access<br/>- MFA/VPN<br/>- Password Policy"]
     T3["**Cloud & Operations Security**<br/>Team 3<br/><br/>- Cloud Security<br/>- Infrastructure<br/>- Patch Mgmt"]
-    T4["**Incident Response & Monitoring**<br/>Team 4<br/><br/>- Incident Response<br/>- SIEM Monitoring<br/>- Forensics"]
+    T4["**Incident Response & Monitoring**<br/>Team 4<br/><br/>- Incident Response<br/>- Log Analytics/Monitoring tools Monitoring<br/>- Forensics"]
 
     %% Define Connections
     BOD --> ISM
@@ -273,8 +273,8 @@ graph TD
 **Kualifikasi yang Diperlukan:**
 
 - Min. 7 tahun pengalaman keamanan informasi, dengan 3+ tahun di industri terregulasi (FSI, telco, healthcare)
-- Sertifikasi ISO/IEC 27001 Lead Implementer (PECB/IRCA) — wajib
-- Sertifikasi CISM atau CISSP — wajib
+- Sertifikasi ISO/IEC 27001 Lead Implementer (PECB/IRCA) � wajib
+- Sertifikasi CISM atau CISSP � wajib
 - Pengalaman memimpin minimal 1 siklus sertifikasi ISO 27001
 - Pemahaman mendalam tentang UU PDP, OJK POJK, dan regulasi Indonesia lainnya
 
@@ -309,7 +309,7 @@ graph TD
 #### **Team 4: Incident Response & Monitoring**
 
 - Deteksi dan respons insiden keamanan (triage, containment, remediation)
-- SIEM dan centralized logging (Azure Sentinel atau MSSP)
+- Log Analytics/Monitoring tools dan centralized logging (Azure Sentinel atau MSSP)
 - Forensik digital dan pengumpulan bukti
 - Perencanaan pemulihan bencana (DRP) dan kontinuitas bisnis (BCP)
 - Pengelolaan jejak audit dan compliance logging
@@ -352,8 +352,8 @@ graph TD
 **Kualifikasi yang Diperlukan:**
 
 - Min. 5 tahun pengalaman audit atau internal control
-- Sertifikasi ISO 27001 Lead Auditor (IRCA-accredited) — wajib
-- Sertifikasi CISA — direkomendasikan
+- Sertifikasi ISO 27001 Lead Auditor (IRCA-accredited) � wajib
+- Sertifikasi CISA � direkomendasikan
 - Kemampuan menulis audit report dalam Bahasa Indonesia formal
 
 ### 6.6 Pejabat Pelindungan Data Pribadi (DPO)
@@ -382,7 +382,7 @@ graph TD
 
 - Latar belakang legal atau compliance
 - Pemahaman mendalam tentang UU PDP, BSSN regulations, OJK SE 21/2017 (untuk klien FSI)
-- Sertifikasi CIPM atau CIPP/E — direkomendasikan
+- Sertifikasi CIPM atau CIPP/E � direkomendasikan
 - Min. 4 tahun pengalaman privacy atau compliance
 
 ### 6.7 Kepala IT Operations
@@ -619,7 +619,7 @@ PT Ecomindo menerapkan security requirements komprehensif mengacu pada standar b
 - **Identity & Access Management**: Entra ID, MFA, Privileged Access Management (PAM), RBAC
 - **Data Protection**: Encryption at-rest (AES-256 in Key Vault), encryption in-transit (TLS 1.2+), data classification
 - **Application Security**: Secure coding (OWASP ASVS), SAST/DAST/SCA, dependency scanning, code review
-- **Monitoring & Logging**: Azure Sentinel/SIEM, centralized logging, alert rules for security events
+- **Monitoring & Logging**: Azure Sentinel/Log Analytics/Monitoring tools, centralized logging, alert rules for security events
 - **Incident Response**: Formal IR procedures, containment, remediation, post-incident review
 - **Business Continuity**: DRP dan BCP dengan RPO/RTO targets
 - **Vendor Security**: Vendor due diligence, SLA security clauses, continuous monitoring
@@ -1200,7 +1200,7 @@ PT Ecomindo menetapkan kebijakan akses jarak jauh dengan keamanan kuat:
 
 - Akses VPN harus dipantau dan dicatat:
   - Pencatatan log: ID pengguna, alamat IP, timestamp, durasi sesi, data yang ditransfer
-  - Pencatatan terpusat: SIEM atau server pencatatan
+  - Pencatatan terpusat: Log Analytics/Monitoring tools atau server pencatatan
   - Alerts: Peringatan jika pola akses tidak biasa (misalnya, di luar jam kerja, lokasi tidak biasa)
   - Review: Tinjauan bulanan dari log akses untuk anomali
 
@@ -1470,7 +1470,7 @@ PT Ecomindo menetapkan 3 kontrol keamanan jaringan wajib:
 
 - Pemantauan wajib dengan:
   - Alat pemantauan jaringan (IDS/IPS atau serupa)
-  - Pencatatan terpusat: Log firewall, server, aplikasi dikirim ke SIEM
+  - Pencatatan terpusat: Log firewall, server, aplikasi dikirim ke Log Analytics/Monitoring tools
   - Peringatan: Peringatan otomatis untuk aktivitas mencurigakan (port scans, DDoS, dll.)
   - Tinjauan: Tinjauan mingguan dari data pemantauan, tinjauan formal bulanan
   - Retensi: Log dipertahankan minimal 90 hari, kritis 1 tahun
@@ -1518,7 +1518,7 @@ PT Ecomindo memiliki program respons insiden formal:
 **A. Detection & Response Process**
 
 1. **Deteksi**:
-   - Tim SOC memantau peringatan dari: Firewall, IDS/IPS, antivirus, SIEM
+   - Tim SOC memantau peringatan dari: Firewall, IDS/IPS, antivirus, Log Analytics/Monitoring tools
    - Peringatan dikelompokkan berdasarkan severity
    - Triaging peringatan: Tentukan jika true positive atau false positive
 
@@ -1592,7 +1592,7 @@ PT Ecomindo mengaktifkan pencatatan audit komprehensif:
 
 **B. Centralized Logging & Monitoring**
 
-- Semua log dikirim ke SIEM terpusat (Splunk, ELK, ArcSight, atau serupa)
+- Semua log dikirim ke Log Analytics/Monitoring tools terpusat (Splunk, ELK, ArcSight, atau serupa)
 - Analisis real-time: Aturan otomatis untuk mendeteksi pola mencurigakan
 - Peringatan: Peringatan otomatis untuk:
   - Beberapa login gagal
@@ -1842,15 +1842,15 @@ Setiap kebijakan didukung oleh prosedur operasional terperinci yang menjelaskan 
 
 **Dokumen Referensi:**
 
-- ðŸ‘‰ **PROC-01-HR-Employment** (Prosedur HR: Recruitment, Termination, Contractors, NDA)
-- ðŸ‘‰ **PROC-02-Access-Control** (Prosedur Akses: User Lifecycle, Access Review, VPN/MFA, Cloud IAM)
-- ðŸ‘‰ **PROC-03-Operations-Security** (Prosedur Operasi: Hardening, Change Mgmt, VAPT, Incident Response)
-- ðŸ‘‰ **PROC-04-Asset-Management** (Prosedur Aset: Data Classification 4-Level, Encryption, Device Disposal, Cloud Security)
-- ðŸ‘‰ **PROC-05-Physical-Security** (Prosedur Fisik: Access Control, Datacenter, Logbook)
-- ðŸ‘‰ **PROC-06-Awareness-Compliance** (Prosedur Awareness: Training Program, Obsolete Tech)
-- ðŸ‘‰ **PROC-07-Risk-Management** (Prosedur Manajemen Risiko: Risk Assessment, Risk Register, Risk Treatment)
-- ðŸ‘‰ **PROC-08-BCP-DRP** (Prosedur BCP/DRP: Business Continuity, Disaster Recovery, DR Testing)
-- ðŸ‘‰ **PROC-09-Cloud-Security** (Prosedur Keamanan Cloud: Cloud Onboarding, Shared Responsibility Model, Data Location & Residency)
+- 👉 **PROC-01-HR-Employment** (Prosedur HR: Recruitment, Termination, Contractors, NDA)
+- 👉 **PROC-02-Access-Control** (Prosedur Akses: User Lifecycle, Access Review, VPN/MFA, Cloud IAM)
+- 👉 **PROC-03-Operations-Security** (Prosedur Operasi: Hardening, Change Mgmt, VAPT, Incident Response)
+- 👉 **PROC-04-Asset-Management** (Prosedur Aset: Data Classification 4-Level, Encryption, Device Disposal, Cloud Security)
+- 👉 **PROC-05-Physical-Security** (Prosedur Fisik: Access Control, Datacenter, Logbook)
+- 👉 **PROC-06-Awareness-Compliance** (Prosedur Awareness: Training Program, Obsolete Tech)
+- 👉 **PROC-07-Risk-Management** (Prosedur Manajemen Risiko: Risk Assessment, Risk Register, Risk Treatment)
+- 👉 **PROC-08-BCP-DRP** (Prosedur BCP/DRP: Business Continuity, Disaster Recovery, DR Testing)
+- 👉 **PROC-09-Cloud-Security** (Prosedur Keamanan Cloud: Cloud Onboarding, Shared Responsibility Model, Data Location & Residency)
 
 ### 8.2 Struktur Umum Setiap Prosedur
 
@@ -1875,13 +1875,13 @@ Setiap dokumen prosedur mengikuti struktur standar:
 Seluruh bukti dan evidence yang diperlukan untuk membuktikan compliance terhadap standar keamanan informasi internasional telah dikumpulkan dan terdokumentasi dalam satu dokumen komprehensif.
 
 **Dokumen Referensi:**
-ðŸ‘‰ **BUKTI-EVIDENCE-LENGKAP**
+👉 **BUKTI-EVIDENCE-LENGKAP**
 
 ### 9.2 Evidence Mapping ke Assessment Questions
 
 Evidence Framework melakukan mapping lengkap:
 
-- **23 Assessment Questions** → Required Policies → Required Procedures → Evidence Requirements
+- **23 Assessment Questions** ? Required Policies ? Required Procedures ? Evidence Requirements
 - Setiap question memiliki evidence checklist yang jelas
 - Semua templates dan samples tersedia
 - Ready untuk audit atau assessment
@@ -1915,8 +1915,8 @@ Evidence Framework melakukan mapping lengkap:
 ### 10.2 Proses Persetujuan untuk Pembaruan
 
 ```
-Pemilik Kebijakan/Prosedur → Peninjauan ISM → Persetujuan Manajemen (CEO/Direktur) 
-→ Distribusi & Penerimaan → Tanggal Berlaku
+Pemilik Kebijakan/Prosedur ? Peninjauan ISM ? Persetujuan Manajemen (CEO/Direktur) 
+? Distribusi & Penerimaan ? Tanggal Berlaku
 ```
 
 ### 10.3 Pengendalian Versi
@@ -2091,7 +2091,7 @@ flowchart LR
 
 - Tim audit memverifikasi bahwa tindakan korektif telah diimplementasikan
 - Verifikasi mencakup: review bukti, re-testing, atau re-audit jika diperlukan
-- Status temuan diperbarui: Open → In Progress → Closed
+- Status temuan diperbarui: Open ? In Progress ? Closed
 
 **Langkah 7: Penutupan Audit**
 
@@ -2186,13 +2186,13 @@ Setiap Management Review membahas:
 
 | # | KPI | Target | Frekuensi Pengukuran |
 |---|-----|--------|---------------------|
-| 1 | Persentase kepatuhan terhadap security baseline | â‰¥ 95% | Kuartalan |
+| 1 | Persentase kepatuhan terhadap security baseline | ≥ 95% | Kuartalan |
 | 2 | Jumlah insiden keamanan (severity High/Critical) | 0 per kuartal | Kuartalan |
-| 3 | Mean Time to Detect (MTTD) insiden | â‰¤ 4 jam | Per insiden |
-| 4 | Mean Time to Respond (MTTR) insiden | â‰¤ 8 jam | Per insiden |
+| 3 | Mean Time to Detect (MTTD) insiden | ≤ 4 jam | Per insiden |
+| 4 | Mean Time to Respond (MTTR) insiden | ≤ 8 jam | Per insiden |
 | 5 | Persentase karyawan yang menyelesaikan security awareness training | 100% per tahun | Tahunan |
 | 6 | Jumlah temuan audit Major yang belum ditutup | 0 (dalam SLA) | Bulanan |
-| 7 | Persentase patch critical yang diterapkan tepat waktu | â‰¥ 95% dalam 30 hari | Bulanan |
+| 7 | Persentase patch critical yang diterapkan tepat waktu | ≥ 95% dalam 30 hari | Bulanan |
 | 8 | Persentase access review yang diselesaikan tepat waktu | 100% per kuartal | Kuartalan |
 | 9 | Jumlah pengecualian aktif | Minimum yang diperlukan | Bulanan |
 | 10 | Hasil simulasi DR/BCP (keberhasilan restore) | 100% sukses | Tahunan |
@@ -2361,7 +2361,7 @@ ISM atau tim Risk Management wajib melakukan penilaian risiko terhadap setiap pe
 - Identifikasi ancaman dan kerentanan yang timbul akibat pengecualian
 - Evaluasi probabilitas terjadinya insiden (Likelihood: 1-5)
 - Evaluasi dampak jika insiden terjadi (Impact: 1-5)
-- Hitung skor risiko residual: **Risk Score = Likelihood Ã— Impact**
+- Hitung skor risiko residual: **Risk Score = Likelihood × Impact**
 
 **B. Matriks Risiko Pengecualian**
 
@@ -2455,9 +2455,9 @@ Selama masa berlaku pengecualian, ISM wajib memastikan:
 
 | Kategori Pengecualian | Frekuensi Review |
 |----------------------|------------------|
-| Operasional (â‰¤30 hari) | Setiap 15 hari |
-| Teknis (â‰¤90 hari) | Setiap 30 hari |
-| Kontraktual (â‰¤180 hari) | Setiap 60 hari |
+| Operasional (≤30 hari) | Setiap 15 hari |
+| Teknis (≤90 hari) | Setiap 30 hari |
+| Kontraktual (≤180 hari) | Setiap 60 hari |
 | Regulasi | Setiap 90 hari |
 
 **Setiap review WAJIB mencakup:**

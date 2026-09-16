@@ -79,7 +79,7 @@ Prosedur ini berlaku untuk seluruh aset informasi, termasuk:
 
 3. **Pembuatan Inventaris** (IT Operations - Bulanan)
 
-   - Memperbarui CMDB (Configuration Management Database) dengan data terkini
+   - Memperbarui Database Inventory Aset (Configuration Management Database) dengan data terkini
    - Menetapkan pemilik (owner) dan penanggung jawab (custodian) untuk setiap aset
    - Menghasilkan laporan inventaris yang komprehensif
 
@@ -320,7 +320,7 @@ ID Aset | Nama | Jenis | Klasifikasi | Pemilik | Lokasi | Status | Nilai
 
 ### 4.1 Mekanisme Kontrol
 
-- **Integrasi CMDB**: Basis data aset terpusat yang memungkinkan pelacakan menyeluruh
+- **Integrasi Database Inventory Aset**: Basis data aset terpusat yang memungkinkan pelacakan menyeluruh
 - **Penemuan Otomatis**: Pemindaian jaringan secara berkala untuk mendeteksi perangkat keras baru
 - **Implementasi DLP**: Penegakan aturan klasifikasi data secara otomatis
 - **SLA Pemasok**: Persyaratan keamanan yang mengikat dalam setiap kontrak vendor
@@ -343,7 +343,7 @@ ID Aset | Nama | Jenis | Klasifikasi | Pemilik | Lokasi | Status | Nilai
 
 ### Persyaratan Manajemen Aset:
 
-- ✅ **AM-1**: Inventaris aset dipelihara melalui CMDB dengan pembaruan bulanan
+- ✅ **AM-1**: Inventaris aset dipelihara melalui Database Inventory Aset dengan pembaruan bulanan
 - ✅ **AM-2**: Kepemilikan aset didefinisikan secara jelas dengan penetapan pemilik dan penanggung jawab
 - ✅ **AM-3**: Klasifikasi data diterapkan dalam 3 tingkat dengan pelabelan yang konsisten
 - ✅ **AM-4**: Penanganan informasi diatur melalui prosedur yang mencakup seluruh siklus hidup aset
@@ -378,7 +378,7 @@ ID Aset | Nama | Jenis | Klasifikasi | Pemilik | Lokasi | Status | Nilai
 - Lampiran A: Matriks Klasifikasi Aset
 - Lampiran B: Standar Pemusnahan Data
 - Lampiran C: Kuesioner Keamanan Pemasok
-- Lampiran D: Skema dan Struktur CMDB
+- Lampiran D: Skema dan Struktur Database Inventory Aset
 - Lampiran E: Pedoman Penilaian Nilai Aset
 
 **AKHIR DOKUMEN PROSEDUR**
