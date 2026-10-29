@@ -47,7 +47,7 @@ Gunakan checklist ini sebagai panduan verifikasi berkala (self-assessment & audi
 | **CHK-07** | **Password & Otentikasi** | Min 12 karakter (kombinasi huruf, angka, simbol), masa berlaku 90 hari, Windows Hello for Business PIN terproteksi TPM | Min 12 karakter, kompleksitas aktif, Touch ID terikat enkripsi Secure Enclave | **GOV-POL Area 6**<br>**PROC-02** (Standar Password) | [ ] |
 | **CHK-08** | **Screen Lock & Clear Screen** | Inactivity timeout maksimal 10 menit, langsung minta password saat layar hidup | Inactivity timeout maksimal 10 menit, ask password delay = 0 detik | **GOV-POL Area 6 & 7**<br>**PROC-05** (2.2 & 2.5 WFH)<br>**PROC-02** (2.6) | [ ] |
 | **CHK-09** | **Hak Akses Lokal (Least Privilege)** | User operasional adalah **Standard User**. Akun Administrator dikelola via **Windows LAPS** (rotasi 30 hari) | User operasional adalah **Standard User**. Akun admin lokal dikelola terpisah dan didelegasikan | **GOV-POL Area 6**<br>**PROC-02** (2.1 & 2.3)<br>**STD-SoD** | [ ] |
-| **CHK-10** | **Pencegahan Kebocoran Data (USB DLP)** | Removable Storage Block Write atau Read-Only. Autorun/Autoplay dinonaktifkan total | Penulisan media eksternal dibatasi (Read-only USB profile) | **GOV-POL Area 5**<br>**PROC-03** (2.3 USB Media)<br>**PROC-04** (2.3) | [ ] |
+| **CHK-10** | **Pencegahan Kebocoran Data (USB DLP)** | Removable Storage Block Write atau Read-Only. Autorun/Autoplay dinonaktifkan total | Media Management Disc Burning: Burn Support diset "Off" / "Authenticate", pembatasan USB via MDE Device Control | **GOV-POL Area 5**<br>**PROC-03** (2.3 USB Media)<br>**PROC-04** (2.3) | [ ] |
 | **CHK-11** | **Host Firewall & Network Security** | Windows Defender Firewall aktif pada profil Domain, Private, dan Public | macOS Application Firewall aktif, Stealth Mode aktif | **GOV-POL Area 8**<br>**PROC-03** (2.7 Pengamanan Jaringan) | [ ] |
 | **CHK-12** | **Web Protection & Filtering** | Network Protection aktif, Web Content Filtering: Blokir Phishing, Adult, High-Liability, Perjudian | Web Protection Network Filter Extension aktif di macOS | **GOV-POL Area 3 & 8**<br>**PROC-06** (2.1)<br>**PROC-03** (2.3) | [ ] |
 | **CHK-13** | **Conditional Access Enforcement** | Akses ke seluruh layanan cloud korporat (M365, AWS, Github) WAJIB berasal dari perangkat berstatus **Compliant** | Sama (macOS Compliant via Intune Company Portal) | **GOV-POL Area 6 & 9**<br>**PROC-09** (2.1)<br>**PROC-02** (2.6) | [ ] |
@@ -255,10 +255,20 @@ Sesuai **PROC-03 Bagian 2.3**: *"Penggunaan USB flash drive dan media eksternal 
    - Atau pilih `Block Removable Storage` jika menerapkan isolasi USB total.
 5. Nonaktifkan Autorun: Buat policy di Settings Catalog > `System` > `Turn off Autoplay` = `Enabled (All drives)`.
 
-#### B. Konfigurasi macOS USB Restriction:
-1. Masuk ke **Devices** > **Configuration** > **Create** > Settings Catalog (macOS).
-2. Nama: `SEC-POL-MAC-USB-RESTRICTION`.
-3. Cari `Restrictions` > `Media Management` > Batasi izin *Write to external storage/burn*.
+#### B. Konfigurasi macOS Media Management & Disc Burning Restriction:
+1. Masuk ke Intune admin center > **Devices** > **Configuration** > **Create** > **New Policy**.
+2. Platform: **macOS** | Profile type: **Settings Catalog**.
+3. Nama Policy: `SEC-POL-MAC-MEDIA-RESTRICTION`.
+4. Klik **Add settings**:
+   - Cari kategori: **Media Management Disc Burning**.
+   - Centang pengaturan: **Burn Support**.
+5. Konfigurasi Nilai:
+   - Atur **Burn Support** ke salah satu opsi berikut sesuai kebijakan:
+     - **`Off`** : Mematikan (*disable*) dukungan penulisan/pembakaran media eksternal secara total (Rekomendasi isolasi ketat ISO 27001).
+     - **`Authenticate`** : Mewajibkan otentikasi kredensial administrator sebelum diizinkan melakukan operasi penulisan (*burn*).
+6. *(Lanjutan - Pembatasan USB Flashdisk/Removable Disk di macOS)*:
+   - Untuk memblokir atau membuat USB mass storage menjadi Read-Only pada macOS, gunakan kebijakan **Device Control di Defender for Endpoint (MDE)** via custom profile XML/mobileconfig (Disk Arbitration).
+7. Assign ke grup: `All Corporate macOS Devices`.
 
 ---
 
