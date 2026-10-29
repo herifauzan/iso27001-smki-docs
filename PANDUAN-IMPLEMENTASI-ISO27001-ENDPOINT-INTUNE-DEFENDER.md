@@ -91,10 +91,24 @@ Setiap laptop yang digunakan karyawan wajib terdaftar di inventaris resmi perusa
    - Dapatkan *Hardware Hash* dari vendor atau jalankan script PowerShell `Get-WindowsAutopilotInfo.ps1 -Online`.
    - Upload ke Intune > **Devices** > **Enrollment** > **Windows Autopilot Deployment Program** > **Devices**.
    - Buat Deployment Profile: User-Driven Mode, Microsoft Entra Joined, Standard User account type (bukan Administrator).
-2. **Untuk Laptop Eksisting (Hybrid / Workplace Join)**:
-   - Arahkan karyawan ke **Settings** > **Accounts** > **Access work or school** > **Connect**.
-   - Masukkan akun email resmi `@ecomindo.com`.
-   - Perangkat otomatis ter-enroll ke MDM Intune dan terdaftar di `Inventory-AM-01` (Aset TI).
+2. **Untuk Laptop Eksisting (Metode Paling Pasti Berhasil)**:
+   - **Metode A - Aplikasi Company Portal (Sangat Direkomendasikan)**:
+     - Karyawan membuka **Microsoft Store** > cari dan install **Company Portal** (Portal Perusahaan resmi Microsoft).
+     - Buka Company Portal > Login dengan akun email `@ecomindo.com`.
+     - Ikuti petunjuk pendaftaran perangkat hingga muncul centang hijau *"This device is managed by PT Ecomindo Sarana Cipta"*.
+   - **Metode B - Menu Windows Settings (Wajib Perhatikan Link Khusus)**:
+     - Buka **Settings** > **Accounts** > **Access work or school** > **Connect**.
+     - > [!WARNING]
+       > **JANGAN LANGSUNG KETIK EMAIL** pada prompt utama (karena Windows hanya akan mendaftarkan akun biasa / *Workplace Join*, bukan Intune MDM).
+     - **Untuk Laptop Kantor**: Klik link teks biru di bawah: **`Join this device to Microsoft Entra ID`** > Baru masukkan email dan password karyawan.
+     - **Untuk Laptop BYOD / Pribadi**: Klik link teks biru di bawah: **`Enroll only in device management`** > Masukkan email dan password karyawan.
+   - **Verifikasi Keberhasilan di Laptop**:
+     - Klik akun yang terhubung di *Access work or school* > Pastikan muncul tombol **`Info`**.
+     - Klik **`Info`** > scroll ke bawah > klik **`Sync`** untuk mempercepat sinkronisasi awal.
+   - **Troubleshooting Jika Belum Muncul di Intune**:
+     - Cek **Entra ID** > **Mobility (MDM and WIP)** > **Microsoft Intune**: Pastikan *MDM user scope* diset ke **All**.
+     - Cek lisensi akun: Pastikan user memiliki lisensi M365 E3/E5, Business Premium, atau Intune Plan 1.
+     - Cek **Intune** > **Devices** > **Enrollment** > **Device platform restrictions**: Pastikan *Windows (MDM)* tidak di-block.
 
 #### B. macOS (Company Portal Enrollment):
 1. Pastikan **Apple MDM Push Certificate** aktif di Intune.
