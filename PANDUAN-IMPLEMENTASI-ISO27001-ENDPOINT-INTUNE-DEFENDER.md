@@ -38,7 +38,7 @@ Gunakan checklist ini sebagai panduan verifikasi berkala (self-assessment & audi
 
 | ID | Sasaran Keamanan | Windows 10/11 | macOS (Ventura/Sonoma/Sequoia) | Rujukan Kebijakan & Prosedur | Status |
 |:---:|:---|:---|:---|:---|:---:|
-| **CHK-01** | **Inventarisasi & Enrollment Terpusat** | Terdaftar di Microsoft Entra ID & Intune via Windows Autopilot | Terdaftar di Intune via Apple ADE atau Company Portal App | **GOV-POL Area 5**<br>**PROC-04** (2.1)<br>**PROC-01** (Checklist Onboarding) | [ ] |
+| **CHK-01** | **Inventarisasi & Enrollment Terpusat** | Terdaftar di Microsoft Entra ID & Intune via Windows Autopilot (baru) atau Company Portal App (eksisting) | Terdaftar di Intune via Apple ADE (baru) atau Company Portal App (eksisting) | **GOV-POL Area 5**<br>**PROC-04** (2.1)<br>**PROC-01** (Checklist Onboarding) | [ ] |
 | **CHK-02** | **Full-Disk Encryption (At-Rest)** | BitLocker aktif (XTS-AES 256-bit), TPM 2.0 wajib, Recovery Key escrow ke Entra ID | FileVault aktif (AES-256), Personal Recovery Key escrow ke Intune, rotasi otomatis | **GOV-POL Area 5**<br>**PROC-04** (2.3)<br>**PROC-02** (Standar Enkripsi) | [ ] |
 | **CHK-03** | **Anti-Malware & Real-Time Protection** | Microsoft Defender Antivirus: Real-time ON, Cloud protection High, PUA Protection Block, Tamper Protection ON | Defender for Endpoint daemon aktif, Real-time scan ON, RTP ON, System Extension approved | **GOV-POL Area 8**<br>**PROC-03** (2.3 Proteksi Malware) | [ ] |
 | **CHK-04** | **Endpoint Detection & Response (EDR)** | MDE Sensor aktif (Onboarded via Intune connector), Telemetry frequency accelerated | MDE Sensor onboarded via MobileConfig profile, Full Disk Access (FDA) approved | **GOV-POL Area 8**<br>**PROC-03** (2.2 Logging & Monitoring) | [ ] |
@@ -91,24 +91,32 @@ Setiap laptop yang digunakan karyawan wajib terdaftar di inventaris resmi perusa
    - Dapatkan *Hardware Hash* dari vendor atau jalankan script PowerShell `Get-WindowsAutopilotInfo.ps1 -Online`.
    - Upload ke Intune > **Devices** > **Enrollment** > **Windows Autopilot Deployment Program** > **Devices**.
    - Buat Deployment Profile: User-Driven Mode, Microsoft Entra Joined, Standard User account type (bukan Administrator).
-2. **Untuk Laptop Eksisting (Metode Paling Pasti Berhasil)**:
-   - **Metode A - Aplikasi Company Portal (Sangat Direkomendasikan)**:
-     - Karyawan membuka **Microsoft Store** > cari dan install **Company Portal** (Portal Perusahaan resmi Microsoft).
-     - Buka Company Portal > Login dengan akun email `@ecomindo.com`.
-     - Ikuti petunjuk pendaftaran perangkat hingga muncul centang hijau *"This device is managed by PT Ecomindo Sarana Cipta"*.
-   - **Metode B - Menu Windows Settings (Wajib Perhatikan Link Khusus)**:
-     - Buka **Settings** > **Accounts** > **Access work or school** > **Connect**.
-     - > [!WARNING]
-       > **JANGAN LANGSUNG KETIK EMAIL** pada prompt utama (karena Windows hanya akan mendaftarkan akun biasa / *Workplace Join*, bukan Intune MDM).
-     - **Untuk Laptop Kantor**: Klik link teks biru di bawah: **`Join this device to Microsoft Entra ID`** > Baru masukkan email dan password karyawan.
-     - **Untuk Laptop BYOD / Pribadi**: Klik link teks biru di bawah: **`Enroll only in device management`** > Masukkan email dan password karyawan.
-   - **Verifikasi Keberhasilan di Laptop**:
-     - Klik akun yang terhubung di *Access work or school* > Pastikan muncul tombol **`Info`**.
-     - Klik **`Info`** > scroll ke bawah > klik **`Sync`** untuk mempercepat sinkronisasi awal.
-   - **Troubleshooting Jika Belum Muncul di Intune**:
-     - Cek **Entra ID** > **Mobility (MDM and WIP)** > **Microsoft Intune**: Pastikan *MDM user scope* diset ke **All**.
-     - Cek lisensi akun: Pastikan user memiliki lisensi M365 E3/E5, Business Premium, atau Intune Plan 1.
-     - Cek **Intune** > **Devices** > **Enrollment** > **Device platform restrictions**: Pastikan *Windows (MDM)* tidak di-block.
+2. **Untuk Laptop Eksisting (Metode Standar Resmi: Aplikasi Company Portal)**:
+   > [!NOTE]
+   > Karena **lingkup (scope) audit ISO 27001 bersifat terbatas** dan pengaturan *Mobility (MDM and WIP)* di Entra ID tidak perlu dibuka untuk seluruh organisasi, **Aplikasi Company Portal (Portal Perusahaan) ditetapkan sebagai metode standar resmi** untuk pendaftaran seluruh laptop eksisting. Metode ini melakukan direct-enrollment secara individual hanya untuk karyawan dalam scope ISO, tanpa mempengaruhi perangkat karyawan lain di luar lingkup.
+
+   - **Langkah-Langkah Pendaftaran via Company Portal**:
+     1. Karyawan membuka **Microsoft Store** di laptop Windows.
+     2. Cari dan pasang aplikasi resmi: **Company Portal** *(Portal Perusahaan oleh Microsoft Corporation)*.
+     3. Buka aplikasi **Company Portal** > Login menggunakan email resmi `@ecomindo.com` (akun yang masuk scope ISO).
+     4. Aplikasi akan mendeteksi status perangkat dan menampilkan prompt:
+        > *"This device has not been registered yet. Click here to set up your device."*
+     5. Klik tombol **Set up** / **Register** dan ikuti panduan persetujuan 2 langkah di layar.
+     6. Tunggu proses pendaftaran hingga muncul tanda centang hijau:
+        > *"You're all set! This device is now managed by PT Ecomindo Sarana Cipta."*
+   
+   - **Verifikasi Keberhasilan di Sisi Laptop**:
+     1. Buka **Settings** > **Accounts** > **Access work or school**.
+     2. Klik akun `@ecomindo.com` yang terhubung.
+     3. **Pastikan tombol `Info` muncul di sebelah tombol `Disconnect`** (tanda valid bahwa koneksi MDM Intune telah aktif).
+     4. Klik **`Info`** > scroll ke bawah > klik tombol **`Sync`** untuk mempercepat penarikan kebijakan keamanan.
+     5. Dalam waktu 2–5 menit, laptop otomatis muncul pada konsol Intune (**Devices** > **Windows devices**) dan dapat dicatat pada formulir `Inventory-AM-01` (Aset TI).
+
+   - **Metode Alternatif (Jika Microsoft Store Tidak Dapat Diakses)**:
+     - Buka **Settings** > **Accounts** > **Access work or school**.
+     - Di bawah tombol *Connect*, klik link teks biru: **`Enroll only in device management`**.
+     - Masukkan email `@ecomindo.com` dan password karyawan > Klik *Next* hingga selesai.
+     *(Catatan: Hindari mengklik tombol Connect langsung untuk mencegah pendaftaran hanya sebagai akun biasa tanpa MDM).*
 
 #### B. macOS (Company Portal Enrollment):
 1. Pastikan **Apple MDM Push Certificate** aktif di Intune.
@@ -412,7 +420,7 @@ sequenceDiagram
     HR->>IT: Notifikasi Karyawan Baru (Form-AK-01)
     IT->>Intune: Daftarkan SN Laptop ke Inventaris (Inventory-AM-01)
     IT->>User: Serahkan Laptop Baru & Panduan Akses (PROC-01)
-    User->>Intune: Autopilot Login (Windows) / Company Portal (macOS)
+    User->>Intune: Autopilot (Laptop Baru) / Company Portal App (Laptop Eksisting & macOS)
     Intune-->>User: Push BitLocker/FileVault, Antivirus, ASR, Update Rings
     Intune->>Def: Onboard EDR Sensor & Laporkan Health Telemetry
 
