@@ -7,6 +7,7 @@
 # Allow specific files if needed (uncomment and modify as necessary)
 # !important-file
 # !*.pdf
+!PANDUAN-IMPLEMENTASI-ISO27001-ENDPOINT-INTUNE-DEFENDER.md
 
 # Allow benchmarking-azure folder
 !benchmarking-azure
