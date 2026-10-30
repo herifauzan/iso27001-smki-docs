@@ -328,30 +328,41 @@ Menjadi "pagar terluar" yang memastikan data perusahaan di cloud (M365, SharePoi
 ### 6.1 Onboarding Sensor EDR & Health Telemetry (Korelasi: GOV-POL Area 8, PROC-03 Bagian 2.2 & ISO A.8.16)
 
 #### A. Windows 10/11:
-1. Buka Intune > **Endpoint security** > **Endpoint detection and response** > **Create Policy**.
-2. Platform: Windows 10 and later | Profile: **Endpoint detection and response**.
-3. Konfigurasi:
+1. Buka Intune admin center > **Endpoint security** > **Endpoint detection and response** > **Create Policy**.
+2. Platform: **Windows 10, Windows 11, and Windows Server** | Profile: **Endpoint detection and response**.
+3. **Nama Policy**: `SEC-POL-WIN-EDR-ONBOARDING`.
+4. Konfigurasi Parameter:
    - *Client configuration package type*: `Auto from connector`.
-   - *Accelerate telemetry reporting frequency*: `Enable` (Mempercepat deteksi insiden).
+   - *Accelerate telemetry reporting frequency*: `Enable` (Mempercepat transmisi telemetri deteksi insiden).
    - *Sample sharing for all files*: `All`.
-4. Sensor Defender bawaan Windows langsung aktif dan melapor ke portal `security.microsoft.com`.
+5. Assignment: Terapkan ke grup target (misal `GRP-SCOPE-ISO27001-DEVICES` atau `All Windows Corporate Laptops`).
+6. Sensor Defender bawaan Windows langsung aktif dan terhubung otomatis ke portal `security.microsoft.com`.
 
 #### B. macOS Onboarding (Aplikasi + Profil Izin):
-1. Deploy file instalasi MDE dari Intune: **Apps** > **macOS** > **Add** > Tipe: **Microsoft Defender for Endpoint (macOS)**.
-2. Deploy Profil Konfigurasi Wajib macOS (System Extensions & FDA):
-   - Tanpa profil ini, macOS akan memblokir daemon antivirus Defender.
-   - Buat Configuration Profile (Settings Catalog / Custom MobileConfig) untuk menyetujui secara otomatis:
-     - *System Extensions approval* (Bundle ID: `com.microsoft.wdav.netext`, `com.microsoft.wdav.epsext`).
+1. **Deploy Aplikasi Defender**:
+   - Masuk ke Intune > **Apps** > **macOS** > **Add** > Tipe: **Microsoft Defender for Endpoint (macOS)** > Assign ke seluruh Mac.
+2. **Deploy Profil Konfigurasi Izin Sistem (System Extensions, FDA & Network Filter)**:
+   - Buka Intune > **Devices** > **Configuration** > **Create** > Platform: **macOS** > Profile type: **Settings Catalog**.
+   - **Nama Policy**: `SEC-POL-MAC-MDE-PERMISSIONS`.
+   - Konfigurasikan persetujuan otomatis untuk:
+     - *System Extensions approval* (Team ID: `UBF8T346G9`, Bundle ID: `com.microsoft.wdav.netext`, `com.microsoft.wdav.epsext`).
      - *Full Disk Access (FDA)* (TCC payload untuk `/Applications/Microsoft Defender.app`).
      - *Network Filter provider*.
-3. Deploy paket onboarding MDE yang diunduh dari Defender Portal (`security.microsoft.com` > **Settings** > **Endpoints** > **Onboarding** > OS: **macOS** > Deployment: **Intune**).
+3. **Deploy Paket Onboarding MDE (Custom Configuration Profile)**:
+   - Unduh paket onboarding dari Defender Portal (`security.microsoft.com` > **Settings** > **Endpoints** > **Onboarding** > OS: **macOS** > Deployment method: **Mobile Device Management / Microsoft Intune**).
+   - Buka Intune > **Devices** > **Configuration** > **Create** > Platform: **macOS** > Profile type: **Templates** > **Custom**.
+   - **Nama Policy**: `SEC-POL-MAC-MDE-ONBOARDING`.
+   - Upload file payload `.xml` / `.mobileconfig` yang telah diunduh dari portal Defender.
+   - Assignment: Terapkan ke grup target macOS.
 
 ---
 
 ### 6.2 Next-Generation Antivirus (NGAV) & Tamper Protection (Korelasi: GOV-POL Area 8, PROC-03 Bagian 2.3 & ISO A.8.7)
 
 1. Buka Intune > **Endpoint security** > **Antivirus** > **Create Policy**.
-2. Platform: Windows 10 and later (buat profil serupa untuk macOS) | Profile: **Microsoft Defender Antivirus**.
+2. Platform & Profil:
+   - Untuk Windows: Platform **Windows 10 and later** | Profile: **Microsoft Defender Antivirus** | **Nama Policy**: `SEC-POL-WIN-DEFENDER-AV`.
+   - Untuk macOS: Platform **macOS** | Profile: **Defender** | **Nama Policy**: `SEC-POL-MAC-DEFENDER-AV`.
 3. Konfigurasi Wajib:
    - *Turn on real-time protection*: `Yes`
    - *Turn on cloud-delivered protection*: `Yes`
@@ -370,8 +381,9 @@ Menjadi "pagar terluar" yang memastikan data perusahaan di cloud (M365, SharePoi
 
 Mencegah eksploitasi skrip dan ransomware pada Windows 10/11:
 1. Buka Intune > **Endpoint security** > **Attack surface reduction** > **Create Policy**.
-2. Profile: **Attack surface reduction rules**.
-3. Atur aturan-aturan berikut ke status **Block**:
+2. Platform: **Windows 10 and later** | Profile: **Attack surface reduction rules**.
+3. **Nama Policy**: `SEC-POL-WIN-ASR-RULES`.
+4. Atur aturan-aturan berikut ke status **Block**:
    - `Block executable content from email client and webmail` -> **Block**
    - `Block all Office applications from creating child processes` -> **Block**
    - `Block Office applications from injecting code into other processes` -> **Block**
