@@ -338,21 +338,62 @@ Menjadi "pagar terluar" yang memastikan data perusahaan di cloud (M365, SharePoi
 5. Assignment: Terapkan ke grup target (misal `GRP-SCOPE-ISO27001-DEVICES` atau `All Windows Corporate Laptops`).
 6. Sensor Defender bawaan Windows langsung aktif dan terhubung otomatis ke portal `security.microsoft.com`.
 
-#### B. macOS Onboarding (Aplikasi + Profil Izin):
-1. **Deploy Aplikasi Defender**:
-   - Masuk ke Intune > **Apps** > **macOS** > **Add** > Tipe: **Microsoft Defender for Endpoint (macOS)** > Assign ke seluruh Mac.
-2. **Deploy Profil Konfigurasi Izin Sistem (System Extensions, FDA & Network Filter)**:
-   - Buka Intune > **Devices** > **Configuration** > **Create** > Platform: **macOS** > Profile type: **Settings Catalog**.
+#### B. macOS Onboarding (Aplikasi + Profil Izin Sistem):
+1. **Deploy Aplikasi Microsoft Defender**:
+   - Masuk ke Intune > **Apps** > **macOS** > **Add** > Tipe: **Microsoft Defender for Endpoint (macOS)** > Assign ke seluruh perangkat macOS dalam scope.
+
+2. **Deploy Profil Izin Sistem (System Extensions & Privacy Preferences Policy Control)**:
+   > [!IMPORTANT]
+   > Mengacu pada [Dokumentasi Resmi Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/manage-profiles-approve-sys-extensions-intune), macOS mewajibkan persetujuan ekstensi sistem dan Full Disk Access agar engine antivirus dan network protection Defender dapat berjalan aktif di background tanpa dicekal sistem operasi.
+
+   - Masuk ke Intune admin center > **Devices** > **Configuration** > **Create** > **New Policy**.
+   - Platform: **macOS** | Profile type: **Settings Catalog**.
    - **Nama Policy**: `SEC-POL-MAC-MDE-PERMISSIONS`.
-   - Konfigurasikan persetujuan otomatis untuk:
-     - *System Extensions approval* (Team ID: `UBF8T346G9`, Bundle ID: `com.microsoft.wdav.netext`, `com.microsoft.wdav.epsext`).
-     - *Full Disk Access (FDA)* (TCC payload untuk `/Applications/Microsoft Defender.app`).
-     - *Network Filter provider*.
+   - Klik **Add settings**, tambahkan kategori dan konfigurasi berikut:
+
+     **a. Kategori: System Configuration > System Extensions**:
+     - Cari dan klik kategori **System Configuration > System Extensions**.
+     - Centang dua opsi di bagian bawah:
+       - ☑️ **Allowed System Extensions**
+       - ☑️ **Allowed System Extension Types**
+     - Konfigurasi nilai parameter:
+       - **Allowed System Extensions**:
+         - *Key (Team Identifier)*: `UBF8T346G9`
+         - *Allowed System Extensions (Bundle Identifiers)*:
+           - Tambahkan: `com.microsoft.wdav.epsext` (Endpoint Security Extension)
+           - Tambahkan: `com.microsoft.wdav.netext` (Network Extension)
+       - **Allowed System Extension Types**:
+         - *Key (Team Identifier)*: `UBF8T346G9`
+         - *Allowed System Extension Types*:
+           - Tambahkan: `Endpoint Security Extensions`
+           - Tambahkan: `Network Extensions`
+
+     **b. Kategori: Privacy > Privacy Preferences Policy Control (PPPC / Full Disk Access)**:
+     - Cari dan klik kategori **Privacy > Privacy Preferences Policy Control**.
+     - Centang: **Services**.
+     - Konfigurasi izin Full Disk Access:
+       - *Identifier*: `com.microsoft.wdav`
+       - *Identifier Type*: `Bundle ID`
+       - *Code Requirement*:
+         `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+       - *Service*: **SystemPolicyAllFiles** (Full Disk Access) -> **Allowed** / `Access: True`.
+
+     **c. Kategori: Network > Network Filter (Web Protection & Content Filter)**:
+     - Cari dan klik kategori **Network > Network Filter**.
+     - Setel filter provider untuk Web Protection:
+       - *Filter Name*: `Microsoft Defender Content Filter`
+       - *Filter Sockets*: `True`
+       - *Provider Bundle Identifier*: `com.microsoft.wdav.netext`
+       - *Provider Designated Requirement*:
+         `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+
+   - Assignment: Terapkan policy `SEC-POL-MAC-MDE-PERMISSIONS` ke seluruh laptop macOS dalam scope.
+
 3. **Deploy Paket Onboarding MDE (Custom Configuration Profile)**:
    - Unduh paket onboarding dari Defender Portal (`security.microsoft.com` > **Settings** > **Endpoints** > **Onboarding** > OS: **macOS** > Deployment method: **Mobile Device Management / Microsoft Intune**).
    - Buka Intune > **Devices** > **Configuration** > **Create** > Platform: **macOS** > Profile type: **Templates** > **Custom**.
    - **Nama Policy**: `SEC-POL-MAC-MDE-ONBOARDING`.
-   - Upload file payload `.xml` / `.mobileconfig` yang telah diunduh dari portal Defender.
+   - Upload file payload onboarding `.xml` / `.mobileconfig` yang telah diunduh dari portal Defender.
    - Assignment: Terapkan ke grup target macOS.
 
 ---
